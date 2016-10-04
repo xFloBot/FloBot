@@ -23,5 +23,22 @@ namespace FloBot
             
             new Main.StateMachine(this);
         }
+
+        private void tbRestHP_Scroll(object sender, EventArgs e)
+        {
+            lblRestHP.Text = tbRestHP.Value + "%";
+        }
+        private void tbRestMP_Scroll(object sender, EventArgs e)
+        {
+            lblRestMP.Text = tbRestMP.Value + "%";
+        }
+        private void tbEmHP_Scroll(object sender, EventArgs e)
+        {
+            lblEmHP.Text = tbEmHP.Value + "%";
+        }
+        private void tbEmMP_Scroll(object sender, EventArgs e)
+        {
+            lblEmMP.Text = tbEmMP.Value + "%";
+        }
     }
 }

@@ -24,7 +24,7 @@ namespace FloBot.State
             //check if you need rest and if you not checked autobattle
             new CheckCurrentTarget().doTask(main_form,mc);
            
-            if (new GetRestTask().doTask(mc) || !main_form.cbAutoBattle.Checked)
+            if (new GetRestTask().doTask(main_form,mc) || !main_form.cbAutoBattle.Checked)
                 return new FindGameState();
 
             //Focus a target

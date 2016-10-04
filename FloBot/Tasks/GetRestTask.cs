@@ -13,21 +13,26 @@ namespace FloBot.Tasks
         private static bool resting = false;
         public bool doTask(MemoryRW mc)
         {
+            throw new NotImplementedException();
+        }
+
+        public bool doTask(mainForm main_form, MemoryRW mc)
+        {
+
             if (checkForEmergency(mc))
                 return false;
 
-            return needResting(mc);
-
+            return needResting(main_form, mc);
         }
 
-        private bool needResting(MemoryRW mc)
+        private bool needResting(mainForm main_form,MemoryRW mc)
         {
             //Check if you'r dead
             if (AddressUtil.getCurrentCharHP() == 0)
                 return false;
             //Check if your Current HP is below 30% and if you'r not resting allready
             //Sit down if this is the case
-            else if ((getMaxCharHP(mc) / 100 * 30) > getCurrentCharHP(mc) && !resting)
+            else if ((AddressUtil.getMaxCharHP() / 100 * main_form.tbRestHP.Value) > AddressUtil.getCurrentCharHP() && !resting)
             {
                 mc.sendKeystroke(Keys.Z);
                 resting = true;
@@ -35,7 +40,7 @@ namespace FloBot.Tasks
             }
             //Check Current HP and stand up when over 80%
             if (resting)
-                if ((getMaxCharHP(mc) / 100 * 80) > getCurrentCharHP(mc))
+                if ((AddressUtil.getMaxCharHP()) != AddressUtil.getCurrentCharHP())
                     return true;
                 else
                     mc.sendKeystroke(Keys.Z);
@@ -44,10 +49,7 @@ namespace FloBot.Tasks
             return false;
         }
 
-        public bool doTask(mainForm main_form, MemoryRW mc)
-        {
-            throw new NotImplementedException();
-        }
+        
         private bool checkForEmergency(MemoryRW mc)
         {
             if (inCombat())
@@ -60,23 +62,6 @@ namespace FloBot.Tasks
                 return true;
             }
             return false;
-        }
-        private int getCurrentCharHP(MemoryRW mc)
-        {
-            IntPtr zeiger = IntPtr.Add(mc.getBaseAdress(), 0x00BE7A70);
-            
-            int zeigerGerade = mc.ReadInteger(zeiger.ToInt32(), 4) + 0x2c8;
-
-            return mc.ReadInteger(zeigerGerade,4);
-        }
-
-        private int getMaxCharHP(MemoryRW mc)
-        {
-            IntPtr zeiger = IntPtr.Add(mc.getBaseAdress(), 0x00BE7A70);
-
-            int zeigerMax = mc.ReadInteger(zeiger.ToInt32(), 4) + 0x2c4;
-
-            return mc.ReadInteger(zeigerMax,4);
         }
         
         private bool inCombat()
