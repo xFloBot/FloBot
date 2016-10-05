@@ -17,8 +17,10 @@ namespace FloBot.State
 
            
                 while (!nextTask.doTask(mc)) Thread.Sleep(1000);
-
+            
             main_form.lblGameFound.Text = "Florensia gefunden";
+            mc.getPixelsByPercent(50, 50);
+
             return new CombatState();
         }
          

@@ -29,18 +29,24 @@ namespace FloBot.Tasks
         {
             //Check if you'r dead
             if (AddressUtil.getCurrentCharHP() == 0)
-                return false;
+            {
+                resting = false;
+                return true;
+            }
+                
             //Check if your Current HP is below 30% and if you'r not resting allready
             //Sit down if this is the case
-            else if ((AddressUtil.getMaxCharHP() / 100 * main_form.tbRestHP.Value) > AddressUtil.getCurrentCharHP() && !resting)
+            else if (
+               ((AddressUtil.getMaxCharHP() / 100 * main_form.tbRestHP.Value) > AddressUtil.getCurrentCharHP() || AddressUtil.getCharMaxMP() /100*main_form.tbRestMP.Value >AddressUtil.getCharCurrentMP())
+                && !resting)
             {
                 mc.sendKeystroke(Keys.Z);
                 resting = true;
                 return true;
             }
-            //Check Current HP and stand up when over 80%
+            //Check Current HP and stand up when full
             if (resting)
-                if ((AddressUtil.getMaxCharHP()) != AddressUtil.getCurrentCharHP())
+                if ((AddressUtil.getMaxCharHP()) != AddressUtil.getCurrentCharHP() )
                     return true;
                 else
                     mc.sendKeystroke(Keys.Z);

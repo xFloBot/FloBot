@@ -14,6 +14,9 @@ namespace FloBot.State
     {
         public IState doTasks(mainForm main_form, MemoryRW mc)
         {
+            if (new ReviveIfNeededTask().doTask(mc))
+                return new FindGameState();
+
             //Update Charinfo
             new UpdateCharInfoTask().doTask(main_form, mc);
 
@@ -22,16 +25,16 @@ namespace FloBot.State
              new CheckCurrentTarget().doTask(main_form, mc);
          
             //check if you need rest and if you not checked autobattle
-            new CheckCurrentTarget().doTask(main_form,mc);
+      
            
-            if (new GetRestTask().doTask(main_form,mc) || !main_form.cbAutoBattle.Checked)
+            if (!main_form.cbAutoBattle.Checked||new GetRestTask().doTask(main_form,mc))
                 return new FindGameState();
 
             //Focus a target
-            new FocusTargetTask().doTask(mc);
+            new FocusTargetTask().doTask(main_form,mc);
   
 
-            while (new CheckCurrentTarget().doTask(main_form,mc) && !main_form.IsDisposed)
+            while (new CheckCurrentTarget().doTask(main_form,mc) && !main_form.IsDisposed && AddressUtil.getCurrentCharHP()>0)
             {
                 new AttackTargetTask().doTask(mc);
                 new UpdateCharInfoTask().doTask(main_form,mc);

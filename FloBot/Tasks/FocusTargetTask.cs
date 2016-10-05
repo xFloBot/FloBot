@@ -14,10 +14,15 @@ namespace FloBot.Tasks
     {
         public bool doTask(MemoryRW mc)
         {
-           if(AddressUtil.getTargetCurrentHP() == 0)
+            throw new NotImplementedException();
+        }
+
+        public bool doTask(mainForm main_form, MemoryRW mc)
+        {
+            if (AddressUtil.getTargetName().Contains("NoTarget"))
             {
                 //Check for target with Max HP
-                while(AddressUtil.getTargetCurrentHP() != AddressUtil.getTargetMaxHP())
+                while (AddressUtil.getTargetCurrentHP() != AddressUtil.getTargetMaxHP()||!checkIfInRange(main_form))
                 {
                     mc.sendKeystroke(Keys.Tab);
                     Thread.Sleep(100);
@@ -25,11 +30,23 @@ namespace FloBot.Tasks
             }
 
             return true;
+           
         }
 
-        public bool doTask(mainForm main_form, MemoryRW mc)
+        private bool checkIfInRange(mainForm main_form)
         {
-            throw new NotImplementedException();
+            int range;
+            int ownLevel = Int32.Parse(main_form.lblCharLvL.Text);
+            int monsterLevel;
+            if (!Int32.TryParse(AddressUtil.getTargetLevel(), out monsterLevel))
+                return false;
+            if (!Int32.TryParse(main_form.tbLvLRange.Text, out range)) return false;
+
+            if (monsterLevel > (ownLevel + range)
+                || monsterLevel < ownLevel - range)
+                return false;
+
+            return true;
         }
     }
 }

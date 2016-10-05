@@ -20,7 +20,7 @@ namespace FloBot.MemoryClass
         IntPtr pHandel;
         IntPtr baseAddress;
         [DllImport("user32.dll")]
-        public static extern bool PostMessage(IntPtr hWnd, uint Msg, Keys wParam, IntPtr lParam);
+        public static extern bool PostMessage(IntPtr hWnd, uint Msg, Keys wParam, int lParam);
 
         [DllImport("user32.dll", SetLastError = true)]
         public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
@@ -64,6 +64,7 @@ namespace FloBot.MemoryClass
 
         //This is the part you want to edit
         #region Write Functions (Integer & String)
+
         public void WriteInteger(int Address, int Value)
         {
             Write(Address, Value);
@@ -112,10 +113,45 @@ namespace FloBot.MemoryClass
         {
             const uint WM_KEYDOWN = 0x100;
             const uint WM_KEYUP = 0x101;
-            PostMessage(hWnd, WM_KEYDOWN, k , IntPtr.Zero);
+            PostMessage(hWnd, WM_KEYDOWN, k , 0);
             Thread.Sleep(new Random().Next(1, 300));
-            PostMessage(hWnd, WM_KEYUP, k, IntPtr.Zero);
+            PostMessage(hWnd, WM_KEYUP, k, 0);
         }
+
+        public void sendLeftClick(int[] pos)
+        {
+            int coordinates = pos[0] | (pos[1] << 16);
+            const uint WM_LBUTTONDOWN = 0x201; //Left mousebutton down
+            const uint WM_LBUTTONUP = 0x202;   //Left mousebutton up
+            PostMessage(hWnd, WM_LBUTTONDOWN, 0, coordinates);
+            Thread.Sleep(new Random().Next(1, 300));
+            PostMessage(hWnd, WM_LBUTTONUP, 0, coordinates);
+        }
+
+
+        [DllImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool GetWindowRect(IntPtr hWnd, out RECT lpRect);
+
+        [StructLayout(LayoutKind.Sequential)]
+        private struct RECT
+        {
+            public int Left;        // x position of upper-left corner
+            public int Top;         // y position of upper-left corner
+            public int Right;       // x position of lower-right corner
+            public int Bottom;      // y position of lower-right cornerd
+        }
+
+        public int[] getPixelsByPercent(Single xPerc,Single yPerc)
+        {
+            RECT floWin;
+            GetWindowRect(hWnd, out floWin);
+            int[] res = { (int)((floWin.Right - floWin.Left + 1)/(100.0/xPerc)), (int)((floWin.Bottom - floWin.Top + 1) / (100.0 / yPerc)) };
+
+            return res ;
+
+        }
+
     }
 
 }
