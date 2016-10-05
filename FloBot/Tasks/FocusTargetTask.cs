@@ -22,7 +22,7 @@ namespace FloBot.Tasks
             if (AddressUtil.getTargetName().Contains("NoTarget"))
             {
                 //Check for target with Max HP
-                while (AddressUtil.getTargetCurrentHP() != AddressUtil.getTargetMaxHP()||!checkIfInRange(main_form))
+                while (AddressUtil.getTargetCurrentHP() != AddressUtil.getTargetMaxHP()||!checkIfInRange(main_form)&&AddressUtil.getCurrentCharHP() >0)
                 {
                     mc.sendKeystroke(Keys.Tab);
                     Thread.Sleep(500);
