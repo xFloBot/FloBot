@@ -14,8 +14,10 @@ namespace FloBot.Tasks
         public bool doTask(MemoryRW mc)
         {
             mc.sendKeystroke(Keys.NumPad1);
+            Thread.Sleep(100);
             mc.sendKeystroke(Keys.Space);
-            
+            Thread.Sleep(100);
+            mc.sendKeystroke(Keys.NumPad2);
 
             return true;
         }

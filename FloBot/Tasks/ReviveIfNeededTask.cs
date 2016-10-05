@@ -14,6 +14,7 @@ namespace FloBot.Tasks
             if(AddressUtil.getCurrentCharHP() == 0)
             {
                 mc.sendLeftClick(mc.getPixelsByPercent(50,50));
+                GetRestTask.setRestFalse();
                 return true;
             }
             return false;

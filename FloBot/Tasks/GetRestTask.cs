@@ -15,7 +15,10 @@ namespace FloBot.Tasks
         {
             throw new NotImplementedException();
         }
-
+        public static void setRestFalse()
+        {
+            resting = false;
+        }
         public bool doTask(mainForm main_form, MemoryRW mc)
         {
 

@@ -24,13 +24,15 @@ namespace FloBot.Tasks
             main_form.lblLvL.Text = AddressUtil.getTargetLevel();
 
 
-            if ((int)AddressUtil.getTargetCurrentHP() == 0  )
+            //I dont like this part 
+            if(!AddressUtil.getTargetName().Contains("NoTarget")&& AddressUtil.getTargetName().Length > 1&& (int)AddressUtil.getTargetCurrentHP() == 0)
             {
-                if(!AddressUtil.getTargetName().Contains("NoTarget")&& AddressUtil.getTargetName().Length > 1)
-                    mc.sendKeystroke(Keys.Escape);
+                mc.sendKeystroke(Keys.Escape);
                 return false;
             }
-                
+            else if ((int)AddressUtil.getTargetCurrentHP() == 0)
+                return false;
+
 
             return true;
         }
