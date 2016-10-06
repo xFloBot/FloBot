@@ -20,7 +20,7 @@ namespace FloBot.Tasks
 
             main_form.lblCharLvL.Text = "" + AddressUtil.getCharLevel();
 
-            main_form.lblCharHP.Text = AddressUtil.getCurrentCharHP() + "/" + AddressUtil.getMaxCharHP();
+            main_form.lblCharHP.Text = AddressUtil.getCurrentCharHP() + "/" + AddressUtil.getCharMaxHP();
 
             main_form.lblCharMP.Text = AddressUtil.getCharCurrentMP() + "/" + AddressUtil.getCharMaxMP();
             return true;

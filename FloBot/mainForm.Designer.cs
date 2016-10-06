@@ -60,6 +60,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.lblEmMP = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lblExpCurrent = new System.Windows.Forms.Label();
+            this.lblExpMax = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbRestHP)).BeginInit();
@@ -156,15 +160,19 @@
             this.groupBox1.Controls.Add(this.lblLvL);
             this.groupBox1.Controls.Add(this.lblTarget);
             this.groupBox1.Controls.Add(this.lblHP);
-            this.groupBox1.Location = new System.Drawing.Point(16, 170);
+            this.groupBox1.Location = new System.Drawing.Point(16, 197);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(286, 100);
+            this.groupBox1.Size = new System.Drawing.Size(286, 73);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gegner Übersicht";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lblExpMax);
+            this.groupBox2.Controls.Add(this.lblExpCurrent);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.lblCharLvL);
             this.groupBox2.Controls.Add(this.lblCharMP);
             this.groupBox2.Controls.Add(this.lblCharHP);
@@ -175,7 +183,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(16, 30);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(286, 119);
+            this.groupBox2.Size = new System.Drawing.Size(286, 161);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Charakter Übersicht";
@@ -384,6 +392,42 @@
             this.label13.TabIndex = 1;
             this.label13.Text = "MP trank bei:\r\n(Muss auf - gelegt sein)\r\n";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 100);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 13);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Exp gerade";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(151, 100);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(66, 13);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "Exp benötigt";
+            // 
+            // lblExpCurrent
+            // 
+            this.lblExpCurrent.AutoSize = true;
+            this.lblExpCurrent.Location = new System.Drawing.Point(9, 117);
+            this.lblExpCurrent.Name = "lblExpCurrent";
+            this.lblExpCurrent.Size = new System.Drawing.Size(70, 13);
+            this.lblExpCurrent.TabIndex = 4;
+            this.lblExpCurrent.Text = "kill a mob first";
+            // 
+            // lblExpMax
+            // 
+            this.lblExpMax.AutoSize = true;
+            this.lblExpMax.Location = new System.Drawing.Point(151, 117);
+            this.lblExpMax.Name = "lblExpMax";
+            this.lblExpMax.Size = new System.Drawing.Size(131, 13);
+            this.lblExpMax.TabIndex = 4;
+            this.lblExpMax.Text = "maybe wrong after levelup";
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -458,6 +502,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblEmMP;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label12;
+        public System.Windows.Forms.Label lblExpMax;
+        public System.Windows.Forms.Label lblExpCurrent;
     }
 }
 

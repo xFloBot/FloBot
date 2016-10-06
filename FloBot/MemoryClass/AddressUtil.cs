@@ -36,7 +36,7 @@ namespace FloBot.MemoryClass
         }
 
         private static int[] CharMaxHPOffset = { HP_MP_Base, 0x2c4 };
-        public static int getMaxCharHP()
+        public static int getCharMaxHP()
         {
             return mc.ReadInteger(
                 getFinalPointer(mc.getBaseAdress().ToInt32(),
@@ -74,6 +74,24 @@ namespace FloBot.MemoryClass
                 getFinalPointer(mc.getBaseAdress().ToInt32(),
                 CharMaxMPOffset));
         }
+
+        private static int[] CharExpPercentOffset = { 0x006515CC, 0x44, 0x10 };
+        public static Single getCharExpPercent()
+        {
+            return mc.ReadSingle(
+               getFinalPointer(mc.getBaseAdress().ToInt32(),
+               CharExpPercentOffset));
+        }
+
+
+        private static int[] CharCurrentExpOffset = { 0x006515CC, 0x38, 0x10 };
+        public static int getCharCurrentExp()
+        {
+            return mc.ReadInteger(
+               getFinalPointer(mc.getBaseAdress().ToInt32(),
+               CharCurrentExpOffset));
+        }
+
         #endregion
 
 

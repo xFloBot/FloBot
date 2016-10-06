@@ -25,7 +25,7 @@ namespace FloBot.Tasks
 
         private bool checkForLowHealth(mainForm main_form, MemoryRW mc)
         {
-            return AddressUtil.getMaxCharHP() / 100 * main_form.tbEmHP.Value > AddressUtil.getCurrentCharHP();
+            return AddressUtil.getCharMaxHP() / 100 * main_form.tbEmHP.Value > AddressUtil.getCurrentCharHP();
         }
     }
 }
