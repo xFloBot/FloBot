@@ -14,12 +14,12 @@ namespace FloBot.Tasks
         public bool doTask(MemoryRW mc)
         {
             Console.WriteLine("Mobs zu looten: {0}",CheckCurrentTarget.mobsToLoot);
-            Thread.Sleep(100);
+            Thread.Sleep(1000);
 
             while(CheckCurrentTarget.mobsToLoot>0)
             {
                 int counter = 0;
-                while (counter < 3 && AddressUtil.getTargetCurrentHP() == 0)
+                while (counter < 30 && AddressUtil.getTargetCurrentHP() == 0)
                 {
                     if (counter == 0)
                     {
@@ -27,7 +27,7 @@ namespace FloBot.Tasks
                         Console.WriteLine("Looting: {0}", CheckCurrentTarget.mobsToLoot);
                     }
                         
-                    Thread.Sleep(1000);
+                    Thread.Sleep(100);
                     counter++;
                 }
                 if (AddressUtil.getTargetCurrentHP() == 0)
