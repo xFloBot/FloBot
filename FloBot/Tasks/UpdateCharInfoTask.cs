@@ -44,8 +44,8 @@ namespace FloBot.Tasks
                 main_form.lblExpCurrent.Text =
                   calculateCurrentExp()
                     + "(" + AddressUtil.getCharExpPercent() + "%)";
-
-                main_form.lblMobsTillUp.Text = ""+((calculateMaxExp() - calculateCurrentExp()) / ((AddressUtil.getCharCurrentExp()-currentExp + lastMobExp) / 2));
+                if(((AddressUtil.getCharCurrentExp() - currentExp + lastMobExp) / 2)!=0)
+                    main_form.lblMobsTillUp.Text = ""+((calculateMaxExp() - calculateCurrentExp()) / ((AddressUtil.getCharCurrentExp() - currentExp + lastMobExp) / 2));
                 lastMobExp = (AddressUtil.getCharCurrentExp() - currentExp);
                 currentExpPercent = AddressUtil.getCharExpPercent();
                 currentExp = AddressUtil.getCharCurrentExp();

@@ -19,8 +19,7 @@ namespace FloBot.State
 
             //Update Charinfo
             new UpdateCharInfoTask().doTask(main_form, mc);
-            //
-            new CheckCurrentTarget().doTask(main_form, mc);
+           
             //check if you need rest and if you not checked autobattle
             if (!main_form.cbAutoBattle.Checked||new GetRestTask().doTask(main_form,mc))
                 return new FindGameState();
@@ -36,7 +35,7 @@ namespace FloBot.State
                 new EmergencyHealTask().doTask(main_form, mc);
                 Thread.Sleep(1000);
             }
-
+            new AutoLootTask().doTask(mc);
             return new FindGameState();
         }
     }
