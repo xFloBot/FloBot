@@ -40,5 +40,10 @@ namespace FloBot
         {
             lblEmMP.Text = tbEmMP.Value + "%";
         }
+
+        private void lblExpCurrent_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

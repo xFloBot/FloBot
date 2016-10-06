@@ -19,9 +19,8 @@ namespace FloBot.State
 
             //Update Charinfo
             new UpdateCharInfoTask().doTask(main_form, mc);
-
-            new CalculateExpNeededTask().doTask(main_form, mc);
-            
+            //
+            new CheckCurrentTarget().doTask(main_form, mc);
             //check if you need rest and if you not checked autobattle
             if (!main_form.cbAutoBattle.Checked||new GetRestTask().doTask(main_form,mc))
                 return new FindGameState();

@@ -15,6 +15,7 @@ namespace FloBot.Tasks
         }
         private static Single currentExpPercent = -1F;
         private static int currentExp = -1;
+        private static int lastMobExp = -1;
         public bool doTask(mainForm main_form, MemoryRW mc)
         {
             main_form.lblCharName.Text = AddressUtil.getCharName();
@@ -29,19 +30,23 @@ namespace FloBot.Tasks
             {
                 currentExpPercent = AddressUtil.getCharExpPercent();
                 currentExp = AddressUtil.getCharCurrentExp();
+                
                 return true;
             }
 
             if (currentExpPercent != AddressUtil.getCharExpPercent())
             {
-               
+               if(lastMobExp == -1)
+                    lastMobExp = (AddressUtil.getCharCurrentExp() - currentExp);
                 main_form.lblExpMax.Text = "" + calculateMaxExp();
-
+                
 
                 main_form.lblExpCurrent.Text =
                   calculateCurrentExp()
                     + "(" + AddressUtil.getCharExpPercent() + "%)";
 
+                main_form.lblMobsTillUp.Text = ""+((calculateMaxExp() - calculateCurrentExp()) / ((AddressUtil.getCharCurrentExp()-currentExp + lastMobExp) / 2));
+                lastMobExp = (AddressUtil.getCharCurrentExp() - currentExp);
                 currentExpPercent = AddressUtil.getCharExpPercent();
                 currentExp = AddressUtil.getCharCurrentExp();
 

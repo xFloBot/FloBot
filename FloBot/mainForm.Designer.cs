@@ -64,6 +64,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.lblExpCurrent = new System.Windows.Forms.Label();
             this.lblExpMax = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lblMobsTillUp = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbRestHP)).BeginInit();
@@ -160,7 +162,7 @@
             this.groupBox1.Controls.Add(this.lblLvL);
             this.groupBox1.Controls.Add(this.lblTarget);
             this.groupBox1.Controls.Add(this.lblHP);
-            this.groupBox1.Location = new System.Drawing.Point(16, 197);
+            this.groupBox1.Location = new System.Drawing.Point(16, 210);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(286, 73);
             this.groupBox1.TabIndex = 7;
@@ -170,8 +172,10 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblExpMax);
+            this.groupBox2.Controls.Add(this.lblMobsTillUp);
             this.groupBox2.Controls.Add(this.lblExpCurrent);
             this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.lblCharLvL);
             this.groupBox2.Controls.Add(this.lblCharMP);
@@ -183,7 +187,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(16, 30);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(286, 161);
+            this.groupBox2.Size = new System.Drawing.Size(286, 174);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Charakter Übersicht";
@@ -418,6 +422,7 @@
             this.lblExpCurrent.Size = new System.Drawing.Size(70, 13);
             this.lblExpCurrent.TabIndex = 4;
             this.lblExpCurrent.Text = "kill a mob first";
+            this.lblExpCurrent.Click += new System.EventHandler(this.lblExpCurrent_Click);
             // 
             // lblExpMax
             // 
@@ -427,6 +432,25 @@
             this.lblExpMax.Size = new System.Drawing.Size(131, 13);
             this.lblExpMax.TabIndex = 4;
             this.lblExpMax.Text = "maybe wrong after levelup";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 139);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(108, 13);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "Gegner bis zum lvlup:";
+            // 
+            // lblMobsTillUp
+            // 
+            this.lblMobsTillUp.AutoSize = true;
+            this.lblMobsTillUp.Location = new System.Drawing.Point(9, 158);
+            this.lblMobsTillUp.Name = "lblMobsTillUp";
+            this.lblMobsTillUp.Size = new System.Drawing.Size(70, 13);
+            this.lblMobsTillUp.TabIndex = 4;
+            this.lblMobsTillUp.Text = "kill a mob first";
+            this.lblMobsTillUp.Click += new System.EventHandler(this.lblExpCurrent_Click);
             // 
             // mainForm
             // 
@@ -506,6 +530,8 @@
         private System.Windows.Forms.Label label12;
         public System.Windows.Forms.Label lblExpMax;
         public System.Windows.Forms.Label lblExpCurrent;
+        private System.Windows.Forms.Label label15;
+        public System.Windows.Forms.Label lblMobsTillUp;
     }
 }
 
