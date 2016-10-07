@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FloBot.MemoryClass;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace FloBot.Tasks
 {
@@ -19,6 +20,11 @@ namespace FloBot.Tasks
         {
             resting = false;
         }
+
+        private Single lastX = 0;
+        private Single lastY = 0;
+        private Single lastZ = 0;
+
         public bool doTask(mainForm main_form, MemoryRW mc)
         {
 
@@ -43,10 +49,16 @@ namespace FloBot.Tasks
                ((AddressUtil.getCharMaxHP() / 100 * main_form.tbRestHP.Value) > AddressUtil.getCurrentCharHP() || AddressUtil.getCharMaxMP() /100*main_form.tbRestMP.Value >AddressUtil.getCharCurrentMP())
                 && !resting)
             {
+                Thread.Sleep(1000);
                 mc.sendKeystroke(Keys.Z);
+                
+                lastX = AddressUtil.getCharPosX();
+                lastY = AddressUtil.getCharPosY();
+                lastZ = AddressUtil.getCharPosZ();
                 resting = true;
                 return true;
             }
+
             //Check Current HP and stand up when full
             if (resting)
                 if ((AddressUtil.getCharMaxHP()) != AddressUtil.getCurrentCharHP() )
@@ -57,8 +69,19 @@ namespace FloBot.Tasks
             resting = false;
             return false;
         }
+        private bool hasMoved()
+        {
+            bool moved = AddressUtil.getCharPosX() != lastX
+            || AddressUtil.getCharPosY() != lastY
+            || AddressUtil.getCharPosZ() != lastZ;
 
-        
+            lastX = AddressUtil.getCharPosX();
+            lastY = AddressUtil.getCharPosY();
+            lastZ = AddressUtil.getCharPosZ();
+
+            return moved;
+        }
+
         private bool checkForEmergency(MemoryRW mc)
         {
             if (inCombat())
@@ -75,7 +98,7 @@ namespace FloBot.Tasks
         
         private bool inCombat()
         {
-            return AddressUtil.getTargetCurrentHP() != 0; 
+            return AddressUtil.getTargetCurrentHP() != 0 || !AddressUtil.getTargetName().Contains("NoTarget"); 
         }
     }
 }

@@ -92,6 +92,29 @@ namespace FloBot.MemoryClass
                CharCurrentExpOffset));
         }
 
+        private static int[] CharPosXOffset = { 0x68BF48 };
+        public static Single getCharPosX()
+        {
+            return mc.ReadSingle(
+               getFinalPointer(mc.getBaseAdress().ToInt32(),
+               CharPosXOffset));
+        }
+
+        private static int[] CharPosYOffset = { 0x68BF4C };
+        public static Single getCharPosY()
+        {
+            return mc.ReadSingle(
+               getFinalPointer(mc.getBaseAdress().ToInt32(),
+               CharPosYOffset));
+        }
+
+        private static int[] CharPosZOffset = { 0x68BF50 };
+        public static Single getCharPosZ()
+        {
+            return mc.ReadSingle(
+               getFinalPointer(mc.getBaseAdress().ToInt32(),
+               CharPosZOffset));
+        }
         #endregion
 
 

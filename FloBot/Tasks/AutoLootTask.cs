@@ -13,30 +13,52 @@ namespace FloBot.Tasks
     {
         public bool doTask(MemoryRW mc)
         {
-            Console.WriteLine("Mobs zu looten: {0}",CheckCurrentTarget.mobsToLoot);
-            Thread.Sleep(1000);
+            Console.WriteLine("___________________________\nMobs zu looten: {0}", DataNeededCrossTaskUtil.MobToLootCount);
+            Thread.Sleep(700);
+            lastX = AddressUtil.getCharPosX();
+            lastY = AddressUtil.getCharPosY();
+            lastZ = AddressUtil.getCharPosZ();
 
-            while(CheckCurrentTarget.mobsToLoot>0)
+            while(DataNeededCrossTaskUtil.MobToLootCount > 0)
             {
-                int counter = 0;
-                while (counter < 30 && AddressUtil.getTargetCurrentHP() == 0)
+                bool pressedX = false;
+                while ( AddressUtil.getTargetCurrentHP() == 0)
                 {
-                    if (counter == 0)
+                    if (!pressedX)
                     {
+                        Console.WriteLine("Pressing X");
                         mc.sendKeystroke(Keys.X);
-                        Console.WriteLine("Looting: {0}", CheckCurrentTarget.mobsToLoot);
+                        pressedX = true;
+                        Console.WriteLine("Looting: {0}", DataNeededCrossTaskUtil.MobToLootCount);
                     }
                         
                     Thread.Sleep(100);
-                    counter++;
+                    if (!hasMoved())
+                        break;
                 }
-                if (AddressUtil.getTargetCurrentHP() == 0)
-                    CheckCurrentTarget.mobsToLoot--;
-                else
-                    return true;
+                Thread.Sleep(1000);
+                if (AddressUtil.getTargetCurrentHP() ==0 && DataNeededCrossTaskUtil.MobToLootCount > 0)
+                    DataNeededCrossTaskUtil.MobToLootCount--;
+                
             }
-
+            Console.WriteLine("___________________________");
             return true;
+        }
+        private Single lastX = 0;
+        private Single lastY = 0;
+        private Single lastZ = 0;
+
+        private bool hasMoved()
+        {
+            bool moved = AddressUtil.getCharPosX() != lastX
+            || AddressUtil.getCharPosY() != lastY
+            || AddressUtil.getCharPosZ() != lastZ;
+
+            lastX = AddressUtil.getCharPosX();
+            lastY = AddressUtil.getCharPosY();
+            lastZ = AddressUtil.getCharPosZ();
+
+            return moved;
         }
 
         public bool doTask(mainForm main_form, MemoryRW mc)

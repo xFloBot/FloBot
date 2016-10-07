@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MemoryClass\AddressUtil.cs" />
+    <Compile Include="MemoryClass\DataNeededCrossTaskUtil.cs" />
     <Compile Include="State\CombatState.cs" />
     <Compile Include="Tasks\AttackTargetTask.cs" />
     <Compile Include="Tasks\AutoLootTask.cs" />
