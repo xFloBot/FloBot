@@ -14,7 +14,8 @@ namespace FloBot.State
     {
         public IState doTasks(mainForm main_form, MemoryRW mc)
         {
-            if (new ReviveIfNeededTask().doTask(mc)||AddressUtil.getCurrentCharHP() == 0)
+          
+            if (new ReviveIfNeededTask().doTask(mc))
                 return new FindGameState();
 
             //Update Charinfo

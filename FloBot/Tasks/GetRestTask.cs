@@ -21,10 +21,6 @@ namespace FloBot.Tasks
             resting = false;
         }
 
-        private Single lastX = 0;
-        private Single lastY = 0;
-        private Single lastZ = 0;
-
         public bool doTask(mainForm main_form, MemoryRW mc)
         {
 
@@ -37,7 +33,7 @@ namespace FloBot.Tasks
         private bool needResting(mainForm main_form,MemoryRW mc)
         {
             //Check if you'r dead
-            if (AddressUtil.getCurrentCharHP() == 0)
+            if (AddressUtil.getCurrentCharHP() == 0 || AddressUtil.getTargetCurrentHP() > 0)
             {
                 resting = false;
                 return true;
@@ -49,12 +45,11 @@ namespace FloBot.Tasks
                ((AddressUtil.getCharMaxHP() / 100 * main_form.tbRestHP.Value) > AddressUtil.getCurrentCharHP() || AddressUtil.getCharMaxMP() /100*main_form.tbRestMP.Value >AddressUtil.getCharCurrentMP())
                 && !resting)
             {
-                Thread.Sleep(1000);
+                int counter = 0;
+                while (counter++<20 && AddressUtil.getTargetCurrentHP() != 0)
+                    Thread.Sleep(100);
                 mc.sendKeystroke(Keys.Z);
-                
-                lastX = AddressUtil.getCharPosX();
-                lastY = AddressUtil.getCharPosY();
-                lastZ = AddressUtil.getCharPosZ();
+          
                 resting = true;
                 return true;
             }
@@ -69,18 +64,7 @@ namespace FloBot.Tasks
             resting = false;
             return false;
         }
-        private bool hasMoved()
-        {
-            bool moved = AddressUtil.getCharPosX() != lastX
-            || AddressUtil.getCharPosY() != lastY
-            || AddressUtil.getCharPosZ() != lastZ;
-
-            lastX = AddressUtil.getCharPosX();
-            lastY = AddressUtil.getCharPosY();
-            lastZ = AddressUtil.getCharPosZ();
-
-            return moved;
-        }
+    
 
         private bool checkForEmergency(MemoryRW mc)
         {
@@ -98,7 +82,7 @@ namespace FloBot.Tasks
         
         private bool inCombat()
         {
-            return AddressUtil.getTargetCurrentHP() != 0 || !AddressUtil.getTargetName().Contains("NoTarget"); 
+            return AddressUtil.getTargetCurrentHP() != 0; 
         }
     }
 }

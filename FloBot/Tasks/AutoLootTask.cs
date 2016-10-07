@@ -19,7 +19,7 @@ namespace FloBot.Tasks
             lastY = AddressUtil.getCharPosY();
             lastZ = AddressUtil.getCharPosZ();
 
-            while(DataNeededCrossTaskUtil.MobToLootCount > 0)
+            while(DataNeededCrossTaskUtil.MobToLootCount > 0 && AddressUtil.getTargetCurrentHP() == 0)
             {
                 bool pressedX = false;
                 while ( AddressUtil.getTargetCurrentHP() == 0)
