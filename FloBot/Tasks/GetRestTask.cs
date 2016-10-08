@@ -20,7 +20,7 @@ namespace FloBot.Tasks
         {
             resting = false;
         }
-
+        private static int currentHP = 0;
         public bool doTask(mainForm main_form, MemoryRW mc)
         {
 
@@ -46,11 +46,11 @@ namespace FloBot.Tasks
                 && !resting)
             {
                 int counter = 0;
-                while (counter++<20 && AddressUtil.getTargetCurrentHP() != 0)
+                while (counter++<20 && AddressUtil.getTargetCurrentHP() == 0)
                     Thread.Sleep(100);
                 mc.sendKeystroke(Keys.Z);
-          
-                resting = true;
+                currentHP = AddressUtil.getCurrentCharHP();
+                      resting = true;
                 return true;
             }
 
@@ -58,8 +58,13 @@ namespace FloBot.Tasks
             if (resting)
                 if ((AddressUtil.getCharMaxHP()) != AddressUtil.getCurrentCharHP() )
                     return true;
+                
                 else
+                {
+                    currentHP = 0;
                     mc.sendKeystroke(Keys.Z);
+                }
+                    
 
             resting = false;
             return false;
@@ -68,10 +73,11 @@ namespace FloBot.Tasks
 
         private bool checkForEmergency(MemoryRW mc)
         {
-            if (inCombat())
+            if (inCombat()||AddressUtil.getCurrentCharHP() < currentHP)
             {
                 if (resting)
                 {
+                    currentHP = 0;
                     mc.sendKeystroke(Keys.Z);
                     resting = false;
                 }

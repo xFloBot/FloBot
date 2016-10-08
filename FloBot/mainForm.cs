@@ -20,8 +20,16 @@ namespace FloBot
         private void Form1_Load(object sender, EventArgs e)
         {
             CheckForIllegalCrossThreadCalls = false;
-            
+            tbRestHP_Scroll(null, null);
+            tbEmHP_Scroll(null, null);
+            tbRestMP_Scroll(null, null);
+            tbEmMP_Scroll(null, null);
             new Main.StateMachine(this);
+        }
+        private void Form1_Closing(object sender, EventArgs e)
+        {
+            Console.WriteLine("Called!");
+            Properties.Settings.Default.Save();
         }
 
         private void tbRestHP_Scroll(object sender, EventArgs e)
@@ -42,6 +50,11 @@ namespace FloBot
         }
 
         private void lblExpCurrent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRestHP_Click(object sender, EventArgs e)
         {
 
         }

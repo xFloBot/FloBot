@@ -22,21 +22,24 @@ namespace FloBot.State
             new UpdateCharInfoTask().doTask(main_form, mc);
            
             //check if you need rest and if you not checked autobattle
-            if (!main_form.cbAutoBattle.Checked||new GetRestTask().doTask(main_form,mc))
+            if (new GetRestTask().doTask(main_form,mc))
                 return new FindGameState();
 
             //Focus a target
-            new FocusTargetTask().doTask(main_form,mc);
+            if(main_form.cbAutoTarget.Checked)
+                new FocusTargetTask().doTask(main_form,mc);
   
-
-            while (new CheckCurrentTarget().doTask(main_form,mc) && !main_form.IsDisposed && AddressUtil.getCurrentCharHP()>0)
-            {
-                new AttackTargetTask().doTask(mc);
-                new UpdateCharInfoTask().doTask(main_form,mc);
-                new EmergencyHealTask().doTask(main_form, mc);
-                Thread.Sleep(1000);
-            }
-            new AutoLootTask().doTask(mc);
+            if(main_form.cbAutoBattle.Checked)
+                while (new CheckCurrentTarget().doTask(main_form, mc) && !main_form.IsDisposed && AddressUtil.getCurrentCharHP() > 0)
+                {
+                    new AttackTargetTask().doTask(mc);
+                    new UpdateCharInfoTask().doTask(main_form, mc);
+                    new EmergencyHealTask().doTask(main_form, mc);
+                    new EmergencyMPTask().doTask(main_form, mc);
+                    Thread.Sleep(1000);
+                }
+            if(main_form.cbAutoLoot.Checked)
+                new AutoLootTask().doTask(mc);
             return new FindGameState();
         }
     }

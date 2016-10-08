@@ -36,9 +36,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblLvL = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbLvLRange = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblExpMax = new System.Windows.Forms.Label();
+            this.lblMobsTillUp = new System.Windows.Forms.Label();
+            this.lblExpCurrent = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.lblCharLvL = new System.Windows.Forms.Label();
             this.lblCharMP = new System.Windows.Forms.Label();
             this.lblCharHP = new System.Windows.Forms.Label();
@@ -48,30 +53,31 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cbAutoBattle = new System.Windows.Forms.CheckBox();
-            this.tbRestHP = new System.Windows.Forms.TrackBar();
             this.lblRestHP = new System.Windows.Forms.Label();
-            this.tbEmHP = new System.Windows.Forms.TrackBar();
             this.label9 = new System.Windows.Forms.Label();
             this.lblEmHP = new System.Windows.Forms.Label();
-            this.tbRestMP = new System.Windows.Forms.TrackBar();
             this.label11 = new System.Windows.Forms.Label();
             this.lblRestMP = new System.Windows.Forms.Label();
             this.tbEmMP = new System.Windows.Forms.TrackBar();
             this.label10 = new System.Windows.Forms.Label();
             this.lblEmMP = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.lblExpCurrent = new System.Windows.Forms.Label();
-            this.lblExpMax = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.lblMobsTillUp = new System.Windows.Forms.Label();
+            this.tbEmHP = new System.Windows.Forms.TrackBar();
+            this.tbRestMP = new System.Windows.Forms.TrackBar();
+            this.tbRestHP = new System.Windows.Forms.TrackBar();
+            this.tbLvLRange = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cbAutoTarget = new System.Windows.Forms.CheckBox();
+            this.cbAutoLoot = new System.Windows.Forms.CheckBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbRestHP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbEmMP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbRestMP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbEmMP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbRestHP)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblGameFound
@@ -86,7 +92,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 286);
+            this.label1.Location = new System.Drawing.Point(22, 307);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 13);
             this.label1.TabIndex = 1;
@@ -140,29 +146,22 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(317, 54);
+            this.label4.Location = new System.Drawing.Point(23, 51);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 26);
             this.label4.TabIndex = 5;
             this.label4.Text = "Maximaler level unterschied\r\n(+- vom Spieler Level)\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tbLvLRange
-            // 
-            this.tbLvLRange.Location = new System.Drawing.Point(334, 83);
-            this.tbLvLRange.Name = "tbLvLRange";
-            this.tbLvLRange.Size = new System.Drawing.Size(100, 20);
-            this.tbLvLRange.TabIndex = 6;
-            this.tbLvLRange.Text = "5";
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.lblLvL);
             this.groupBox1.Controls.Add(this.lblTarget);
             this.groupBox1.Controls.Add(this.lblHP);
-            this.groupBox1.Location = new System.Drawing.Point(16, 210);
+            this.groupBox1.Location = new System.Drawing.Point(16, 217);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(286, 73);
             this.groupBox1.TabIndex = 7;
@@ -171,6 +170,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.lblExpMax);
             this.groupBox2.Controls.Add(this.lblMobsTillUp);
             this.groupBox2.Controls.Add(this.lblExpCurrent);
@@ -187,10 +187,65 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(16, 30);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(286, 174);
+            this.groupBox2.Size = new System.Drawing.Size(286, 181);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Charakter Übersicht";
+            // 
+            // lblExpMax
+            // 
+            this.lblExpMax.AutoSize = true;
+            this.lblExpMax.Location = new System.Drawing.Point(151, 117);
+            this.lblExpMax.Name = "lblExpMax";
+            this.lblExpMax.Size = new System.Drawing.Size(131, 13);
+            this.lblExpMax.TabIndex = 4;
+            this.lblExpMax.Text = "maybe wrong after levelup";
+            // 
+            // lblMobsTillUp
+            // 
+            this.lblMobsTillUp.AutoSize = true;
+            this.lblMobsTillUp.Location = new System.Drawing.Point(9, 158);
+            this.lblMobsTillUp.Name = "lblMobsTillUp";
+            this.lblMobsTillUp.Size = new System.Drawing.Size(0, 13);
+            this.lblMobsTillUp.TabIndex = 4;
+            this.lblMobsTillUp.Click += new System.EventHandler(this.lblExpCurrent_Click);
+            // 
+            // lblExpCurrent
+            // 
+            this.lblExpCurrent.AutoSize = true;
+            this.lblExpCurrent.Location = new System.Drawing.Point(9, 117);
+            this.lblExpCurrent.Name = "lblExpCurrent";
+            this.lblExpCurrent.Size = new System.Drawing.Size(70, 13);
+            this.lblExpCurrent.TabIndex = 4;
+            this.lblExpCurrent.Text = "kill a mob first";
+            this.lblExpCurrent.Click += new System.EventHandler(this.lblExpCurrent_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(151, 100);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(66, 13);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "Exp benötigt";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 139);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(108, 13);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "Gegner bis zum lvlup:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 100);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 13);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Exp gerade";
             // 
             // lblCharLvL
             // 
@@ -267,51 +322,28 @@
             // cbAutoBattle
             // 
             this.cbAutoBattle.AutoSize = true;
-            this.cbAutoBattle.Location = new System.Drawing.Point(319, 30);
+            this.cbAutoBattle.Location = new System.Drawing.Point(6, 113);
             this.cbAutoBattle.Name = "cbAutoBattle";
-            this.cbAutoBattle.Size = new System.Drawing.Size(138, 17);
+            this.cbAutoBattle.Size = new System.Drawing.Size(132, 17);
             this.cbAutoBattle.TabIndex = 9;
-            this.cbAutoBattle.Text = "Automatisch Angreifen?";
+            this.cbAutoBattle.Text = "Automatisch Angreifen";
             this.cbAutoBattle.UseVisualStyleBackColor = true;
-            // 
-            // tbRestHP
-            // 
-            this.tbRestHP.AutoSize = false;
-            this.tbRestHP.Location = new System.Drawing.Point(16, 302);
-            this.tbRestHP.Maximum = 100;
-            this.tbRestHP.Name = "tbRestHP";
-            this.tbRestHP.Size = new System.Drawing.Size(234, 31);
-            this.tbRestHP.TabIndex = 11;
-            this.tbRestHP.TickFrequency = 10;
-            this.tbRestHP.Value = 30;
-            this.tbRestHP.Scroll += new System.EventHandler(this.tbRestHP_Scroll);
             // 
             // lblRestHP
             // 
             this.lblRestHP.AutoSize = true;
-            this.lblRestHP.Location = new System.Drawing.Point(124, 286);
+            this.lblRestHP.Location = new System.Drawing.Point(124, 307);
             this.lblRestHP.Name = "lblRestHP";
             this.lblRestHP.Size = new System.Drawing.Size(27, 13);
             this.lblRestHP.TabIndex = 12;
             this.lblRestHP.Tag = "";
             this.lblRestHP.Text = "30%";
-            // 
-            // tbEmHP
-            // 
-            this.tbEmHP.AutoSize = false;
-            this.tbEmHP.Location = new System.Drawing.Point(16, 368);
-            this.tbEmHP.Maximum = 100;
-            this.tbEmHP.Name = "tbEmHP";
-            this.tbEmHP.Size = new System.Drawing.Size(234, 31);
-            this.tbEmHP.TabIndex = 11;
-            this.tbEmHP.TickFrequency = 10;
-            this.tbEmHP.Value = 10;
-            this.tbEmHP.Scroll += new System.EventHandler(this.tbEmHP_Scroll);
+            this.lblRestHP.Click += new System.EventHandler(this.lblRestHP_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 339);
+            this.label9.Location = new System.Drawing.Point(13, 360);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(119, 26);
             this.label9.TabIndex = 1;
@@ -320,29 +352,17 @@
             // lblEmHP
             // 
             this.lblEmHP.AutoSize = true;
-            this.lblEmHP.Location = new System.Drawing.Point(124, 339);
+            this.lblEmHP.Location = new System.Drawing.Point(124, 360);
             this.lblEmHP.Name = "lblEmHP";
             this.lblEmHP.Size = new System.Drawing.Size(27, 13);
             this.lblEmHP.TabIndex = 12;
             this.lblEmHP.Tag = "";
             this.lblEmHP.Text = "10%";
             // 
-            // tbRestMP
-            // 
-            this.tbRestMP.AutoSize = false;
-            this.tbRestMP.Location = new System.Drawing.Point(256, 302);
-            this.tbRestMP.Maximum = 100;
-            this.tbRestMP.Name = "tbRestMP";
-            this.tbRestMP.Size = new System.Drawing.Size(234, 31);
-            this.tbRestMP.TabIndex = 11;
-            this.tbRestMP.TickFrequency = 10;
-            this.tbRestMP.Value = 5;
-            this.tbRestMP.Scroll += new System.EventHandler(this.tbRestMP_Scroll);
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(262, 286);
+            this.label11.Location = new System.Drawing.Point(262, 307);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(96, 13);
             this.label11.TabIndex = 1;
@@ -351,7 +371,7 @@
             // lblRestMP
             // 
             this.lblRestMP.AutoSize = true;
-            this.lblRestMP.Location = new System.Drawing.Point(364, 286);
+            this.lblRestMP.Location = new System.Drawing.Point(364, 307);
             this.lblRestMP.Name = "lblRestMP";
             this.lblRestMP.Size = new System.Drawing.Size(21, 13);
             this.lblRestMP.TabIndex = 12;
@@ -361,18 +381,20 @@
             // tbEmMP
             // 
             this.tbEmMP.AutoSize = false;
-            this.tbEmMP.Location = new System.Drawing.Point(256, 368);
+            this.tbEmMP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbEmrMP", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbEmMP.Location = new System.Drawing.Point(256, 389);
             this.tbEmMP.Maximum = 100;
             this.tbEmMP.Name = "tbEmMP";
             this.tbEmMP.Size = new System.Drawing.Size(234, 31);
             this.tbEmMP.TabIndex = 11;
             this.tbEmMP.TickFrequency = 10;
+            this.tbEmMP.Value = global::FloBot.Properties.Settings.Default.tbEmrMP;
             this.tbEmMP.Scroll += new System.EventHandler(this.tbEmMP_Scroll);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(262, 352);
+            this.label10.Location = new System.Drawing.Point(262, 373);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 13);
             this.label10.TabIndex = 1;
@@ -380,7 +402,7 @@
             // lblEmMP
             // 
             this.lblEmMP.AutoSize = true;
-            this.lblEmMP.Location = new System.Drawing.Point(366, 336);
+            this.lblEmMP.Location = new System.Drawing.Point(366, 357);
             this.lblEmMP.Name = "lblEmMP";
             this.lblEmMP.Size = new System.Drawing.Size(21, 13);
             this.lblEmMP.TabIndex = 12;
@@ -390,73 +412,119 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(268, 339);
+            this.label13.Location = new System.Drawing.Point(268, 360);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(116, 26);
             this.label13.TabIndex = 1;
             this.label13.Text = "MP trank bei:\r\n(Muss auf - gelegt sein)\r\n";
             // 
-            // label12
+            // tbEmHP
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 100);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 13);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Exp gerade";
+            this.tbEmHP.AutoSize = false;
+            this.tbEmHP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbEmrHp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbEmHP.Location = new System.Drawing.Point(16, 389);
+            this.tbEmHP.Maximum = 100;
+            this.tbEmHP.Name = "tbEmHP";
+            this.tbEmHP.Size = new System.Drawing.Size(234, 31);
+            this.tbEmHP.TabIndex = 11;
+            this.tbEmHP.TickFrequency = 10;
+            this.tbEmHP.Value = global::FloBot.Properties.Settings.Default.tbEmrHp;
+            this.tbEmHP.Scroll += new System.EventHandler(this.tbEmHP_Scroll);
             // 
-            // label14
+            // tbRestMP
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(151, 100);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(66, 13);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "Exp benötigt";
+            this.tbRestMP.AutoSize = false;
+            this.tbRestMP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbRestMp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbRestMP.Location = new System.Drawing.Point(256, 323);
+            this.tbRestMP.Maximum = 100;
+            this.tbRestMP.Name = "tbRestMP";
+            this.tbRestMP.Size = new System.Drawing.Size(234, 31);
+            this.tbRestMP.TabIndex = 11;
+            this.tbRestMP.TickFrequency = 10;
+            this.tbRestMP.Value = global::FloBot.Properties.Settings.Default.tbRestMp;
+            this.tbRestMP.Scroll += new System.EventHandler(this.tbRestMP_Scroll);
             // 
-            // lblExpCurrent
+            // tbRestHP
             // 
-            this.lblExpCurrent.AutoSize = true;
-            this.lblExpCurrent.Location = new System.Drawing.Point(9, 117);
-            this.lblExpCurrent.Name = "lblExpCurrent";
-            this.lblExpCurrent.Size = new System.Drawing.Size(70, 13);
-            this.lblExpCurrent.TabIndex = 4;
-            this.lblExpCurrent.Text = "kill a mob first";
-            this.lblExpCurrent.Click += new System.EventHandler(this.lblExpCurrent_Click);
+            this.tbRestHP.AutoSize = false;
+            this.tbRestHP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbRestHP", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbRestHP.Location = new System.Drawing.Point(16, 323);
+            this.tbRestHP.Maximum = 100;
+            this.tbRestHP.Name = "tbRestHP";
+            this.tbRestHP.Size = new System.Drawing.Size(234, 31);
+            this.tbRestHP.TabIndex = 11;
+            this.tbRestHP.TickFrequency = 10;
+            this.tbRestHP.Value = global::FloBot.Properties.Settings.Default.tbRestHP;
+            this.tbRestHP.Scroll += new System.EventHandler(this.tbRestHP_Scroll);
             // 
-            // lblExpMax
+            // tbLvLRange
             // 
-            this.lblExpMax.AutoSize = true;
-            this.lblExpMax.Location = new System.Drawing.Point(151, 117);
-            this.lblExpMax.Name = "lblExpMax";
-            this.lblExpMax.Size = new System.Drawing.Size(131, 13);
-            this.lblExpMax.TabIndex = 4;
-            this.lblExpMax.Text = "maybe wrong after levelup";
+            this.tbLvLRange.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "maxLevelDif", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbLvLRange.Location = new System.Drawing.Point(41, 80);
+            this.tbLvLRange.Name = "tbLvLRange";
+            this.tbLvLRange.Size = new System.Drawing.Size(100, 20);
+            this.tbLvLRange.TabIndex = 6;
+            this.tbLvLRange.Text = global::FloBot.Properties.Settings.Default.maxLevelDif;
             // 
-            // label15
+            // label16
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(6, 139);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(108, 13);
-            this.label15.TabIndex = 3;
-            this.label15.Text = "Gegner bis zum lvlup:";
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.DarkRed;
+            this.label16.Location = new System.Drawing.Point(151, 139);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(91, 39);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Exp may fluctuate\r\nbecause of \r\nfloating points\r\n";
             // 
-            // lblMobsTillUp
+            // groupBox3
             // 
-            this.lblMobsTillUp.AutoSize = true;
-            this.lblMobsTillUp.Location = new System.Drawing.Point(9, 158);
-            this.lblMobsTillUp.Name = "lblMobsTillUp";
-            this.lblMobsTillUp.Size = new System.Drawing.Size(70, 13);
-            this.lblMobsTillUp.TabIndex = 4;
-            this.lblMobsTillUp.Text = "kill a mob first";
-            this.lblMobsTillUp.Click += new System.EventHandler(this.lblExpCurrent_Click);
+            this.groupBox3.Controls.Add(this.cbAutoTarget);
+            this.groupBox3.Controls.Add(this.cbAutoLoot);
+            this.groupBox3.Controls.Add(this.cbAutoBattle);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.tbLvLRange);
+            this.groupBox3.Location = new System.Drawing.Point(308, 30);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 260);
+            this.groupBox3.TabIndex = 13;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Kampf einstellungen";
+            // 
+            // cbAutoTarget
+            // 
+            this.cbAutoTarget.AutoSize = true;
+            this.cbAutoTarget.Location = new System.Drawing.Point(6, 32);
+            this.cbAutoTarget.Name = "cbAutoTarget";
+            this.cbAutoTarget.Size = new System.Drawing.Size(141, 17);
+            this.cbAutoTarget.TabIndex = 10;
+            this.cbAutoTarget.Text = "Automatisch Ziel wählen";
+            this.cbAutoTarget.UseVisualStyleBackColor = true;
+            // 
+            // cbAutoLoot
+            // 
+            this.cbAutoLoot.AutoSize = true;
+            this.cbAutoLoot.Location = new System.Drawing.Point(6, 139);
+            this.cbAutoLoot.Name = "cbAutoLoot";
+            this.cbAutoLoot.Size = new System.Drawing.Size(116, 17);
+            this.cbAutoLoot.TabIndex = 9;
+            this.cbAutoLoot.Text = "Automatisch looten";
+            this.cbAutoLoot.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(6, 30);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(33, 13);
+            this.label17.TabIndex = 5;
+            this.label17.Text = "Feind";
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 432);
+            this.ClientSize = new System.Drawing.Size(656, 432);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.lblEmHP);
             this.Controls.Add(this.lblEmMP);
             this.Controls.Add(this.lblRestMP);
@@ -470,23 +538,23 @@
             this.Controls.Add(this.tbEmMP);
             this.Controls.Add(this.tbRestMP);
             this.Controls.Add(this.tbRestHP);
-            this.Controls.Add(this.cbAutoBattle);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.tbLvLRange);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.lblGameFound);
             this.Name = "mainForm";
             this.Text = "mainForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_Closing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbRestHP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbEmMP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbRestMP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbEmMP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbRestHP)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -532,6 +600,11 @@
         public System.Windows.Forms.Label lblExpCurrent;
         private System.Windows.Forms.Label label15;
         public System.Windows.Forms.Label lblMobsTillUp;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.GroupBox groupBox3;
+        public System.Windows.Forms.CheckBox cbAutoTarget;
+        public System.Windows.Forms.CheckBox cbAutoLoot;
     }
 }
 

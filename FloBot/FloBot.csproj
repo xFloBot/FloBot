@@ -51,6 +51,7 @@
     <Compile Include="State\CombatState.cs" />
     <Compile Include="Tasks\AttackTargetTask.cs" />
     <Compile Include="Tasks\AutoLootTask.cs" />
+    <Compile Include="Tasks\EmergencyMpTask.cs" />
     <Compile Include="Tasks\EmergencyHealTask.cs" />
     <Compile Include="Tasks\FindGameHandlerTask.cs" />
     <Compile Include="mainForm.cs">

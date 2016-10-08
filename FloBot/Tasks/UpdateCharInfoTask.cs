@@ -57,12 +57,12 @@ namespace FloBot.Tasks
 
         private int calculateMaxExp()
         {
-            return (int)((AddressUtil.getCharCurrentExp() - currentExp) / (AddressUtil.getCharExpPercent() - currentExpPercent) * 100);
+            return (int)(((AddressUtil.getCharCurrentExp() - currentExp) / (AddressUtil.getCharExpPercent() - currentExpPercent)) * 100F);
         }
         
         private int calculateCurrentExp()
         {
-            return (int)((AddressUtil.getCharCurrentExp() - currentExp) / (AddressUtil.getCharExpPercent() - currentExpPercent) * AddressUtil.getCharExpPercent());
+            return (int)(((AddressUtil.getCharCurrentExp() - currentExp) / (AddressUtil.getCharExpPercent() - currentExpPercent))* AddressUtil.getCharExpPercent());
         }
 
        

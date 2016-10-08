@@ -36,7 +36,7 @@ namespace FloBot.Tasks
                     if (!hasMoved())
                         break;
                 }
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 if (AddressUtil.getTargetCurrentHP() ==0 && DataNeededCrossTaskUtil.MobToLootCount > 0)
                     DataNeededCrossTaskUtil.MobToLootCount--;
                 
