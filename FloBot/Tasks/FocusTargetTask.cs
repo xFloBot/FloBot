@@ -19,15 +19,17 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc)
         {
-            if (AddressUtil.getTargetName().Contains("NoTarget")&& DataNeededCrossTaskUtil.MobToLootCount == 0 || DataNeededCrossTaskUtil.Buffed)
+
+            if (AddressUtil.getTargetName().Contains("NoTarget")&& DataNeededCrossTaskUtil.MobToLootCount == 0)
             {
-                int counter = 10;
                 //Check for target with Max HP
-                while (AddressUtil.getTargetCurrentHP() != AddressUtil.getTargetMaxHP()||!checkIfInRange(main_form)&&AddressUtil.getCurrentCharHP() >0 &&counter-->0)
+                while (AddressUtil.getTargetCurrentHP() != AddressUtil.getTargetMaxHP()||!checkIfInRange(main_form))
                 {
+                    if (AddressUtil.getCurrentCharHP() == 0||AddressUtil.getTargetName().Contains(AddressUtil.getCharName().Replace( '0'.ToString() ,string.Empty)))
+                        break;
                     mc.sendKeystroke(Keys.Tab);
                     Thread.Sleep(500);
-                    DataNeededCrossTaskUtil.Buffed = false;
+                
                 }
             }
 

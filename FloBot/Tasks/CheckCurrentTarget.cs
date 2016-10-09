@@ -27,7 +27,8 @@ namespace FloBot.Tasks
             //I dont like this part 
             if(!AddressUtil.getTargetName().Contains("NoTarget")&& AddressUtil.getTargetName().Length > 1&& (int)AddressUtil.getTargetCurrentHP() == 0)
             {
-                DataNeededCrossTaskUtil.MobToLootCount++;
+                if(main_form.cbAutoLoot.Checked)
+                    DataNeededCrossTaskUtil.MobToLootCount++;
                 mc.sendKeystroke(Keys.Escape);
                 return false;
             }

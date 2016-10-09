@@ -16,7 +16,7 @@ namespace FloBot.Tasks
         {
             foreach (Skill skill in DataNeededCrossTaskUtil.BuffArray)
             {
-                Thread.Sleep(1500);
+                Thread.Sleep(2000);
                 if (AddressUtil.getTargetCurrentHP() > 0 && !AddressUtil.getTargetName().Contains(AddressUtil.getCharName().Substring(16)))
                     return true;
                 if (skill.skillCanBeUsed())
