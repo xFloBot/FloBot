@@ -32,7 +32,7 @@ namespace FloBot.Tasks
 
             String charName = AddressUtil.getCharName().Replace( ((char)0).ToString(),string.Empty);
             
-            while (AddressUtil.getTargetName().Contains(charName))           
+            while (AddressUtil.getTargetName().Contains(charName)&&AddressUtil.getTargetCurrentHP() > 0)           
             {
               
                 mc.sendKeystroke(Keys.Escape);
