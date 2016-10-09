@@ -46,7 +46,7 @@ namespace FloBot.Tasks
                 && !resting)
             {
                 int counter = 0;
-                while (counter++<10 && AddressUtil.getTargetCurrentHP() == 0)
+                while (counter++<15 && AddressUtil.getTargetCurrentHP() == 0)
                     Thread.Sleep(100);
                 mc.sendKeystroke(Keys.Z);
                 currentHP = AddressUtil.getCurrentCharHP();

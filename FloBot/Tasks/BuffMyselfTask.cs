@@ -30,12 +30,12 @@ namespace FloBot.Tasks
 
             }
 
-            Console.WriteLine(AddressUtil.getCharName().Substring(16));
-            while(!AddressUtil.getTargetName().Contains("NoTarget")&&AddressUtil.getTargetName().Contains(AddressUtil.getCharName().Substring(16)) && AddressUtil.getTargetCurrentHP() == AddressUtil.getCurrentCharHP())
+            String charName = AddressUtil.getCharName().Substring(0,16);
+            Console.WriteLine("SubStringName: {0}", AddressUtil.getTargetName().Contains(charName));
+            while (AddressUtil.getTargetName().Contains(charName) )           
             {
-                Console.WriteLine(AddressUtil.getTargetName());
                 mc.sendKeystroke(Keys.Escape);
-                Thread.Sleep(100);
+                Thread.Sleep(500);
             }
            
             return true;

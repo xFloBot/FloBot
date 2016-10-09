@@ -13,7 +13,7 @@ namespace FloBot.Tasks
     {
         public bool doTask(MemoryRW mc)
         {
-            Console.WriteLine("___________________________\nMobs zu looten: {0}", DataNeededCrossTaskUtil.MobToLootCount);
+           
             Thread.Sleep(1000);
 
             DataNeededCrossTaskUtil.LastX = AddressUtil.getCharPosX();
@@ -27,10 +27,10 @@ namespace FloBot.Tasks
                 {
                     if (!pressedX)
                     {
-                        Console.WriteLine("Pressing X");
+                       
                         mc.sendKeystroke(Keys.X);
                         pressedX = true;
-                        Console.WriteLine("Looting: {0}", DataNeededCrossTaskUtil.MobToLootCount);
+                        
                     }
                         
                     Thread.Sleep(100);
@@ -45,7 +45,7 @@ namespace FloBot.Tasks
                 Thread.Sleep(2000);
 
             }
-            Console.WriteLine("___________________________");
+           
             return true;
         }
        
