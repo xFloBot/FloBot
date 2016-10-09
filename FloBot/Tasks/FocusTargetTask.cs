@@ -21,9 +21,9 @@ namespace FloBot.Tasks
         {
             if (AddressUtil.getTargetName().Contains("NoTarget")&& DataNeededCrossTaskUtil.MobToLootCount == 0 || DataNeededCrossTaskUtil.Buffed)
             {
-             
+                int counter = 10;
                 //Check for target with Max HP
-                while (AddressUtil.getTargetCurrentHP() != AddressUtil.getTargetMaxHP()||!checkIfInRange(main_form)&&AddressUtil.getCurrentCharHP() >0)
+                while (AddressUtil.getTargetCurrentHP() != AddressUtil.getTargetMaxHP()||!checkIfInRange(main_form)&&AddressUtil.getCurrentCharHP() >0 &&counter-->0)
                 {
                     mc.sendKeystroke(Keys.Tab);
                     Thread.Sleep(500);

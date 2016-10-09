@@ -30,10 +30,11 @@ namespace FloBot.Tasks
 
             }
 
-            String charName = AddressUtil.getCharName().Substring(0,16);
-            Console.WriteLine("SubStringName: {0}", AddressUtil.getTargetName().Contains(charName));
-            while (AddressUtil.getTargetName().Contains(charName) )           
+            String charName = AddressUtil.getCharName().Replace( ((char)0).ToString(),string.Empty);
+            
+            while (AddressUtil.getTargetName().Contains(charName))           
             {
+              
                 mc.sendKeystroke(Keys.Escape);
                 Thread.Sleep(500);
             }
