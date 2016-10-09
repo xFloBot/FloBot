@@ -32,6 +32,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'debug2|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\debug2\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -48,9 +58,11 @@
   <ItemGroup>
     <Compile Include="MemoryClass\AddressUtil.cs" />
     <Compile Include="MemoryClass\DataNeededCrossTaskUtil.cs" />
+    <Compile Include="Model\Skill.cs" />
     <Compile Include="State\CombatState.cs" />
     <Compile Include="Tasks\AttackTargetTask.cs" />
     <Compile Include="Tasks\AutoLootTask.cs" />
+    <Compile Include="Tasks\BuffMyselfTask.cs" />
     <Compile Include="Tasks\EmergencyMpTask.cs" />
     <Compile Include="Tasks\EmergencyHealTask.cs" />
     <Compile Include="Tasks\FindGameHandlerTask.cs" />

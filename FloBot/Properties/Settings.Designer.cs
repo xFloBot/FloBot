@@ -82,5 +82,281 @@ namespace FloBot.Properties {
                 this["tbEmrMP"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool cbAutoTarget {
+            get {
+                return ((bool)(this["cbAutoTarget"]));
+            }
+            set {
+                this["cbAutoTarget"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool cbAutoAttack {
+            get {
+                return ((bool)(this["cbAutoAttack"]));
+            }
+            set {
+                this["cbAutoAttack"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool cbAutoLoot {
+            get {
+                return ((bool)(this["cbAutoLoot"]));
+            }
+            set {
+                this["cbAutoLoot"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool rbAttackSkill1 {
+            get {
+                return ((bool)(this["rbAttackSkill1"]));
+            }
+            set {
+                this["rbAttackSkill1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool rbBuffSkill1 {
+            get {
+                return ((bool)(this["rbBuffSkill1"]));
+            }
+            set {
+                this["rbBuffSkill1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("6")]
+        public string tbDelaySkill1 {
+            get {
+                return ((string)(this["tbDelaySkill1"]));
+            }
+            set {
+                this["tbDelaySkill1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string tbCastSkill1 {
+            get {
+                return ((string)(this["tbCastSkill1"]));
+            }
+            set {
+                this["tbCastSkill1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool cbUseSkill2 {
+            get {
+                return ((bool)(this["cbUseSkill2"]));
+            }
+            set {
+                this["cbUseSkill2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool rbAtt2 {
+            get {
+                return ((bool)(this["rbAtt2"]));
+            }
+            set {
+                this["rbAtt2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool rbBuff2 {
+            get {
+                return ((bool)(this["rbBuff2"]));
+            }
+            set {
+                this["rbBuff2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("6")]
+        public string tbDelay2 {
+            get {
+                return ((string)(this["tbDelay2"]));
+            }
+            set {
+                this["tbDelay2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string tbCast2 {
+            get {
+                return ((string)(this["tbCast2"]));
+            }
+            set {
+                this["tbCast2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool cbUseSkill3 {
+            get {
+                return ((bool)(this["cbUseSkill3"]));
+            }
+            set {
+                this["cbUseSkill3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool rbBuff3 {
+            get {
+                return ((bool)(this["rbBuff3"]));
+            }
+            set {
+                this["rbBuff3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool rbAtt3 {
+            get {
+                return ((bool)(this["rbAtt3"]));
+            }
+            set {
+                this["rbAtt3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("6")]
+        public string tbDelay3 {
+            get {
+                return ((string)(this["tbDelay3"]));
+            }
+            set {
+                this["tbDelay3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string tbCast3 {
+            get {
+                return ((string)(this["tbCast3"]));
+            }
+            set {
+                this["tbCast3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool cbUseSkill9 {
+            get {
+                return ((bool)(this["cbUseSkill9"]));
+            }
+            set {
+                this["cbUseSkill9"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool rbAtt9 {
+            get {
+                return ((bool)(this["rbAtt9"]));
+            }
+            set {
+                this["rbAtt9"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool rbBuff9 {
+            get {
+                return ((bool)(this["rbBuff9"]));
+            }
+            set {
+                this["rbBuff9"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("6")]
+        public string tbDelay9 {
+            get {
+                return ((string)(this["tbDelay9"]));
+            }
+            set {
+                this["tbDelay9"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string tbCast9 {
+            get {
+                return ((string)(this["tbCast9"]));
+            }
+            set {
+                this["tbCast9"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool cbUseSkill1 {
+            get {
+                return ((bool)(this["cbUseSkill1"]));
+            }
+            set {
+                this["cbUseSkill1"] = value;
+            }
+        }
     }
 }

@@ -21,9 +21,10 @@ namespace FloBot.State
             main_form.lblGameFound.Text = "Florensia gefunden";
             mc.getPixelsByPercent(50, 50);
 
-            return new CombatState();
+            if (main_form.cbEnableCombatState.Checked)
+                return new CombatState();
+            else return this;
         }
          
-
     }
 }

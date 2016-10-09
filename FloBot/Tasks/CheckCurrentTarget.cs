@@ -24,7 +24,6 @@ namespace FloBot.Tasks
 
             main_form.lblLvL.Text = AddressUtil.getTargetLevel();
 
-
             //I dont like this part 
             if(!AddressUtil.getTargetName().Contains("NoTarget")&& AddressUtil.getTargetName().Length > 1&& (int)AddressUtil.getTargetCurrentHP() == 0)
             {

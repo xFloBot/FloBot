@@ -11,18 +11,20 @@ namespace FloBot.Tasks
     {
         public bool doTask(MemoryRW mc)
         {
-            if(AddressUtil.getCurrentCharHP() == 0)
-            {
-                mc.sendLeftClick(mc.getPixelsByPercent(50,50));
-                GetRestTask.setRestFalse();
-                return true;
-            }
-            return false;
+            throw new NotImplementedException();
         }
 
         public bool doTask(mainForm main_form, MemoryRW mc)
         {
-            throw new NotImplementedException();
+            if (AddressUtil.getCurrentCharHP() == 0)
+            {
+                mc.sendLeftClick(mc.getPixelsByPercent(50, 50));
+                GetRestTask.setRestFalse();
+                main_form.lblDeathDate.Text = DateTime.Now.ToString("HH:mm:ss");
+                return true;
+            }
+            return false;
+           
         }
     }
 }
