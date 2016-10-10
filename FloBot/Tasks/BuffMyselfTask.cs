@@ -18,7 +18,10 @@ namespace FloBot.Tasks
             {
                 Thread.Sleep(2000);
                 if (AddressUtil.getTargetCurrentHP() > 0 && !AddressUtil.getTargetName().Contains(AddressUtil.getCharName().Substring(16)))
-                    return true;
+                {
+                    break;
+                }
+                   
                 if (skill.skillCanBeUsed())
                 {
                     Console.WriteLine("Should buff");
@@ -29,12 +32,15 @@ namespace FloBot.Tasks
                 }
 
             }
-
-            String charName = AddressUtil.getCharName().Replace( ((char)0).ToString(),string.Empty);
-            
-            while (AddressUtil.getTargetName().Contains(charName)&&AddressUtil.getTargetCurrentHP() > 0)           
+            int indexOfStringEnd = AddressUtil.getCharName().IndexOf('\0') - 1;
+            Console.WriteLine(indexOfStringEnd);
+            String charName = AddressUtil.getCharName();
+            if (indexOfStringEnd >= 0)
+                charName = AddressUtil.getCharName().Substring(0, indexOfStringEnd);//.Replace( ((char)0x00).ToString(),string.Empty);
+   
+            while (AddressUtil.getTargetName().Contains(charName))           
             {
-              
+
                 mc.sendKeystroke(Keys.Escape);
                 Thread.Sleep(500);
             }
