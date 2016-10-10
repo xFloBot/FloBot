@@ -18,6 +18,8 @@ namespace FloBot.State
             */
             new ReviveIfNeededTask().doTask(main_form,mc,player);
 
+            if (player.inCombat && main_form.cbAutoBattle.Checked)
+                return new CombatState();
 
             if (main_form.cbAutoLoot.Checked)
                 new AutoLootTask().doTask(main_form, mc, player);

@@ -19,7 +19,7 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            Thread.Sleep(500);
+
             if (checkForLowMP(main_form, player))
                 mc.sendKeystroke(Keys.OemMinus);
             Thread.Sleep(100);
