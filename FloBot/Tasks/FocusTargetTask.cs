@@ -13,57 +13,26 @@ namespace FloBot.Tasks
 {
     class FocusTargetTask : ITask
     {
-        public bool doTask(MemoryRW mc)
-        {
-            throw new NotImplementedException();
-        }
-
         public bool doTask(mainForm main_form, Player player)
         {
             throw new NotImplementedException();
         }
 
-        public bool doTask(mainForm main_form, MemoryRW mc)
+        public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-
-            if (AddressUtil.getTargetName().Contains("NoTarget")&& DataNeededCrossTaskUtil.MobToLootCount == 0)
+            DateTime mobSearchBreak = DateTime.Now;
+            while(
+                    !player.inCombat
+                    && (DateTime.Now - mobSearchBreak).TotalSeconds < 5
+                    && player.MobToLootCount == 0
+                )
             {
-                //Check for target with Max HP
-                while (AddressUtil.getTargetCurrentHP() != AddressUtil.getTargetMaxHP()||!checkIfInRange(main_form))
-                {
-                    if (AddressUtil.getCharCurrentHP() == 0||AddressUtil.getTargetName().Contains(AddressUtil.getCharName().Replace( '0'.ToString() ,string.Empty)))
-                        break;
-                    mc.sendKeystroke(Keys.Tab);
-                    Thread.Sleep(500);
-                
-                }
+                mc.sendKeystroke(Keys.Tab);
+                Thread.Sleep(50);
             }
 
             return true;
-           
-        }
 
-        public bool doTask(mainForm main_form, MemoryRW mc, Player player)
-        {
-            throw new NotImplementedException();
-        }
-
-        private bool checkIfInRange(mainForm main_form)
-        {
-            int range;
-            int ownLevel = Int32.Parse(main_form.lblCharLvL.Text);
-            int monsterLevel;
-            //TryParse Target level(It's stored as String in the address dunno why)
-            if (!Int32.TryParse(AddressUtil.getTargetLevel(), out monsterLevel))
-                return false;
-            //Try parse range
-            if (!Int32.TryParse(main_form.tbLvLRange.Text, out range)) return false;
-            //check if monster level is bigger than ownLevel+ range || smaller than ownLevel-range
-            if (monsterLevel > (ownLevel + range)
-                || monsterLevel < ownLevel - range)
-                return false;
-
-            return true;
         }
     }
 }

@@ -22,16 +22,17 @@ namespace FloBot.State
             new UpdateTargetInfo().doTask(main_form,player);
 
             /*
-            *   Check if you need to rest
+            *   Check if you need to rest when yes set State to FindGameState
             */
-            new GetRestTask().doTask(main_form, mc, player);
+            if(new GetRestTask().doTask(main_form, mc, player))
+                return new FindGameState();
             /*
             *   Buff yourself if buffs are set
             */
             new BuffMyselfTask().doTask(main_form, mc, player);
 
-            //if(main_form.cbEnableCombatState.Checked)
-             //   return new CombatState();
+            if(main_form.cbEnableCombatState.Checked)
+                return new CombatState();
 
             return new FindGameState();
         }

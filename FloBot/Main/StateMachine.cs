@@ -16,7 +16,7 @@ namespace FloBot.Main
         private mainForm main_form;
         private MemoryClass.MemoryRW mc;
         private Player player;
-
+        private Thread botThread;
         public StateMachine(mainForm main_form,Player player)
         {
             this.main_form = main_form;
@@ -24,8 +24,15 @@ namespace FloBot.Main
             this.player = player;
             currentState = new FindGameState();
             AddressUtil.setMemoryRW(this.mc);
-            new Thread(start_Method).Start();
+            botThread = new Thread(start_Method);
+            botThread.Start();
         }
+
+        public void endBotThread()
+        {
+            botThread.Abort();
+        }
+
         private IState currentState;
         private void start_Method()
         {

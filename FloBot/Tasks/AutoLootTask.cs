@@ -12,57 +12,27 @@ namespace FloBot.Tasks
 {
     class AutoLootTask : ITask
     {
-        public bool doTask(MemoryRW mc)
-        {
-           
-            Thread.Sleep(1000);
-
-            DataNeededCrossTaskUtil.LastX = AddressUtil.getCharPosX();
-            DataNeededCrossTaskUtil.LastY = AddressUtil.getCharPosY();
-            DataNeededCrossTaskUtil.LastZ = AddressUtil.getCharPosZ();
-           
-            while(DataNeededCrossTaskUtil.MobToLootCount > 0 && AddressUtil.getTargetCurrentHP() == 0)
-            {
-                bool pressedX = false;
-                while ( AddressUtil.getTargetCurrentHP() == 0)
-                {
-                    if (!pressedX)
-                    {
-                       
-                        mc.sendKeystroke(Keys.X);
-                        pressedX = true;
-                        
-                    }
-                        
-                    Thread.Sleep(100);
-                    if (!DataNeededCrossTaskUtil.hasMoved())
-                        break;
-                }
-
-                if (AddressUtil.getTargetCurrentHP() == 0 && DataNeededCrossTaskUtil.MobToLootCount > 0)
-                    DataNeededCrossTaskUtil.MobToLootCount--;
-                else
-                    return true;
-                Thread.Sleep(2000);
-
-            }
-           
-            return true;
-        }
-
         public bool doTask(mainForm main_form, Player player)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool doTask(mainForm main_form, MemoryRW mc)
         {
             throw new NotImplementedException();
         }
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            throw new NotImplementedException();
+            while(!player.inCombat && player.MobToLootCount>0)
+            {
+                mc.sendKeystroke(Keys.X);
+                Thread.Sleep(200);
+                while (player.Pos.moved() && !player.inCombat) Thread.Sleep(200);
+
+                if (player.inCombat)
+                    return true;
+
+                player.MobToLootCount--;
+                Thread.Sleep(2000);
+            }
+            
+            return true;
         }
     }
 }

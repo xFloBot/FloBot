@@ -1,4 +1,5 @@
-﻿using FloBot.MemoryClass;
+﻿using FloBot.Main;
+using FloBot.MemoryClass;
 using FloBot.Model;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace FloBot
     public partial class mainForm : Form
     {
         private Player player = new Player();
+        private StateMachine machine;
         public mainForm()
         {
             InitializeComponent();
@@ -33,7 +35,7 @@ namespace FloBot
             tbEmHP_Scroll(null, null);
             tbRestMP_Scroll(null, null);
             tbEmMP_Scroll(null, null);
-            new Main.StateMachine(this, player);
+            machine = new StateMachine(this, player);
         }
         private void Form1_Closing(object sender, EventArgs e)
         {
@@ -218,6 +220,11 @@ namespace FloBot
         private void tbCast9_TextChanged(object sender, EventArgs e)
         {
             rbBuff9_CheckedChanged(null, null);
+        }
+
+        private void cbAutoLoot_CheckedChanged(object sender, EventArgs e)
+        {
+            player.MobToLootCount = 0;
         }
     }
 }

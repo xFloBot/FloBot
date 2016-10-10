@@ -62,13 +62,14 @@
     <Compile Include="Model\Position.cs" />
     <Compile Include="Model\Skill.cs" />
     <Compile Include="Model\Target.cs" />
+    <Compile Include="State\AfterCombatState.cs" />
     <Compile Include="State\CombatState.cs" />
     <Compile Include="State\PreCombatState.cs" />
     <Compile Include="Tasks\AttackTargetTask.cs" />
     <Compile Include="Tasks\AutoLootTask.cs" />
     <Compile Include="Tasks\BuffMyselfTask.cs" />
     <Compile Include="Tasks\EmergencyMpTask.cs" />
-    <Compile Include="Tasks\EmergencyHealTask.cs" />
+    <Compile Include="Tasks\EmergencyHPTask.cs" />
     <Compile Include="Tasks\FindGameHandlerTask.cs" />
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
@@ -80,7 +81,7 @@
     <Compile Include="MemoryClass\MemoryRW.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tasks\CheckCurrentTarget.cs" />
+    <Compile Include="Tasks\CheckCurrentTargetTask.cs" />
     <Compile Include="Tasks\GetRestTask.cs" />
     <Compile Include="Tasks\ITask.cs" />
     <Compile Include="State\FindGameState.cs" />

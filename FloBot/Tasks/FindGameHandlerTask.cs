@@ -14,12 +14,6 @@ namespace FloBot.Tasks
 
         private const String gameName = "FlorensiaEN.bin";
 
-
-        public bool doTask(mainForm main_form)
-        {
-            throw new NotImplementedException();
-        }
-
         public bool doTask(mainForm main_form, Player player)
         {
             throw new NotImplementedException();

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace FloBot.Model
@@ -14,7 +15,10 @@ namespace FloBot.Model
         {
             get
             {
-                return AddressUtil.getTargetName().Substring(0, AddressUtil.getTargetName().IndexOf('\0'));
+                int targetNameEnd = -1;
+                while ((targetNameEnd = AddressUtil.getTargetName().IndexOf('\0')) < 0) Thread.Sleep(50);
+
+                return AddressUtil.getTargetName().Substring(0, targetNameEnd);       
             }
         }
 
@@ -22,7 +26,10 @@ namespace FloBot.Model
         {
             get
             {
-                return AddressUtil.getTargetLevel().Substring(0, AddressUtil.getTargetLevel().IndexOf('\0'));
+                int targetLevelEnd = -1;
+                while ((targetLevelEnd = AddressUtil.getTargetLevel().IndexOf('\0')) < 0) Thread.Sleep(50);
+
+                return AddressUtil.getTargetLevel().Substring(0, targetLevelEnd);
             }
         }
 

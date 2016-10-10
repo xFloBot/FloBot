@@ -59,7 +59,7 @@ namespace FloBot.Model
         {
             get
             {
-                return Target.isCurrentTargetAlive() && !Target.targetName.Contains("NoTarget") && !targetingMyself();
+                return Target.isCurrentTargetAlive() && !Target.targetName.Contains("NoTarget") && !targetingMyself() && PlayerCurrentHP > 0;
             }
         }
 
@@ -72,7 +72,7 @@ namespace FloBot.Model
 
             set
             {
-                _MobToLootCount += value;
+                _MobToLootCount = value;
             }
         }
 
@@ -93,7 +93,10 @@ namespace FloBot.Model
         {
             get
             {
-                return AddressUtil.getCharName().Substring(0, AddressUtil.getTargetName().IndexOf('\0'));
+                int playerNameEnd = -1 ;
+                while ((playerNameEnd = AddressUtil.getCharName().IndexOf('\0')) < 0) Thread.Sleep(50);
+
+                return AddressUtil.getCharName().Substring(0, playerNameEnd);
             }
         }
 
@@ -109,7 +112,10 @@ namespace FloBot.Model
         {
             get
             {
-                return AddressUtil.getCharMaxHP();
+                int MaxHP;
+                while ((MaxHP = AddressUtil.getCharMaxHP()) == 1) Thread.Sleep(50);
+
+                return MaxHP;
             }
         }
 
@@ -124,7 +130,10 @@ namespace FloBot.Model
         {
             get
             {
-                return AddressUtil.getCharMaxMP();
+                int MaxMP;
+                while ((MaxMP = AddressUtil.getCharMaxMP()) == 1) Thread.Sleep(50);
+
+                return MaxMP;
             }
         }
 

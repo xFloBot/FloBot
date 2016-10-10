@@ -6,37 +6,29 @@ using System.Threading.Tasks;
 using FloBot.MemoryClass;
 using System.Windows.Forms;
 using FloBot.Model;
+using System.Threading;
 
 namespace FloBot.Tasks
 {
     class EmergencyMPTask : ITask
     {
-        public bool doTask(MemoryRW mc)
-        {
-            throw new NotImplementedException();
-        }
-
         public bool doTask(mainForm main_form, Player player)
         {
             throw new NotImplementedException();
         }
 
-        public bool doTask(mainForm main_form, MemoryRW mc)
+        public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            if (checkForLowMP(main_form,mc))
+            Thread.Sleep(500);
+            if (checkForLowMP(main_form, player))
                 mc.sendKeystroke(Keys.OemMinus);
-            
+            Thread.Sleep(100);
             return true;
         }
 
-        public bool doTask(mainForm main_form, MemoryRW mc, Player player)
+        private bool checkForLowMP(mainForm main_form, Player player)
         {
-            throw new NotImplementedException();
-        }
-
-        private bool checkForLowMP(mainForm main_form, MemoryRW mc)
-        {
-            return AddressUtil.getCharMaxMP() / 100 * main_form.tbEmMP.Value > AddressUtil.getCharCurrentMP();
+            return player.PlayerMaxMP / 100 * main_form.tbEmMP.Value > player.PlayerCurrentMP;
         }
     }
 }

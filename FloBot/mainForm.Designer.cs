@@ -570,6 +570,7 @@
             this.cbAutoLoot.TabIndex = 9;
             this.cbAutoLoot.Text = "Automatisch looten";
             this.cbAutoLoot.UseVisualStyleBackColor = true;
+            this.cbAutoLoot.CheckedChanged += new System.EventHandler(this.cbAutoLoot_CheckedChanged);
             // 
             // cbAutoBattle
             // 

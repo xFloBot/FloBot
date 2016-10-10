@@ -20,8 +20,8 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-
-            //Check if in combat yes -> return fals (not resting) incase you were resting, stand up and set resting to false
+            
+            //Check if in combat yes -> return false (not resting) incase you were resting, stand up and set resting to false
             if (player.inCombat)
                 if (player.Resting)
                 {
@@ -32,6 +32,8 @@ namespace FloBot.Tasks
                 else
                     return false;
 
+
+            //Check if player is not resting but needs to rest
             if(!player.Resting && (getRestHP(main_form,player) || getRestMP(main_form, player)))
             {
                 while (player.Pos.moved())
@@ -42,11 +44,12 @@ namespace FloBot.Tasks
                 mc.sendKeystroke(Keys.Z);
                 return true;
             }
-
+            //Check if player has finished resting
             if(player.Resting)
             {
                 if (player.PlayerMaxHP == player.PlayerCurrentHP && player.PlayerMaxMP == player.PlayerCurrentMP)
                 {
+                    Console.WriteLine("Player max HP: {0} \nPlayer current HP:{1}", player.PlayerMaxHP, player.PlayerCurrentHP);
                     mc.sendKeystroke(Keys.Z);
                     player.Resting = false;
                     return false;

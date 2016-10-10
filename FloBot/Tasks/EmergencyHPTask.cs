@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using FloBot.MemoryClass;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 using FloBot.Model;
+using System.Threading;
 
 namespace FloBot.Tasks
 {
-    class CheckCurrentTarget : ITask
+    class EmergencyHPTask : ITask
     {
         public bool doTask(mainForm main_form, Player player)
         {
@@ -19,7 +19,16 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            throw new NotImplementedException();
+            Thread.Sleep(500);
+            if (checkForLowHP(main_form, player))
+                mc.sendKeystroke(Keys.Oemplus);
+            Thread.Sleep(100);
+            return true;
+        }
+
+        private bool checkForLowHP(mainForm main_form, Player player)
+        {
+            return player.PlayerMaxHP/ 100 * main_form.tbEmHP.Value > player.PlayerCurrentHP;
         }
     }
 }
