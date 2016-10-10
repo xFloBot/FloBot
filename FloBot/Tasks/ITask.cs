@@ -1,4 +1,5 @@
 ﻿using FloBot.MemoryClass;
+using FloBot.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace FloBot.Tasks
 {
     interface ITask
     {
-        bool doTask(MemoryRW mc);
-        bool doTask(mainForm main_form,MemoryRW mc);
+        bool doTask(mainForm main_form,Player player);
+        bool doTask(mainForm main_form,MemoryRW mc, Player player);
     }
 }

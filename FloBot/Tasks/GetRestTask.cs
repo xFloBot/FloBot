@@ -6,89 +6,67 @@ using System.Threading.Tasks;
 using FloBot.MemoryClass;
 using System.Windows.Forms;
 using System.Threading;
+using FloBot.Model;
 
 namespace FloBot.Tasks
 {
     class GetRestTask : ITask
     {
-        private static bool resting = false;
-        public bool doTask(MemoryRW mc)
+        
+        public bool doTask(mainForm main_form, Player player)
         {
             throw new NotImplementedException();
         }
-        public static void setRestFalse()
-        {
-            resting = false;
-        }
-        private static int currentHP = 0;
-        public bool doTask(mainForm main_form, MemoryRW mc)
+
+        public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
 
-            if (checkForEmergency(mc))
-                return false;
-
-            return needResting(main_form, mc);
-        }
-
-        private bool needResting(mainForm main_form,MemoryRW mc)
-        {
-            //Check if you'r dead
-            if (AddressUtil.getCurrentCharHP() == 0 || AddressUtil.getTargetCurrentHP() > 0)
-            {
-                resting = false;
-                return true;
-            }
-                
-            //Check if your Current HP is below 30% and if you'r not resting allready
-            //Sit down if this is the case
-            else if (
-               ((AddressUtil.getCharMaxHP() / 100 * main_form.tbRestHP.Value) > AddressUtil.getCurrentCharHP() || AddressUtil.getCharMaxMP() /100*main_form.tbRestMP.Value >AddressUtil.getCharCurrentMP())
-                && !resting)
-            {
-                int counter = 0;
-                while (counter++<15 && AddressUtil.getTargetCurrentHP() == 0)
-                    Thread.Sleep(100);
-                mc.sendKeystroke(Keys.Z);
-                currentHP = AddressUtil.getCurrentCharHP();
-                      resting = true;
-                return true;
-            }
-
-            //Check Current HP and stand up when full
-            if (resting)
-                if ((AddressUtil.getCharMaxHP()) != AddressUtil.getCurrentCharHP() )
-                    return true;
-                
+            //Check if in combat yes -> return fals (not resting) incase you were resting, stand up and set resting to false
+            if (player.inCombat)
+                if (player.Resting)
+                {
+                    mc.sendKeystroke(Keys.Z);
+                    player.Resting = false;
+                    return false;
+                }
                 else
-                {
-                    currentHP = 0;
-                    mc.sendKeystroke(Keys.Z);
-                }
-                    
+                    return false;
 
-            resting = false;
-            return false;
-        }
-    
-
-        private bool checkForEmergency(MemoryRW mc)
-        {
-            if (inCombat()||AddressUtil.getCurrentCharHP() < currentHP)
+            if(!player.Resting && (getRestHP(main_form,player) || getRestMP(main_form, player)))
             {
-                if (resting)
-                {
-                    currentHP = 0;
-                    mc.sendKeystroke(Keys.Z);
-                    resting = false;
-                }
+                while (player.Pos.moved())
+                    Thread.Sleep(100);
+                if (player.inCombat)
+                    return false;
+                player.Resting = true;
+                mc.sendKeystroke(Keys.Z);
                 return true;
             }
+
+            if(player.Resting)
+            {
+                if (player.PlayerMaxHP == player.PlayerCurrentHP && player.PlayerMaxMP == player.PlayerCurrentMP)
+                {
+                    mc.sendKeystroke(Keys.Z);
+                    player.Resting = false;
+                    return false;
+                }
+                else
+                    return true;
+            }
             return false;
+
+                  
         }
-        
-        private bool inCombat()
+
+        private bool getRestHP(mainForm main_form, Player player)
         {
-            return AddressUtil.getTargetCurrentHP() != 0; 
+           return ( (player.PlayerMaxHP) / 100 * main_form.tbRestHP.Value) > player.PlayerCurrentHP;
         }
+        private bool getRestMP(mainForm main_form, Player player)
+        {
+            return ((player.PlayerMaxMP) / 100 * main_form.tbRestMP.Value) > player.PlayerCurrentMP;
+        }
+
     }
 }

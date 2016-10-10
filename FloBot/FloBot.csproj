@@ -58,8 +58,12 @@
   <ItemGroup>
     <Compile Include="MemoryClass\AddressUtil.cs" />
     <Compile Include="MemoryClass\DataNeededCrossTaskUtil.cs" />
+    <Compile Include="Model\Player.cs" />
+    <Compile Include="Model\Position.cs" />
     <Compile Include="Model\Skill.cs" />
+    <Compile Include="Model\Target.cs" />
     <Compile Include="State\CombatState.cs" />
+    <Compile Include="State\PreCombatState.cs" />
     <Compile Include="Tasks\AttackTargetTask.cs" />
     <Compile Include="Tasks\AutoLootTask.cs" />
     <Compile Include="Tasks\BuffMyselfTask.cs" />
@@ -84,6 +88,7 @@
     <Compile Include="Tasks\FocusTargetTask.cs" />
     <Compile Include="Tasks\ReviveIfNeededTask.cs" />
     <Compile Include="Tasks\UpdateCharInfoTask.cs" />
+    <Compile Include="Tasks\UpdateTargetInfo.cs" />
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>

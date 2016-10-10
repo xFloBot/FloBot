@@ -7,12 +7,18 @@ using FloBot.MemoryClass;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Threading;
+using FloBot.Model;
 
 namespace FloBot.Tasks
 {
     class FocusTargetTask : ITask
     {
         public bool doTask(MemoryRW mc)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool doTask(mainForm main_form, Player player)
         {
             throw new NotImplementedException();
         }
@@ -25,7 +31,7 @@ namespace FloBot.Tasks
                 //Check for target with Max HP
                 while (AddressUtil.getTargetCurrentHP() != AddressUtil.getTargetMaxHP()||!checkIfInRange(main_form))
                 {
-                    if (AddressUtil.getCurrentCharHP() == 0||AddressUtil.getTargetName().Contains(AddressUtil.getCharName().Replace( '0'.ToString() ,string.Empty)))
+                    if (AddressUtil.getCharCurrentHP() == 0||AddressUtil.getTargetName().Contains(AddressUtil.getCharName().Replace( '0'.ToString() ,string.Empty)))
                         break;
                     mc.sendKeystroke(Keys.Tab);
                     Thread.Sleep(500);
@@ -35,6 +41,11 @@ namespace FloBot.Tasks
 
             return true;
            
+        }
+
+        public bool doTask(mainForm main_form, MemoryRW mc, Player player)
+        {
+            throw new NotImplementedException();
         }
 
         private bool checkIfInRange(mainForm main_form)

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using FloBot.MemoryClass;
 using System.Windows.Forms;
 using System.Threading;
+using FloBot.Model;
 
 namespace FloBot.Tasks
 {
@@ -48,9 +49,18 @@ namespace FloBot.Tasks
            
             return true;
         }
-       
+
+        public bool doTask(mainForm main_form, Player player)
+        {
+            throw new NotImplementedException();
+        }
 
         public bool doTask(mainForm main_form, MemoryRW mc)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
             throw new NotImplementedException();
         }

@@ -4,67 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FloBot.MemoryClass;
+using FloBot.Model;
 
 namespace FloBot.Tasks
 {
     class UpdateCharInfoTask : ITask
     {
-        public bool doTask(MemoryRW mc)
+        public bool doTask(mainForm main_form, Player player)
         {
-            throw new NotImplementedException();
-        }
-        private static Single currentExpPercent = -1F;
-        private static int currentExp = -1;
-        private static int lastMobExp = -1;
-        public bool doTask(mainForm main_form, MemoryRW mc)
-        {
-            main_form.lblCharName.Text = AddressUtil.getCharName();
-
-            main_form.lblCharLvL.Text = "" + AddressUtil.getCharLevel();
-
-            main_form.lblCharHP.Text = AddressUtil.getCurrentCharHP() + "/" + AddressUtil.getCharMaxHP();
-
-            main_form.lblCharMP.Text = AddressUtil.getCharCurrentMP() + "/" + AddressUtil.getCharMaxMP();
-
-            if (currentExpPercent == -1)
-            {
-                currentExpPercent = AddressUtil.getCharExpPercent();
-                currentExp = AddressUtil.getCharCurrentExp();
-                
-                return true;
-            }
-
-            if (currentExpPercent != AddressUtil.getCharExpPercent())
-            {
-               if(lastMobExp == -1)
-                    lastMobExp = (AddressUtil.getCharCurrentExp() - currentExp);
-                main_form.lblExpMax.Text = "" + calculateMaxExp();
-                
-
-                main_form.lblExpCurrent.Text =
-                  calculateCurrentExp()
-                    + "(" + AddressUtil.getCharExpPercent() + "%)";
-                if(((AddressUtil.getCharCurrentExp() - currentExp + lastMobExp) / 2)!=0)
-                    main_form.lblMobsTillUp.Text = ""+((calculateMaxExp() - calculateCurrentExp()) / ((AddressUtil.getCharCurrentExp() - currentExp + lastMobExp) / 2));
-                lastMobExp = (AddressUtil.getCharCurrentExp() - currentExp);
-                currentExpPercent = AddressUtil.getCharExpPercent();
-                currentExp = AddressUtil.getCharCurrentExp();
-
-            }
-
+            player.updateCharInfo(main_form);
             return true;
         }
 
-        private int calculateMaxExp()
+        public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            return (int)(((AddressUtil.getCharCurrentExp() - currentExp) / (AddressUtil.getCharExpPercent() - currentExpPercent)) * 100F);
+            throw new NotImplementedException();
         }
-        
-        private int calculateCurrentExp()
-        {
-            return (int)(((AddressUtil.getCharCurrentExp() - currentExp) / (AddressUtil.getCharExpPercent() - currentExpPercent))* AddressUtil.getCharExpPercent());
-        }
-
-       
     }
 }

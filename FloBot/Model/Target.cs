@@ -1,0 +1,81 @@
+﻿using FloBot.MemoryClass;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FloBot.Model
+{
+    class Target
+    {
+
+        public String targetName
+        {
+            get
+            {
+                return AddressUtil.getTargetName().Substring(0, AddressUtil.getTargetName().IndexOf('\0'));
+            }
+        }
+
+        public String targetLevel
+        {
+            get
+            {
+                return AddressUtil.getTargetLevel().Substring(0, AddressUtil.getTargetLevel().IndexOf('\0'));
+            }
+        }
+
+        public Single targetMaxHP
+        {
+            get
+            {
+                return AddressUtil.getTargetMaxHP();
+            }
+        }
+
+        public Single targetCurrentHP
+        {
+            get
+            {
+                return AddressUtil.getTargetCurrentHP();
+            }
+        }
+
+        public bool isCurrentTargetAlive()
+        {
+            return targetCurrentHP > 0;
+        }
+
+        public void updateTargetInfo(mainForm main_form)
+        {
+            main_form.lblTarget.Text = targetName;
+            main_form.lblHP.Text = targetCurrentHP + "/" + targetMaxHP;
+
+            main_form.lblLvL.Text = targetLevel;
+        }
+
+        public bool isValidTarget(mainForm main_form)
+        {
+            return checkIfInRange(main_form) && !targetName.Contains("NoTarget") && targetCurrentHP == targetMaxHP;
+        }
+
+        private bool checkIfInRange(mainForm main_form)
+        {
+            int range;
+            int ownLevel = Int32.Parse(main_form.lblCharLvL.Text);
+            int monsterLevel;
+            //TryParse Target level(It's stored as String in the address dunno why)
+            if (!Int32.TryParse(AddressUtil.getTargetLevel(), out monsterLevel))
+                return false;
+            //Try parse range
+            if (!Int32.TryParse(main_form.tbLvLRange.Text, out range)) return false;
+            //check if monster level is bigger than ownLevel+ range || smaller than ownLevel-range
+            if (monsterLevel > (ownLevel + range)
+                || monsterLevel < ownLevel - range)
+                return false;
+
+            return true;
+        }
+    }
+}

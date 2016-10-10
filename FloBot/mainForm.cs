@@ -14,6 +14,7 @@ namespace FloBot
 {
     public partial class mainForm : Form
     {
+        private Player player = new Player();
         public mainForm()
         {
             InitializeComponent();
@@ -32,7 +33,7 @@ namespace FloBot
             tbEmHP_Scroll(null, null);
             tbRestMP_Scroll(null, null);
             tbEmMP_Scroll(null, null);
-            new Main.StateMachine(this);
+            new Main.StateMachine(this, player);
         }
         private void Form1_Closing(object sender, EventArgs e)
         {
@@ -70,8 +71,8 @@ namespace FloBot
         private void rbBuff1_CheckedChanged(object sender, EventArgs e)
         {
 
-            DataNeededCrossTaskUtil.removeElement(DataNeededCrossTaskUtil.AttArray, new Skill(0, 0, Keys.NumPad1));
-            DataNeededCrossTaskUtil.removeElement(DataNeededCrossTaskUtil.BuffArray, new Skill(0, 0, Keys.NumPad1));
+            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad1));
+            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad1));
 
             if (cbUseAtt1.Checked)
             {
@@ -80,9 +81,9 @@ namespace FloBot
                 Int32.TryParse(tbDelay1.Text, out delay);
                 Int32.TryParse(tbCast1.Text, out cast);
                 if (rbBuff1.Checked)
-                    DataNeededCrossTaskUtil.addElement(DataNeededCrossTaskUtil.BuffArray, new Skill(delay, cast, Keys.NumPad1));
+                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad1));
                 if(rbAttack1.Checked)
-                    DataNeededCrossTaskUtil.addElement(DataNeededCrossTaskUtil.AttArray, new Skill(delay, cast, Keys.NumPad1));
+                    player.addElement(player.AttArray, new Skill(delay, cast, Keys.NumPad1));
             }
                 
                     
@@ -111,8 +112,8 @@ namespace FloBot
 
         private void rbBuff2_CheckedChanged(object sender, EventArgs e)
         {
-            DataNeededCrossTaskUtil.removeElement(DataNeededCrossTaskUtil.AttArray, new Skill(0, 0, Keys.NumPad2));
-            DataNeededCrossTaskUtil.removeElement(DataNeededCrossTaskUtil.BuffArray, new Skill(0, 0, Keys.NumPad2));
+            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad2));
+            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad2));
 
             if (cbUseSkill2.Checked)
             {
@@ -121,10 +122,10 @@ namespace FloBot
                 Int32.TryParse(tbDelay2.Text, out delay);
                 Int32.TryParse(tbCast2.Text, out cast);
                 if (rbBuff2.Checked)
-                    DataNeededCrossTaskUtil.addElement(DataNeededCrossTaskUtil.BuffArray, new Skill(delay, cast, Keys.NumPad2));
+                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad2));
                 
                 if (rbAtt2.Checked)
-                    DataNeededCrossTaskUtil.addElement(DataNeededCrossTaskUtil.AttArray, new Skill(delay, cast, Keys.NumPad2));
+                    player.addElement(player.AttArray, new Skill(delay, cast, Keys.NumPad2));
                 
             }
         }
@@ -146,8 +147,8 @@ namespace FloBot
 
         private void rbBuff3_CheckedChanged(object sender, EventArgs e)
         {
-            DataNeededCrossTaskUtil.removeElement(DataNeededCrossTaskUtil.AttArray, new Skill(0, 0, Keys.NumPad3));
-            DataNeededCrossTaskUtil.removeElement(DataNeededCrossTaskUtil.BuffArray, new Skill(0, 0, Keys.NumPad3));
+            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad3));
+            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad3));
 
             if (cbUseSkill3.Checked)
             {
@@ -156,10 +157,10 @@ namespace FloBot
                 Int32.TryParse(tbDelay3.Text, out delay);
                 Int32.TryParse(tbCast3.Text, out cast);
                 if (rbBuff3.Checked)
-                    DataNeededCrossTaskUtil.addElement(DataNeededCrossTaskUtil.BuffArray, new Skill(delay, cast, Keys.NumPad3));
+                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad3));
 
                 if (rbAtt3.Checked)
-                    DataNeededCrossTaskUtil.addElement(DataNeededCrossTaskUtil.AttArray, new Skill(delay, cast, Keys.NumPad3));
+                    player.addElement(player.AttArray, new Skill(delay, cast, Keys.NumPad3));
 
             }
         }
@@ -191,8 +192,8 @@ namespace FloBot
 
         private void rbBuff9_CheckedChanged(object sender, EventArgs e)
         {
-            DataNeededCrossTaskUtil.removeElement(DataNeededCrossTaskUtil.AttArray, new Skill(0, 0, Keys.NumPad9));
-            DataNeededCrossTaskUtil.removeElement(DataNeededCrossTaskUtil.BuffArray, new Skill(0, 0, Keys.NumPad9));
+            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad9));
+            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad9));
 
             if (cbUseSkill9.Checked)
             {
@@ -201,10 +202,10 @@ namespace FloBot
                 Int32.TryParse(tbDelay9.Text, out delay);
                 Int32.TryParse(tbCast9.Text, out cast);
                 if (rbBuff9.Checked)
-                    DataNeededCrossTaskUtil.addElement(DataNeededCrossTaskUtil.BuffArray, new Skill(delay, cast, Keys.NumPad9));
+                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad9));
 
                 if (rbAtt9.Checked)
-                    DataNeededCrossTaskUtil.addElement(DataNeededCrossTaskUtil.AttArray, new Skill(delay, cast, Keys.NumPad9));
+                    player.addElement(player.AttArray, new Skill(delay, cast, Keys.NumPad9));
 
             }
         }

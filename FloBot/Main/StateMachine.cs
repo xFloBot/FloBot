@@ -1,4 +1,5 @@
 ﻿using FloBot.MemoryClass;
+using FloBot.Model;
 using FloBot.State;
 using System;
 using System.Collections.Generic;
@@ -14,12 +15,13 @@ namespace FloBot.Main
     {
         private mainForm main_form;
         private MemoryClass.MemoryRW mc;
+        private Player player;
 
-
-        public StateMachine(mainForm main_form)
+        public StateMachine(mainForm main_form,Player player)
         {
             this.main_form = main_form;
             this.mc = new MemoryRW();
+            this.player = player;
             currentState = new FindGameState();
             AddressUtil.setMemoryRW(this.mc);
             new Thread(start_Method).Start();
@@ -29,7 +31,7 @@ namespace FloBot.Main
         {
             while (!main_form.IsDisposed )
             {
-                currentState = currentState.doTasks(main_form, mc);
+                currentState = currentState.doTasks(main_form, mc, player);
                 Thread.Sleep(100);
             }
                 

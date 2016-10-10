@@ -27,7 +27,7 @@ namespace FloBot.MemoryClass
 
         private static int HP_MP_Base = 0x00BE7A70;
         private static int[] CharCurrentHPOffset = { HP_MP_Base, 0x2c8 };
-        public static int getCurrentCharHP()
+        public static int getCharCurrentHP()
         {
             return mc.ReadInteger(
                 getFinalPointer(mc.getBaseAdress().ToInt32(), 

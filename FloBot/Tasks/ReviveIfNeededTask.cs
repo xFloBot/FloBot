@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FloBot.MemoryClass;
+using FloBot.Model;
 
 namespace FloBot.Tasks
 {
@@ -14,17 +15,27 @@ namespace FloBot.Tasks
             throw new NotImplementedException();
         }
 
+        public bool doTask(mainForm main_form, Player player)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool doTask(mainForm main_form, MemoryRW mc)
         {
-            if (AddressUtil.getCurrentCharHP() == 0)
+            if (AddressUtil.getCharCurrentHP() == 0)
             {
                 mc.sendLeftClick(mc.getPixelsByPercent(50, 50));
-                GetRestTask.setRestFalse();
+               // GetRestTask.setRestFalse();
                 main_form.lblDeathDate.Text = DateTime.Now.ToString("HH:mm:ss");
                 return true;
             }
             return false;
            
+        }
+
+        public bool doTask(mainForm main_form, MemoryRW mc, Player player)
+        {
+            throw new NotImplementedException();
         }
     }
 }

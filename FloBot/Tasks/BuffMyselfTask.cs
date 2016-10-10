@@ -12,45 +12,51 @@ namespace FloBot.Tasks
 {
     class BuffMyselfTask : ITask
     {
-        public bool doTask(MemoryRW mc)
-        {
-            foreach (Skill skill in DataNeededCrossTaskUtil.BuffArray)
-            {
-                Thread.Sleep(2000);
-                if (AddressUtil.getTargetCurrentHP() > 0 && !AddressUtil.getTargetName().Contains(AddressUtil.getCharName().Substring(16)))
-                {
-                    break;
-                }
-                   
-                if (skill.skillCanBeUsed())
-                {
-                    Console.WriteLine("Should buff");
-                    mc.sendKeystroke(skill.Hotkey);
-                    skill.LastTimeUsed = DateTime.Now;
-                    //DataNeededCrossTaskUtil.Buffed = true;
-                    Thread.Sleep(1500);
-                }
-
-            }
-            int indexOfStringEnd = AddressUtil.getCharName().IndexOf('\0') - 1;
-            Console.WriteLine(indexOfStringEnd);
-            String charName = AddressUtil.getCharName();
-            if (indexOfStringEnd >= 0)
-                charName = AddressUtil.getCharName().Substring(0, indexOfStringEnd);//.Replace( ((char)0x00).ToString(),string.Empty);
-   
-            while (AddressUtil.getTargetName().Contains(charName))           
-            {
-
-                mc.sendKeystroke(Keys.Escape);
-                Thread.Sleep(500);
-            }
-           
-            return true;
-        }
-
-        public bool doTask(mainForm main_form, MemoryRW mc)
+        private int castDelay = 0;
+        public bool doTask(mainForm main_form, Player player)
         {
             throw new NotImplementedException();
+        }
+
+        public bool doTask(mainForm main_form, MemoryRW mc, Player player)
+        {
+
+            while (player.Pos.moved()) Thread.Sleep(100);
+            int counter = 0;
+
+            try
+            {
+                foreach (Skill buff in player.BuffArray)
+                {
+
+                    Console.WriteLine();
+                    if (buff.skillCanBeUsed())
+                    {
+                        mc.sendKeystroke(buff.Hotkey);
+                        buff.LastTimeUsed = DateTime.Now;
+                    }
+                    while (counter++ <= 10)
+                        if (player.inCombat)
+                            return false;
+                        else
+                            Thread.Sleep(200);
+
+                }
+            }catch(InvalidOperationException e)
+            {
+
+            }
+           finally
+            {
+                while (player.targetingMyself())
+                {
+                    mc.sendKeystroke(Keys.Escape);
+                    Thread.Sleep(100);
+                }
+               
+            }
+            return true;
+
         }
     }
 }

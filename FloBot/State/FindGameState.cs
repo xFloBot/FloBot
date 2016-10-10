@@ -6,24 +6,18 @@ using System.Threading.Tasks;
 using FloBot.MemoryClass;
 using FloBot.Tasks;
 using System.Threading;
+using FloBot.Model;
 
 namespace FloBot.State
 {
     class FindGameState : IState
     {
-        public IState doTasks(mainForm main_form, MemoryRW mc)
+        public IState doTasks(mainForm main_form, MemoryRW mc, Player player)
         {
-            ITask nextTask = new FindGameHandlerTask();
 
-           
-                while (!nextTask.doTask(mc)) Thread.Sleep(1000);
-            
-            main_form.lblGameFound.Text = "Florensia gefunden";
-            mc.getPixelsByPercent(50, 50);
+            while (!new FindGameHandlerTask().doTask(main_form,mc,player)) Thread.Sleep(1000);
 
-            if (main_form.cbEnableCombatState.Checked)
-                return new CombatState();
-            else return this;
+            return new PreCombatState();
         }
          
     }
