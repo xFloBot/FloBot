@@ -66,7 +66,12 @@ namespace FloBot.Model
         {
             return checkIfInRange(main_form) && !targetName.Contains("NoTarget") && targetCurrentHP == targetMaxHP;
         }
-
+        public bool isTargetFriendly()
+        {
+            if (AddressUtil.getTargetType() == 0)
+                return true;
+            return false;
+        }
         private bool checkIfInRange(mainForm main_form)
         {
             int range;

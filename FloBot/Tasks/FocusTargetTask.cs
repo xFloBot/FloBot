@@ -20,14 +20,19 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
+            Console.WriteLine(player.Target.isTargetFriendly());
 
-            if (player.inCombat)
+
+
+            if (player.inCombat && !player.Target.isTargetFriendly())
                 return true;
+
             DateTime mobSearchBreak = DateTime.Now;
             while (
                     (DateTime.Now - mobSearchBreak).TotalSeconds < 5
                     && player.MobToLootCount == 0
                     && !player.Target.isValidTarget(main_form)
+                    || player.Target.isTargetFriendly() && (DateTime.Now - mobSearchBreak).TotalSeconds < 5
                 )
             {
                 mc.sendKeystroke(Keys.Tab);
