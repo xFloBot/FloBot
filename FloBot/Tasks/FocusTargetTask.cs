@@ -20,17 +20,25 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
+
+            if (player.inCombat)
+                return true;
             DateTime mobSearchBreak = DateTime.Now;
-            while(
-                    !player.inCombat
-                    && (DateTime.Now - mobSearchBreak).TotalSeconds < 5
+            while (
+                    (DateTime.Now - mobSearchBreak).TotalSeconds < 5
                     && player.MobToLootCount == 0
+                    && !player.Target.isValidTarget(main_form)
                 )
             {
                 mc.sendKeystroke(Keys.Tab);
                 Thread.Sleep(50);
             }
 
+            while (!player.Target.isValidTarget(main_form) && player.Target.targetCurrentHP >0)
+            {
+                mc.sendKeystroke(Keys.Escape);
+                Thread.Sleep(50);
+            }
             return true;
 
         }
