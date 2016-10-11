@@ -25,6 +25,7 @@ namespace FloBot.State
             {
                 if(main_form.cbAutoBattle.Checked)
                 {
+                    new UpdateCharInfoTask().doTask();
                     new EmergencyHPTask().doTask(main_form, mc, player);
                     new EmergencyMPTask().doTask(main_form, mc, player);
                     new AttackTargetTask().doTask(main_form, mc, player);
