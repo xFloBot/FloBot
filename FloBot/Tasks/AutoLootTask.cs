@@ -22,8 +22,8 @@ namespace FloBot.Tasks
             while(!player.inCombat && player.MobToLootCount>0)
             {
                 mc.sendKeystroke(Keys.X);
-                Thread.Sleep(200);
-                while (player.Pos.moved() && !player.inCombat) Thread.Sleep(200);
+                Thread.Sleep(100);
+                while (player.Pos.moved() && !player.inCombat) Thread.Sleep(100);
 
                 if (player.inCombat)
                     return true;

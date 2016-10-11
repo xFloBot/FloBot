@@ -17,10 +17,11 @@ namespace FloBot.Tasks
         {
             throw new NotImplementedException();
         }
-
+        private int oldHP = -1;
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            
+            if (player.PlayerCurrentHP == 0)
+                return false;
             //Check if in combat yes -> return false (not resting) incase you were resting, stand up and set resting to false
             if (player.inCombat)
                 if (player.Resting)
@@ -31,7 +32,13 @@ namespace FloBot.Tasks
                 }
                 else
                     return false;
-
+            if(player.Resting && oldHP > player.PlayerCurrentHP)
+            {
+                player.Resting = false;
+                mc.sendKeystroke(Keys.Z);
+                oldHP = -1;
+                return false;
+            }
 
             //Check if player is not resting but needs to rest
             if(!player.Resting && (getRestHP(main_form,player) || getRestMP(main_form, player)))
@@ -40,6 +47,9 @@ namespace FloBot.Tasks
                     Thread.Sleep(100);
                 if (player.inCombat)
                     return false;
+                int counter = 0;
+                while ((oldHP = player.PlayerCurrentHP) == 0 && counter++ < 10) Thread.Sleep(100);
+
                 player.Resting = true;
                 mc.sendKeystroke(Keys.Z);
                 return true;
