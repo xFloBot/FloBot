@@ -55,7 +55,7 @@ namespace FloBot.Tasks
 
                 }
             }
-            catch (InvalidOperationException e)
+            catch (InvalidOperationException)
             {
                 return true;
             }

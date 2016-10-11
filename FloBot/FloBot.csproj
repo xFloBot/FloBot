@@ -57,7 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MemoryClass\AddressUtil.cs" />
-    <Compile Include="MemoryClass\DataNeededCrossTaskUtil.cs" />
     <Compile Include="Model\Player.cs" />
     <Compile Include="Model\Position.cs" />
     <Compile Include="Model\Skill.cs" />

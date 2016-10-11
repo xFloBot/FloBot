@@ -146,7 +146,6 @@ namespace FloBot.Model
         }
         public bool targetingMyself()
         {
-            int charNameEnd = -1;
 
             if (PlayerName.Length <= 0)
                 return false;

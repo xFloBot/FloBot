@@ -12,7 +12,7 @@ namespace FloBot.Tasks
 {
     class BuffMyselfTask : ITask
     {
-        private int castDelay = 0;
+
         public bool doTask(mainForm main_form, Player player)
         {
             throw new NotImplementedException();
@@ -46,7 +46,7 @@ namespace FloBot.Tasks
                             Thread.Sleep(200);
 
                 }
-            }catch(InvalidOperationException e)
+            }catch(InvalidOperationException )
             {
 
             }
