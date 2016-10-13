@@ -17,6 +17,7 @@ namespace FloBot.Main
         private MemoryClass.MemoryRW mc;
         private Player player;
         private Thread botThread;
+        private Thread abortThread;
         public StateMachine(mainForm main_form,Player player)
         {
             this.main_form = main_form;
@@ -26,11 +27,14 @@ namespace FloBot.Main
             AddressUtil.setMemoryRW(this.mc);
             botThread = new Thread(start_Method);
             botThread.Start();
+            abortThread = new Thread(check_Abort_Bot);
+            abortThread.Start();
         }
 
         public void endBotThread()
         {
             botThread.Abort();
+            abortThread.Abort();
         }
 
         private IState currentState;
@@ -42,6 +46,26 @@ namespace FloBot.Main
                 Thread.Sleep(100);
             }
                 
+        }
+
+        private void check_Abort_Bot()
+        {
+            while(true)
+            {
+                Thread.Sleep(500);
+                if (mc.isGameInForeground() && main_form.cbDisableBot.Checked)
+                {
+                    botThread.Abort();
+
+                    check_Abort_Bot();
+                }
+                if (!botThread.IsAlive)
+                {
+                    botThread = new Thread(start_Method);
+                    botThread.Start();
+                }
+            }
+
         }
     }
 }

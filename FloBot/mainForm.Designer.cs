@@ -149,6 +149,7 @@
             this.tbEmMP = new System.Windows.Forms.TrackBar();
             this.tbRestMP = new System.Windows.Forms.TrackBar();
             this.tbRestHP = new System.Windows.Forms.TrackBar();
+            this.cbDisableBot = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1457,11 +1458,22 @@
             this.tbRestHP.Value = global::FloBot.Properties.Settings.Default.tbRestHP;
             this.tbRestHP.Scroll += new System.EventHandler(this.tbRestHP_Scroll);
             // 
+            // cbDisableBot
+            // 
+            this.cbDisableBot.AutoSize = true;
+            this.cbDisableBot.Location = new System.Drawing.Point(525, 221);
+            this.cbDisableBot.Name = "cbDisableBot";
+            this.cbDisableBot.Size = new System.Drawing.Size(261, 17);
+            this.cbDisableBot.TabIndex = 16;
+            this.cbDisableBot.Text = "Bot ausmachen wenn Florensia im Vordergrund ist";
+            this.cbDisableBot.UseVisualStyleBackColor = true;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 432);
+            this.Controls.Add(this.cbDisableBot);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.tbHotkeys);
             this.Controls.Add(this.groupBox3);
@@ -1642,6 +1654,7 @@
         public System.Windows.Forms.CheckBox cbUseSkill9;
         public System.Windows.Forms.RadioButton rbAtt9;
         public System.Windows.Forms.RadioButton rbBuff9;
+        public System.Windows.Forms.CheckBox cbDisableBot;
     }
 }
 

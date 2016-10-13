@@ -24,11 +24,20 @@ namespace FloBot.MemoryClass
 
         [DllImport("user32.dll", SetLastError = true)]
         public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
-
+        [DllImport("user32.dll")]
+        private static extern IntPtr GetForegroundWindow();
         public IntPtr getBaseAdress()
         {
             return baseAddress;
         }
+
+        private IntPtr windowHandler;
+        
+        public bool isGameInForeground()
+        {
+            return windowHandler == GetForegroundWindow();
+        }
+
         public bool Process_Handle(string ProcessName)
         {
             try
@@ -38,9 +47,14 @@ namespace FloBot.MemoryClass
                     return false;
                 else
                 {
+                    windowHandler = ProcList[0].MainWindowHandle;
                     hWnd = FindWindow("Florensia", null);
                     pHandel = ProcList[0].Handle;
                     baseAddress = ProcList[0].MainModule.BaseAddress;
+
+                    Console.WriteLine("ForeGround: "+GetForegroundWindow());
+                    Console.WriteLine("phandle: "+pHandel);
+                    Console.WriteLine("base: "+ ProcList[0].MainWindowHandle);
                     return true;
                 }
             }

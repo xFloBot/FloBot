@@ -36,6 +36,8 @@ namespace FloBot.Tasks
             {
                 player.Resting = false;
                 mc.sendKeystroke(Keys.Z);
+                Thread.Sleep(100);
+                mc.sendKeystroke(Keys.Tab);
                 oldHP = -1;
                 return false;
             }

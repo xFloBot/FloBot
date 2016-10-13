@@ -150,7 +150,7 @@ namespace FloBot.Model
             if (PlayerName.Length <= 0)
                 return false;
           
-            return Target.targetName.Contains(PlayerName);
+            return Target.targetName.Contains(PlayerName) && Target.isTargetFriendly();
         }
 
 
