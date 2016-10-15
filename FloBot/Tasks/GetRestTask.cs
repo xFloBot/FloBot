@@ -64,6 +64,7 @@ namespace FloBot.Tasks
                 if (player.PlayerMaxHP == player.PlayerCurrentHP && player.PlayerMaxMP == player.PlayerCurrentMP)
                 {
                     Console.WriteLine("Player max HP: {0} \nPlayer current HP:{1}", player.PlayerMaxHP, player.PlayerCurrentHP);
+                    oldHP = -1;
                     mc.sendKeystroke(Keys.Z);
                     player.Resting = false;
                     return false;

@@ -19,6 +19,7 @@ namespace FloBot.Main
         private Thread botThread;
         private Thread abortThread;
         private bool runBot = true;
+        private bool endBot = false;
         public StateMachine(mainForm main_form,Player player)
         {
             this.main_form = main_form;
@@ -34,8 +35,10 @@ namespace FloBot.Main
 
         public void endBotThread()
         {
-            botThread.Abort();
-            abortThread.Abort();
+            runBot = false ;
+            endBot = true;
+            botThread.Join();
+            abortThread.Join();
         }
 
         private IState currentState;
@@ -44,14 +47,14 @@ namespace FloBot.Main
             while (!main_form.IsDisposed && runBot)
             {
                 currentState = currentState.doTasks(main_form, mc, player);
-                Thread.Sleep(50);
+                Thread.Sleep(100);
             }
                 
         }
 
         private void check_Abort_Bot()
         {
-            while(true)
+            while(!endBot)
             {
                 Thread.Sleep(500);
                 if (mc.isGameInForeground() && main_form.cbDisableBot.Checked)
