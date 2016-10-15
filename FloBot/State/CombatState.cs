@@ -18,8 +18,6 @@ namespace FloBot.State
             /*
             *   Focus a Target when you do not have any
             */
-            if(main_form.cbAutoTarget.Checked)
-                new FocusTargetTask().doTask(main_form,mc,player);
 
             if(new CheckCurrentTargetTask().doTask(main_form,mc,player))
             {

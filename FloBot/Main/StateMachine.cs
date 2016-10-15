@@ -44,7 +44,7 @@ namespace FloBot.Main
             while (!main_form.IsDisposed && runBot)
             {
                 currentState = currentState.doTasks(main_form, mc, player);
-                Thread.Sleep(100);
+                Thread.Sleep(50);
             }
                 
         }
