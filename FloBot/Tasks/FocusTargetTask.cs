@@ -27,16 +27,18 @@ namespace FloBot.Tasks
             if (player.inCombat && !player.Target.isTargetFriendly())
                 return true;
 
+            if (player.MobToLootCount > 0)
+                return false;
+
             DateTime mobSearchBreak = DateTime.Now;
             while (
                     (DateTime.Now - mobSearchBreak).TotalSeconds < 5
-                    && player.MobToLootCount == 0
                     && !player.Target.isValidTarget(main_form)
                     || player.Target.isTargetFriendly() && (DateTime.Now - mobSearchBreak).TotalSeconds < 5
                 )
             {
                 mc.sendKeystroke(Keys.Tab);
-                Thread.Sleep(50);
+                Thread.Sleep(600);
             }
 
             while (!player.Target.isValidTarget(main_form) && player.Target.targetCurrentHP >0)

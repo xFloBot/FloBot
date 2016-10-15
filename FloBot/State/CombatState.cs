@@ -21,7 +21,7 @@ namespace FloBot.State
             if(main_form.cbAutoTarget.Checked)
                 new FocusTargetTask().doTask(main_form,mc,player);
 
-            while(new CheckCurrentTargetTask().doTask(main_form,mc,player))
+            if(new CheckCurrentTargetTask().doTask(main_form,mc,player))
             {
                 if(main_form.cbAutoBattle.Checked)
                 {
@@ -32,12 +32,11 @@ namespace FloBot.State
 
                     new UpdateTargetInfo().doTask(main_form, player);
                 }
-
-
-                Thread.Sleep(100);
+                
+                return new CombatState();
             }
 
-
+            
             return new AfterCombatState();
         }
     }

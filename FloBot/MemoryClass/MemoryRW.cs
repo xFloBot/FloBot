@@ -51,10 +51,7 @@ namespace FloBot.MemoryClass
                     hWnd = FindWindow("Florensia", null);
                     pHandel = ProcList[0].Handle;
                     baseAddress = ProcList[0].MainModule.BaseAddress;
-
-                    Console.WriteLine("ForeGround: "+GetForegroundWindow());
-                    Console.WriteLine("phandle: "+pHandel);
-                    Console.WriteLine("base: "+ ProcList[0].MainWindowHandle);
+                    
                     return true;
                 }
             }
