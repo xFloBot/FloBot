@@ -13,6 +13,8 @@ namespace FloBot.Model
         private int _castTime;
         private DateTime _lastTimeUsed;
         private Keys _hotkey;
+        private int _maxHP;
+        private int _minHP;
 
         public int Delay
         {
@@ -57,15 +59,40 @@ namespace FloBot.Model
             }
         }
 
-        public Skill (int delay,int castTime,Keys hotkey)
+        public int MaxHP
+        {
+            get
+            {
+                return _maxHP;
+            }
+        }
+
+        public int MinHP
+        {
+            get
+            {
+                return _minHP;
+            }
+        }
+
+        public Skill (int delay,int castTime,Keys hotkey,int maxHP,int minHP)
         {
             _delay = delay+castTime;
             _castTime = castTime;
             _hotkey = hotkey;
+            _maxHP = maxHP;
+            _minHP = minHP;
         }
         public bool skillCanBeUsed()
         {
             return ( DateTime.Now - LastTimeUsed ).TotalSeconds >= Delay;
+        }
+        public bool attackCanBeUsed(Target target)
+        {
+            return (DateTime.Now - LastTimeUsed).TotalSeconds >= Delay 
+                && (target.targetMaxHP/100*MaxHP)>=target.targetCurrentHP
+                && (target.targetMaxHP / 100 * MinHP) <= target.targetCurrentHP
+                ;
         }
 
         public override bool Equals(Object obj)

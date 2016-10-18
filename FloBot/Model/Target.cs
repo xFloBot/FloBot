@@ -45,6 +45,7 @@ namespace FloBot.Model
         {
             get
             {
+             
                 return AddressUtil.getTargetCurrentHP();
             }
         }
@@ -76,10 +77,12 @@ namespace FloBot.Model
         {
             int range;
             int ownLevel = Int32.Parse(main_form.lblCharLvL.Text);
-            int monsterLevel;
+            int monsterLevel = 1;
+
             //TryParse Target level(It's stored as String in the address dunno why)
-            if (!Int32.TryParse(AddressUtil.getTargetLevel(), out monsterLevel))
-                return false;
+            if (!Int32.TryParse(targetLevel, out monsterLevel))
+                return false ;
+         
             //Try parse range
             if (!Int32.TryParse(main_form.tbLvLRange.Text, out range)) return false;
             //check if monster level is bigger than ownLevel+ range || smaller than ownLevel-range

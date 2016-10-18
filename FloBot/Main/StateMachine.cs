@@ -37,17 +37,18 @@ namespace FloBot.Main
         {
             runBot = false ;
             endBot = true;
-            botThread.Join();
             abortThread.Join();
+            botThread.Join();
+            
         }
 
         private IState currentState;
         private void start_Method()
         {
-            while (!main_form.IsDisposed && runBot)
+            while (runBot)
             {
                 currentState = currentState.doTasks(main_form, mc, player);
-                Thread.Sleep(100);
+                //Thread.Sleep(50);
             }
                 
         }

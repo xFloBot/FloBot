@@ -15,8 +15,12 @@ namespace FloBot.State
         public IState doTasks(mainForm main_form, MemoryRW mc, Player player)
         {
 
-            while (!new FindGameHandlerTask().doTask(main_form,mc,player)) Thread.Sleep(1000);
-
+            while (!new FindGameHandlerTask().doTask(main_form, mc, player))
+            {
+                Thread.Sleep(500);
+                return new FindGameState();
+            }
+            Thread.Sleep(100);
             return new PreCombatState();
         }
          

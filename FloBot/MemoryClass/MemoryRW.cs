@@ -26,31 +26,58 @@ namespace FloBot.MemoryClass
         public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
         [DllImport("user32.dll")]
         private static extern IntPtr GetForegroundWindow();
+        [DllImport("user32.dll")]
+        static extern int SetWindowText(IntPtr hWnd, string text);
+
+
         public IntPtr getBaseAdress()
         {
             return baseAddress;
         }
 
         private IntPtr windowHandler;
-        
+        private Process yourProcess = null;
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        public static extern bool GetExitCodeProcess(IntPtr hProcess, out uint ExitCode);
+        public bool isProcessStillRunning
+        {
+            get
+            {
+                if (yourProcess == null)
+                    return false;
+                uint exitCode = 0;
+                if(!GetExitCodeProcess(pHandel, out exitCode))return false;
+                
+                return exitCode == 259;
+            }
+        }
         public bool isGameInForeground()
         {
             return windowHandler == GetForegroundWindow();
         }
 
-        public bool Process_Handle(string ProcessName)
+        public bool Process_Handle(string ProcessName,string multiClientName,int processNumber,String windowName)
         {
             try
             {
-                Process[] ProcList = Process.GetProcessesByName(ProcessName);
+                Process[] ProcList = Process.GetProcessesByName(multiClientName);
                 if (ProcList.Length == 0)
-                    return false;
-                else
                 {
-                    windowHandler = ProcList[0].MainWindowHandle;
-                    hWnd = FindWindow("Florensia", null);
-                    pHandel = ProcList[0].Handle;
-                    baseAddress = ProcList[0].MainModule.BaseAddress;
+
+                    ProcList = Process.GetProcessesByName(ProcessName);
+                    if (ProcList.Length == 0)
+                        return false;
+                }
+
+                if (ProcList.Length != 0 && ProcList.Length > processNumber) ;
+                {
+                    yourProcess = ProcList[processNumber];
+                    windowHandler = yourProcess.MainWindowHandle;
+                    SetWindowText(windowHandler, windowName);
+                    hWnd = FindWindow(null, windowName);
+                    pHandel = yourProcess.Handle;
+                    baseAddress = yourProcess.MainModule.BaseAddress;
                     
                     return true;
                 }

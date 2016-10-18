@@ -28,17 +28,17 @@ namespace FloBot.Tasks
                     return true;
                 else
                     delayTime = 0;
-            try
-            {
-
-                foreach (Skill attk in player.AttArray)
+            Skill[] copy = new Skill[player.AttArray.Count];
+            player.AttArray.CopyTo(copy);
+            foreach (Skill attk in copy)
                 {
+              
 
-
-                    if (attk.skillCanBeUsed())
+                    if (attk.attackCanBeUsed(player.Target))
                     {
                         if (!player.inCombat)
                             return false;
+                    
                         mc.sendKeystroke(attk.Hotkey);
 
                         while (player.Pos.moved())
@@ -54,11 +54,8 @@ namespace FloBot.Tasks
                     }
 
                 }
-            }
-            catch (InvalidOperationException)
-            {
-                return true;
-            }
+           
+            
 
             return true;
         }

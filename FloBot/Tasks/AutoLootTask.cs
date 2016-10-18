@@ -21,14 +21,17 @@ namespace FloBot.Tasks
         {
             while(!player.inCombat && player.MobToLootCount>0)
             {
+                int counter = 0;
+                while (counter++ < 10 && !player.inCombat) Thread.Sleep(100);
                 mc.sendKeystroke(Keys.X);
-                Thread.Sleep(100);
+                
                 while (player.Pos.moved() && !player.inCombat) Thread.Sleep(100);
 
                 if (player.inCombat)
                     return true;
 
                 player.MobToLootCount--;
+                Console.WriteLine("MobToLoot decrease:{0}", player.MobToLootCount);
                 Thread.Sleep(2000);
             }
             

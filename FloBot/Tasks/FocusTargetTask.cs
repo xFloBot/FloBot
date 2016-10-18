@@ -46,7 +46,7 @@ namespace FloBot.Tasks
                 mc.sendKeystroke(Keys.Escape);
                 Thread.Sleep(50);
             }
-            return true;
+            return false;
 
         }
     }

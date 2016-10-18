@@ -21,7 +21,13 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            if (mc.Process_Handle(gameName))
+            if (mc.isProcessStillRunning)
+                return true;
+
+            int number = 0;
+            Int32.TryParse(main_form.tbProcessID.Text, out number);
+
+            if (mc.Process_Handle(gameName, number,main_form.tbProcessName.Text))
             {
                 main_form.lblGameFound.Text = "Florensia gefunden";
                 return true;

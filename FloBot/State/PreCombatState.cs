@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using FloBot.MemoryClass;
 using FloBot.Tasks;
 using FloBot.Model;
+using System.Threading;
 
 namespace FloBot.State
 {
@@ -20,12 +21,23 @@ namespace FloBot.State
             new UpdateCharInfoTask().doTask(main_form,player);
 
             new UpdateTargetInfo().doTask(main_form,player);
+            /*
+             *    Revive incase you DIED Noob.
+             */
+            if (new ReviveIfNeededTask().doTask(main_form, mc, player))
+                return new PreCombatState();
 
             /*
             *   Check if you need to rest when yes set State to FindGameState
             */
-            if(new GetRestTask().doTask(main_form, mc, player))
-                return new FindGameState();
+            if (new GetRestTask().doTask(main_form, mc, player))
+                return new PreCombatState();
+            /*
+            *   Loot leftovers
+            */
+            if (main_form.cbAutoLoot.Checked)
+                new AutoLootTask().doTask(main_form, mc, player);
+
             /*
             *   Buff yourself if buffs are set
             */
@@ -36,6 +48,8 @@ namespace FloBot.State
 
                 if (main_form.cbAutoTarget.Checked)
                     new FocusTargetTask().doTask(main_form, mc, player);
+
+                Thread.Sleep(100);
                 return new CombatState();
             }
                 

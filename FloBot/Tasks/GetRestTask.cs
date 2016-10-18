@@ -20,8 +20,7 @@ namespace FloBot.Tasks
         private static int oldHP = -1;
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            if (player.PlayerCurrentHP == 0)
-                return false;
+            
             //Check if in combat yes -> return false (not resting) incase you were resting, stand up and set resting to false
             if (player.inCombat)
                 if (player.Resting)
@@ -49,6 +48,9 @@ namespace FloBot.Tasks
             {
                 while (player.Pos.moved())
                     Thread.Sleep(100);
+                int count = 0;
+                while (count++ < 15 && !player.inCombat) Thread.Sleep(100);
+
                 if (player.inCombat)
                     return false;
                 int counter = 0;
@@ -63,10 +65,11 @@ namespace FloBot.Tasks
             {
                 if (player.PlayerMaxHP == player.PlayerCurrentHP && player.PlayerMaxMP == player.PlayerCurrentMP)
                 {
-                    Console.WriteLine("Player max HP: {0} \nPlayer current HP:{1}", player.PlayerMaxHP, player.PlayerCurrentHP);
+                  
                     oldHP = -1;
                     mc.sendKeystroke(Keys.Z);
                     player.Resting = false;
+                    Thread.Sleep(1500);
                     return false;
                 }
                 else

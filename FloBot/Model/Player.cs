@@ -1,7 +1,6 @@
 ﻿using FloBot.MemoryClass;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -17,6 +16,7 @@ namespace FloBot.Model
         private  ArrayList _attArray = new ArrayList();
         private int _MobToLootCount = 0;
         private bool _Resting = false;
+        private bool _buffed = false;
         private Single oldPercentage=-1;
         private int oldExp =-1;
         private int oldMobExp =-1;
@@ -112,10 +112,7 @@ namespace FloBot.Model
         {
             get
             {
-                int MaxHP;
-                while ((MaxHP = AddressUtil.getCharMaxHP()) == 1) Thread.Sleep(50);
-
-                return MaxHP;
+                return AddressUtil.getCharMaxHP();
             }
         }
 
@@ -130,10 +127,7 @@ namespace FloBot.Model
         {
             get
             {
-                int MaxMP;
-                while ((MaxMP = AddressUtil.getCharMaxMP()) == 1) Thread.Sleep(50);
-
-                return MaxMP;
+                return AddressUtil.getCharMaxMP();
             }
         }
 
@@ -144,6 +138,20 @@ namespace FloBot.Model
                 return AddressUtil.getCharCurrentMP();
             }
         }
+
+        public bool Buffed
+        {
+            get
+            {
+                return _buffed;
+            }
+
+            set
+            {
+                _buffed = value;
+            }
+        }
+
         public bool targetingMyself()
         {
 
