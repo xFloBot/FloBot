@@ -73,7 +73,10 @@ namespace FloBot.Tasks
                     return false;
                 }
                 else
+                {
+                    Thread.Sleep(200);
                     return true;
+                }
             }
             return false;
 
