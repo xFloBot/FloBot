@@ -89,6 +89,18 @@ namespace FloBot.Model
         }
         public bool attackCanBeUsed(Target target)
         {
+            if(Keys.NumPad3 == Hotkey)
+            {
+                Console.WriteLine("3DelayTime:{0}", (DateTime.Now - LastTimeUsed).TotalSeconds);
+                Console.WriteLine("3HP in range?{0}", (target.targetMaxHP / 100 * MaxHP) >= target.targetCurrentHP);
+                Console.WriteLine("3HP in range2?{0}", (target.targetMaxHP / 100 * MinHP) <= target.targetCurrentHP);
+            }
+            if (Keys.NumPad1 == Hotkey)
+            {
+                Console.WriteLine("1DelayTime:{0}", (DateTime.Now - LastTimeUsed).TotalSeconds);
+                Console.WriteLine("1HP in range?{0}", (target.targetMaxHP / 100 * MaxHP) >= target.targetCurrentHP);
+                Console.WriteLine("1HP in range2?{0}", (target.targetMaxHP / 100 * MinHP) <= target.targetCurrentHP);
+            }
             return (DateTime.Now - LastTimeUsed).TotalSeconds >= Delay 
                 && (target.targetMaxHP/100*MaxHP)>=target.targetCurrentHP
                 && (target.targetMaxHP / 100 * MinHP) <= target.targetCurrentHP

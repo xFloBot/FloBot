@@ -63,11 +63,18 @@
             this.lblEmMP = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.tbNotRevivePercent = new System.Windows.Forms.TextBox();
             this.lblDeathDate = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.cbEnableCombatState = new System.Windows.Forms.CheckBox();
+            this.cbAutoTarget = new System.Windows.Forms.CheckBox();
+            this.cbAutoLoot = new System.Windows.Forms.CheckBox();
+            this.cbAutoBattle = new System.Windows.Forms.CheckBox();
+            this.tbLvLRange = new System.Windows.Forms.TextBox();
             this.tbHotkeys = new System.Windows.Forms.TabControl();
             this.tp1 = new System.Windows.Forms.TabPage();
+            this.tbMin1 = new System.Windows.Forms.TrackBar();
             this.label54 = new System.Windows.Forms.Label();
             this.lblMin1 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
@@ -75,8 +82,14 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
+            this.tbMax1 = new System.Windows.Forms.TrackBar();
             this.label21 = new System.Windows.Forms.Label();
+            this.tbCast1 = new System.Windows.Forms.TextBox();
+            this.tbDelay1 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.cbUseAtt1 = new System.Windows.Forms.CheckBox();
+            this.rbAttack1 = new System.Windows.Forms.RadioButton();
+            this.rbBuff1 = new System.Windows.Forms.RadioButton();
             this.tp2 = new System.Windows.Forms.TabPage();
             this.label55 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
@@ -85,6 +98,15 @@
             this.label47 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.lblMin2 = new System.Windows.Forms.Label();
+            this.lblMax2 = new System.Windows.Forms.Label();
+            this.tbMin2 = new System.Windows.Forms.TrackBar();
+            this.tbMax2 = new System.Windows.Forms.TrackBar();
+            this.tbCast2 = new System.Windows.Forms.TextBox();
+            this.tbDelay2 = new System.Windows.Forms.TextBox();
+            this.cbUseSkill2 = new System.Windows.Forms.CheckBox();
+            this.rbAtt2 = new System.Windows.Forms.RadioButton();
+            this.rbBuff2 = new System.Windows.Forms.RadioButton();
             this.tp3 = new System.Windows.Forms.TabPage();
             this.label38 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -93,6 +115,15 @@
             this.label52 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.lblMin3 = new System.Windows.Forms.Label();
+            this.lblMax3 = new System.Windows.Forms.Label();
+            this.tbMin3 = new System.Windows.Forms.TrackBar();
+            this.tbMax3 = new System.Windows.Forms.TrackBar();
+            this.tbCast3 = new System.Windows.Forms.TextBox();
+            this.tbDelay3 = new System.Windows.Forms.TextBox();
+            this.cbUseSkill3 = new System.Windows.Forms.CheckBox();
+            this.rbAtt3 = new System.Windows.Forms.RadioButton();
+            this.rbBuff3 = new System.Windows.Forms.RadioButton();
             this.tp4 = new System.Windows.Forms.TabPage();
             this.label26 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -141,38 +172,6 @@
             this.label57 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.tp0 = new System.Windows.Forms.TabPage();
-            this.label19 = new System.Windows.Forms.Label();
-            this.cbDisableBot = new System.Windows.Forms.CheckBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.tbProcessName = new System.Windows.Forms.TextBox();
-            this.tbProcessID = new System.Windows.Forms.TextBox();
-            this.tbMin1 = new System.Windows.Forms.TrackBar();
-            this.tbMax1 = new System.Windows.Forms.TrackBar();
-            this.tbCast1 = new System.Windows.Forms.TextBox();
-            this.tbDelay1 = new System.Windows.Forms.TextBox();
-            this.cbUseAtt1 = new System.Windows.Forms.CheckBox();
-            this.rbAttack1 = new System.Windows.Forms.RadioButton();
-            this.rbBuff1 = new System.Windows.Forms.RadioButton();
-            this.lblMin2 = new System.Windows.Forms.Label();
-            this.lblMax2 = new System.Windows.Forms.Label();
-            this.tbMin2 = new System.Windows.Forms.TrackBar();
-            this.tbMax2 = new System.Windows.Forms.TrackBar();
-            this.tbCast2 = new System.Windows.Forms.TextBox();
-            this.tbDelay2 = new System.Windows.Forms.TextBox();
-            this.cbUseSkill2 = new System.Windows.Forms.CheckBox();
-            this.rbAtt2 = new System.Windows.Forms.RadioButton();
-            this.rbBuff2 = new System.Windows.Forms.RadioButton();
-            this.lblMin3 = new System.Windows.Forms.Label();
-            this.lblMax3 = new System.Windows.Forms.Label();
-            this.tbMin3 = new System.Windows.Forms.TrackBar();
-            this.tbMax3 = new System.Windows.Forms.TrackBar();
-            this.tbCast3 = new System.Windows.Forms.TextBox();
-            this.tbDelay3 = new System.Windows.Forms.TextBox();
-            this.cbUseSkill3 = new System.Windows.Forms.CheckBox();
-            this.rbAtt3 = new System.Windows.Forms.RadioButton();
-            this.rbBuff3 = new System.Windows.Forms.RadioButton();
             this.lblMin9 = new System.Windows.Forms.Label();
             this.lblMax9 = new System.Windows.Forms.Label();
             this.tbMin9 = new System.Windows.Forms.TrackBar();
@@ -182,10 +181,13 @@
             this.cbUseSkill9 = new System.Windows.Forms.CheckBox();
             this.rbAtt9 = new System.Windows.Forms.RadioButton();
             this.rbBuff9 = new System.Windows.Forms.RadioButton();
-            this.cbAutoTarget = new System.Windows.Forms.CheckBox();
-            this.cbAutoLoot = new System.Windows.Forms.CheckBox();
-            this.cbAutoBattle = new System.Windows.Forms.CheckBox();
-            this.tbLvLRange = new System.Windows.Forms.TextBox();
+            this.tp0 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.cbDisableBot = new System.Windows.Forms.CheckBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.tbProcessName = new System.Windows.Forms.TextBox();
+            this.tbProcessID = new System.Windows.Forms.TextBox();
             this.tbEmHP = new System.Windows.Forms.TrackBar();
             this.tbEmMP = new System.Windows.Forms.TrackBar();
             this.tbRestMP = new System.Windows.Forms.TrackBar();
@@ -195,20 +197,20 @@
             this.groupBox3.SuspendLayout();
             this.tbHotkeys.SuspendLayout();
             this.tp1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax1)).BeginInit();
             this.tp2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax2)).BeginInit();
             this.tp3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax3)).BeginInit();
             this.tp4.SuspendLayout();
             this.tp5.SuspendLayout();
             this.tp6.SuspendLayout();
             this.tp7.SuspendLayout();
             this.tp8.SuspendLayout();
             this.tp9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmHP)).BeginInit();
@@ -307,9 +309,9 @@
             this.groupBox1.Controls.Add(this.lblTarget);
             this.groupBox1.Controls.Add(this.lblHP);
             this.groupBox1.Location = new System.Drawing.Point(21, 267);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(381, 90);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
@@ -343,9 +345,9 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(21, 37);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(381, 229);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
@@ -589,6 +591,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label60);
+            this.groupBox3.Controls.Add(this.tbNotRevivePercent);
             this.groupBox3.Controls.Add(this.lblDeathDate);
             this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.cbEnableCombatState);
@@ -598,13 +602,31 @@
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.tbLvLRange);
             this.groupBox3.Location = new System.Drawing.Point(411, 37);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(267, 320);
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Kampf einstellungen";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(3, 281);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(162, 16);
+            this.label60.TabIndex = 15;
+            this.label60.Text = "Nicht wb wenn % verloren:";
+            // 
+            // tbNotRevivePercent
+            // 
+            this.tbNotRevivePercent.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbRevivePercent", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbNotRevivePercent.Location = new System.Drawing.Point(162, 278);
+            this.tbNotRevivePercent.Name = "tbNotRevivePercent";
+            this.tbNotRevivePercent.Size = new System.Drawing.Size(100, 22);
+            this.tbNotRevivePercent.TabIndex = 14;
+            this.tbNotRevivePercent.Text = global::FloBot.Properties.Settings.Default.tbRevivePercent;
             // 
             // lblDeathDate
             // 
@@ -630,12 +652,63 @@
             // 
             this.cbEnableCombatState.AutoSize = true;
             this.cbEnableCombatState.Location = new System.Drawing.Point(9, 39);
-            this.cbEnableCombatState.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbEnableCombatState.Margin = new System.Windows.Forms.Padding(4);
             this.cbEnableCombatState.Name = "cbEnableCombatState";
             this.cbEnableCombatState.Size = new System.Drawing.Size(86, 20);
             this.cbEnableCombatState.TabIndex = 11;
             this.cbEnableCombatState.Text = "Aktivieren";
             this.cbEnableCombatState.UseVisualStyleBackColor = true;
+            this.cbEnableCombatState.CheckedChanged += new System.EventHandler(this.cbEnableCombatState_CheckedChanged);
+            // 
+            // cbAutoTarget
+            // 
+            this.cbAutoTarget.AutoSize = true;
+            this.cbAutoTarget.Checked = global::FloBot.Properties.Settings.Default.cbAutoTarget;
+            this.cbAutoTarget.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoTarget", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbAutoTarget.Location = new System.Drawing.Point(27, 74);
+            this.cbAutoTarget.Margin = new System.Windows.Forms.Padding(4);
+            this.cbAutoTarget.Name = "cbAutoTarget";
+            this.cbAutoTarget.Size = new System.Drawing.Size(170, 20);
+            this.cbAutoTarget.TabIndex = 10;
+            this.cbAutoTarget.Text = "Automatisch Ziel wählen";
+            this.cbAutoTarget.UseVisualStyleBackColor = true;
+            // 
+            // cbAutoLoot
+            // 
+            this.cbAutoLoot.AutoSize = true;
+            this.cbAutoLoot.Checked = global::FloBot.Properties.Settings.Default.cbAutoLoot;
+            this.cbAutoLoot.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoLoot", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbAutoLoot.Location = new System.Drawing.Point(27, 206);
+            this.cbAutoLoot.Margin = new System.Windows.Forms.Padding(4);
+            this.cbAutoLoot.Name = "cbAutoLoot";
+            this.cbAutoLoot.Size = new System.Drawing.Size(140, 20);
+            this.cbAutoLoot.TabIndex = 9;
+            this.cbAutoLoot.Text = "Automatisch looten";
+            this.cbAutoLoot.UseVisualStyleBackColor = true;
+            this.cbAutoLoot.CheckedChanged += new System.EventHandler(this.cbAutoLoot_CheckedChanged);
+            // 
+            // cbAutoBattle
+            // 
+            this.cbAutoBattle.AutoSize = true;
+            this.cbAutoBattle.Checked = global::FloBot.Properties.Settings.Default.cbAutoAttack;
+            this.cbAutoBattle.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoAttack", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbAutoBattle.Location = new System.Drawing.Point(27, 174);
+            this.cbAutoBattle.Margin = new System.Windows.Forms.Padding(4);
+            this.cbAutoBattle.Name = "cbAutoBattle";
+            this.cbAutoBattle.Size = new System.Drawing.Size(160, 20);
+            this.cbAutoBattle.TabIndex = 9;
+            this.cbAutoBattle.Text = "Automatisch Angreifen";
+            this.cbAutoBattle.UseVisualStyleBackColor = true;
+            // 
+            // tbLvLRange
+            // 
+            this.tbLvLRange.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "maxLevelDif", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbLvLRange.Location = new System.Drawing.Point(73, 133);
+            this.tbLvLRange.Margin = new System.Windows.Forms.Padding(4);
+            this.tbLvLRange.Name = "tbLvLRange";
+            this.tbLvLRange.Size = new System.Drawing.Size(132, 22);
+            this.tbLvLRange.TabIndex = 6;
+            this.tbLvLRange.Text = global::FloBot.Properties.Settings.Default.maxLevelDif;
             // 
             // tbHotkeys
             // 
@@ -650,7 +723,7 @@
             this.tbHotkeys.Controls.Add(this.tp9);
             this.tbHotkeys.Controls.Add(this.tp0);
             this.tbHotkeys.Location = new System.Drawing.Point(700, 37);
-            this.tbHotkeys.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbHotkeys.Margin = new System.Windows.Forms.Padding(4);
             this.tbHotkeys.Name = "tbHotkeys";
             this.tbHotkeys.SelectedIndex = 0;
             this.tbHotkeys.Size = new System.Drawing.Size(639, 281);
@@ -675,13 +748,27 @@
             this.tp1.Controls.Add(this.rbAttack1);
             this.tp1.Controls.Add(this.rbBuff1);
             this.tp1.Location = new System.Drawing.Point(4, 25);
-            this.tp1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp1.Margin = new System.Windows.Forms.Padding(4);
             this.tp1.Name = "tp1";
-            this.tp1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp1.Padding = new System.Windows.Forms.Padding(4);
             this.tp1.Size = new System.Drawing.Size(631, 252);
             this.tp1.TabIndex = 0;
             this.tp1.Text = "1";
             this.tp1.UseVisualStyleBackColor = true;
+            // 
+            // tbMin1
+            // 
+            this.tbMin1.AutoSize = false;
+            this.tbMin1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin1.Location = new System.Drawing.Point(299, 76);
+            this.tbMin1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin1.Maximum = 100;
+            this.tbMin1.Name = "tbMin1";
+            this.tbMin1.Size = new System.Drawing.Size(312, 38);
+            this.tbMin1.TabIndex = 17;
+            this.tbMin1.TickFrequency = 10;
+            this.tbMin1.Value = global::FloBot.Properties.Settings.Default.tbMin1;
+            this.tbMin1.Scroll += new System.EventHandler(this.tbMin1_Scroll);
             // 
             // label54
             // 
@@ -753,6 +840,20 @@
             this.label39.TabIndex = 15;
             this.label39.Text = "Nutzen ab";
             // 
+            // tbMax1
+            // 
+            this.tbMax1.AutoSize = false;
+            this.tbMax1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax1.Location = new System.Drawing.Point(299, 39);
+            this.tbMax1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax1.Maximum = 100;
+            this.tbMax1.Name = "tbMax1";
+            this.tbMax1.Size = new System.Drawing.Size(312, 38);
+            this.tbMax1.TabIndex = 12;
+            this.tbMax1.TickFrequency = 10;
+            this.tbMax1.Value = global::FloBot.Properties.Settings.Default.tbMax1;
+            this.tbMax1.Scroll += new System.EventHandler(this.tbMax1_Scroll);
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -763,6 +864,28 @@
             this.label21.TabIndex = 5;
             this.label21.Text = "Cast time:";
             // 
+            // tbCast1
+            // 
+            this.tbCast1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCastSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast1.Location = new System.Drawing.Point(35, 166);
+            this.tbCast1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCast1.Name = "tbCast1";
+            this.tbCast1.Size = new System.Drawing.Size(132, 22);
+            this.tbCast1.TabIndex = 4;
+            this.tbCast1.Text = global::FloBot.Properties.Settings.Default.tbCastSkill1;
+            this.tbCast1.TextChanged += new System.EventHandler(this.tbCast1_TextChanged);
+            // 
+            // tbDelay1
+            // 
+            this.tbDelay1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelaySkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay1.Location = new System.Drawing.Point(35, 113);
+            this.tbDelay1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDelay1.Name = "tbDelay1";
+            this.tbDelay1.Size = new System.Drawing.Size(132, 22);
+            this.tbDelay1.TabIndex = 4;
+            this.tbDelay1.Text = global::FloBot.Properties.Settings.Default.tbDelaySkill1;
+            this.tbDelay1.TextChanged += new System.EventHandler(this.tbDelay1_TextChanged);
+            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -772,6 +895,49 @@
             this.label20.Size = new System.Drawing.Size(47, 16);
             this.label20.TabIndex = 3;
             this.label20.Text = "Delay:";
+            // 
+            // cbUseAtt1
+            // 
+            this.cbUseAtt1.AutoSize = true;
+            this.cbUseAtt1.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill1;
+            this.cbUseAtt1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseAtt1.Location = new System.Drawing.Point(8, 5);
+            this.cbUseAtt1.Margin = new System.Windows.Forms.Padding(4);
+            this.cbUseAtt1.Name = "cbUseAtt1";
+            this.cbUseAtt1.Size = new System.Drawing.Size(52, 20);
+            this.cbUseAtt1.TabIndex = 2;
+            this.cbUseAtt1.Text = "Use";
+            this.cbUseAtt1.UseVisualStyleBackColor = true;
+            this.cbUseAtt1.CheckedChanged += new System.EventHandler(this.cbUseAtt1_CheckedChanged);
+            // 
+            // rbAttack1
+            // 
+            this.rbAttack1.AutoSize = true;
+            this.rbAttack1.Checked = global::FloBot.Properties.Settings.Default.rbAttackSkill1;
+            this.rbAttack1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAttackSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAttack1.Location = new System.Drawing.Point(29, 63);
+            this.rbAttack1.Margin = new System.Windows.Forms.Padding(4);
+            this.rbAttack1.Name = "rbAttack1";
+            this.rbAttack1.Size = new System.Drawing.Size(91, 20);
+            this.rbAttack1.TabIndex = 1;
+            this.rbAttack1.TabStop = true;
+            this.rbAttack1.Text = "Attack Skill";
+            this.rbAttack1.UseVisualStyleBackColor = true;
+            this.rbAttack1.CheckedChanged += new System.EventHandler(this.rbAttack1_CheckedChanged);
+            // 
+            // rbBuff1
+            // 
+            this.rbBuff1.AutoSize = true;
+            this.rbBuff1.Checked = global::FloBot.Properties.Settings.Default.rbBuffSkill1;
+            this.rbBuff1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuffSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff1.Location = new System.Drawing.Point(29, 33);
+            this.rbBuff1.Margin = new System.Windows.Forms.Padding(4);
+            this.rbBuff1.Name = "rbBuff1";
+            this.rbBuff1.Size = new System.Drawing.Size(74, 20);
+            this.rbBuff1.TabIndex = 0;
+            this.rbBuff1.Text = "Buff skill";
+            this.rbBuff1.UseVisualStyleBackColor = true;
+            this.rbBuff1.CheckedChanged += new System.EventHandler(this.rbBuff1_CheckedChanged);
             // 
             // tp2
             // 
@@ -792,9 +958,9 @@
             this.tp2.Controls.Add(this.rbAtt2);
             this.tp2.Controls.Add(this.rbBuff2);
             this.tp2.Location = new System.Drawing.Point(4, 25);
-            this.tp2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp2.Margin = new System.Windows.Forms.Padding(4);
             this.tp2.Name = "tp2";
-            this.tp2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp2.Padding = new System.Windows.Forms.Padding(4);
             this.tp2.Size = new System.Drawing.Size(631, 252);
             this.tp2.TabIndex = 1;
             this.tp2.Text = "2";
@@ -869,798 +1035,6 @@
             this.label23.Size = new System.Drawing.Size(47, 16);
             this.label23.TabIndex = 9;
             this.label23.Text = "Delay:";
-            // 
-            // tp3
-            // 
-            this.tp3.Controls.Add(this.label38);
-            this.tp3.Controls.Add(this.label48);
-            this.tp3.Controls.Add(this.label50);
-            this.tp3.Controls.Add(this.label51);
-            this.tp3.Controls.Add(this.label52);
-            this.tp3.Controls.Add(this.label24);
-            this.tp3.Controls.Add(this.label25);
-            this.tp3.Controls.Add(this.lblMin3);
-            this.tp3.Controls.Add(this.lblMax3);
-            this.tp3.Controls.Add(this.tbMin3);
-            this.tp3.Controls.Add(this.tbMax3);
-            this.tp3.Controls.Add(this.tbCast3);
-            this.tp3.Controls.Add(this.tbDelay3);
-            this.tp3.Controls.Add(this.cbUseSkill3);
-            this.tp3.Controls.Add(this.rbAtt3);
-            this.tp3.Controls.Add(this.rbBuff3);
-            this.tp3.Location = new System.Drawing.Point(4, 25);
-            this.tp3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tp3.Name = "tp3";
-            this.tp3.Size = new System.Drawing.Size(631, 252);
-            this.tp3.TabIndex = 2;
-            this.tp3.Text = "3";
-            this.tp3.UseVisualStyleBackColor = true;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(449, 6);
-            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(20, 16);
-            this.label38.TabIndex = 28;
-            this.label38.Text = "%";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(352, 6);
-            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(26, 16);
-            this.label48.TabIndex = 27;
-            this.label48.Text = "bis";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(213, 87);
-            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(29, 16);
-            this.label50.TabIndex = 23;
-            this.label50.Text = "min";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(209, 43);
-            this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(33, 16);
-            this.label51.TabIndex = 24;
-            this.label51.Text = "max";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(189, 6);
-            this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(68, 16);
-            this.label52.TabIndex = 22;
-            this.label52.Text = "Nutzen ab";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(27, 145);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(66, 16);
-            this.label24.TabIndex = 12;
-            this.label24.Text = "Cast time:";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(23, 94);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(47, 16);
-            this.label25.TabIndex = 9;
-            this.label25.Text = "Delay:";
-            // 
-            // tp4
-            // 
-            this.tp4.Controls.Add(this.label26);
-            this.tp4.Controls.Add(this.textBox5);
-            this.tp4.Controls.Add(this.textBox6);
-            this.tp4.Controls.Add(this.label27);
-            this.tp4.Controls.Add(this.checkBox3);
-            this.tp4.Controls.Add(this.radioButton5);
-            this.tp4.Controls.Add(this.radioButton6);
-            this.tp4.Location = new System.Drawing.Point(4, 25);
-            this.tp4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tp4.Name = "tp4";
-            this.tp4.Size = new System.Drawing.Size(631, 252);
-            this.tp4.TabIndex = 3;
-            this.tp4.Text = "4";
-            this.tp4.UseVisualStyleBackColor = true;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(27, 145);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(66, 16);
-            this.label26.TabIndex = 12;
-            this.label26.Text = "Cast time:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(31, 165);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(132, 22);
-            this.textBox5.TabIndex = 10;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(31, 112);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(132, 22);
-            this.textBox6.TabIndex = 11;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(23, 94);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(47, 16);
-            this.label27.TabIndex = 9;
-            this.label27.Text = "Delay:";
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(4, 4);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(52, 20);
-            this.checkBox3.TabIndex = 8;
-            this.checkBox3.Text = "Use";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(25, 62);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(91, 20);
-            this.radioButton5.TabIndex = 7;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Attack Skill";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(25, 32);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(74, 20);
-            this.radioButton6.TabIndex = 6;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Buff skill";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // tp5
-            // 
-            this.tp5.Controls.Add(this.label28);
-            this.tp5.Controls.Add(this.textBox7);
-            this.tp5.Controls.Add(this.textBox8);
-            this.tp5.Controls.Add(this.label29);
-            this.tp5.Controls.Add(this.checkBox4);
-            this.tp5.Controls.Add(this.radioButton7);
-            this.tp5.Controls.Add(this.radioButton8);
-            this.tp5.Location = new System.Drawing.Point(4, 25);
-            this.tp5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tp5.Name = "tp5";
-            this.tp5.Size = new System.Drawing.Size(631, 252);
-            this.tp5.TabIndex = 4;
-            this.tp5.Text = "5";
-            this.tp5.UseVisualStyleBackColor = true;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(27, 145);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(66, 16);
-            this.label28.TabIndex = 12;
-            this.label28.Text = "Cast time:";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(31, 165);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(132, 22);
-            this.textBox7.TabIndex = 10;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(31, 112);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(132, 22);
-            this.textBox8.TabIndex = 11;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(23, 94);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(47, 16);
-            this.label29.TabIndex = 9;
-            this.label29.Text = "Delay:";
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(4, 4);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(52, 20);
-            this.checkBox4.TabIndex = 8;
-            this.checkBox4.Text = "Use";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(25, 62);
-            this.radioButton7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(91, 20);
-            this.radioButton7.TabIndex = 7;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Attack Skill";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(25, 32);
-            this.radioButton8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(74, 20);
-            this.radioButton8.TabIndex = 6;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Buff skill";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // tp6
-            // 
-            this.tp6.Controls.Add(this.label30);
-            this.tp6.Controls.Add(this.textBox9);
-            this.tp6.Controls.Add(this.textBox10);
-            this.tp6.Controls.Add(this.label31);
-            this.tp6.Controls.Add(this.checkBox5);
-            this.tp6.Controls.Add(this.radioButton9);
-            this.tp6.Controls.Add(this.radioButton10);
-            this.tp6.Location = new System.Drawing.Point(4, 25);
-            this.tp6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tp6.Name = "tp6";
-            this.tp6.Size = new System.Drawing.Size(631, 252);
-            this.tp6.TabIndex = 5;
-            this.tp6.Text = "6";
-            this.tp6.UseVisualStyleBackColor = true;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(27, 145);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(66, 16);
-            this.label30.TabIndex = 12;
-            this.label30.Text = "Cast time:";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(31, 165);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(132, 22);
-            this.textBox9.TabIndex = 10;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(31, 112);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(132, 22);
-            this.textBox10.TabIndex = 11;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(23, 94);
-            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(47, 16);
-            this.label31.TabIndex = 9;
-            this.label31.Text = "Delay:";
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(4, 4);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(52, 20);
-            this.checkBox5.TabIndex = 8;
-            this.checkBox5.Text = "Use";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton9
-            // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(25, 62);
-            this.radioButton9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(91, 20);
-            this.radioButton9.TabIndex = 7;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Attack Skill";
-            this.radioButton9.UseVisualStyleBackColor = true;
-            // 
-            // radioButton10
-            // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(25, 32);
-            this.radioButton10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(74, 20);
-            this.radioButton10.TabIndex = 6;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Buff skill";
-            this.radioButton10.UseVisualStyleBackColor = true;
-            // 
-            // tp7
-            // 
-            this.tp7.Controls.Add(this.label32);
-            this.tp7.Controls.Add(this.textBox11);
-            this.tp7.Controls.Add(this.textBox12);
-            this.tp7.Controls.Add(this.label33);
-            this.tp7.Controls.Add(this.checkBox6);
-            this.tp7.Controls.Add(this.radioButton11);
-            this.tp7.Controls.Add(this.radioButton12);
-            this.tp7.Location = new System.Drawing.Point(4, 25);
-            this.tp7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tp7.Name = "tp7";
-            this.tp7.Size = new System.Drawing.Size(631, 252);
-            this.tp7.TabIndex = 6;
-            this.tp7.Text = "7";
-            this.tp7.UseVisualStyleBackColor = true;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(27, 145);
-            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(66, 16);
-            this.label32.TabIndex = 12;
-            this.label32.Text = "Cast time:";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(31, 165);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(132, 22);
-            this.textBox11.TabIndex = 10;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(31, 112);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(132, 22);
-            this.textBox12.TabIndex = 11;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(23, 94);
-            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(47, 16);
-            this.label33.TabIndex = 9;
-            this.label33.Text = "Delay:";
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(4, 4);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(52, 20);
-            this.checkBox6.TabIndex = 8;
-            this.checkBox6.Text = "Use";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton11
-            // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(25, 62);
-            this.radioButton11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(91, 20);
-            this.radioButton11.TabIndex = 7;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Attack Skill";
-            this.radioButton11.UseVisualStyleBackColor = true;
-            // 
-            // radioButton12
-            // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(25, 32);
-            this.radioButton12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(74, 20);
-            this.radioButton12.TabIndex = 6;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Buff skill";
-            this.radioButton12.UseVisualStyleBackColor = true;
-            // 
-            // tp8
-            // 
-            this.tp8.Controls.Add(this.label34);
-            this.tp8.Controls.Add(this.textBox13);
-            this.tp8.Controls.Add(this.textBox14);
-            this.tp8.Controls.Add(this.label35);
-            this.tp8.Controls.Add(this.checkBox7);
-            this.tp8.Controls.Add(this.radioButton13);
-            this.tp8.Controls.Add(this.radioButton14);
-            this.tp8.Location = new System.Drawing.Point(4, 25);
-            this.tp8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tp8.Name = "tp8";
-            this.tp8.Size = new System.Drawing.Size(631, 252);
-            this.tp8.TabIndex = 7;
-            this.tp8.Text = "8";
-            this.tp8.UseVisualStyleBackColor = true;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(27, 145);
-            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(66, 16);
-            this.label34.TabIndex = 12;
-            this.label34.Text = "Cast time:";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(31, 165);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(132, 22);
-            this.textBox13.TabIndex = 10;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(31, 112);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(132, 22);
-            this.textBox14.TabIndex = 11;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(23, 94);
-            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(47, 16);
-            this.label35.TabIndex = 9;
-            this.label35.Text = "Delay:";
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(4, 4);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(52, 20);
-            this.checkBox7.TabIndex = 8;
-            this.checkBox7.Text = "Use";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton13
-            // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(25, 62);
-            this.radioButton13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(91, 20);
-            this.radioButton13.TabIndex = 7;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "Attack Skill";
-            this.radioButton13.UseVisualStyleBackColor = true;
-            // 
-            // radioButton14
-            // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Location = new System.Drawing.Point(25, 32);
-            this.radioButton14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(74, 20);
-            this.radioButton14.TabIndex = 6;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "Buff skill";
-            this.radioButton14.UseVisualStyleBackColor = true;
-            // 
-            // tp9
-            // 
-            this.tp9.Controls.Add(this.label44);
-            this.tp9.Controls.Add(this.label49);
-            this.tp9.Controls.Add(this.label53);
-            this.tp9.Controls.Add(this.label56);
-            this.tp9.Controls.Add(this.label57);
-            this.tp9.Controls.Add(this.label36);
-            this.tp9.Controls.Add(this.label37);
-            this.tp9.Controls.Add(this.lblMin9);
-            this.tp9.Controls.Add(this.lblMax9);
-            this.tp9.Controls.Add(this.tbMin9);
-            this.tp9.Controls.Add(this.tbMax9);
-            this.tp9.Controls.Add(this.tbCast9);
-            this.tp9.Controls.Add(this.tbDelay9);
-            this.tp9.Controls.Add(this.cbUseSkill9);
-            this.tp9.Controls.Add(this.rbAtt9);
-            this.tp9.Controls.Add(this.rbBuff9);
-            this.tp9.Location = new System.Drawing.Point(4, 25);
-            this.tp9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tp9.Name = "tp9";
-            this.tp9.Size = new System.Drawing.Size(631, 252);
-            this.tp9.TabIndex = 8;
-            this.tp9.Text = "9";
-            this.tp9.UseVisualStyleBackColor = true;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(448, 6);
-            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(20, 16);
-            this.label44.TabIndex = 45;
-            this.label44.Text = "%";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(345, 6);
-            this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(26, 16);
-            this.label49.TabIndex = 44;
-            this.label49.Text = "bis";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(207, 87);
-            this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(29, 16);
-            this.label53.TabIndex = 40;
-            this.label53.Text = "min";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(203, 43);
-            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(33, 16);
-            this.label56.TabIndex = 41;
-            this.label56.Text = "max";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(183, 6);
-            this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(68, 16);
-            this.label57.TabIndex = 39;
-            this.label57.Text = "Nutzen ab";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(27, 145);
-            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(66, 16);
-            this.label36.TabIndex = 12;
-            this.label36.Text = "Cast time:";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(23, 94);
-            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(47, 16);
-            this.label37.TabIndex = 9;
-            this.label37.Text = "Delay:";
-            // 
-            // tp0
-            // 
-            this.tp0.Location = new System.Drawing.Point(4, 25);
-            this.tp0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tp0.Name = "tp0";
-            this.tp0.Size = new System.Drawing.Size(631, 252);
-            this.tp0.TabIndex = 9;
-            this.tp0.Text = "0";
-            this.tp0.UseVisualStyleBackColor = true;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(700, 16);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(58, 16);
-            this.label19.TabIndex = 15;
-            this.label19.Text = "Hotkeys";
-            // 
-            // cbDisableBot
-            // 
-            this.cbDisableBot.AutoSize = true;
-            this.cbDisableBot.Location = new System.Drawing.Point(700, 325);
-            this.cbDisableBot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cbDisableBot.Name = "cbDisableBot";
-            this.cbDisableBot.Size = new System.Drawing.Size(324, 20);
-            this.cbDisableBot.TabIndex = 16;
-            this.cbDisableBot.Text = "Bot ausmachen wenn Florensia im Vordergrund ist";
-            this.cbDisableBot.UseVisualStyleBackColor = true;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(165, 17);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(139, 16);
-            this.label58.TabIndex = 17;
-            this.label58.Text = "Prozess (startet bei 0):";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(411, 17);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(156, 16);
-            this.label59.TabIndex = 19;
-            this.label59.Text = "Fenster name(eindeutig):";
-            // 
-            // tbProcessName
-            // 
-            this.tbProcessName.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbProcessName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbProcessName.Location = new System.Drawing.Point(573, 13);
-            this.tbProcessName.Name = "tbProcessName";
-            this.tbProcessName.Size = new System.Drawing.Size(100, 22);
-            this.tbProcessName.TabIndex = 20;
-            this.tbProcessName.Text = global::FloBot.Properties.Settings.Default.tbProcessName;
-            // 
-            // tbProcessID
-            // 
-            this.tbProcessID.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbProcessID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbProcessID.Location = new System.Drawing.Point(302, 14);
-            this.tbProcessID.Name = "tbProcessID";
-            this.tbProcessID.Size = new System.Drawing.Size(100, 22);
-            this.tbProcessID.TabIndex = 18;
-            this.tbProcessID.Text = global::FloBot.Properties.Settings.Default.tbProcessID;
-            // 
-            // tbMin1
-            // 
-            this.tbMin1.AutoSize = false;
-            this.tbMin1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin1.Location = new System.Drawing.Point(299, 76);
-            this.tbMin1.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin1.Maximum = 100;
-            this.tbMin1.Name = "tbMin1";
-            this.tbMin1.Size = new System.Drawing.Size(312, 38);
-            this.tbMin1.TabIndex = 17;
-            this.tbMin1.TickFrequency = 10;
-            this.tbMin1.Value = global::FloBot.Properties.Settings.Default.tbMin1;
-            this.tbMin1.Scroll += new System.EventHandler(this.tbMin1_Scroll);
-            // 
-            // tbMax1
-            // 
-            this.tbMax1.AutoSize = false;
-            this.tbMax1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax1.Location = new System.Drawing.Point(299, 39);
-            this.tbMax1.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax1.Maximum = 100;
-            this.tbMax1.Name = "tbMax1";
-            this.tbMax1.Size = new System.Drawing.Size(312, 38);
-            this.tbMax1.TabIndex = 12;
-            this.tbMax1.TickFrequency = 10;
-            this.tbMax1.Value = global::FloBot.Properties.Settings.Default.tbMax1;
-            this.tbMax1.Scroll += new System.EventHandler(this.tbMax1_Scroll);
-            // 
-            // tbCast1
-            // 
-            this.tbCast1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCastSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbCast1.Location = new System.Drawing.Point(35, 166);
-            this.tbCast1.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCast1.Name = "tbCast1";
-            this.tbCast1.Size = new System.Drawing.Size(132, 22);
-            this.tbCast1.TabIndex = 4;
-            this.tbCast1.Text = global::FloBot.Properties.Settings.Default.tbCastSkill1;
-            this.tbCast1.TextChanged += new System.EventHandler(this.tbCast1_TextChanged);
-            // 
-            // tbDelay1
-            // 
-            this.tbDelay1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelaySkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbDelay1.Location = new System.Drawing.Point(35, 113);
-            this.tbDelay1.Margin = new System.Windows.Forms.Padding(4);
-            this.tbDelay1.Name = "tbDelay1";
-            this.tbDelay1.Size = new System.Drawing.Size(132, 22);
-            this.tbDelay1.TabIndex = 4;
-            this.tbDelay1.Text = global::FloBot.Properties.Settings.Default.tbDelaySkill1;
-            this.tbDelay1.TextChanged += new System.EventHandler(this.tbDelay1_TextChanged);
-            // 
-            // cbUseAtt1
-            // 
-            this.cbUseAtt1.AutoSize = true;
-            this.cbUseAtt1.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill1;
-            this.cbUseAtt1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbUseAtt1.Location = new System.Drawing.Point(8, 5);
-            this.cbUseAtt1.Margin = new System.Windows.Forms.Padding(4);
-            this.cbUseAtt1.Name = "cbUseAtt1";
-            this.cbUseAtt1.Size = new System.Drawing.Size(52, 20);
-            this.cbUseAtt1.TabIndex = 2;
-            this.cbUseAtt1.Text = "Use";
-            this.cbUseAtt1.UseVisualStyleBackColor = true;
-            this.cbUseAtt1.CheckedChanged += new System.EventHandler(this.cbUseAtt1_CheckedChanged);
-            // 
-            // rbAttack1
-            // 
-            this.rbAttack1.AutoSize = true;
-            this.rbAttack1.Checked = global::FloBot.Properties.Settings.Default.rbAttackSkill1;
-            this.rbAttack1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAttackSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbAttack1.Location = new System.Drawing.Point(29, 63);
-            this.rbAttack1.Margin = new System.Windows.Forms.Padding(4);
-            this.rbAttack1.Name = "rbAttack1";
-            this.rbAttack1.Size = new System.Drawing.Size(91, 20);
-            this.rbAttack1.TabIndex = 1;
-            this.rbAttack1.TabStop = true;
-            this.rbAttack1.Text = "Attack Skill";
-            this.rbAttack1.UseVisualStyleBackColor = true;
-            this.rbAttack1.CheckedChanged += new System.EventHandler(this.rbAttack1_CheckedChanged);
-            // 
-            // rbBuff1
-            // 
-            this.rbBuff1.AutoSize = true;
-            this.rbBuff1.Checked = global::FloBot.Properties.Settings.Default.rbBuffSkill1;
-            this.rbBuff1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuffSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbBuff1.Location = new System.Drawing.Point(29, 33);
-            this.rbBuff1.Margin = new System.Windows.Forms.Padding(4);
-            this.rbBuff1.Name = "rbBuff1";
-            this.rbBuff1.Size = new System.Drawing.Size(74, 20);
-            this.rbBuff1.TabIndex = 0;
-            this.rbBuff1.Text = "Buff skill";
-            this.rbBuff1.UseVisualStyleBackColor = true;
-            this.rbBuff1.CheckedChanged += new System.EventHandler(this.rbBuff1_CheckedChanged);
             // 
             // lblMin2
             // 
@@ -1777,6 +1151,102 @@
             this.rbBuff2.UseVisualStyleBackColor = true;
             this.rbBuff2.CheckedChanged += new System.EventHandler(this.rbBuff2_CheckedChanged);
             // 
+            // tp3
+            // 
+            this.tp3.Controls.Add(this.label38);
+            this.tp3.Controls.Add(this.label48);
+            this.tp3.Controls.Add(this.label50);
+            this.tp3.Controls.Add(this.label51);
+            this.tp3.Controls.Add(this.label52);
+            this.tp3.Controls.Add(this.label24);
+            this.tp3.Controls.Add(this.label25);
+            this.tp3.Controls.Add(this.lblMin3);
+            this.tp3.Controls.Add(this.lblMax3);
+            this.tp3.Controls.Add(this.tbMin3);
+            this.tp3.Controls.Add(this.tbMax3);
+            this.tp3.Controls.Add(this.tbCast3);
+            this.tp3.Controls.Add(this.tbDelay3);
+            this.tp3.Controls.Add(this.cbUseSkill3);
+            this.tp3.Controls.Add(this.rbAtt3);
+            this.tp3.Controls.Add(this.rbBuff3);
+            this.tp3.Location = new System.Drawing.Point(4, 25);
+            this.tp3.Margin = new System.Windows.Forms.Padding(4);
+            this.tp3.Name = "tp3";
+            this.tp3.Size = new System.Drawing.Size(631, 252);
+            this.tp3.TabIndex = 2;
+            this.tp3.Text = "3";
+            this.tp3.UseVisualStyleBackColor = true;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(449, 6);
+            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(20, 16);
+            this.label38.TabIndex = 28;
+            this.label38.Text = "%";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(352, 6);
+            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(26, 16);
+            this.label48.TabIndex = 27;
+            this.label48.Text = "bis";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(213, 87);
+            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(29, 16);
+            this.label50.TabIndex = 23;
+            this.label50.Text = "min";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(209, 43);
+            this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(33, 16);
+            this.label51.TabIndex = 24;
+            this.label51.Text = "max";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(189, 6);
+            this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(68, 16);
+            this.label52.TabIndex = 22;
+            this.label52.Text = "Nutzen ab";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(27, 145);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(66, 16);
+            this.label24.TabIndex = 12;
+            this.label24.Text = "Cast time:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(23, 94);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(47, 16);
+            this.label25.TabIndex = 9;
+            this.label25.Text = "Delay:";
+            // 
             // lblMin3
             // 
             this.lblMin3.AutoSize = true;
@@ -1892,6 +1362,542 @@
             this.rbBuff3.UseVisualStyleBackColor = true;
             this.rbBuff3.CheckedChanged += new System.EventHandler(this.rbBuff3_CheckedChanged);
             // 
+            // tp4
+            // 
+            this.tp4.Controls.Add(this.label26);
+            this.tp4.Controls.Add(this.textBox5);
+            this.tp4.Controls.Add(this.textBox6);
+            this.tp4.Controls.Add(this.label27);
+            this.tp4.Controls.Add(this.checkBox3);
+            this.tp4.Controls.Add(this.radioButton5);
+            this.tp4.Controls.Add(this.radioButton6);
+            this.tp4.Location = new System.Drawing.Point(4, 25);
+            this.tp4.Margin = new System.Windows.Forms.Padding(4);
+            this.tp4.Name = "tp4";
+            this.tp4.Size = new System.Drawing.Size(631, 252);
+            this.tp4.TabIndex = 3;
+            this.tp4.Text = "4";
+            this.tp4.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(27, 145);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(66, 16);
+            this.label26.TabIndex = 12;
+            this.label26.Text = "Cast time:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(31, 165);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(132, 22);
+            this.textBox5.TabIndex = 10;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(31, 112);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(132, 22);
+            this.textBox6.TabIndex = 11;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(23, 94);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(47, 16);
+            this.label27.TabIndex = 9;
+            this.label27.Text = "Delay:";
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(4, 4);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(52, 20);
+            this.checkBox3.TabIndex = 8;
+            this.checkBox3.Text = "Use";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(25, 62);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(91, 20);
+            this.radioButton5.TabIndex = 7;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Attack Skill";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(25, 32);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(74, 20);
+            this.radioButton6.TabIndex = 6;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Buff skill";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // tp5
+            // 
+            this.tp5.Controls.Add(this.label28);
+            this.tp5.Controls.Add(this.textBox7);
+            this.tp5.Controls.Add(this.textBox8);
+            this.tp5.Controls.Add(this.label29);
+            this.tp5.Controls.Add(this.checkBox4);
+            this.tp5.Controls.Add(this.radioButton7);
+            this.tp5.Controls.Add(this.radioButton8);
+            this.tp5.Location = new System.Drawing.Point(4, 25);
+            this.tp5.Margin = new System.Windows.Forms.Padding(4);
+            this.tp5.Name = "tp5";
+            this.tp5.Size = new System.Drawing.Size(631, 252);
+            this.tp5.TabIndex = 4;
+            this.tp5.Text = "5";
+            this.tp5.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(27, 145);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(66, 16);
+            this.label28.TabIndex = 12;
+            this.label28.Text = "Cast time:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(31, 165);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(132, 22);
+            this.textBox7.TabIndex = 10;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(31, 112);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(132, 22);
+            this.textBox8.TabIndex = 11;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(23, 94);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(47, 16);
+            this.label29.TabIndex = 9;
+            this.label29.Text = "Delay:";
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(4, 4);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(52, 20);
+            this.checkBox4.TabIndex = 8;
+            this.checkBox4.Text = "Use";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(25, 62);
+            this.radioButton7.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(91, 20);
+            this.radioButton7.TabIndex = 7;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Attack Skill";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(25, 32);
+            this.radioButton8.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(74, 20);
+            this.radioButton8.TabIndex = 6;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Buff skill";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // tp6
+            // 
+            this.tp6.Controls.Add(this.label30);
+            this.tp6.Controls.Add(this.textBox9);
+            this.tp6.Controls.Add(this.textBox10);
+            this.tp6.Controls.Add(this.label31);
+            this.tp6.Controls.Add(this.checkBox5);
+            this.tp6.Controls.Add(this.radioButton9);
+            this.tp6.Controls.Add(this.radioButton10);
+            this.tp6.Location = new System.Drawing.Point(4, 25);
+            this.tp6.Margin = new System.Windows.Forms.Padding(4);
+            this.tp6.Name = "tp6";
+            this.tp6.Size = new System.Drawing.Size(631, 252);
+            this.tp6.TabIndex = 5;
+            this.tp6.Text = "6";
+            this.tp6.UseVisualStyleBackColor = true;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(27, 145);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(66, 16);
+            this.label30.TabIndex = 12;
+            this.label30.Text = "Cast time:";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(31, 165);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(132, 22);
+            this.textBox9.TabIndex = 10;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(31, 112);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(132, 22);
+            this.textBox10.TabIndex = 11;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(23, 94);
+            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(47, 16);
+            this.label31.TabIndex = 9;
+            this.label31.Text = "Delay:";
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(4, 4);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(52, 20);
+            this.checkBox5.TabIndex = 8;
+            this.checkBox5.Text = "Use";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(25, 62);
+            this.radioButton9.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(91, 20);
+            this.radioButton9.TabIndex = 7;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "Attack Skill";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Location = new System.Drawing.Point(25, 32);
+            this.radioButton10.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(74, 20);
+            this.radioButton10.TabIndex = 6;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "Buff skill";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            // 
+            // tp7
+            // 
+            this.tp7.Controls.Add(this.label32);
+            this.tp7.Controls.Add(this.textBox11);
+            this.tp7.Controls.Add(this.textBox12);
+            this.tp7.Controls.Add(this.label33);
+            this.tp7.Controls.Add(this.checkBox6);
+            this.tp7.Controls.Add(this.radioButton11);
+            this.tp7.Controls.Add(this.radioButton12);
+            this.tp7.Location = new System.Drawing.Point(4, 25);
+            this.tp7.Margin = new System.Windows.Forms.Padding(4);
+            this.tp7.Name = "tp7";
+            this.tp7.Size = new System.Drawing.Size(631, 252);
+            this.tp7.TabIndex = 6;
+            this.tp7.Text = "7";
+            this.tp7.UseVisualStyleBackColor = true;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(27, 145);
+            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(66, 16);
+            this.label32.TabIndex = 12;
+            this.label32.Text = "Cast time:";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(31, 165);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(132, 22);
+            this.textBox11.TabIndex = 10;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(31, 112);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(132, 22);
+            this.textBox12.TabIndex = 11;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(23, 94);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(47, 16);
+            this.label33.TabIndex = 9;
+            this.label33.Text = "Delay:";
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(4, 4);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(52, 20);
+            this.checkBox6.TabIndex = 8;
+            this.checkBox6.Text = "Use";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Location = new System.Drawing.Point(25, 62);
+            this.radioButton11.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(91, 20);
+            this.radioButton11.TabIndex = 7;
+            this.radioButton11.TabStop = true;
+            this.radioButton11.Text = "Attack Skill";
+            this.radioButton11.UseVisualStyleBackColor = true;
+            // 
+            // radioButton12
+            // 
+            this.radioButton12.AutoSize = true;
+            this.radioButton12.Location = new System.Drawing.Point(25, 32);
+            this.radioButton12.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton12.Name = "radioButton12";
+            this.radioButton12.Size = new System.Drawing.Size(74, 20);
+            this.radioButton12.TabIndex = 6;
+            this.radioButton12.TabStop = true;
+            this.radioButton12.Text = "Buff skill";
+            this.radioButton12.UseVisualStyleBackColor = true;
+            // 
+            // tp8
+            // 
+            this.tp8.Controls.Add(this.label34);
+            this.tp8.Controls.Add(this.textBox13);
+            this.tp8.Controls.Add(this.textBox14);
+            this.tp8.Controls.Add(this.label35);
+            this.tp8.Controls.Add(this.checkBox7);
+            this.tp8.Controls.Add(this.radioButton13);
+            this.tp8.Controls.Add(this.radioButton14);
+            this.tp8.Location = new System.Drawing.Point(4, 25);
+            this.tp8.Margin = new System.Windows.Forms.Padding(4);
+            this.tp8.Name = "tp8";
+            this.tp8.Size = new System.Drawing.Size(631, 252);
+            this.tp8.TabIndex = 7;
+            this.tp8.Text = "8";
+            this.tp8.UseVisualStyleBackColor = true;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(27, 145);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(66, 16);
+            this.label34.TabIndex = 12;
+            this.label34.Text = "Cast time:";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(31, 165);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(132, 22);
+            this.textBox13.TabIndex = 10;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(31, 112);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(132, 22);
+            this.textBox14.TabIndex = 11;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(23, 94);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(47, 16);
+            this.label35.TabIndex = 9;
+            this.label35.Text = "Delay:";
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(4, 4);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(52, 20);
+            this.checkBox7.TabIndex = 8;
+            this.checkBox7.Text = "Use";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton13
+            // 
+            this.radioButton13.AutoSize = true;
+            this.radioButton13.Location = new System.Drawing.Point(25, 62);
+            this.radioButton13.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton13.Name = "radioButton13";
+            this.radioButton13.Size = new System.Drawing.Size(91, 20);
+            this.radioButton13.TabIndex = 7;
+            this.radioButton13.TabStop = true;
+            this.radioButton13.Text = "Attack Skill";
+            this.radioButton13.UseVisualStyleBackColor = true;
+            // 
+            // radioButton14
+            // 
+            this.radioButton14.AutoSize = true;
+            this.radioButton14.Location = new System.Drawing.Point(25, 32);
+            this.radioButton14.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton14.Name = "radioButton14";
+            this.radioButton14.Size = new System.Drawing.Size(74, 20);
+            this.radioButton14.TabIndex = 6;
+            this.radioButton14.TabStop = true;
+            this.radioButton14.Text = "Buff skill";
+            this.radioButton14.UseVisualStyleBackColor = true;
+            // 
+            // tp9
+            // 
+            this.tp9.Controls.Add(this.label44);
+            this.tp9.Controls.Add(this.label49);
+            this.tp9.Controls.Add(this.label53);
+            this.tp9.Controls.Add(this.label56);
+            this.tp9.Controls.Add(this.label57);
+            this.tp9.Controls.Add(this.label36);
+            this.tp9.Controls.Add(this.label37);
+            this.tp9.Controls.Add(this.lblMin9);
+            this.tp9.Controls.Add(this.lblMax9);
+            this.tp9.Controls.Add(this.tbMin9);
+            this.tp9.Controls.Add(this.tbMax9);
+            this.tp9.Controls.Add(this.tbCast9);
+            this.tp9.Controls.Add(this.tbDelay9);
+            this.tp9.Controls.Add(this.cbUseSkill9);
+            this.tp9.Controls.Add(this.rbAtt9);
+            this.tp9.Controls.Add(this.rbBuff9);
+            this.tp9.Location = new System.Drawing.Point(4, 25);
+            this.tp9.Margin = new System.Windows.Forms.Padding(4);
+            this.tp9.Name = "tp9";
+            this.tp9.Size = new System.Drawing.Size(631, 252);
+            this.tp9.TabIndex = 8;
+            this.tp9.Text = "9";
+            this.tp9.UseVisualStyleBackColor = true;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(448, 6);
+            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(20, 16);
+            this.label44.TabIndex = 45;
+            this.label44.Text = "%";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(345, 6);
+            this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(26, 16);
+            this.label49.TabIndex = 44;
+            this.label49.Text = "bis";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(207, 87);
+            this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(29, 16);
+            this.label53.TabIndex = 40;
+            this.label53.Text = "min";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(203, 43);
+            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(33, 16);
+            this.label56.TabIndex = 41;
+            this.label56.Text = "max";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(183, 6);
+            this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(68, 16);
+            this.label57.TabIndex = 39;
+            this.label57.Text = "Nutzen ab";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(27, 145);
+            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(66, 16);
+            this.label36.TabIndex = 12;
+            this.label36.Text = "Cast time:";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(23, 94);
+            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(47, 16);
+            this.label37.TabIndex = 9;
+            this.label37.Text = "Delay:";
+            // 
             // lblMin9
             // 
             this.lblMin9.AutoSize = true;
@@ -2005,55 +2011,72 @@
             this.rbBuff9.UseVisualStyleBackColor = true;
             this.rbBuff9.CheckedChanged += new System.EventHandler(this.rbBuff9_CheckedChanged);
             // 
-            // cbAutoTarget
+            // tp0
             // 
-            this.cbAutoTarget.AutoSize = true;
-            this.cbAutoTarget.Checked = global::FloBot.Properties.Settings.Default.cbAutoTarget;
-            this.cbAutoTarget.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoTarget", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbAutoTarget.Location = new System.Drawing.Point(27, 74);
-            this.cbAutoTarget.Margin = new System.Windows.Forms.Padding(4);
-            this.cbAutoTarget.Name = "cbAutoTarget";
-            this.cbAutoTarget.Size = new System.Drawing.Size(170, 20);
-            this.cbAutoTarget.TabIndex = 10;
-            this.cbAutoTarget.Text = "Automatisch Ziel wählen";
-            this.cbAutoTarget.UseVisualStyleBackColor = true;
+            this.tp0.Location = new System.Drawing.Point(4, 25);
+            this.tp0.Margin = new System.Windows.Forms.Padding(4);
+            this.tp0.Name = "tp0";
+            this.tp0.Size = new System.Drawing.Size(631, 252);
+            this.tp0.TabIndex = 9;
+            this.tp0.Text = "0";
+            this.tp0.UseVisualStyleBackColor = true;
             // 
-            // cbAutoLoot
+            // label19
             // 
-            this.cbAutoLoot.AutoSize = true;
-            this.cbAutoLoot.Checked = global::FloBot.Properties.Settings.Default.cbAutoLoot;
-            this.cbAutoLoot.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoLoot", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbAutoLoot.Location = new System.Drawing.Point(27, 206);
-            this.cbAutoLoot.Margin = new System.Windows.Forms.Padding(4);
-            this.cbAutoLoot.Name = "cbAutoLoot";
-            this.cbAutoLoot.Size = new System.Drawing.Size(140, 20);
-            this.cbAutoLoot.TabIndex = 9;
-            this.cbAutoLoot.Text = "Automatisch looten";
-            this.cbAutoLoot.UseVisualStyleBackColor = true;
-            this.cbAutoLoot.CheckedChanged += new System.EventHandler(this.cbAutoLoot_CheckedChanged);
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(700, 16);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(58, 16);
+            this.label19.TabIndex = 15;
+            this.label19.Text = "Hotkeys";
             // 
-            // cbAutoBattle
+            // cbDisableBot
             // 
-            this.cbAutoBattle.AutoSize = true;
-            this.cbAutoBattle.Checked = global::FloBot.Properties.Settings.Default.cbAutoAttack;
-            this.cbAutoBattle.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoAttack", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbAutoBattle.Location = new System.Drawing.Point(27, 174);
-            this.cbAutoBattle.Margin = new System.Windows.Forms.Padding(4);
-            this.cbAutoBattle.Name = "cbAutoBattle";
-            this.cbAutoBattle.Size = new System.Drawing.Size(160, 20);
-            this.cbAutoBattle.TabIndex = 9;
-            this.cbAutoBattle.Text = "Automatisch Angreifen";
-            this.cbAutoBattle.UseVisualStyleBackColor = true;
+            this.cbDisableBot.AutoSize = true;
+            this.cbDisableBot.Location = new System.Drawing.Point(700, 325);
+            this.cbDisableBot.Margin = new System.Windows.Forms.Padding(4);
+            this.cbDisableBot.Name = "cbDisableBot";
+            this.cbDisableBot.Size = new System.Drawing.Size(324, 20);
+            this.cbDisableBot.TabIndex = 16;
+            this.cbDisableBot.Text = "Bot ausmachen wenn Florensia im Vordergrund ist";
+            this.cbDisableBot.UseVisualStyleBackColor = true;
             // 
-            // tbLvLRange
+            // label58
             // 
-            this.tbLvLRange.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "maxLevelDif", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbLvLRange.Location = new System.Drawing.Point(73, 133);
-            this.tbLvLRange.Margin = new System.Windows.Forms.Padding(4);
-            this.tbLvLRange.Name = "tbLvLRange";
-            this.tbLvLRange.Size = new System.Drawing.Size(132, 22);
-            this.tbLvLRange.TabIndex = 6;
-            this.tbLvLRange.Text = global::FloBot.Properties.Settings.Default.maxLevelDif;
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(165, 17);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(139, 16);
+            this.label58.TabIndex = 17;
+            this.label58.Text = "Prozess (startet bei 0):";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(411, 17);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(156, 16);
+            this.label59.TabIndex = 19;
+            this.label59.Text = "Fenster name(eindeutig):";
+            // 
+            // tbProcessName
+            // 
+            this.tbProcessName.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbProcessName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbProcessName.Location = new System.Drawing.Point(573, 13);
+            this.tbProcessName.Name = "tbProcessName";
+            this.tbProcessName.Size = new System.Drawing.Size(100, 22);
+            this.tbProcessName.TabIndex = 20;
+            this.tbProcessName.Text = global::FloBot.Properties.Settings.Default.tbProcessName;
+            // 
+            // tbProcessID
+            // 
+            this.tbProcessID.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbProcessID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbProcessID.Location = new System.Drawing.Point(302, 14);
+            this.tbProcessID.Name = "tbProcessID";
+            this.tbProcessID.Size = new System.Drawing.Size(100, 22);
+            this.tbProcessID.TabIndex = 18;
+            this.tbProcessID.Text = global::FloBot.Properties.Settings.Default.tbProcessID;
             // 
             // tbEmHP
             // 
@@ -2140,7 +2163,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblGameFound);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mainForm";
             this.Text = "mainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_Closing);
@@ -2154,10 +2177,16 @@
             this.tbHotkeys.ResumeLayout(false);
             this.tp1.ResumeLayout(false);
             this.tp1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax1)).EndInit();
             this.tp2.ResumeLayout(false);
             this.tp2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax2)).EndInit();
             this.tp3.ResumeLayout(false);
             this.tp3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax3)).EndInit();
             this.tp4.ResumeLayout(false);
             this.tp4.PerformLayout();
             this.tp5.ResumeLayout(false);
@@ -2170,12 +2199,6 @@
             this.tp8.PerformLayout();
             this.tp9.ResumeLayout(false);
             this.tp9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmHP)).EndInit();
@@ -2351,6 +2374,8 @@
         private System.Windows.Forms.Label label59;
         public System.Windows.Forms.TextBox tbProcessID;
         public System.Windows.Forms.TextBox tbProcessName;
+        private System.Windows.Forms.Label label60;
+        public System.Windows.Forms.TextBox tbNotRevivePercent;
     }
 }
 

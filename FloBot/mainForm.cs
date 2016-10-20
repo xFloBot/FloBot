@@ -25,20 +25,23 @@ namespace FloBot
         private void Form1_Load(object sender, EventArgs e)
         {
             CheckForIllegalCrossThreadCalls = false;
-            int test = 0;
-            String testS = "1";
-            Int32.TryParse(testS, out test);
-            Console.WriteLine(test);
-            rbBuff1_CheckedChanged(null, null);
-            rbBuff2_CheckedChanged(null, null);
-            rbBuff3_CheckedChanged(null, null);
-            rbBuff9_CheckedChanged(null, null);
-            
+
             tbRestHP_Scroll(null, null);
             tbEmHP_Scroll(null, null);
             tbRestMP_Scroll(null, null);
             tbEmMP_Scroll(null, null);
             machine = new StateMachine(this, player);
+        }
+
+        private void initAttacks()
+        {
+            Console.WriteLine("AttArraySizeBefor:{0}\nBuffArrayBefor{1}:", player.AttArray.Count, player.BuffArray.Count);
+            rbBuff1_CheckedChanged(null, null);
+            rbBuff2_CheckedChanged(null, null);
+            rbBuff3_CheckedChanged(null, null);
+            rbBuff9_CheckedChanged(null, null);
+
+            Console.WriteLine("AttArraySizAfter:{0}\nBuffArrayAfter:{1}\n_____________", player.AttArray.Count, player.BuffArray.Count);
         }
         private void Form1_Closing(object sender, EventArgs e)
         {
@@ -77,8 +80,8 @@ namespace FloBot
         {
             lblMax1.Text = tbMax1.Value + "%";
             lblMin1.Text = tbMin1.Value + "%";
-            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad1,tbMax1.Value,tbMin1.Value));
-            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad1, tbMax1.Value, tbMin1.Value));
+            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad1,0,0));
+            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad1, 0, 0));
 
             if (cbUseAtt1.Checked)
             {
@@ -153,8 +156,8 @@ namespace FloBot
 
         private void rbBuff3_CheckedChanged(object sender, EventArgs e)
         {
-            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad3, tbMax3.Value, tbMax3.Value));
-            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad3, tbMax3.Value, tbMax3.Value));
+            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad3, 0, 0));
+            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad3, 0, 0));
 
             if (cbUseSkill3.Checked)
             {
@@ -275,6 +278,10 @@ namespace FloBot
         {
             lblMin9.Text = "" + tbMin9.Value;
         }
-        
+
+        private void cbEnableCombatState_CheckedChanged(object sender, EventArgs e)
+        {
+            initAttacks();
+        }
     }
 }

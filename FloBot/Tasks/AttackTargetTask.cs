@@ -28,6 +28,8 @@ namespace FloBot.Tasks
                     return true;
                 else
                     delayTime = 0;
+            Console.WriteLine("__________\nArrayCount:{0}\n_____________", player.AttArray.Count);
+
             Skill[] copy = new Skill[player.AttArray.Count];
             player.AttArray.CopyTo(copy);
             foreach (Skill attk in copy)

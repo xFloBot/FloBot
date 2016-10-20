@@ -37,27 +37,14 @@ namespace FloBot.MemoryClass
 
         private IntPtr windowHandler;
         private Process yourProcess = null;
-
-        [DllImport("kernel32.dll", SetLastError = true)]
-        public static extern bool GetExitCodeProcess(IntPtr hProcess, out uint ExitCode);
-        public bool isProcessStillRunning
-        {
-            get
-            {
-                if (yourProcess == null)
-                    return false;
-                uint exitCode = 0;
-                if(!GetExitCodeProcess(pHandel, out exitCode))return false;
-                
-                return exitCode == 259;
-            }
-        }
+        private int processID = 0;
+       
         public bool isGameInForeground()
         {
             return windowHandler == GetForegroundWindow();
         }
 
-        public bool Process_Handle(string ProcessName,string multiClientName,int processNumber,String windowName)
+        public bool Process_Handle(string ProcessName,string multiClientName,int processNumber,String windowName,bool updateWindow)
         {
             try
             {
@@ -68,19 +55,31 @@ namespace FloBot.MemoryClass
                     ProcList = Process.GetProcessesByName(ProcessName);
                     if (ProcList.Length == 0)
                         return false;
+                    else
+                        processNumber = 0;
                 }
 
-                if (ProcList.Length != 0 && ProcList.Length > processNumber) ;
+                if (ProcList.Length != 0 && ProcList.Length > processNumber)
                 {
+                    if (processID == ProcList[processNumber].Id)
+                    {
+                        if (updateWindow)
+                        {
+                            SetWindowText(windowHandler, windowName);
+                            hWnd = FindWindow(null, windowName);
+                        }
+                        return true;
+                    }
+                        
+                    processID = ProcList[processNumber].Id;
                     yourProcess = ProcList[processNumber];
                     windowHandler = yourProcess.MainWindowHandle;
-                    SetWindowText(windowHandler, windowName);
-                    hWnd = FindWindow(null, windowName);
+                   
                     pHandel = yourProcess.Handle;
                     baseAddress = yourProcess.MainModule.BaseAddress;
                     
                     return true;
-                }
+                }return false;
             }
             catch (Exception ex)
             { Console.Beep(); Console.WriteLine("Process_Handle - " + ex.Message); return false; }

@@ -18,7 +18,7 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            if (player.PlayerCurrentHP > 0)
+            if (player.PlayerCurrentHP > 0 || !player.allowedToRevive(main_form))
                 return false;
             Thread.Sleep(1000);
             while(player.PlayerCurrentHP <= 0 && player.PlayerName.Length >= 3)

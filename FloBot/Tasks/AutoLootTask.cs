@@ -31,7 +31,6 @@ namespace FloBot.Tasks
                     return true;
 
                 player.MobToLootCount--;
-                Console.WriteLine("MobToLoot decrease:{0}", player.MobToLootCount);
                 Thread.Sleep(2000);
             }
             

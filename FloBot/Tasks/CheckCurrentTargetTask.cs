@@ -28,8 +28,6 @@ namespace FloBot.Tasks
 
                 player.MobToLootCount++;
 
-            Console.WriteLine("MobToLoot:{0}", player.MobToLootCount);
-
             while (!player.Target.targetName.Contains("NoTarget") && player.Target.targetName.Length > 0)
             {
                 mc.sendKeystroke(Keys.Escape);

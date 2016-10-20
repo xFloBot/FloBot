@@ -18,6 +18,8 @@ namespace FloBot.Model
         private bool _Resting = false;
         private bool _buffed = false;
         private Single oldPercentage=-1;
+        private int level;
+        private Single highestPercent = -1;
         private int oldExp =-1;
         private int oldMobExp =-1;
 
@@ -30,7 +32,7 @@ namespace FloBot.Model
             }
 
         }
-
+        
         public  ArrayList AttArray
         {
             get
@@ -38,7 +40,7 @@ namespace FloBot.Model
                 return _attArray;
             }
         }
-
+        
         public Position Pos
         {
             get
@@ -161,23 +163,53 @@ namespace FloBot.Model
             return Target.targetName.Contains(PlayerName) && Target.isTargetFriendly();
         }
 
+        public void updateReviveBlock()
+        {
+            if(highestPercent == -1)
+            {
+                highestPercent = AddressUtil.getCharExpPercent();
+                level = PlayerLevel;
+                return;
+            }
+            if(highestPercent < AddressUtil.getCharExpPercent())
+            {
+                highestPercent = AddressUtil.getCharExpPercent();
+                return;
+            }
 
+            if (PlayerLevel > level)
+            {
+                highestPercent = AddressUtil.getCharExpPercent();
+                level = PlayerLevel;
+                return;
+            }
 
+        }
 
+        public bool allowedToRevive(mainForm main_form)
+        {
+            int maxAllowedExpLos = 0;
+            Int32.TryParse(main_form.tbNotRevivePercent.Text,out maxAllowedExpLos);
+
+            return (highestPercent - Math.Abs(AddressUtil.getCharExpPercent()) < maxAllowedExpLos);
+            
+
+        }
 
         public int addElement(ArrayList al, Skill skill)
         {
-            return al.Add(skill);
+            return al.Add(skill); 
         }
 
         public void removeElement(ArrayList al, Skill skill)
         {
-
             Skill skillToRemove = null;
             foreach (Skill skill2 in al)
             {
                 if (skill2.Equals(skill))
+                {
                     skillToRemove = skill2;
+                }
             }
             if (skillToRemove != null)
                 al.Remove(skillToRemove);

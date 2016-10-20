@@ -50,7 +50,8 @@ namespace FloBot.State
                     new FocusTargetTask().doTask(main_form, mc, player);
 
                 Thread.Sleep(100);
-                return new CombatState();
+                if (main_form.cbAutoBattle.Checked)
+                    return new CombatState();
             }
                 
 

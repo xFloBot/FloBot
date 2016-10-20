@@ -21,17 +21,15 @@ namespace FloBot.State
 
             if(new CheckCurrentTargetTask().doTask(main_form,mc,player))
             {
-                if(main_form.cbAutoBattle.Checked)
-                {
                     new EmergencyHPTask().doTask(main_form, mc, player);
                     new EmergencyMPTask().doTask(main_form, mc, player);
                     new AttackTargetTask().doTask(main_form, mc, player);
                     new UpdateCharInfoTask().doTask(main_form, player);
 
                     new UpdateTargetInfo().doTask(main_form, player);
-                }
+            
                 
-                return new CombatState();
+                    return new CombatState();
             }
 
             Thread.Sleep(100);

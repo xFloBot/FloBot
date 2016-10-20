@@ -550,5 +550,17 @@ namespace FloBot.Properties {
                 this["tbProcessName"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public string tbRevivePercent {
+            get {
+                return ((string)(this["tbRevivePercent"]));
+            }
+            set {
+                this["tbRevivePercent"] = value;
+            }
+        }
     }
 }
