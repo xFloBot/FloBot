@@ -63,8 +63,9 @@ namespace FloBot.MemoryClass
                 {
                     if (processID == ProcList[processNumber].Id)
                     {
-                        if (updateWindow)
+                        if (updateWindow && !(windowHandler == null))
                         {
+                            windowHandler = yourProcess.MainWindowHandle;
                             SetWindowText(windowHandler, windowName);
                             hWnd = FindWindow(null, windowName);
                         }
@@ -77,7 +78,8 @@ namespace FloBot.MemoryClass
                    
                     pHandel = yourProcess.Handle;
                     baseAddress = yourProcess.MainModule.BaseAddress;
-                    
+                    SetWindowText(windowHandler, windowName);
+                    hWnd = FindWindow(null, windowName);
                     return true;
                 }return false;
             }

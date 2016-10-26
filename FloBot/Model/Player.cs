@@ -196,9 +196,10 @@ namespace FloBot.Model
 
         }
 
-        public int addElement(ArrayList al, Skill skill)
+        public void addElement(ArrayList al, Skill skill)
         {
-            return al.Add(skill); 
+            al.Add(skill);
+            al.Sort();
         }
 
         public void removeElement(ArrayList al, Skill skill)

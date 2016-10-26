@@ -26,19 +26,23 @@ namespace FloBot
         {
             CheckForIllegalCrossThreadCalls = false;
 
+           
+        }
+        private void Form1_Shown(object sender, EventArgs e)
+        {
             tbRestHP_Scroll(null, null);
             tbEmHP_Scroll(null, null);
             tbRestMP_Scroll(null, null);
             tbEmMP_Scroll(null, null);
+            initAttacks();
             machine = new StateMachine(this, player);
         }
-
         private void initAttacks()
         {
             Console.WriteLine("AttArraySizeBefor:{0}\nBuffArrayBefor{1}:", player.AttArray.Count, player.BuffArray.Count);
-            rbBuff1_CheckedChanged(null, null);
-            rbBuff2_CheckedChanged(null, null);
-            rbBuff3_CheckedChanged(null, null);
+            rbBuff1_Changed(null, null);
+            rbBuff2_Changed(null, null);
+            rbBuff3_Changed(null, null);
             rbBuff9_CheckedChanged(null, null);
 
             Console.WriteLine("AttArraySizAfter:{0}\nBuffArrayAfter:{1}\n_____________", player.AttArray.Count, player.BuffArray.Count);
@@ -75,54 +79,41 @@ namespace FloBot
         {
 
         }
-
-        private void rbBuff1_CheckedChanged(object sender, EventArgs e)
+        
+        private void rbBuff1_Changed(object sender, EventArgs e)
         {
-            lblMax1.Text = tbMax1.Value + "%";
-            lblMin1.Text = tbMin1.Value + "%";
-            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad1,0,0));
-            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad1, 0, 0));
+            lblMax1M.Text = tbMax1M.Value + "%";
+            lblMin1M.Text = tbMin1M.Value + "%";
+            lblMax1P.Text = tbMax1P.Value + "%";
+            lblMin1P.Text = tbMin1P.Value + "%";
+            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad1,0,0,0,0,0));
+            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad1, 0, 0, 0, 0, 0));
 
-            if (cbUseAtt1.Checked)
+            if (cbUseSkill1.Checked)
             {
                 int delay = 0;
                 int cast = 0;
                 Int32.TryParse(tbDelay1.Text, out delay);
                 Int32.TryParse(tbCast1.Text, out cast);
                 if (rbBuff1.Checked)
-                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad1, tbMax1.Value, tbMin1.Value));
-                if(rbAttack1.Checked)
-                    player.addElement(player.AttArray, new Skill(delay, cast, Keys.NumPad1, tbMax1.Value, tbMin1.Value));
+                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad1, tbMax1M.Value, tbMin1M.Value,tbMax1P.Value,tbMin1P.Value,(int)nudPrio1.Value));
+                if(rbAtt1.Checked)
+                    player.addElement(player.AttArray, new Skill(delay, cast, Keys.NumPad1, tbMax1M.Value, tbMin1M.Value, tbMax1P.Value, tbMin1P.Value, (int)nudPrio1.Value));
             }
                 
                     
 
         }
 
-        private void rbAttack1_CheckedChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void tbDelay1_TextChanged(object sender, EventArgs e)
+        private void rbBuff2_Changed(object sender, EventArgs e)
         {
-            rbBuff1_CheckedChanged(null, null);
-        }
-
-        private void tbCast1_TextChanged(object sender, EventArgs e)
-        {
-            rbBuff1_CheckedChanged(null, null);
-        }
-
-        private void cbUseAtt1_CheckedChanged(object sender, EventArgs e)
-        {
-            rbBuff1_CheckedChanged(null, null);
-        }
-
-        private void rbBuff2_CheckedChanged(object sender, EventArgs e)
-        {
-            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad2, 0, 0));
-            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad2, 0, 0));
+            lblMax2M.Text = tbMax2M.Value + "%";
+            lblMin2M.Text = tbMin2M.Value + "%";
+            lblMax2P.Text = tbMax2P.Value + "%";
+            lblMin2P.Text = tbMin2P.Value + "%";
+            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad2, 0, 0, 0, 0, 0));
+            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad2, 0, 0, 0, 0, 0));
 
             if (cbUseSkill2.Checked)
             {
@@ -131,33 +122,23 @@ namespace FloBot
                 Int32.TryParse(tbDelay2.Text, out delay);
                 Int32.TryParse(tbCast2.Text, out cast);
                 if (rbBuff2.Checked)
-                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad2, tbMax2.Value, tbMin2.Value));
-                
+                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad2, tbMax2M.Value, tbMin2M.Value, tbMax2P.Value, tbMin2P.Value, (int)nudPrio2.Value));
                 if (rbAtt2.Checked)
-                    player.addElement(player.AttArray, new Skill(delay, cast, Keys.NumPad2, tbMax2.Value, tbMin2.Value));
-                
+                    player.addElement(player.AttArray, new Skill(delay, cast, Keys.NumPad2, tbMax2M.Value, tbMin2M.Value, tbMax2P.Value, tbMin2P.Value, (int)nudPrio2.Value));
             }
+
+
         }
 
-        private void cbUseSkill2_CheckedChanged(object sender, EventArgs e)
-        {
-            rbBuff2_CheckedChanged(null, null);
-        }
 
-        private void tbDelay2_TextChanged(object sender, EventArgs e)
+        private void rbBuff3_Changed(object sender, EventArgs e)
         {
-            rbBuff2_CheckedChanged(null, null);
-        }
-
-        private void tbCast2_TextChanged(object sender, EventArgs e)
-        {
-            rbBuff2_CheckedChanged(null, null);
-        }
-
-        private void rbBuff3_CheckedChanged(object sender, EventArgs e)
-        {
-            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad3, 0, 0));
-            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad3, 0, 0));
+            lblMax3M.Text = tbMax3M.Value + "%";
+            lblMin3M.Text = tbMin3M.Value + "%";
+            lblMax3P.Text = tbMax3P.Value + "%";
+            lblMin3P.Text = tbMin3P.Value + "%";
+            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad3, 0, 0, 0, 0, 0));
+            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad3, 0, 0, 0, 0, 0));
 
             if (cbUseSkill3.Checked)
             {
@@ -166,43 +147,22 @@ namespace FloBot
                 Int32.TryParse(tbDelay3.Text, out delay);
                 Int32.TryParse(tbCast3.Text, out cast);
                 if (rbBuff3.Checked)
-                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad3, tbMax3.Value, tbMax3.Value));
-
+                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad3, tbMax3M.Value, tbMin3M.Value, tbMax3P.Value, tbMin3P.Value, (int)nudPrio3.Value));
                 if (rbAtt3.Checked)
-                    player.addElement(player.AttArray, new Skill(delay, cast, Keys.NumPad3, tbMax3.Value, tbMax3.Value));
-
+                    player.addElement(player.AttArray, new Skill(delay, cast, Keys.NumPad3, tbMax3M.Value, tbMin3M.Value, tbMax3P.Value, tbMin3P.Value, (int)nudPrio3.Value));
             }
         }
 
-        private void cbUseSkill3_CheckedChanged(object sender, EventArgs e)
-        {
-            rbBuff3_CheckedChanged(null, null);
-        }
-
-        private void tbCast3_TextChanged(object sender, EventArgs e)
-        {
-            rbBuff3_CheckedChanged(null, null);
-        }
-
-        private void rbAtt3_CheckedChanged(object sender, EventArgs e)
-        {
-            rbBuff3_CheckedChanged(null, null);
-        }
-
-        private void tbDelay3_TextChanged(object sender, EventArgs e)
-        {
-            rbBuff3_CheckedChanged(null, null);
-        }
-
-        private void rbAtt2_CheckedChanged(object sender, EventArgs e)
-        {
-            rbBuff2_CheckedChanged(null, null);
-        }
-
+   
         private void rbBuff9_CheckedChanged(object sender, EventArgs e)
         {
-            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad9, tbMax9.Value, tbMin9.Value));
-            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad9, tbMax9.Value, tbMin9.Value));
+            /*
+            lblMax9M.Text = tbMax9M.Value + "%";
+            lblMin9M.Text = tbMin9M.Value + "%";
+            lblMax9P.Text = tbMax9P.Value + "%";
+            lblMin9P.Text = tbMin9P.Value + "%";
+            player.removeElement(player.AttArray, new Skill(0, 0, Keys.NumPad9, 0, 0, 0, 0, 0));
+            player.removeElement(player.BuffArray, new Skill(0, 0, Keys.NumPad9, 0, 0, 0, 0, 0));
 
             if (cbUseSkill9.Checked)
             {
@@ -211,12 +171,10 @@ namespace FloBot
                 Int32.TryParse(tbDelay9.Text, out delay);
                 Int32.TryParse(tbCast9.Text, out cast);
                 if (rbBuff9.Checked)
-                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad9, tbMax9.Value, tbMin9.Value));
-
+                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad9, tbMax9M.Value, tbMin9M.Value, tbMax9P.Value, tbMin9P.Value, (int)nudPrio9.Value));
                 if (rbAtt9.Checked)
-                    player.addElement(player.AttArray, new Skill(delay, cast, Keys.NumPad9, tbMax9.Value, tbMin9.Value));
-
-            }
+                    player.addElement(player.BuffArray, new Skill(delay, cast, Keys.NumPad9, tbMax9M.Value, tbMin9M.Value, tbMax9P.Value, tbMin9P.Value, (int)nudPrio9.Value));
+            }*/
         }
 
         private void tbDelay9_TextChanged(object sender, EventArgs e)
@@ -234,40 +192,7 @@ namespace FloBot
             player.MobToLootCount = 0;
         }
 
-        private void tbMax1_Scroll(object sender, EventArgs e)
-        {
-             
-            rbBuff1_CheckedChanged(null, null);
-        }
-
-        private void tbMin1_Scroll(object sender, EventArgs e)
-        {
-            lblMin1.Text = tbMin1.Value + "%";
-            
-        }
-
-        private void tbMax2_Scroll(object sender, EventArgs e)
-        {
-            lblMax2.Text = "" + tbMax2.Value;
-        }
-
-        private void tbMin2_Scroll(object sender, EventArgs e)
-        {
-
-            lblMin2.Text = "" + tbMin2.Value;
-
-        }
-
-        private void tbMax3_Scroll(object sender, EventArgs e)
-        {
-            lblMax3.Text = "" + tbMax3.Value;
-        }
-
-        private void tbMin3_Scroll(object sender, EventArgs e)
-        {
-
-            lblMin3.Text = "" + tbMin3.Value;
-        }
+       
 
         private void tbMax9_Scroll(object sender, EventArgs e)
         {
@@ -283,5 +208,7 @@ namespace FloBot
         {
             initAttacks();
         }
+
+   
     }
 }

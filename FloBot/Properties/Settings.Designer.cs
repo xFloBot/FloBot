@@ -562,5 +562,137 @@ namespace FloBot.Properties {
                 this["tbRevivePercent"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int tbMax1P {
+            get {
+                return ((int)(this["tbMax1P"]));
+            }
+            set {
+                this["tbMax1P"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int tbMin1P {
+            get {
+                return ((int)(this["tbMin1P"]));
+            }
+            set {
+                this["tbMin1P"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal nudPrio1 {
+            get {
+                return ((decimal)(this["nudPrio1"]));
+            }
+            set {
+                this["nudPrio1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal nudPrio2 {
+            get {
+                return ((decimal)(this["nudPrio2"]));
+            }
+            set {
+                this["nudPrio2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal nudPrio3 {
+            get {
+                return ((decimal)(this["nudPrio3"]));
+            }
+            set {
+                this["nudPrio3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int tbMax3P {
+            get {
+                return ((int)(this["tbMax3P"]));
+            }
+            set {
+                this["tbMax3P"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int tbMin3P {
+            get {
+                return ((int)(this["tbMin3P"]));
+            }
+            set {
+                this["tbMin3P"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int tbMin2P {
+            get {
+                return ((int)(this["tbMin2P"]));
+            }
+            set {
+                this["tbMin2P"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int tbMax2P {
+            get {
+                return ((int)(this["tbMax2P"]));
+            }
+            set {
+                this["tbMax2P"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int tbMin2M {
+            get {
+                return ((int)(this["tbMin2M"]));
+            }
+            set {
+                this["tbMin2M"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int tbMax3M {
+            get {
+                return ((int)(this["tbMax3M"]));
+            }
+            set {
+                this["tbMax3M"] = value;
+            }
+        }
     }
 }

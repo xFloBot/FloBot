@@ -7,14 +7,17 @@ using System.Windows.Forms;
 
 namespace FloBot.Model
 {
-    class Skill
+    class Skill : IComparable
     {
         private int _delay;
         private int _castTime;
         private DateTime _lastTimeUsed;
         private Keys _hotkey;
-        private int _maxHP;
-        private int _minHP;
+        private int _maxHPM;
+        private int _minHPM;
+        private int _maxHPP;
+        private int _minHPP;
+        private int _prio;
 
         public int Delay
         {
@@ -22,8 +25,15 @@ namespace FloBot.Model
             {
                 return _delay;
             }
-
-         
+            
+        }
+        public int Prio
+        {
+            get
+            {
+                return _prio;
+            }
+            
         }
 
         public int CastTime
@@ -32,7 +42,6 @@ namespace FloBot.Model
             {
                 return _castTime;
             }
-
             
         }
 
@@ -42,8 +51,7 @@ namespace FloBot.Model
             {
                 return _hotkey;
             }
-
-          
+            
         }
 
         public DateTime LastTimeUsed
@@ -59,51 +67,62 @@ namespace FloBot.Model
             }
         }
 
-        public int MaxHP
+        public int MaxHPM
         {
             get
             {
-                return _maxHP;
+                return _maxHPM;
             }
         }
 
-        public int MinHP
+        public int MinHPM
         {
             get
             {
-                return _minHP;
+                return _minHPM;
             }
         }
 
-        public Skill (int delay,int castTime,Keys hotkey,int maxHP,int minHP)
+        public int MaxHPP
+        {
+            get
+            {
+                return _maxHPP;
+            }
+        }
+
+        public int MinHPP
+        {
+            get
+            {
+                return _minHPP;
+            }
+        }
+
+        public Skill (int delay,int castTime,Keys hotkey,int maxHPM,int minHPM,int maxHPP,int minHPP,int prio)
         {
             _delay = delay+castTime;
             _castTime = castTime;
             _hotkey = hotkey;
-            _maxHP = maxHP;
-            _minHP = minHP;
+            _maxHPM = maxHPM;
+            _minHPM = minHPM;
+            _maxHPP = maxHPP;
+            _minHPP = minHPP;
+            _prio = prio;
         }
         public bool skillCanBeUsed()
         {
             return ( DateTime.Now - LastTimeUsed ).TotalSeconds >= Delay;
         }
-        public bool attackCanBeUsed(Target target)
+        public bool attackCanBeUsed(Target target,Player player)
         {
-            if(Keys.NumPad3 == Hotkey)
-            {
-                Console.WriteLine("3DelayTime:{0}", (DateTime.Now - LastTimeUsed).TotalSeconds);
-                Console.WriteLine("3HP in range?{0}", (target.targetMaxHP / 100 * MaxHP) >= target.targetCurrentHP);
-                Console.WriteLine("3HP in range2?{0}", (target.targetMaxHP / 100 * MinHP) <= target.targetCurrentHP);
-            }
-            if (Keys.NumPad1 == Hotkey)
-            {
-                Console.WriteLine("1DelayTime:{0}", (DateTime.Now - LastTimeUsed).TotalSeconds);
-                Console.WriteLine("1HP in range?{0}", (target.targetMaxHP / 100 * MaxHP) >= target.targetCurrentHP);
-                Console.WriteLine("1HP in range2?{0}", (target.targetMaxHP / 100 * MinHP) <= target.targetCurrentHP);
-            }
+
             return (DateTime.Now - LastTimeUsed).TotalSeconds >= Delay 
-                && (target.targetMaxHP/100*MaxHP)>=target.targetCurrentHP
-                && (target.targetMaxHP / 100 * MinHP) <= target.targetCurrentHP
+                && (target.targetMaxHP / 100 * MaxHPM) >= target.targetCurrentHP
+                && (target.targetMaxHP / 100 * MinHPM) <= target.targetCurrentHP
+
+                && (player.PlayerMaxHP / 100 * MaxHPP) >= player.PlayerCurrentHP
+                && (player.PlayerMaxHP / 100 * MinHPP) <= player.PlayerCurrentHP
                 ;
         }
 
@@ -116,5 +135,11 @@ namespace FloBot.Model
             return Hotkey == ((Skill) obj).Hotkey;
         }
 
+        public int CompareTo(object obj)
+        {
+            if (obj == null)
+                return 1;
+            return Prio.CompareTo(((Skill)obj).Prio);
+        }
     }
 }
