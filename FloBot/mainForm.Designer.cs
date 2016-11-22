@@ -63,6 +63,7 @@
             this.lblEmMP = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label45 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.tbNotRevivePercent = new System.Windows.Forms.TextBox();
             this.lblDeathDate = new System.Windows.Forms.Label();
@@ -245,7 +246,6 @@
             this.tbEmMP = new System.Windows.Forms.TrackBar();
             this.tbRestMP = new System.Windows.Forms.TrackBar();
             this.tbRestHP = new System.Windows.Forms.TrackBar();
-            this.label45 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -451,9 +451,9 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(151, 100);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(66, 13);
+            this.label14.Size = new System.Drawing.Size(64, 13);
             this.label14.TabIndex = 3;
-            this.label14.Text = "Exp benötigt";
+            this.label14.Text = "Exp needed";
             // 
             // label15
             // 
@@ -641,6 +641,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Combat Settings";
             // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(35, 241);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(41, 13);
+            this.label45.TabIndex = 16;
+            this.label45.Text = "(exp %)";
+            // 
             // label60
             // 
             this.label60.AutoSize = true;
@@ -655,7 +664,7 @@
             // 
             this.tbNotRevivePercent.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbRevivePercent", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbNotRevivePercent.Location = new System.Drawing.Point(119, 225);
-            this.tbNotRevivePercent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNotRevivePercent.Margin = new System.Windows.Forms.Padding(2);
             this.tbNotRevivePercent.Name = "tbNotRevivePercent";
             this.tbNotRevivePercent.Size = new System.Drawing.Size(76, 20);
             this.tbNotRevivePercent.TabIndex = 14;
@@ -786,7 +795,7 @@
             this.tp1.Controls.Add(this.rbBuff1);
             this.tp1.Location = new System.Drawing.Point(4, 22);
             this.tp1.Name = "tp1";
-            this.tp1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tp1.Padding = new System.Windows.Forms.Padding(3);
             this.tp1.Size = new System.Drawing.Size(471, 202);
             this.tp1.TabIndex = 0;
             this.tp1.Text = "1";
@@ -796,7 +805,7 @@
             // 
             this.nudPrio1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio1.Location = new System.Drawing.Point(26, 179);
-            this.nudPrio1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudPrio1.Margin = new System.Windows.Forms.Padding(2);
             this.nudPrio1.Name = "nudPrio1";
             this.nudPrio1.Size = new System.Drawing.Size(90, 20);
             this.nudPrio1.TabIndex = 22;
@@ -1102,7 +1111,7 @@
             this.tp2.Controls.Add(this.rbBuff2);
             this.tp2.Location = new System.Drawing.Point(4, 22);
             this.tp2.Name = "tp2";
-            this.tp2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tp2.Padding = new System.Windows.Forms.Padding(3);
             this.tp2.Size = new System.Drawing.Size(471, 202);
             this.tp2.TabIndex = 1;
             this.tp2.Text = "2";
@@ -1112,7 +1121,7 @@
             // 
             this.nudPrio2.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio2.Location = new System.Drawing.Point(26, 179);
-            this.nudPrio2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudPrio2.Margin = new System.Windows.Forms.Padding(2);
             this.nudPrio2.Name = "nudPrio2";
             this.nudPrio2.Size = new System.Drawing.Size(90, 20);
             this.nudPrio2.TabIndex = 49;
@@ -1425,7 +1434,7 @@
             // 
             this.nudPrio3.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio3.Location = new System.Drawing.Point(26, 179);
-            this.nudPrio3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudPrio3.Margin = new System.Windows.Forms.Padding(2);
             this.nudPrio3.Name = "nudPrio3";
             this.nudPrio3.Size = new System.Drawing.Size(90, 20);
             this.nudPrio3.TabIndex = 49;
@@ -1740,7 +1749,7 @@
             // 
             this.numericUpDown3.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.numericUpDown3.Location = new System.Drawing.Point(26, 179);
-            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(90, 20);
             this.numericUpDown3.TabIndex = 49;
@@ -2569,7 +2578,7 @@
             // 
             this.tbProcessName.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbProcessName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbProcessName.Location = new System.Drawing.Point(421, 7);
-            this.tbProcessName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbProcessName.Margin = new System.Windows.Forms.Padding(2);
             this.tbProcessName.Name = "tbProcessName";
             this.tbProcessName.Size = new System.Drawing.Size(76, 20);
             this.tbProcessName.TabIndex = 20;
@@ -2579,7 +2588,7 @@
             // 
             this.tbProcessID.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbProcessID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbProcessID.Location = new System.Drawing.Point(213, 10);
-            this.tbProcessID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbProcessID.Margin = new System.Windows.Forms.Padding(2);
             this.tbProcessID.Name = "tbProcessID";
             this.tbProcessID.Size = new System.Drawing.Size(76, 20);
             this.tbProcessID.TabIndex = 18;
@@ -2636,15 +2645,6 @@
             this.tbRestHP.TickFrequency = 10;
             this.tbRestHP.Value = global::FloBot.Properties.Settings.Default.tbRestHP;
             this.tbRestHP.Scroll += new System.EventHandler(this.tbRestHP_Scroll);
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(35, 241);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(41, 13);
-            this.label45.TabIndex = 16;
-            this.label45.Text = "(exp %)";
             // 
             // mainForm
             // 
