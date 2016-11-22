@@ -7,7 +7,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+*   Credits to Jorndel from MPGH for this class
+*/
 namespace FloBot.MemoryClass
 {
     class MemoryRW

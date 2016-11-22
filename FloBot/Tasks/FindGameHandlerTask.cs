@@ -31,13 +31,13 @@ namespace FloBot.Tasks
 
             if (mc.Process_Handle(gameName,gameNameMultiClient, number, main_form.tbProcessName.Text, !(oldProcessNumber.Equals(main_form.tbProcessID.Text) && oldWindowName.Equals(main_form.tbProcessName.Text))))
             {
-                main_form.lblGameFound.Text = "Florensia gefunden";
+                main_form.lblGameFound.Text = "Flo found";
                
                 oldProcessNumber = main_form.tbProcessID.Text;
                 oldWindowName = main_form.tbProcessName.Text;
                 return true;
             }
-            main_form.lblGameFound.Text = "Florensia nicht gefunden";
+            main_form.lblGameFound.Text = "Flo not found";
 
             return false;
         }
