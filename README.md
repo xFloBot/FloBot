@@ -2,7 +2,13 @@
 
 
 #Which functions are working:
-  - Hotkey 1-3
+  - Auto target
+  -- specify level range (does not count when being attacked)
+  - Auto attack with hotkeys
+  - Auto loot 
+  - Auto buff
+  - Auto revive at altar
+  - Hotkeys 1-3
   - take HP|MP Pot 
   - Rest when below HP|MP
   - Player|Mob info
