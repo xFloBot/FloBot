@@ -20,18 +20,25 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
+            Console.WriteLine(player.Target.isTargetFriendly());
 
-            if (player.inCombat)
+
+
+            if (player.inCombat && !player.Target.isTargetFriendly())
                 return true;
+
+            if (player.MobToLootCount > 0)
+                return false;
+
             DateTime mobSearchBreak = DateTime.Now;
             while (
                     (DateTime.Now - mobSearchBreak).TotalSeconds < 5
-                    && player.MobToLootCount == 0
                     && !player.Target.isValidTarget(main_form)
+                    || player.Target.isTargetFriendly() && (DateTime.Now - mobSearchBreak).TotalSeconds < 5
                 )
             {
                 mc.sendKeystroke(Keys.Tab);
-                Thread.Sleep(50);
+                Thread.Sleep(600);
             }
 
             while (!player.Target.isValidTarget(main_form) && player.Target.targetCurrentHP >0)
@@ -39,7 +46,7 @@ namespace FloBot.Tasks
                 mc.sendKeystroke(Keys.Escape);
                 Thread.Sleep(50);
             }
-            return true;
+            return false;
 
         }
     }

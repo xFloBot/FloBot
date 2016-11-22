@@ -13,7 +13,9 @@ namespace FloBot.Tasks
     {
 
         private const String gameName = "FlorensiaEN.bin";
-
+        private const String gameNameMultiClient = "FlorensiaEN";
+        private static String oldWindowName ="";
+        private static String oldProcessNumber = "";
         public bool doTask(mainForm main_form, Player player)
         {
             throw new NotImplementedException();
@@ -21,9 +23,18 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            if (mc.Process_Handle(gameName))
+
+            
+
+            int number = 0;
+            Int32.TryParse(main_form.tbProcessID.Text, out number);
+
+            if (mc.Process_Handle(gameName,gameNameMultiClient, number, main_form.tbProcessName.Text, !(oldProcessNumber.Equals(main_form.tbProcessID.Text) && oldWindowName.Equals(main_form.tbProcessName.Text))))
             {
                 main_form.lblGameFound.Text = "Florensia gefunden";
+               
+                oldProcessNumber = main_form.tbProcessID.Text;
+                oldWindowName = main_form.tbProcessName.Text;
                 return true;
             }
             main_form.lblGameFound.Text = "Florensia nicht gefunden";

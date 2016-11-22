@@ -18,26 +18,21 @@ namespace FloBot.State
             /*
             *   Focus a Target when you do not have any
             */
-            if(main_form.cbAutoTarget.Checked)
-                new FocusTargetTask().doTask(main_form,mc,player);
 
-            while(new CheckCurrentTargetTask().doTask(main_form,mc,player))
+            if(new CheckCurrentTargetTask().doTask(main_form,mc,player))
             {
-                if(main_form.cbAutoBattle.Checked)
-                {
                     new EmergencyHPTask().doTask(main_form, mc, player);
                     new EmergencyMPTask().doTask(main_form, mc, player);
                     new AttackTargetTask().doTask(main_form, mc, player);
                     new UpdateCharInfoTask().doTask(main_form, player);
 
                     new UpdateTargetInfo().doTask(main_form, player);
-                }
-
-
-                Thread.Sleep(100);
+            
+                
+                    return new CombatState();
             }
 
-
+            Thread.Sleep(100);
             return new AfterCombatState();
         }
     }

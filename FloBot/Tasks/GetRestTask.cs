@@ -17,11 +17,10 @@ namespace FloBot.Tasks
         {
             throw new NotImplementedException();
         }
-        private int oldHP = -1;
+        private static int oldHP = -1;
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            if (player.PlayerCurrentHP == 0)
-                return false;
+            
             //Check if in combat yes -> return false (not resting) incase you were resting, stand up and set resting to false
             if (player.inCombat)
                 if (player.Resting)
@@ -32,10 +31,14 @@ namespace FloBot.Tasks
                 }
                 else
                     return false;
+
             if(player.Resting && oldHP > player.PlayerCurrentHP)
             {
+               
                 player.Resting = false;
                 mc.sendKeystroke(Keys.Z);
+                Thread.Sleep(100);
+                mc.sendKeystroke(Keys.Tab);
                 oldHP = -1;
                 return false;
             }
@@ -45,13 +48,16 @@ namespace FloBot.Tasks
             {
                 while (player.Pos.moved())
                     Thread.Sleep(100);
+                int count = 0;
+                while (count++ < 15 && !player.inCombat) Thread.Sleep(100);
+
                 if (player.inCombat)
                     return false;
                 int counter = 0;
-                while ((oldHP = player.PlayerCurrentHP) == 0 && counter++ < 10) Thread.Sleep(100);
-
+                while ((oldHP = player.PlayerCurrentHP) <= 0 && counter++ < 10) Thread.Sleep(100);
                 player.Resting = true;
                 mc.sendKeystroke(Keys.Z);
+                
                 return true;
             }
             //Check if player has finished resting
@@ -59,13 +65,18 @@ namespace FloBot.Tasks
             {
                 if (player.PlayerMaxHP == player.PlayerCurrentHP && player.PlayerMaxMP == player.PlayerCurrentMP)
                 {
-                    Console.WriteLine("Player max HP: {0} \nPlayer current HP:{1}", player.PlayerMaxHP, player.PlayerCurrentHP);
+                  
+                    oldHP = -1;
                     mc.sendKeystroke(Keys.Z);
                     player.Resting = false;
+                    Thread.Sleep(1500);
                     return false;
                 }
                 else
+                {
+                    Thread.Sleep(200);
                     return true;
+                }
             }
             return false;
 

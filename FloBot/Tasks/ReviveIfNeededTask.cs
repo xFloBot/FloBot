@@ -18,14 +18,20 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            
+            if (player.PlayerCurrentHP > 0 || !player.allowedToRevive(main_form))
+                return false;
+            Thread.Sleep(1000);
             while(player.PlayerCurrentHP <= 0 && player.PlayerName.Length >= 3)
             {
-                player.Resting = false;
+                
                 mc.sendLeftClick(mc.getPixelsByPercent(50, 50));
                 Thread.Sleep(100);
             }
-            Thread.Sleep(2000);
+            player.Resting = false;
+            player.MobToLootCount = 0;
+            player.Buffed = false;
+            main_form.lblDeathDate.Text = DateTime.Now.ToString("HH:mm:ss");
+            Thread.Sleep(1000);
 
 
             return true;

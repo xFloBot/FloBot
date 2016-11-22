@@ -128,28 +128,36 @@ namespace FloBot.MemoryClass
                TargetNameOffset),40);
         }
 
-        private static int[] TargetCurrentHPOffsett = { targetBase, 0x10, 0x10 };
+        private static int[] TargetCurrentHPOffset = { targetBase, 0x10, 0x10 };
         public static Single getTargetCurrentHP()
         {
             return mc.ReadSingle(
                getFinalPointer(mc.getBaseAdress().ToInt32(),
-               TargetCurrentHPOffsett));
+               TargetCurrentHPOffset));
         }
-        private static int[] TargetMaxHPOffsett = { targetBase, 0x50 };
+        private static int[] TargetMaxHPOffset = { targetBase, 0x50 };
         public static Single getTargetMaxHP()
         {
             return mc.ReadSingle(
                getFinalPointer(mc.getBaseAdress().ToInt32(),
-               TargetMaxHPOffsett));
+               TargetMaxHPOffset));
         }
 
-        private static int[] TargetLevelOffsett = { targetBase, 0x18, 0x10, 0x0 };
+        private static int[] TargetLevelOffset = { targetBase, 0x18, 0x10, 0x0 };
         public static String getTargetLevel()
         {
             return mc.ReadString(
                 getFinalPointer(mc.getBaseAdress().ToInt32(),
-                TargetLevelOffsett),3);
+                TargetLevelOffset),3);
 
+        }
+
+        private static int[] TargetTypeOffset = { 0x0065160C, 0x54 };
+        public static int getTargetType()
+        {
+            return mc.ReadInteger(
+                getFinalPointer(mc.getBaseAdress().ToInt32(), TargetTypeOffset)
+                );
         }
         #endregion
     }

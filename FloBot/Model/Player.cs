@@ -1,7 +1,6 @@
 ﻿using FloBot.MemoryClass;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -17,7 +16,10 @@ namespace FloBot.Model
         private  ArrayList _attArray = new ArrayList();
         private int _MobToLootCount = 0;
         private bool _Resting = false;
+        private bool _buffed = false;
         private Single oldPercentage=-1;
+        private int level;
+        private Single highestPercent = -1;
         private int oldExp =-1;
         private int oldMobExp =-1;
 
@@ -30,7 +32,7 @@ namespace FloBot.Model
             }
 
         }
-
+        
         public  ArrayList AttArray
         {
             get
@@ -38,7 +40,7 @@ namespace FloBot.Model
                 return _attArray;
             }
         }
-
+        
         public Position Pos
         {
             get
@@ -112,10 +114,7 @@ namespace FloBot.Model
         {
             get
             {
-                int MaxHP;
-                while ((MaxHP = AddressUtil.getCharMaxHP()) == 1) Thread.Sleep(50);
-
-                return MaxHP;
+                return AddressUtil.getCharMaxHP();
             }
         }
 
@@ -130,10 +129,7 @@ namespace FloBot.Model
         {
             get
             {
-                int MaxMP;
-                while ((MaxMP = AddressUtil.getCharMaxMP()) == 1) Thread.Sleep(50);
-
-                return MaxMP;
+                return AddressUtil.getCharMaxMP();
             }
         }
 
@@ -144,33 +140,77 @@ namespace FloBot.Model
                 return AddressUtil.getCharCurrentMP();
             }
         }
+
+        public bool Buffed
+        {
+            get
+            {
+                return _buffed;
+            }
+
+            set
+            {
+                _buffed = value;
+            }
+        }
+
         public bool targetingMyself()
         {
-            int charNameEnd = -1;
 
             if (PlayerName.Length <= 0)
                 return false;
           
-            return Target.targetName.Contains(PlayerName);
+            return Target.targetName.Contains(PlayerName) && Target.isTargetFriendly();
         }
 
-
-
-
-
-        public int addElement(ArrayList al, Skill skill)
+        public void updateReviveBlock()
         {
-            return al.Add(skill);
+            if(highestPercent == -1)
+            {
+                highestPercent = AddressUtil.getCharExpPercent();
+                level = PlayerLevel;
+                return;
+            }
+            if(highestPercent < AddressUtil.getCharExpPercent())
+            {
+                highestPercent = AddressUtil.getCharExpPercent();
+                return;
+            }
+
+            if (PlayerLevel > level)
+            {
+                highestPercent = AddressUtil.getCharExpPercent();
+                level = PlayerLevel;
+                return;
+            }
+
+        }
+
+        public bool allowedToRevive(mainForm main_form)
+        {
+            int maxAllowedExpLos = 0;
+            Int32.TryParse(main_form.tbNotRevivePercent.Text,out maxAllowedExpLos);
+
+            return (highestPercent - Math.Abs(AddressUtil.getCharExpPercent()) < maxAllowedExpLos);
+            
+
+        }
+
+        public void addElement(ArrayList al, Skill skill)
+        {
+            al.Add(skill);
+            al.Sort();
         }
 
         public void removeElement(ArrayList al, Skill skill)
         {
-
             Skill skillToRemove = null;
             foreach (Skill skill2 in al)
             {
                 if (skill2.Equals(skill))
+                {
                     skillToRemove = skill2;
+                }
             }
             if (skillToRemove != null)
                 al.Remove(skillToRemove);

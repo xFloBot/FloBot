@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using FloBot.MemoryClass;
 using FloBot.Model;
 using FloBot.Tasks;
+using System.Threading;
 
 namespace FloBot.State
 {
@@ -13,19 +14,12 @@ namespace FloBot.State
     {
         public IState doTasks(mainForm main_form, MemoryRW mc, Player player)
         {
-            /*
-            *    Revive incase you DIED Noob.
-            */
-            new ReviveIfNeededTask().doTask(main_form,mc,player);
-
-          
-
-            if (main_form.cbAutoLoot.Checked)
-                new AutoLootTask().doTask(main_form, mc, player);
+           
 
             if (player.inCombat && main_form.cbAutoBattle.Checked)
                 return new CombatState();
 
+            Thread.Sleep(100);
             return new FindGameState();
         }
     }
