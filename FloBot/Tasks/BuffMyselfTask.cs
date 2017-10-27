@@ -7,7 +7,6 @@ using FloBot.MemoryClass;
 using FloBot.Model;
 using System.Threading;
 using System.Windows.Forms;
-using System.Collections;
 
 namespace FloBot.Tasks
 {

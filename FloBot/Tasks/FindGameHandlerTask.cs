@@ -23,13 +23,10 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
+           
+            Int32.TryParse(main_form.tbProcessID.Text, out int number);
 
-            
-
-            int number = 0;
-            Int32.TryParse(main_form.tbProcessID.Text, out number);
-
-            if (mc.Process_Handle(gameName,gameNameMultiClient, number, main_form.tbProcessName.Text, !(oldProcessNumber.Equals(main_form.tbProcessID.Text) && oldWindowName.Equals(main_form.tbProcessName.Text))))
+            if (mc.Process_Handle(gameName, number, main_form.tbProcessName.Text, !(oldProcessNumber.Equals(main_form.tbProcessID.Text) && oldWindowName.Equals(main_form.tbProcessName.Text))))
             {
                 main_form.lblGameFound.Text = "Flo found";
                

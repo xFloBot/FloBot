@@ -209,6 +209,9 @@ namespace FloBot
             initAttacks();
         }
 
-   
+        private void tbProcessName_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

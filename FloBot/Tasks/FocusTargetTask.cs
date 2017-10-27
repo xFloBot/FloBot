@@ -41,7 +41,7 @@ namespace FloBot.Tasks
                 Thread.Sleep(600);
             }
 
-            while (!player.Target.isValidTarget(main_form) && player.Target.targetCurrentHP >0)
+            while (!player.Target.isValidTarget(main_form) && player.Target.targetCurrentHP > 0)
             {
                 mc.sendKeystroke(Keys.Escape);
                 Thread.Sleep(50);

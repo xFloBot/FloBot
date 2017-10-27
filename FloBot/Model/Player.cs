@@ -95,10 +95,10 @@ namespace FloBot.Model
         {
             get
             {
-                int playerNameEnd = -1 ;
-                while ((playerNameEnd = AddressUtil.getCharName().IndexOf('\0')) < 0) Thread.Sleep(50);
+                //int playerNameEnd = -1 ;
+                //while ((playerNameEnd = AddressUtil.getCharName().IndexOf('\0')) < 0) Thread.Sleep(50);
 
-                return AddressUtil.getCharName().Substring(0, playerNameEnd);
+                return AddressUtil.getCharName();
             }
         }
 

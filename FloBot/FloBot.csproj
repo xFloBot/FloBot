@@ -93,7 +93,7 @@
     <Compile Include="Tasks\CheckCurrentTargetTask.cs" />
     <Compile Include="Tasks\GetRestTask.cs" />
     <Compile Include="Tasks\ITask.cs" />
-    <Compile Include="State\FindGameState.cs" />
+    <Compile Include="State\IdleState.cs" />
     <Compile Include="State\IState.cs" />
     <Compile Include="Tasks\FocusTargetTask.cs" />
     <Compile Include="Tasks\ReviveIfNeededTask.cs" />

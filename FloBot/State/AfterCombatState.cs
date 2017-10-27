@@ -20,7 +20,7 @@ namespace FloBot.State
                 return new CombatState();
 
             Thread.Sleep(100);
-            return new FindGameState();
+            return new IdleState();
         }
     }
 }

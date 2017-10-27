@@ -25,7 +25,7 @@ namespace FloBot.Main
             this.main_form = main_form;
             this.mc = new MemoryRW();
             this.player = player;
-            currentState = new FindGameState();
+            currentState = new IdleState();
             AddressUtil.setMemoryRW(this.mc);
             botThread = new Thread(start_Method);
             botThread.Start();

@@ -55,7 +55,7 @@ namespace FloBot.State
             }
                 
 
-            return new FindGameState();
+            return new IdleState();
         }
     }
 }

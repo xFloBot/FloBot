@@ -65,24 +65,23 @@ namespace FloBot.Model
 
         public bool isValidTarget(mainForm main_form)
         {
-            return checkIfInRange(main_form) && !targetName.Contains("NoTarget") && targetCurrentHP == targetMaxHP;
+            return targetCurrentHP == targetMaxHP && checkIfInRange(main_form) && !targetName.Contains("NoTarget"); 
         }
         public bool isTargetFriendly()
         {
-            if (AddressUtil.getTargetType() == 0)
-                return true;
-            return false;
+            return AddressUtil.getTargetType() == 0;
         }
+
         private bool checkIfInRange(mainForm main_form)
         {
             int range;
             int ownLevel = Int32.Parse(main_form.lblCharLvL.Text);
             int monsterLevel = 1;
-
+            Console.WriteLine("Player level:" + ownLevel);
+            Console.WriteLine("Target level:" + targetLevel);
             //TryParse Target level(It's stored as String in the address dunno why)
             if (!Int32.TryParse(targetLevel, out monsterLevel))
                 return false ;
-         
             //Try parse range
             if (!Int32.TryParse(main_form.tbLvLRange.Text, out range)) return false;
             //check if monster level is bigger than ownLevel+ range || smaller than ownLevel-range

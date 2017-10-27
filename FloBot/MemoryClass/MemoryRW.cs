@@ -46,33 +46,26 @@ namespace FloBot.MemoryClass
             return windowHandler == GetForegroundWindow();
         }
 
-        public bool Process_Handle(string ProcessName,string multiClientName,int processNumber,String windowName,bool updateWindow)
+        public bool Process_Handle(string ProcessName,int processNumber,String windowName,bool updateWindow)
         {
             try
             {
-                Process[] ProcList = Process.GetProcessesByName(multiClientName);
-                if (ProcList.Length == 0)
+                Process[] ProcList = Process.GetProcessesByName(ProcessName);
+                if (ProcList.Length <= processNumber)
                 {
-
-                    ProcList = Process.GetProcessesByName(ProcessName);
-                    if (ProcList.Length == 0)
-                        return false;
-                    else
-                        processNumber = 0;
+                    return false;
                 }
-
-                if (ProcList.Length != 0 && ProcList.Length > processNumber)
+                
+                if (processID == ProcList[processNumber].Id)
                 {
-                    if (processID == ProcList[processNumber].Id)
+                    if (updateWindow && !(windowHandler == null))
                     {
-                        if (updateWindow && !(windowHandler == null))
-                        {
-                            windowHandler = yourProcess.MainWindowHandle;
-                            SetWindowText(windowHandler, windowName);
-                            hWnd = FindWindow(null, windowName);
-                        }
-                        return true;
+                        windowHandler = yourProcess.MainWindowHandle;
+                        SetWindowText(windowHandler, windowName);
+                        hWnd = FindWindow(null, windowName);
                     }
+                    return true;
+                }
                         
                     processID = ProcList[processNumber].Id;
                     yourProcess = ProcList[processNumber];
@@ -83,11 +76,20 @@ namespace FloBot.MemoryClass
                     SetWindowText(windowHandler, windowName);
                     hWnd = FindWindow(null, windowName);
                     return true;
-                }return false;
+            
             }
             catch (Exception ex)
             { Console.Beep(); Console.WriteLine("Process_Handle - " + ex.Message); return false; }
         }
+
+        public void ChangeWindowName(String windowName)
+        {
+            windowHandler = yourProcess.MainWindowHandle;
+            SetWindowText(windowHandler, windowName);
+            hWnd = FindWindow(null, windowName);
+        }
+
+
         private byte[] Read(int Address, int Length)
         {
             byte[] Buffer = new byte[Length];
