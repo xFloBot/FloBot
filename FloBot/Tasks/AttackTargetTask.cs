@@ -22,7 +22,7 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            mc.sendKeystroke(Keys.Space);
+            
             Console.WriteLine((DateTime.Now - lastTimeUsedSpell).TotalSeconds);
             Console.WriteLine("DelayTime: "+ delayTime);
             if (delayTime > 0)
@@ -57,9 +57,9 @@ namespace FloBot.Tasks
                     }
 
                 }
-           
-            
 
+
+            mc.sendKeystroke(Keys.Space);
             return true;
         }
     }

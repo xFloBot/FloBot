@@ -159,9 +159,16 @@
             this.rbAtt3 = new System.Windows.Forms.RadioButton();
             this.rbBuff3 = new System.Windows.Forms.RadioButton();
             this.tp4 = new System.Windows.Forms.TabPage();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.nudPrio4 = new System.Windows.Forms.NumericUpDown();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.lblMin4P = new System.Windows.Forms.Label();
+            this.lblMin4M = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.lblMax4P = new System.Windows.Forms.Label();
+            this.lblMax4M = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
@@ -170,22 +177,15 @@
             this.label92 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.label96 = new System.Windows.Forms.Label();
-            this.label97 = new System.Windows.Forms.Label();
-            this.label98 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.label100 = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
-            this.trackBar9 = new System.Windows.Forms.TrackBar();
-            this.trackBar10 = new System.Windows.Forms.TrackBar();
-            this.trackBar11 = new System.Windows.Forms.TrackBar();
-            this.trackBar12 = new System.Windows.Forms.TrackBar();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.tbMin4P = new System.Windows.Forms.TrackBar();
+            this.tbMin4M = new System.Windows.Forms.TrackBar();
+            this.tbMax4P = new System.Windows.Forms.TrackBar();
+            this.tbMax4M = new System.Windows.Forms.TrackBar();
+            this.tbCast4 = new System.Windows.Forms.TextBox();
+            this.tbDelay4 = new System.Windows.Forms.TextBox();
+            this.cbUseSkill4 = new System.Windows.Forms.CheckBox();
+            this.rbAtt4 = new System.Windows.Forms.RadioButton();
+            this.rbBuff4 = new System.Windows.Forms.RadioButton();
             this.tp5 = new System.Windows.Forms.TabPage();
             this.label28 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -269,11 +269,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbMax3P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax3M)).BeginInit();
             this.tp4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrio4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin4P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin4M)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax4P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax4M)).BeginInit();
             this.tp5.SuspendLayout();
             this.tp6.SuspendLayout();
             this.tp7.SuspendLayout();
@@ -377,9 +377,9 @@
             this.groupBox1.Controls.Add(this.lblTarget);
             this.groupBox1.Controls.Add(this.lblHP);
             this.groupBox1.Location = new System.Drawing.Point(21, 267);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(381, 90);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
@@ -413,9 +413,9 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(21, 37);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(381, 229);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
@@ -671,9 +671,9 @@
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.tbLvLRange);
             this.groupBox3.Location = new System.Drawing.Point(411, 37);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(267, 320);
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
@@ -733,7 +733,7 @@
             // 
             this.cbEnableCombatState.AutoSize = true;
             this.cbEnableCombatState.Location = new System.Drawing.Point(9, 39);
-            this.cbEnableCombatState.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbEnableCombatState.Margin = new System.Windows.Forms.Padding(4);
             this.cbEnableCombatState.Name = "cbEnableCombatState";
             this.cbEnableCombatState.Size = new System.Drawing.Size(74, 21);
             this.cbEnableCombatState.TabIndex = 11;
@@ -747,7 +747,7 @@
             this.cbAutoTarget.Checked = global::FloBot.Properties.Settings.Default.cbAutoTarget;
             this.cbAutoTarget.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoTarget", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbAutoTarget.Location = new System.Drawing.Point(27, 74);
-            this.cbAutoTarget.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbAutoTarget.Margin = new System.Windows.Forms.Padding(4);
             this.cbAutoTarget.Name = "cbAutoTarget";
             this.cbAutoTarget.Size = new System.Drawing.Size(100, 21);
             this.cbAutoTarget.TabIndex = 10;
@@ -760,7 +760,7 @@
             this.cbAutoLoot.Checked = global::FloBot.Properties.Settings.Default.cbAutoLoot;
             this.cbAutoLoot.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoLoot", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbAutoLoot.Location = new System.Drawing.Point(27, 206);
-            this.cbAutoLoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbAutoLoot.Margin = new System.Windows.Forms.Padding(4);
             this.cbAutoLoot.Name = "cbAutoLoot";
             this.cbAutoLoot.Size = new System.Drawing.Size(86, 21);
             this.cbAutoLoot.TabIndex = 9;
@@ -774,7 +774,7 @@
             this.cbAutoBattle.Checked = global::FloBot.Properties.Settings.Default.cbAutoAttack;
             this.cbAutoBattle.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoAttack", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbAutoBattle.Location = new System.Drawing.Point(27, 174);
-            this.cbAutoBattle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbAutoBattle.Margin = new System.Windows.Forms.Padding(4);
             this.cbAutoBattle.Name = "cbAutoBattle";
             this.cbAutoBattle.Size = new System.Drawing.Size(69, 21);
             this.cbAutoBattle.TabIndex = 9;
@@ -785,7 +785,7 @@
             // 
             this.tbLvLRange.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "maxLevelDif", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbLvLRange.Location = new System.Drawing.Point(51, 123);
-            this.tbLvLRange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbLvLRange.Margin = new System.Windows.Forms.Padding(4);
             this.tbLvLRange.Name = "tbLvLRange";
             this.tbLvLRange.Size = new System.Drawing.Size(132, 22);
             this.tbLvLRange.TabIndex = 6;
@@ -804,7 +804,7 @@
             this.tbHotkeys.Controls.Add(this.tp9);
             this.tbHotkeys.Controls.Add(this.tp0);
             this.tbHotkeys.Location = new System.Drawing.Point(700, 37);
-            this.tbHotkeys.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbHotkeys.Margin = new System.Windows.Forms.Padding(4);
             this.tbHotkeys.Name = "tbHotkeys";
             this.tbHotkeys.SelectedIndex = 0;
             this.tbHotkeys.Size = new System.Drawing.Size(639, 281);
@@ -840,9 +840,9 @@
             this.tp1.Controls.Add(this.rbAtt1);
             this.tp1.Controls.Add(this.rbBuff1);
             this.tp1.Location = new System.Drawing.Point(4, 25);
-            this.tp1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp1.Margin = new System.Windows.Forms.Padding(4);
             this.tp1.Name = "tp1";
-            this.tp1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp1.Padding = new System.Windows.Forms.Padding(4);
             this.tp1.Size = new System.Drawing.Size(631, 252);
             this.tp1.TabIndex = 0;
             this.tp1.Text = "1";
@@ -891,7 +891,7 @@
             this.tbMin1P.AutoSize = false;
             this.tbMin1P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin1P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin1P.Location = new System.Drawing.Point(295, 187);
-            this.tbMin1P.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMin1P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin1P.Maximum = 100;
             this.tbMin1P.Name = "tbMin1P";
             this.tbMin1P.Size = new System.Drawing.Size(312, 38);
@@ -905,7 +905,7 @@
             this.tbMin1M.AutoSize = false;
             this.tbMin1M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin1M.Location = new System.Drawing.Point(295, 75);
-            this.tbMin1M.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMin1M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin1M.Maximum = 100;
             this.tbMin1M.Name = "tbMin1M";
             this.tbMin1M.Size = new System.Drawing.Size(312, 38);
@@ -1029,7 +1029,7 @@
             this.tbMax1P.AutoSize = false;
             this.tbMax1P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax1P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax1P.Location = new System.Drawing.Point(295, 150);
-            this.tbMax1P.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMax1P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax1P.Maximum = 100;
             this.tbMax1P.Name = "tbMax1P";
             this.tbMax1P.Size = new System.Drawing.Size(312, 38);
@@ -1053,7 +1053,7 @@
             this.tbMax1M.AutoSize = false;
             this.tbMax1M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax1M.Location = new System.Drawing.Point(295, 38);
-            this.tbMax1M.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMax1M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax1M.Maximum = 100;
             this.tbMax1M.Name = "tbMax1M";
             this.tbMax1M.Size = new System.Drawing.Size(312, 38);
@@ -1076,7 +1076,7 @@
             // 
             this.tbCast1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCastSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast1.Location = new System.Drawing.Point(31, 165);
-            this.tbCast1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbCast1.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast1.Name = "tbCast1";
             this.tbCast1.Size = new System.Drawing.Size(132, 22);
             this.tbCast1.TabIndex = 4;
@@ -1087,7 +1087,7 @@
             // 
             this.tbDelay1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelaySkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay1.Location = new System.Drawing.Point(31, 112);
-            this.tbDelay1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbDelay1.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay1.Name = "tbDelay1";
             this.tbDelay1.Size = new System.Drawing.Size(132, 22);
             this.tbDelay1.TabIndex = 4;
@@ -1100,9 +1100,9 @@
             this.label20.Location = new System.Drawing.Point(23, 94);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(48, 17);
+            this.label20.Size = new System.Drawing.Size(113, 17);
             this.label20.TabIndex = 3;
-            this.label20.Text = "Delay:";
+            this.label20.Text = "Time until reuse:";
             // 
             // cbUseSkill1
             // 
@@ -1110,7 +1110,7 @@
             this.cbUseSkill1.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill1;
             this.cbUseSkill1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill1.Location = new System.Drawing.Point(4, 4);
-            this.cbUseSkill1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbUseSkill1.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill1.Name = "cbUseSkill1";
             this.cbUseSkill1.Size = new System.Drawing.Size(55, 21);
             this.cbUseSkill1.TabIndex = 2;
@@ -1124,7 +1124,7 @@
             this.rbAtt1.Checked = global::FloBot.Properties.Settings.Default.rbAttackSkill1;
             this.rbAtt1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAttackSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt1.Location = new System.Drawing.Point(25, 62);
-            this.rbAtt1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbAtt1.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt1.Name = "rbAtt1";
             this.rbAtt1.Size = new System.Drawing.Size(97, 21);
             this.rbAtt1.TabIndex = 1;
@@ -1139,7 +1139,7 @@
             this.rbBuff1.Checked = global::FloBot.Properties.Settings.Default.rbBuffSkill1;
             this.rbBuff1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuffSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff1.Location = new System.Drawing.Point(25, 32);
-            this.rbBuff1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbBuff1.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff1.Name = "rbBuff1";
             this.rbBuff1.Size = new System.Drawing.Size(81, 21);
             this.rbBuff1.TabIndex = 0;
@@ -1177,9 +1177,9 @@
             this.tp2.Controls.Add(this.rbAtt2);
             this.tp2.Controls.Add(this.rbBuff2);
             this.tp2.Location = new System.Drawing.Point(4, 25);
-            this.tp2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp2.Margin = new System.Windows.Forms.Padding(4);
             this.tp2.Name = "tp2";
-            this.tp2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp2.Padding = new System.Windows.Forms.Padding(4);
             this.tp2.Size = new System.Drawing.Size(631, 252);
             this.tp2.TabIndex = 1;
             this.tp2.Text = "2";
@@ -1249,9 +1249,9 @@
             this.label47.Location = new System.Drawing.Point(369, 118);
             this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(26, 17);
+            this.label47.Size = new System.Drawing.Size(34, 17);
             this.label47.TabIndex = 43;
-            this.label47.Text = "bis";
+            this.label47.Text = "until";
             // 
             // label55
             // 
@@ -1259,9 +1259,9 @@
             this.label55.Location = new System.Drawing.Point(369, 6);
             this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(26, 17);
+            this.label55.Size = new System.Drawing.Size(34, 17);
             this.label55.TabIndex = 42;
-            this.label55.Text = "bis";
+            this.label55.Text = "until";
             // 
             // lblMax2P
             // 
@@ -1329,9 +1329,9 @@
             this.label73.Location = new System.Drawing.Point(207, 118);
             this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(73, 17);
+            this.label73.Size = new System.Drawing.Size(49, 17);
             this.label73.TabIndex = 33;
-            this.label73.Text = "Nutzen ab";
+            this.label73.Text = "Use at";
             // 
             // label74
             // 
@@ -1339,9 +1339,9 @@
             this.label74.Location = new System.Drawing.Point(207, 6);
             this.label74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(73, 17);
+            this.label74.Size = new System.Drawing.Size(49, 17);
             this.label74.TabIndex = 32;
-            this.label74.Text = "Nutzen ab";
+            this.label74.Text = "Use at";
             // 
             // label75
             // 
@@ -1359,16 +1359,16 @@
             this.label76.Location = new System.Drawing.Point(23, 94);
             this.label76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(48, 17);
+            this.label76.Size = new System.Drawing.Size(113, 17);
             this.label76.TabIndex = 26;
-            this.label76.Text = "Delay:";
+            this.label76.Text = "Time until reuse:";
             // 
             // tbMin2P
             // 
             this.tbMin2P.AutoSize = false;
             this.tbMin2P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin2P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin2P.Location = new System.Drawing.Point(295, 187);
-            this.tbMin2P.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMin2P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin2P.Maximum = 100;
             this.tbMin2P.Name = "tbMin2P";
             this.tbMin2P.Size = new System.Drawing.Size(312, 38);
@@ -1382,7 +1382,7 @@
             this.tbMin2M.AutoSize = false;
             this.tbMin2M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin2M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin2M.Location = new System.Drawing.Point(295, 75);
-            this.tbMin2M.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMin2M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin2M.Maximum = 100;
             this.tbMin2M.Name = "tbMin2M";
             this.tbMin2M.Size = new System.Drawing.Size(312, 38);
@@ -1396,7 +1396,7 @@
             this.tbMax2P.AutoSize = false;
             this.tbMax2P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax2P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax2P.Location = new System.Drawing.Point(295, 150);
-            this.tbMax2P.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMax2P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax2P.Maximum = 100;
             this.tbMax2P.Name = "tbMax2P";
             this.tbMax2P.Size = new System.Drawing.Size(312, 38);
@@ -1410,7 +1410,7 @@
             this.tbMax2M.AutoSize = false;
             this.tbMax2M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax2M.Location = new System.Drawing.Point(295, 38);
-            this.tbMax2M.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMax2M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax2M.Maximum = 100;
             this.tbMax2M.Name = "tbMax2M";
             this.tbMax2M.Size = new System.Drawing.Size(312, 38);
@@ -1423,7 +1423,7 @@
             // 
             this.tbCast2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast2.Location = new System.Drawing.Point(31, 165);
-            this.tbCast2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbCast2.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast2.Name = "tbCast2";
             this.tbCast2.Size = new System.Drawing.Size(132, 22);
             this.tbCast2.TabIndex = 28;
@@ -1433,7 +1433,7 @@
             // 
             this.tbDelay2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay2.Location = new System.Drawing.Point(31, 112);
-            this.tbDelay2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbDelay2.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay2.Name = "tbDelay2";
             this.tbDelay2.Size = new System.Drawing.Size(132, 22);
             this.tbDelay2.TabIndex = 27;
@@ -1445,7 +1445,7 @@
             this.cbUseSkill2.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill2;
             this.cbUseSkill2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill2.Location = new System.Drawing.Point(4, 4);
-            this.cbUseSkill2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbUseSkill2.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill2.Name = "cbUseSkill2";
             this.cbUseSkill2.Size = new System.Drawing.Size(55, 21);
             this.cbUseSkill2.TabIndex = 25;
@@ -1459,7 +1459,7 @@
             this.rbAtt2.Checked = global::FloBot.Properties.Settings.Default.rbAtt2;
             this.rbAtt2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt2.Location = new System.Drawing.Point(25, 62);
-            this.rbAtt2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbAtt2.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt2.Name = "rbAtt2";
             this.rbAtt2.Size = new System.Drawing.Size(97, 21);
             this.rbAtt2.TabIndex = 24;
@@ -1474,7 +1474,7 @@
             this.rbBuff2.Checked = global::FloBot.Properties.Settings.Default.rbBuff2;
             this.rbBuff2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff2.Location = new System.Drawing.Point(25, 32);
-            this.rbBuff2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbBuff2.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff2.Name = "rbBuff2";
             this.rbBuff2.Size = new System.Drawing.Size(81, 21);
             this.rbBuff2.TabIndex = 23;
@@ -1512,7 +1512,7 @@
             this.tp3.Controls.Add(this.rbAtt3);
             this.tp3.Controls.Add(this.rbBuff3);
             this.tp3.Location = new System.Drawing.Point(4, 25);
-            this.tp3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp3.Margin = new System.Windows.Forms.Padding(4);
             this.tp3.Name = "tp3";
             this.tp3.Size = new System.Drawing.Size(631, 252);
             this.tp3.TabIndex = 2;
@@ -1583,9 +1583,9 @@
             this.label51.Location = new System.Drawing.Point(369, 118);
             this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(26, 17);
+            this.label51.Size = new System.Drawing.Size(34, 17);
             this.label51.TabIndex = 43;
-            this.label51.Text = "bis";
+            this.label51.Text = "until";
             // 
             // label52
             // 
@@ -1593,9 +1593,9 @@
             this.label52.Location = new System.Drawing.Point(369, 6);
             this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(26, 17);
+            this.label52.Size = new System.Drawing.Size(34, 17);
             this.label52.TabIndex = 42;
-            this.label52.Text = "bis";
+            this.label52.Text = "until";
             // 
             // lblMax3P
             // 
@@ -1663,9 +1663,9 @@
             this.label83.Location = new System.Drawing.Point(207, 118);
             this.label83.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(73, 17);
+            this.label83.Size = new System.Drawing.Size(49, 17);
             this.label83.TabIndex = 33;
-            this.label83.Text = "Nutzen ab";
+            this.label83.Text = "Use at";
             // 
             // label84
             // 
@@ -1673,9 +1673,9 @@
             this.label84.Location = new System.Drawing.Point(207, 6);
             this.label84.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(73, 17);
+            this.label84.Size = new System.Drawing.Size(49, 17);
             this.label84.TabIndex = 32;
-            this.label84.Text = "Nutzen ab";
+            this.label84.Text = "Use at";
             // 
             // label85
             // 
@@ -1693,16 +1693,16 @@
             this.label86.Location = new System.Drawing.Point(23, 94);
             this.label86.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(48, 17);
+            this.label86.Size = new System.Drawing.Size(113, 17);
             this.label86.TabIndex = 26;
-            this.label86.Text = "Delay:";
+            this.label86.Text = "Time until reuse:";
             // 
             // tbMin3P
             // 
             this.tbMin3P.AutoSize = false;
             this.tbMin3P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin3P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin3P.Location = new System.Drawing.Point(295, 187);
-            this.tbMin3P.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMin3P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin3P.Maximum = 100;
             this.tbMin3P.Name = "tbMin3P";
             this.tbMin3P.Size = new System.Drawing.Size(312, 38);
@@ -1716,7 +1716,7 @@
             this.tbMin3M.AutoSize = false;
             this.tbMin3M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin3M.Location = new System.Drawing.Point(295, 75);
-            this.tbMin3M.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMin3M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin3M.Maximum = 100;
             this.tbMin3M.Name = "tbMin3M";
             this.tbMin3M.Size = new System.Drawing.Size(312, 38);
@@ -1730,7 +1730,7 @@
             this.tbMax3P.AutoSize = false;
             this.tbMax3P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax3P.Location = new System.Drawing.Point(295, 150);
-            this.tbMax3P.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMax3P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax3P.Maximum = 100;
             this.tbMax3P.Name = "tbMax3P";
             this.tbMax3P.Size = new System.Drawing.Size(312, 38);
@@ -1744,7 +1744,7 @@
             this.tbMax3M.AutoSize = false;
             this.tbMax3M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax3M.Location = new System.Drawing.Point(295, 38);
-            this.tbMax3M.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMax3M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax3M.Maximum = 100;
             this.tbMax3M.Name = "tbMax3M";
             this.tbMax3M.Size = new System.Drawing.Size(312, 38);
@@ -1757,7 +1757,7 @@
             // 
             this.tbCast3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast3.Location = new System.Drawing.Point(31, 165);
-            this.tbCast3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbCast3.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast3.Name = "tbCast3";
             this.tbCast3.Size = new System.Drawing.Size(132, 22);
             this.tbCast3.TabIndex = 28;
@@ -1768,7 +1768,7 @@
             // 
             this.tbDelay3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay3.Location = new System.Drawing.Point(31, 112);
-            this.tbDelay3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbDelay3.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay3.Name = "tbDelay3";
             this.tbDelay3.Size = new System.Drawing.Size(132, 22);
             this.tbDelay3.TabIndex = 27;
@@ -1781,7 +1781,7 @@
             this.cbUseSkill3.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill1;
             this.cbUseSkill3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill3.Location = new System.Drawing.Point(4, 4);
-            this.cbUseSkill3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbUseSkill3.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill3.Name = "cbUseSkill3";
             this.cbUseSkill3.Size = new System.Drawing.Size(55, 21);
             this.cbUseSkill3.TabIndex = 25;
@@ -1795,7 +1795,7 @@
             this.rbAtt3.Checked = global::FloBot.Properties.Settings.Default.rbAtt3;
             this.rbAtt3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt3.Location = new System.Drawing.Point(25, 62);
-            this.rbAtt3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbAtt3.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt3.Name = "rbAtt3";
             this.rbAtt3.Size = new System.Drawing.Size(97, 21);
             this.rbAtt3.TabIndex = 24;
@@ -1810,7 +1810,7 @@
             this.rbBuff3.Checked = global::FloBot.Properties.Settings.Default.rbBuff3;
             this.rbBuff3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff3.Location = new System.Drawing.Point(25, 32);
-            this.rbBuff3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbBuff3.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff3.Name = "rbBuff3";
             this.rbBuff3.Size = new System.Drawing.Size(81, 21);
             this.rbBuff3.TabIndex = 23;
@@ -1820,9 +1820,16 @@
             // 
             // tp4
             // 
-            this.tp4.Controls.Add(this.numericUpDown3);
+            this.tp4.Controls.Add(this.nudPrio4);
             this.tp4.Controls.Add(this.label26);
             this.tp4.Controls.Add(this.label27);
+            this.tp4.Controls.Add(this.label46);
+            this.tp4.Controls.Add(this.lblMin4P);
+            this.tp4.Controls.Add(this.lblMin4M);
+            this.tp4.Controls.Add(this.label66);
+            this.tp4.Controls.Add(this.label68);
+            this.tp4.Controls.Add(this.lblMax4P);
+            this.tp4.Controls.Add(this.lblMax4M);
             this.tp4.Controls.Add(this.label87);
             this.tp4.Controls.Add(this.label88);
             this.tp4.Controls.Add(this.label89);
@@ -1831,39 +1838,33 @@
             this.tp4.Controls.Add(this.label92);
             this.tp4.Controls.Add(this.label93);
             this.tp4.Controls.Add(this.label94);
-            this.tp4.Controls.Add(this.label95);
-            this.tp4.Controls.Add(this.label96);
-            this.tp4.Controls.Add(this.label97);
-            this.tp4.Controls.Add(this.label98);
-            this.tp4.Controls.Add(this.label99);
-            this.tp4.Controls.Add(this.label100);
-            this.tp4.Controls.Add(this.label101);
-            this.tp4.Controls.Add(this.trackBar9);
-            this.tp4.Controls.Add(this.trackBar10);
-            this.tp4.Controls.Add(this.trackBar11);
-            this.tp4.Controls.Add(this.trackBar12);
-            this.tp4.Controls.Add(this.textBox5);
-            this.tp4.Controls.Add(this.textBox6);
-            this.tp4.Controls.Add(this.checkBox3);
-            this.tp4.Controls.Add(this.radioButton5);
-            this.tp4.Controls.Add(this.radioButton6);
+            this.tp4.Controls.Add(this.tbMin4P);
+            this.tp4.Controls.Add(this.tbMin4M);
+            this.tp4.Controls.Add(this.tbMax4P);
+            this.tp4.Controls.Add(this.tbMax4M);
+            this.tp4.Controls.Add(this.tbCast4);
+            this.tp4.Controls.Add(this.tbDelay4);
+            this.tp4.Controls.Add(this.cbUseSkill4);
+            this.tp4.Controls.Add(this.rbAtt4);
+            this.tp4.Controls.Add(this.rbBuff4);
             this.tp4.Location = new System.Drawing.Point(4, 25);
-            this.tp4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp4.Margin = new System.Windows.Forms.Padding(4);
             this.tp4.Name = "tp4";
             this.tp4.Size = new System.Drawing.Size(631, 252);
             this.tp4.TabIndex = 3;
             this.tp4.Text = "4";
             this.tp4.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown3
+            // nudPrio4
             // 
-            this.numericUpDown3.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown3.Location = new System.Drawing.Point(35, 220);
-            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown3.TabIndex = 49;
-            this.numericUpDown3.Value = global::FloBot.Properties.Settings.Default.nudPrio1;
+            this.nudPrio4.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio4.Location = new System.Drawing.Point(35, 220);
+            this.nudPrio4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudPrio4.Name = "nudPrio4";
+            this.nudPrio4.Size = new System.Drawing.Size(120, 22);
+            this.nudPrio4.TabIndex = 76;
+            this.nudPrio4.Value = global::FloBot.Properties.Settings.Default.nudPrio3;
+            this.nudPrio4.ValueChanged += new System.EventHandler(this.nudPrio4_ValueChanged);
             // 
             // label26
             // 
@@ -1871,278 +1872,287 @@
             this.label26.Location = new System.Drawing.Point(31, 199);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(61, 17);
-            this.label26.TabIndex = 48;
+            this.label26.TabIndex = 75;
             this.label26.Text = "Priorität:";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(445, 118);
+            this.label27.Location = new System.Drawing.Point(457, 119);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(71, 17);
-            this.label27.TabIndex = 47;
+            this.label27.TabIndex = 74;
             this.label27.Text = "Player HP";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(457, 7);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(58, 17);
+            this.label46.TabIndex = 73;
+            this.label46.Text = "Mob HP";
+            // 
+            // lblMin4P
+            // 
+            this.lblMin4P.AutoSize = true;
+            this.lblMin4P.Location = new System.Drawing.Point(424, 118);
+            this.lblMin4P.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMin4P.Name = "lblMin4P";
+            this.lblMin4P.Size = new System.Drawing.Size(16, 17);
+            this.lblMin4P.TabIndex = 72;
+            this.lblMin4P.Text = "0";
+            // 
+            // lblMin4M
+            // 
+            this.lblMin4M.AutoSize = true;
+            this.lblMin4M.Location = new System.Drawing.Point(424, 6);
+            this.lblMin4M.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMin4M.Name = "lblMin4M";
+            this.lblMin4M.Size = new System.Drawing.Size(16, 17);
+            this.lblMin4M.TabIndex = 71;
+            this.lblMin4M.Text = "0";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(369, 118);
+            this.label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(34, 17);
+            this.label66.TabIndex = 70;
+            this.label66.Text = "until";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(369, 6);
+            this.label68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(34, 17);
+            this.label68.TabIndex = 69;
+            this.label68.Text = "until";
+            // 
+            // lblMax4P
+            // 
+            this.lblMax4P.AutoSize = true;
+            this.lblMax4P.Location = new System.Drawing.Point(305, 118);
+            this.lblMax4P.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMax4P.Name = "lblMax4P";
+            this.lblMax4P.Size = new System.Drawing.Size(32, 17);
+            this.lblMax4P.TabIndex = 66;
+            this.lblMax4P.Text = "100";
+            // 
+            // lblMax4M
+            // 
+            this.lblMax4M.AutoSize = true;
+            this.lblMax4M.Location = new System.Drawing.Point(305, 6);
+            this.lblMax4M.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMax4M.Name = "lblMax4M";
+            this.lblMax4M.Size = new System.Drawing.Size(32, 17);
+            this.lblMax4M.TabIndex = 65;
+            this.lblMax4M.Text = "100";
             // 
             // label87
             // 
             this.label87.AutoSize = true;
-            this.label87.Location = new System.Drawing.Point(445, 6);
+            this.label87.Location = new System.Drawing.Point(231, 199);
+            this.label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(58, 17);
-            this.label87.TabIndex = 46;
-            this.label87.Text = "Mob HP";
+            this.label87.Size = new System.Drawing.Size(30, 17);
+            this.label87.TabIndex = 64;
+            this.label87.Text = "min";
             // 
             // label88
             // 
             this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(424, 118);
+            this.label88.Location = new System.Drawing.Point(231, 89);
             this.label88.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(16, 17);
-            this.label88.TabIndex = 45;
-            this.label88.Text = "0";
+            this.label88.Size = new System.Drawing.Size(30, 17);
+            this.label88.TabIndex = 63;
+            this.label88.Text = "min";
             // 
             // label89
             // 
             this.label89.AutoSize = true;
-            this.label89.Location = new System.Drawing.Point(424, 6);
+            this.label89.Location = new System.Drawing.Point(227, 155);
             this.label89.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(16, 17);
-            this.label89.TabIndex = 44;
-            this.label89.Text = "0";
+            this.label89.Size = new System.Drawing.Size(33, 17);
+            this.label89.TabIndex = 62;
+            this.label89.Text = "max";
             // 
             // label90
             // 
             this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(369, 118);
+            this.label90.Location = new System.Drawing.Point(227, 43);
             this.label90.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(26, 17);
-            this.label90.TabIndex = 43;
-            this.label90.Text = "bis";
+            this.label90.Size = new System.Drawing.Size(33, 17);
+            this.label90.TabIndex = 61;
+            this.label90.Text = "max";
             // 
             // label91
             // 
             this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(369, 6);
+            this.label91.Location = new System.Drawing.Point(207, 118);
             this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(26, 17);
-            this.label91.TabIndex = 42;
-            this.label91.Text = "bis";
+            this.label91.Size = new System.Drawing.Size(49, 17);
+            this.label91.TabIndex = 60;
+            this.label91.Text = "Use at";
             // 
             // label92
             // 
             this.label92.AutoSize = true;
-            this.label92.Location = new System.Drawing.Point(305, 118);
+            this.label92.Location = new System.Drawing.Point(207, 6);
             this.label92.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(32, 17);
-            this.label92.TabIndex = 39;
-            this.label92.Text = "100";
+            this.label92.Size = new System.Drawing.Size(49, 17);
+            this.label92.TabIndex = 59;
+            this.label92.Text = "Use at";
             // 
             // label93
             // 
             this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(305, 6);
+            this.label93.Location = new System.Drawing.Point(27, 145);
             this.label93.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(32, 17);
-            this.label93.TabIndex = 38;
-            this.label93.Text = "100";
+            this.label93.Size = new System.Drawing.Size(70, 17);
+            this.label93.TabIndex = 56;
+            this.label93.Text = "Cast time:";
             // 
             // label94
             // 
             this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(231, 199);
+            this.label94.Location = new System.Drawing.Point(23, 94);
             this.label94.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(30, 17);
-            this.label94.TabIndex = 37;
-            this.label94.Text = "min";
+            this.label94.Size = new System.Drawing.Size(113, 17);
+            this.label94.TabIndex = 53;
+            this.label94.Text = "Time until reuse:";
             // 
-            // label95
+            // tbMin4P
             // 
-            this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(231, 89);
-            this.label95.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(30, 17);
-            this.label95.TabIndex = 36;
-            this.label95.Text = "min";
+            this.tbMin4P.AutoSize = false;
+            this.tbMin4P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin3P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin4P.Location = new System.Drawing.Point(295, 187);
+            this.tbMin4P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin4P.Maximum = 100;
+            this.tbMin4P.Name = "tbMin4P";
+            this.tbMin4P.Size = new System.Drawing.Size(312, 38);
+            this.tbMin4P.TabIndex = 68;
+            this.tbMin4P.TickFrequency = 10;
+            this.tbMin4P.Value = global::FloBot.Properties.Settings.Default.tbMin3P;
+            this.tbMin4P.Scroll += new System.EventHandler(this.tbMin4P_Scroll);
             // 
-            // label96
+            // tbMin4M
             // 
-            this.label96.AutoSize = true;
-            this.label96.Location = new System.Drawing.Point(227, 155);
-            this.label96.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(33, 17);
-            this.label96.TabIndex = 35;
-            this.label96.Text = "max";
+            this.tbMin4M.AutoSize = false;
+            this.tbMin4M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin4M.Location = new System.Drawing.Point(295, 75);
+            this.tbMin4M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin4M.Maximum = 100;
+            this.tbMin4M.Name = "tbMin4M";
+            this.tbMin4M.Size = new System.Drawing.Size(312, 38);
+            this.tbMin4M.TabIndex = 67;
+            this.tbMin4M.TickFrequency = 10;
+            this.tbMin4M.Value = global::FloBot.Properties.Settings.Default.tbMin3;
+            this.tbMin4M.Scroll += new System.EventHandler(this.tbMin4M_Scroll);
             // 
-            // label97
+            // tbMax4P
             // 
-            this.label97.AutoSize = true;
-            this.label97.Location = new System.Drawing.Point(227, 43);
-            this.label97.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(33, 17);
-            this.label97.TabIndex = 34;
-            this.label97.Text = "max";
+            this.tbMax4P.AutoSize = false;
+            this.tbMax4P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax4P.Location = new System.Drawing.Point(295, 150);
+            this.tbMax4P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax4P.Maximum = 100;
+            this.tbMax4P.Name = "tbMax4P";
+            this.tbMax4P.Size = new System.Drawing.Size(312, 38);
+            this.tbMax4P.TabIndex = 58;
+            this.tbMax4P.TickFrequency = 10;
+            this.tbMax4P.Value = global::FloBot.Properties.Settings.Default.tbMax3P;
+            this.tbMax4P.Scroll += new System.EventHandler(this.tbMax4P_Scroll);
             // 
-            // label98
+            // tbMax4M
             // 
-            this.label98.AutoSize = true;
-            this.label98.Location = new System.Drawing.Point(207, 118);
-            this.label98.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(73, 17);
-            this.label98.TabIndex = 33;
-            this.label98.Text = "Nutzen ab";
+            this.tbMax4M.AutoSize = false;
+            this.tbMax4M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax4M.Location = new System.Drawing.Point(295, 38);
+            this.tbMax4M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax4M.Maximum = 100;
+            this.tbMax4M.Name = "tbMax4M";
+            this.tbMax4M.Size = new System.Drawing.Size(312, 38);
+            this.tbMax4M.TabIndex = 57;
+            this.tbMax4M.TickFrequency = 10;
+            this.tbMax4M.Value = global::FloBot.Properties.Settings.Default.tbMax3;
+            this.tbMax4M.Scroll += new System.EventHandler(this.tbMax4M_Scroll);
             // 
-            // label99
+            // tbCast4
             // 
-            this.label99.AutoSize = true;
-            this.label99.Location = new System.Drawing.Point(207, 6);
-            this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(73, 17);
-            this.label99.TabIndex = 32;
-            this.label99.Text = "Nutzen ab";
+            this.tbCast4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast4.Location = new System.Drawing.Point(31, 165);
+            this.tbCast4.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCast4.Name = "tbCast4";
+            this.tbCast4.Size = new System.Drawing.Size(132, 22);
+            this.tbCast4.TabIndex = 55;
+            this.tbCast4.Text = global::FloBot.Properties.Settings.Default.tbCast3;
+            this.tbCast4.TextChanged += new System.EventHandler(this.tbCast4_TextChanged);
             // 
-            // label100
+            // tbDelay4
             // 
-            this.label100.AutoSize = true;
-            this.label100.Location = new System.Drawing.Point(27, 145);
-            this.label100.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(70, 17);
-            this.label100.TabIndex = 29;
-            this.label100.Text = "Cast time:";
+            this.tbDelay4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay4.Location = new System.Drawing.Point(31, 112);
+            this.tbDelay4.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDelay4.Name = "tbDelay4";
+            this.tbDelay4.Size = new System.Drawing.Size(132, 22);
+            this.tbDelay4.TabIndex = 54;
+            this.tbDelay4.Text = global::FloBot.Properties.Settings.Default.tbDelay3;
+            this.tbDelay4.TextChanged += new System.EventHandler(this.tbDelay4_TextChanged);
             // 
-            // label101
+            // cbUseSkill4
             // 
-            this.label101.AutoSize = true;
-            this.label101.Location = new System.Drawing.Point(23, 94);
-            this.label101.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(48, 17);
-            this.label101.TabIndex = 26;
-            this.label101.Text = "Delay:";
+            this.cbUseSkill4.AutoSize = true;
+            this.cbUseSkill4.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill1;
+            this.cbUseSkill4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill4.Location = new System.Drawing.Point(4, 4);
+            this.cbUseSkill4.Margin = new System.Windows.Forms.Padding(4);
+            this.cbUseSkill4.Name = "cbUseSkill4";
+            this.cbUseSkill4.Size = new System.Drawing.Size(55, 21);
+            this.cbUseSkill4.TabIndex = 52;
+            this.cbUseSkill4.Text = "Use";
+            this.cbUseSkill4.UseVisualStyleBackColor = true;
+            this.cbUseSkill4.CheckedChanged += new System.EventHandler(this.cbUseSkill4_CheckedChanged);
             // 
-            // trackBar9
+            // rbAtt4
             // 
-            this.trackBar9.AutoSize = false;
-            this.trackBar9.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin1P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.trackBar9.Location = new System.Drawing.Point(295, 187);
-            this.trackBar9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.trackBar9.Maximum = 100;
-            this.trackBar9.Name = "trackBar9";
-            this.trackBar9.Size = new System.Drawing.Size(312, 38);
-            this.trackBar9.TabIndex = 41;
-            this.trackBar9.TickFrequency = 10;
-            this.trackBar9.Value = global::FloBot.Properties.Settings.Default.tbMin1P;
+            this.rbAtt4.AutoSize = true;
+            this.rbAtt4.Checked = global::FloBot.Properties.Settings.Default.rbAtt3;
+            this.rbAtt4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt4.Location = new System.Drawing.Point(25, 62);
+            this.rbAtt4.Margin = new System.Windows.Forms.Padding(4);
+            this.rbAtt4.Name = "rbAtt4";
+            this.rbAtt4.Size = new System.Drawing.Size(97, 21);
+            this.rbAtt4.TabIndex = 51;
+            this.rbAtt4.TabStop = true;
+            this.rbAtt4.Text = "Attack Skill";
+            this.rbAtt4.UseVisualStyleBackColor = true;
+            this.rbAtt4.CheckedChanged += new System.EventHandler(this.rbAtt4_CheckedChanged);
             // 
-            // trackBar10
+            // rbBuff4
             // 
-            this.trackBar10.AutoSize = false;
-            this.trackBar10.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.trackBar10.Location = new System.Drawing.Point(295, 75);
-            this.trackBar10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.trackBar10.Maximum = 100;
-            this.trackBar10.Name = "trackBar10";
-            this.trackBar10.Size = new System.Drawing.Size(312, 38);
-            this.trackBar10.TabIndex = 40;
-            this.trackBar10.TickFrequency = 10;
-            this.trackBar10.Value = global::FloBot.Properties.Settings.Default.tbMin1;
-            // 
-            // trackBar11
-            // 
-            this.trackBar11.AutoSize = false;
-            this.trackBar11.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax1P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.trackBar11.Location = new System.Drawing.Point(295, 150);
-            this.trackBar11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.trackBar11.Maximum = 100;
-            this.trackBar11.Name = "trackBar11";
-            this.trackBar11.Size = new System.Drawing.Size(312, 38);
-            this.trackBar11.TabIndex = 31;
-            this.trackBar11.TickFrequency = 10;
-            this.trackBar11.Value = global::FloBot.Properties.Settings.Default.tbMax1P;
-            // 
-            // trackBar12
-            // 
-            this.trackBar12.AutoSize = false;
-            this.trackBar12.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.trackBar12.Location = new System.Drawing.Point(295, 38);
-            this.trackBar12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.trackBar12.Maximum = 100;
-            this.trackBar12.Name = "trackBar12";
-            this.trackBar12.Size = new System.Drawing.Size(312, 38);
-            this.trackBar12.TabIndex = 30;
-            this.trackBar12.TickFrequency = 10;
-            this.trackBar12.Value = global::FloBot.Properties.Settings.Default.tbMax1;
-            // 
-            // textBox5
-            // 
-            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCastSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox5.Location = new System.Drawing.Point(31, 165);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(132, 22);
-            this.textBox5.TabIndex = 28;
-            this.textBox5.Text = global::FloBot.Properties.Settings.Default.tbCastSkill1;
-            // 
-            // textBox6
-            // 
-            this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelaySkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox6.Location = new System.Drawing.Point(31, 112);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(132, 22);
-            this.textBox6.TabIndex = 27;
-            this.textBox6.Text = global::FloBot.Properties.Settings.Default.tbDelaySkill1;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill1;
-            this.checkBox3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox3.Location = new System.Drawing.Point(4, 4);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(55, 21);
-            this.checkBox3.TabIndex = 25;
-            this.checkBox3.Text = "Use";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Checked = global::FloBot.Properties.Settings.Default.rbAttackSkill1;
-            this.radioButton5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAttackSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.radioButton5.Location = new System.Drawing.Point(25, 62);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(97, 21);
-            this.radioButton5.TabIndex = 24;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Attack Skill";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Checked = global::FloBot.Properties.Settings.Default.rbBuffSkill1;
-            this.radioButton6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuffSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.radioButton6.Location = new System.Drawing.Point(25, 32);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(81, 21);
-            this.radioButton6.TabIndex = 23;
-            this.radioButton6.Text = "Buff skill";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rbBuff4.AutoSize = true;
+            this.rbBuff4.Checked = global::FloBot.Properties.Settings.Default.rbBuff3;
+            this.rbBuff4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff4.Location = new System.Drawing.Point(25, 32);
+            this.rbBuff4.Margin = new System.Windows.Forms.Padding(4);
+            this.rbBuff4.Name = "rbBuff4";
+            this.rbBuff4.Size = new System.Drawing.Size(81, 21);
+            this.rbBuff4.TabIndex = 50;
+            this.rbBuff4.Text = "Buff skill";
+            this.rbBuff4.UseVisualStyleBackColor = true;
+            this.rbBuff4.CheckedChanged += new System.EventHandler(this.rbBuff4_CheckedChanged);
             // 
             // tp5
             // 
@@ -2154,7 +2164,7 @@
             this.tp5.Controls.Add(this.radioButton7);
             this.tp5.Controls.Add(this.radioButton8);
             this.tp5.Location = new System.Drawing.Point(4, 25);
-            this.tp5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp5.Margin = new System.Windows.Forms.Padding(4);
             this.tp5.Name = "tp5";
             this.tp5.Size = new System.Drawing.Size(631, 252);
             this.tp5.TabIndex = 4;
@@ -2174,7 +2184,7 @@
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(31, 165);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(132, 22);
             this.textBox7.TabIndex = 10;
@@ -2182,7 +2192,7 @@
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(31, 112);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(132, 22);
             this.textBox8.TabIndex = 11;
@@ -2201,7 +2211,7 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(4, 4);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(55, 21);
             this.checkBox4.TabIndex = 8;
@@ -2212,7 +2222,7 @@
             // 
             this.radioButton7.AutoSize = true;
             this.radioButton7.Location = new System.Drawing.Point(25, 62);
-            this.radioButton7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton7.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(97, 21);
             this.radioButton7.TabIndex = 7;
@@ -2224,7 +2234,7 @@
             // 
             this.radioButton8.AutoSize = true;
             this.radioButton8.Location = new System.Drawing.Point(25, 32);
-            this.radioButton8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton8.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(81, 21);
             this.radioButton8.TabIndex = 6;
@@ -2242,7 +2252,7 @@
             this.tp6.Controls.Add(this.radioButton9);
             this.tp6.Controls.Add(this.radioButton10);
             this.tp6.Location = new System.Drawing.Point(4, 25);
-            this.tp6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp6.Margin = new System.Windows.Forms.Padding(4);
             this.tp6.Name = "tp6";
             this.tp6.Size = new System.Drawing.Size(631, 252);
             this.tp6.TabIndex = 5;
@@ -2262,7 +2272,7 @@
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(31, 165);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(132, 22);
             this.textBox9.TabIndex = 10;
@@ -2270,7 +2280,7 @@
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(31, 112);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(132, 22);
             this.textBox10.TabIndex = 11;
@@ -2289,7 +2299,7 @@
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.Location = new System.Drawing.Point(4, 4);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(55, 21);
             this.checkBox5.TabIndex = 8;
@@ -2300,7 +2310,7 @@
             // 
             this.radioButton9.AutoSize = true;
             this.radioButton9.Location = new System.Drawing.Point(25, 62);
-            this.radioButton9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton9.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(97, 21);
             this.radioButton9.TabIndex = 7;
@@ -2312,7 +2322,7 @@
             // 
             this.radioButton10.AutoSize = true;
             this.radioButton10.Location = new System.Drawing.Point(25, 32);
-            this.radioButton10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton10.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(81, 21);
             this.radioButton10.TabIndex = 6;
@@ -2330,7 +2340,7 @@
             this.tp7.Controls.Add(this.radioButton11);
             this.tp7.Controls.Add(this.radioButton12);
             this.tp7.Location = new System.Drawing.Point(4, 25);
-            this.tp7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp7.Margin = new System.Windows.Forms.Padding(4);
             this.tp7.Name = "tp7";
             this.tp7.Size = new System.Drawing.Size(631, 252);
             this.tp7.TabIndex = 6;
@@ -2350,7 +2360,7 @@
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(31, 165);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(132, 22);
             this.textBox11.TabIndex = 10;
@@ -2358,7 +2368,7 @@
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(31, 112);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(132, 22);
             this.textBox12.TabIndex = 11;
@@ -2377,7 +2387,7 @@
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.Location = new System.Drawing.Point(4, 4);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(55, 21);
             this.checkBox6.TabIndex = 8;
@@ -2388,7 +2398,7 @@
             // 
             this.radioButton11.AutoSize = true;
             this.radioButton11.Location = new System.Drawing.Point(25, 62);
-            this.radioButton11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton11.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(97, 21);
             this.radioButton11.TabIndex = 7;
@@ -2400,7 +2410,7 @@
             // 
             this.radioButton12.AutoSize = true;
             this.radioButton12.Location = new System.Drawing.Point(25, 32);
-            this.radioButton12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton12.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(81, 21);
             this.radioButton12.TabIndex = 6;
@@ -2418,7 +2428,7 @@
             this.tp8.Controls.Add(this.radioButton13);
             this.tp8.Controls.Add(this.radioButton14);
             this.tp8.Location = new System.Drawing.Point(4, 25);
-            this.tp8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp8.Margin = new System.Windows.Forms.Padding(4);
             this.tp8.Name = "tp8";
             this.tp8.Size = new System.Drawing.Size(631, 252);
             this.tp8.TabIndex = 7;
@@ -2438,7 +2448,7 @@
             // textBox13
             // 
             this.textBox13.Location = new System.Drawing.Point(31, 165);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(132, 22);
             this.textBox13.TabIndex = 10;
@@ -2446,7 +2456,7 @@
             // textBox14
             // 
             this.textBox14.Location = new System.Drawing.Point(31, 112);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(4);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(132, 22);
             this.textBox14.TabIndex = 11;
@@ -2465,7 +2475,7 @@
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.Location = new System.Drawing.Point(4, 4);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(55, 21);
             this.checkBox7.TabIndex = 8;
@@ -2476,7 +2486,7 @@
             // 
             this.radioButton13.AutoSize = true;
             this.radioButton13.Location = new System.Drawing.Point(25, 62);
-            this.radioButton13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton13.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Size = new System.Drawing.Size(97, 21);
             this.radioButton13.TabIndex = 7;
@@ -2488,7 +2498,7 @@
             // 
             this.radioButton14.AutoSize = true;
             this.radioButton14.Location = new System.Drawing.Point(25, 32);
-            this.radioButton14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton14.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton14.Name = "radioButton14";
             this.radioButton14.Size = new System.Drawing.Size(81, 21);
             this.radioButton14.TabIndex = 6;
@@ -2515,7 +2525,7 @@
             this.tp9.Controls.Add(this.rbAtt9);
             this.tp9.Controls.Add(this.rbBuff9);
             this.tp9.Location = new System.Drawing.Point(4, 25);
-            this.tp9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp9.Margin = new System.Windows.Forms.Padding(4);
             this.tp9.Name = "tp9";
             this.tp9.Size = new System.Drawing.Size(631, 252);
             this.tp9.TabIndex = 8;
@@ -2619,7 +2629,7 @@
             this.tbMin9.AutoSize = false;
             this.tbMin9.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin9.Location = new System.Drawing.Point(271, 76);
-            this.tbMin9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMin9.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin9.Maximum = 100;
             this.tbMin9.Name = "tbMin9";
             this.tbMin9.Size = new System.Drawing.Size(312, 38);
@@ -2633,7 +2643,7 @@
             this.tbMax9.AutoSize = false;
             this.tbMax9.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax9.Location = new System.Drawing.Point(271, 38);
-            this.tbMax9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMax9.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax9.Maximum = 100;
             this.tbMax9.Name = "tbMax9";
             this.tbMax9.Size = new System.Drawing.Size(312, 38);
@@ -2646,7 +2656,7 @@
             // 
             this.tbCast9.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast9.Location = new System.Drawing.Point(31, 165);
-            this.tbCast9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbCast9.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast9.Name = "tbCast9";
             this.tbCast9.Size = new System.Drawing.Size(132, 22);
             this.tbCast9.TabIndex = 10;
@@ -2657,7 +2667,7 @@
             // 
             this.tbDelay9.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay9.Location = new System.Drawing.Point(31, 112);
-            this.tbDelay9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbDelay9.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay9.Name = "tbDelay9";
             this.tbDelay9.Size = new System.Drawing.Size(132, 22);
             this.tbDelay9.TabIndex = 11;
@@ -2670,7 +2680,7 @@
             this.cbUseSkill9.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill9;
             this.cbUseSkill9.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill9.Location = new System.Drawing.Point(4, 4);
-            this.cbUseSkill9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbUseSkill9.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill9.Name = "cbUseSkill9";
             this.cbUseSkill9.Size = new System.Drawing.Size(55, 21);
             this.cbUseSkill9.TabIndex = 8;
@@ -2683,7 +2693,7 @@
             this.rbAtt9.Checked = global::FloBot.Properties.Settings.Default.rbAtt9;
             this.rbAtt9.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt9.Location = new System.Drawing.Point(25, 62);
-            this.rbAtt9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbAtt9.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt9.Name = "rbAtt9";
             this.rbAtt9.Size = new System.Drawing.Size(97, 21);
             this.rbAtt9.TabIndex = 7;
@@ -2697,7 +2707,7 @@
             this.rbBuff9.Checked = global::FloBot.Properties.Settings.Default.rbBuff9;
             this.rbBuff9.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff9.Location = new System.Drawing.Point(25, 32);
-            this.rbBuff9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbBuff9.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff9.Name = "rbBuff9";
             this.rbBuff9.Size = new System.Drawing.Size(81, 21);
             this.rbBuff9.TabIndex = 6;
@@ -2708,7 +2718,7 @@
             // tp0
             // 
             this.tp0.Location = new System.Drawing.Point(4, 25);
-            this.tp0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tp0.Margin = new System.Windows.Forms.Padding(4);
             this.tp0.Name = "tp0";
             this.tp0.Size = new System.Drawing.Size(631, 252);
             this.tp0.TabIndex = 9;
@@ -2729,7 +2739,7 @@
             // 
             this.cbDisableBot.AutoSize = true;
             this.cbDisableBot.Location = new System.Drawing.Point(700, 325);
-            this.cbDisableBot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbDisableBot.Margin = new System.Windows.Forms.Padding(4);
             this.cbDisableBot.Name = "cbDisableBot";
             this.cbDisableBot.Size = new System.Drawing.Size(295, 21);
             this.cbDisableBot.TabIndex = 16;
@@ -2780,7 +2790,7 @@
             this.tbEmHP.AutoSize = false;
             this.tbEmHP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbEmrHp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbEmHP.Location = new System.Drawing.Point(21, 479);
-            this.tbEmHP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbEmHP.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmHP.Maximum = 100;
             this.tbEmHP.Name = "tbEmHP";
             this.tbEmHP.Size = new System.Drawing.Size(312, 38);
@@ -2794,7 +2804,7 @@
             this.tbEmMP.AutoSize = false;
             this.tbEmMP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbEmrMP", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbEmMP.Location = new System.Drawing.Point(341, 479);
-            this.tbEmMP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbEmMP.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmMP.Maximum = 100;
             this.tbEmMP.Name = "tbEmMP";
             this.tbEmMP.Size = new System.Drawing.Size(312, 38);
@@ -2808,7 +2818,7 @@
             this.tbRestMP.AutoSize = false;
             this.tbRestMP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbRestMp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbRestMP.Location = new System.Drawing.Point(341, 398);
-            this.tbRestMP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbRestMP.Margin = new System.Windows.Forms.Padding(4);
             this.tbRestMP.Maximum = 100;
             this.tbRestMP.Name = "tbRestMP";
             this.tbRestMP.Size = new System.Drawing.Size(312, 38);
@@ -2822,7 +2832,7 @@
             this.tbRestHP.AutoSize = false;
             this.tbRestHP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbRestHP", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbRestHP.Location = new System.Drawing.Point(21, 398);
-            this.tbRestHP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbRestHP.Margin = new System.Windows.Forms.Padding(4);
             this.tbRestHP.Maximum = 100;
             this.tbRestHP.Name = "tbRestHP";
             this.tbRestHP.Size = new System.Drawing.Size(312, 38);
@@ -2860,7 +2870,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblGameFound);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mainForm";
             this.Text = "mainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_Closing);
@@ -2896,11 +2906,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbMax3M)).EndInit();
             this.tp4.ResumeLayout(false);
             this.tp4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrio4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin4P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin4M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax4P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax4M)).EndInit();
             this.tp5.ResumeLayout(false);
             this.tp5.PerformLayout();
             this.tp6.ResumeLayout(false);
@@ -3114,12 +3124,18 @@
         public System.Windows.Forms.CheckBox cbUseSkill3;
         public System.Windows.Forms.RadioButton rbAtt3;
         public System.Windows.Forms.RadioButton rbBuff3;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.NumericUpDown nudPrio4;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label lblMin4P;
+        private System.Windows.Forms.Label lblMin4M;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label lblMax4P;
+        private System.Windows.Forms.Label lblMax4M;
         private System.Windows.Forms.Label label87;
-        public System.Windows.Forms.TrackBar trackBar9;
-        public System.Windows.Forms.TrackBar trackBar10;
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Label label90;
@@ -3127,21 +3143,15 @@
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.Label label97;
-        private System.Windows.Forms.Label label98;
-        public System.Windows.Forms.TrackBar trackBar11;
-        private System.Windows.Forms.Label label99;
-        public System.Windows.Forms.TrackBar trackBar12;
-        private System.Windows.Forms.Label label100;
-        public System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label101;
-        public System.Windows.Forms.CheckBox checkBox3;
-        public System.Windows.Forms.RadioButton radioButton5;
-        public System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.Label label45;
+        public System.Windows.Forms.TrackBar tbMin4P;
+        public System.Windows.Forms.TrackBar tbMin4M;
+        public System.Windows.Forms.TrackBar tbMax4P;
+        public System.Windows.Forms.TrackBar tbMax4M;
+        public System.Windows.Forms.TextBox tbCast4;
+        public System.Windows.Forms.TextBox tbDelay4;
+        public System.Windows.Forms.CheckBox cbUseSkill4;
+        public System.Windows.Forms.RadioButton rbAtt4;
+        public System.Windows.Forms.RadioButton rbBuff4;
     }
 }
 

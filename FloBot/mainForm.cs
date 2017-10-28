@@ -43,6 +43,7 @@ namespace FloBot
             rbBuff1_Changed(null, null);
             rbBuff2_Changed(null, null);
             rbBuff3_Changed(null, null);
+            rbBuff4_Changed(null, null);
             rbBuff9_CheckedChanged(null, null);
 
             Console.WriteLine("AttArraySizAfter:{0}\nBuffArrayAfter:{1}\n_____________", player.AttArray.Count, player.BuffArray.Count);
@@ -140,8 +141,24 @@ namespace FloBot
                     player.addElement(player.AttArray, new Skill(tbDelay3.Text, tbCast3.Text, Keys.NumPad3, tbMax3M.Value, tbMin3M.Value, tbMax3P.Value, tbMin3P.Value, (int)nudPrio3.Value));
             }
         }
+        private void rbBuff4_Changed(object sender, EventArgs e)
+        {
+            lblMax4M.Text = tbMax4M.Value + "%";
+            lblMin4M.Text = tbMin4M.Value + "%";
+            lblMax4P.Text = tbMax4P.Value + "%";
+            lblMin4P.Text = tbMin4P.Value + "%";
+            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad4, 0, 0, 0, 0, 0));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad4, 0, 0, 0, 0, 0));
 
-   
+            if (cbUseSkill4.Checked)
+            {
+                if (rbBuff4.Checked)
+                    player.addElement(player.BuffArray, new Skill(tbDelay4.Text, tbCast4.Text, Keys.NumPad4, tbMax4M.Value, tbMin4M.Value, tbMax4P.Value, tbMin4P.Value, (int)nudPrio4.Value));
+                if (rbAtt4.Checked)
+                    player.addElement(player.AttArray, new Skill(tbDelay4.Text, tbCast4.Text, Keys.NumPad4, tbMax4M.Value, tbMin4M.Value, tbMax4P.Value, tbMin4P.Value, (int)nudPrio4.Value));
+            }
+        }
+
         private void rbBuff9_CheckedChanged(object sender, EventArgs e)
         {
             /*
@@ -200,6 +217,56 @@ namespace FloBot
         private void tbProcessName_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void cbUseSkill4_CheckedChanged(object sender, EventArgs e)
+        {
+            rbBuff4_Changed(null, null);
+        }
+
+        private void rbBuff4_CheckedChanged(object sender, EventArgs e)
+        {
+            rbBuff4_Changed(null, null);
+        }
+
+        private void rbAtt4_CheckedChanged(object sender, EventArgs e)
+        {
+            rbBuff4_Changed(null, null);
+        }
+
+        private void tbDelay4_TextChanged(object sender, EventArgs e)
+        {
+            rbBuff4_Changed(null, null);
+        }
+
+        private void tbCast4_TextChanged(object sender, EventArgs e)
+        {
+            rbBuff4_Changed(null, null);
+        }
+
+        private void nudPrio4_ValueChanged(object sender, EventArgs e)
+        {
+            rbBuff4_Changed(null, null);
+        }
+
+        private void tbMax4M_Scroll(object sender, EventArgs e)
+        {
+            rbBuff4_Changed(null, null);
+        }
+
+        private void tbMin4M_Scroll(object sender, EventArgs e)
+        {
+            rbBuff4_Changed(null, null);
+        }
+
+        private void tbMax4P_Scroll(object sender, EventArgs e)
+        {
+            rbBuff4_Changed(null, null);
+        }
+
+        private void tbMin4P_Scroll(object sender, EventArgs e)
+        {
+            rbBuff4_Changed(null, null);
         }
     }
 }
