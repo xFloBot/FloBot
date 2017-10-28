@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,8 +10,8 @@ namespace FloBot.Model
 {
     class Skill : IComparable
     {
-        private int _delay;
-        private int _castTime;
+        private float _delay;
+        private float _castTime;
         private DateTime _lastTimeUsed;
         private Keys _hotkey;
         private int _maxHPM;
@@ -19,7 +20,7 @@ namespace FloBot.Model
         private int _minHPP;
         private int _prio;
 
-        public int Delay
+        public float Delay
         {
             get
             {
@@ -36,7 +37,7 @@ namespace FloBot.Model
             
         }
 
-        public int CastTime
+        public float CastTime
         {
             get
             {
@@ -99,10 +100,12 @@ namespace FloBot.Model
             }
         }
 
-        public Skill (int delay,int castTime,Keys hotkey,int maxHPM,int minHPM,int maxHPP,int minHPP,int prio)
+        public Skill (String delay,String castTime,Keys hotkey,int maxHPM,int minHPM,int maxHPP,int minHPP,int prio)
         {
-            _delay = delay+castTime;
-            _castTime = castTime;
+
+            float.TryParse(delay, NumberStyles.Float , CultureInfo.InvariantCulture, out _delay);
+            float.TryParse(castTime, NumberStyles.Float, CultureInfo.InvariantCulture, out _castTime);
+         
             _hotkey = hotkey;
             _maxHPM = maxHPM;
             _minHPM = minHPM;
@@ -116,8 +119,13 @@ namespace FloBot.Model
         }
         public bool attackCanBeUsed(Target target,Player player)
         {
-
-            return (DateTime.Now - LastTimeUsed).TotalSeconds >= Delay 
+            Console.WriteLine(skillCanBeUsed());
+            Console.WriteLine((target.targetMaxHP / 100 * MaxHPM) >= target.targetCurrentHP
+                && (target.targetMaxHP / 100 * MinHPM) <= target.targetCurrentHP);
+            Console.WriteLine((player.PlayerMaxHP / 100 * MaxHPP) >= player.PlayerCurrentHP
+                && (player.PlayerMaxHP / 100 * MinHPP) <= player.PlayerCurrentHP);
+       
+            return skillCanBeUsed()
                 && (target.targetMaxHP / 100 * MaxHPM) >= target.targetCurrentHP
                 && (target.targetMaxHP / 100 * MinHPM) <= target.targetCurrentHP
 

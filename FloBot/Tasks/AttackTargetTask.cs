@@ -13,7 +13,7 @@ namespace FloBot.Tasks
     class AttackTargetTask : ITask
     {
         private static DateTime lastTimeUsedSpell;
-        private static int delayTime = 0;
+        private static float delayTime = 0;
 
         public bool doTask(mainForm main_form, Player player)
         {
@@ -23,6 +23,8 @@ namespace FloBot.Tasks
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
             mc.sendKeystroke(Keys.Space);
+            Console.WriteLine((DateTime.Now - lastTimeUsedSpell).TotalSeconds);
+            Console.WriteLine("DelayTime: "+ delayTime);
             if (delayTime > 0)
                 if ((DateTime.Now - lastTimeUsedSpell).TotalSeconds <= delayTime)
                     return true;
@@ -33,22 +35,22 @@ namespace FloBot.Tasks
             player.AttArray.CopyTo(copy);
             foreach (Skill attk in copy)
                 {
-              
-
+                Console.WriteLine(attk.Hotkey);
                     if (attk.attackCanBeUsed(player.Target,player))
                     {
-                        if (!player.inCombat)
+                    if (!player.inCombat)
                             return false;
                     
                         mc.sendKeystroke(attk.Hotkey);
 
                         while (player.Pos.moved())
-                            Thread.Sleep(200);
-
+                            Thread.Sleep(50);
+                    Console.WriteLine("Set Time Used");
                         attk.LastTimeUsed = DateTime.Now;
                         lastTimeUsedSpell = attk.LastTimeUsed;
+                    Console.WriteLine( attk.CastTime);
                         delayTime = attk.CastTime;
-                        Thread.Sleep(2000);
+                        //Thread.Sleep(2000);
 
                         return true;
 
