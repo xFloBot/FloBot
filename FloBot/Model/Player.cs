@@ -61,7 +61,7 @@ namespace FloBot.Model
         {
             get
             {
-                return Target.isCurrentTargetAlive() && !Target.targetName.Contains("NoTarget") && !targetingMyself() && PlayerCurrentHP > 0;
+                return Target.isCurrentTargetAlive() && !Target.isTargetFriendly() && !Target.targetName.Contains("NoTarget") && !targetingMyself() && PlayerCurrentHP > 0;
             }
         }
 
