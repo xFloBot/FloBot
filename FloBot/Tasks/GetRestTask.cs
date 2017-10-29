@@ -27,6 +27,7 @@ namespace FloBot.Tasks
                 {
                     mc.sendKeystroke(Keys.Z);
                     player.Resting = false;
+                    oldHP = -1;
                     return false;
                 }
                 else
@@ -35,9 +36,9 @@ namespace FloBot.Tasks
             if(player.Resting && oldHP > player.PlayerCurrentHP)
             {
                
-                player.Resting = false;
-                mc.sendKeystroke(Keys.Z);
-                Thread.Sleep(100);
+               //layer.Resting = false;
+               //c.sendKeystroke(Keys.Z);
+               //thread.Sleep(100);
                 mc.sendKeystroke(Keys.Tab);
                 oldHP = -1;
                 return false;
@@ -48,13 +49,14 @@ namespace FloBot.Tasks
             {
                 while (player.Pos.moved())
                     Thread.Sleep(100);
-                int count = 0;
-                while (count++ < 15 && !player.inCombat) Thread.Sleep(100);
+                //int count = 0;
+                //while (count++ < 15 && !player.inCombat) Thread.Sleep(100);
 
                 if (player.inCombat)
                     return false;
-                int counter = 0;
-                while ((oldHP = player.PlayerCurrentHP) <= 0 && counter++ < 10) Thread.Sleep(100);
+                //int counter = 0;
+                //while ((oldHP = player.PlayerCurrentHP) <= 0 && counter++ < 10) Thread.Sleep(100);
+                oldHP = player.PlayerCurrentHP;
                 player.Resting = true;
                 mc.sendKeystroke(Keys.Z);
                 
@@ -65,7 +67,6 @@ namespace FloBot.Tasks
             {
                 if (player.PlayerMaxHP == player.PlayerCurrentHP && player.PlayerMaxMP == player.PlayerCurrentMP)
                 {
-                  
                     oldHP = -1;
                     mc.sendKeystroke(Keys.Z);
                     player.Resting = false;
@@ -74,6 +75,8 @@ namespace FloBot.Tasks
                 }
                 else
                 {
+                    if (oldHP < player.PlayerCurrentHP)
+                        oldHP = player.PlayerCurrentHP;
                     Thread.Sleep(200);
                     return true;
                 }
