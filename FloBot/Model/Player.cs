@@ -22,7 +22,7 @@ namespace FloBot.Model
         private Single highestPercent = -1;
         private int oldExp =-1;
         private int oldMobExp =-1;
-
+        private bool _playerEngaged = false;
 
         public  ArrayList BuffArray
         {
@@ -153,6 +153,8 @@ namespace FloBot.Model
                 _buffed = value;
             }
         }
+
+        public bool PlayerEngaged { get => _playerEngaged; set => _playerEngaged = value; }
 
         public bool targetingMyself()
         {

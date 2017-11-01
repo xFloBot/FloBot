@@ -14,7 +14,7 @@ namespace FloBot.Tasks
     {
         private static DateTime lastTimeUsedSpell;
         private static float delayTime = 0;
-
+      
         public bool doTask(mainForm main_form, Player player)
         {
             throw new NotImplementedException();
@@ -22,44 +22,56 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            
+            if(!player.PlayerEngaged)
+            {  //Attack
+                mc.sendKeystroke(Keys.Space);
+                //Stop Moving
+                mc.sendKeystroke(Keys.S);
+                player.PlayerEngaged = true;
+                do
+                    Thread.Sleep(50);
+                while (player.Pos.moved());
+            }
+           
+
             Console.WriteLine((DateTime.Now - lastTimeUsedSpell).TotalSeconds);
-            Console.WriteLine("DelayTime: "+ delayTime);
+            Console.WriteLine("DelayTime: " + delayTime);
             if (delayTime > 0)
                 if ((DateTime.Now - lastTimeUsedSpell).TotalSeconds <= delayTime)
                     return true;
                 else
                     delayTime = 0;
-
+          
             Skill[] copy = new Skill[player.AttArray.Count];
             player.AttArray.CopyTo(copy);
             foreach (Skill attk in copy)
-                {
+            {
                 Console.WriteLine(attk.Hotkey);
-                    if (attk.attackCanBeUsed(player.Target,player))
-                    {
+                if (attk.attackCanBeUsed(player.Target, player))
+                {
                     if (!player.inCombat)
-                            return false;
-                    
-                        mc.sendKeystroke(attk.Hotkey);
+                        return false;
 
-                        while (player.Pos.moved())
-                            Thread.Sleep(50);
+                    mc.sendKeystroke(attk.Hotkey);
+
+                    do
+                        Thread.Sleep(50);
+                    while (player.Pos.moved());
                     Console.WriteLine("Set Time Used");
-                        attk.LastTimeUsed = DateTime.Now;
-                        lastTimeUsedSpell = attk.LastTimeUsed;
-                    Console.WriteLine( attk.CastTime);
-                        delayTime = attk.CastTime;
-                        //Thread.Sleep(2000);
+                    attk.LastTimeUsed = DateTime.Now;
+                    lastTimeUsedSpell = attk.LastTimeUsed;
+                    Console.WriteLine(attk.CastTime);
+                    delayTime = attk.CastTime;
+                    //Thread.Sleep(2000);
 
-                        return true;
-
-                    }
+                    return true;
 
                 }
 
+            }
 
-            mc.sendKeystroke(Keys.Space);
+
+
             return true;
         }
     }

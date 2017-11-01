@@ -167,7 +167,7 @@ namespace FloBot.MemoryClass
             const uint WM_LBUTTONDOWN = 0x201; //Left mousebutton down
             const uint WM_LBUTTONUP = 0x202;   //Left mousebutton up
             PostMessage(hWnd, WM_LBUTTONDOWN, 0, coordinates);
-            Thread.Sleep(new Random().Next(1, 300));
+            Thread.Sleep(new Random().Next(1, 150));
             PostMessage(hWnd, WM_LBUTTONUP, 0, coordinates);
         }
 

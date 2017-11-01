@@ -33,6 +33,7 @@ namespace FloBot.Tasks
                 mc.sendKeystroke(Keys.Escape);
                 Thread.Sleep(100);
             }
+            player.PlayerEngaged = false;
             return false;
         }
     }

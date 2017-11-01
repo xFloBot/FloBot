@@ -119,18 +119,12 @@ namespace FloBot.Model
         }
         public bool attackCanBeUsed(Target target,Player player)
         {
-            Console.WriteLine(skillCanBeUsed());
-            Console.WriteLine((target.targetMaxHP / 100 * MaxHPM) >= target.targetCurrentHP
-                && (target.targetMaxHP / 100 * MinHPM) <= target.targetCurrentHP);
-            Console.WriteLine((player.PlayerMaxHP / 100 * MaxHPP) >= player.PlayerCurrentHP
-                && (player.PlayerMaxHP / 100 * MinHPP) <= player.PlayerCurrentHP);
-       
             return skillCanBeUsed()
-                && (target.targetMaxHP / 100 * MaxHPM) >= target.targetCurrentHP
-                && (target.targetMaxHP / 100 * MinHPM) <= target.targetCurrentHP
+                && ((double)target.targetMaxHP / 100 * MaxHPM)+1 >= target.targetCurrentHP
+                && ((double)target.targetMaxHP / 100 * MinHPM) <= target.targetCurrentHP
 
-                && (player.PlayerMaxHP / 100 * MaxHPP) >= player.PlayerCurrentHP
-                && (player.PlayerMaxHP / 100 * MinHPP) <= player.PlayerCurrentHP
+                && ((double)player.PlayerMaxHP / 100 * MaxHPP)+1 >= player.PlayerCurrentHP
+                && ((double)player.PlayerMaxHP / 100 * MinHPP) <= player.PlayerCurrentHP
                 ;
         }
 
