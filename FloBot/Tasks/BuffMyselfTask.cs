@@ -29,19 +29,23 @@ namespace FloBot.Tasks
 
             foreach (Skill buff in copy)
             {
+                
+               
                 int counter = 0;
-
-
                 if (buff.skillCanBeUsed()||!player.Buffed)
                 {
+                    counter = (int)buff.CastTime * 4;
                     mc.sendKeystroke(buff.Hotkey);
                     buff.LastTimeUsed = DateTime.Now;
                 }
-                while (counter++ <= 5)
+
+                do
+                {
+
                     if (player.inCombat)
                         return false;
-                    else
-                        Thread.Sleep(200);
+                    Thread.Sleep(250);
+                } while (counter-- >= 0);
             }
            
                 while (player.targetingMyself())

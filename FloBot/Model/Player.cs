@@ -95,10 +95,11 @@ namespace FloBot.Model
         {
             get
             {
-                //int playerNameEnd = -1 ;
-                //while ((playerNameEnd = AddressUtil.getCharName().IndexOf('\0')) < 0) Thread.Sleep(50);
+                String name = AddressUtil.getCharName();
+               // int playerNameEnd = -1 ;
+               // while ((playerNameEnd = AddressUtil.getCharName().IndexOf('\0')) < 0) Thread.Sleep(50);
 
-                return AddressUtil.getCharName();
+                return name.Substring(0, name.IndexOf('\0' ));
             }
         }
 
@@ -161,7 +162,7 @@ namespace FloBot.Model
 
             if (PlayerName.Length <= 0)
                 return false;
-          
+   
             return Target.targetName.Contains(PlayerName) && Target.isTargetFriendly();
         }
 

@@ -694,5 +694,125 @@ namespace FloBot.Properties {
                 this["tbMax3M"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool cbUse4 {
+            get {
+                return ((bool)(this["cbUse4"]));
+            }
+            set {
+                this["cbUse4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool rbBuff4 {
+            get {
+                return ((bool)(this["rbBuff4"]));
+            }
+            set {
+                this["rbBuff4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool rbAtt4 {
+            get {
+                return ((bool)(this["rbAtt4"]));
+            }
+            set {
+                this["rbAtt4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("6")]
+        public string tbReuse4 {
+            get {
+                return ((string)(this["tbReuse4"]));
+            }
+            set {
+                this["tbReuse4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string tbCast4 {
+            get {
+                return ((string)(this["tbCast4"]));
+            }
+            set {
+                this["tbCast4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal nudPrio4 {
+            get {
+                return ((decimal)(this["nudPrio4"]));
+            }
+            set {
+                this["nudPrio4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int tbMax4M {
+            get {
+                return ((int)(this["tbMax4M"]));
+            }
+            set {
+                this["tbMax4M"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int tbMin4M {
+            get {
+                return ((int)(this["tbMin4M"]));
+            }
+            set {
+                this["tbMin4M"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int tbMax4P {
+            get {
+                return ((int)(this["tbMax4P"]));
+            }
+            set {
+                this["tbMax4P"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int tbMin4P {
+            get {
+                return ((int)(this["tbMin4P"]));
+            }
+            set {
+                this["tbMin4P"] = value;
+            }
+        }
     }
 }
