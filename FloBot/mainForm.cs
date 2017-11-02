@@ -176,6 +176,25 @@ namespace FloBot
             }
         }
 
+        private void rbBuff6_Changed(object sender, EventArgs e)
+        {
+            lblMax6M.Text = tbMax6M.Value + "%";
+            lblMin6M.Text = tbMin6M.Value + "%";
+            lblMax6P.Text = tbMax6P.Value + "%";
+            lblMin6P.Text = tbMin6P.Value + "%";
+            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad6, 0, 0, 0, 0, 0));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad6, 0, 0, 0, 0, 0));
+
+            if (cbUseSkill6.Checked)
+            {
+                if (rbBuff6.Checked)
+                    player.addElement(player.BuffArray, new Skill(tbDelay6.Text, tbCast6.Text, Keys.NumPad6, tbMax6M.Value, tbMin6M.Value, tbMax6P.Value, tbMin6P.Value, (int)nudPrio6.Value));
+                if (rbAtt6.Checked)
+                    player.addElement(player.AttArray, new Skill(tbDelay6.Text, tbCast6.Text, Keys.NumPad6, tbMax6M.Value, tbMin6M.Value, tbMax6P.Value, tbMin6P.Value, (int)nudPrio6.Value));
+            }
+        }
+
+
         private void rbBuff9_CheckedChanged(object sender, EventArgs e)
         {
             /*
@@ -344,6 +363,56 @@ namespace FloBot
         private void tbMin5P_Scroll(object sender, EventArgs e)
         {
             rbBuff5_Changed(null, null);
+        }
+
+        private void cbUseSkill6_CheckedChanged(object sender, EventArgs e)
+        {
+            rbBuff6_Changed(null, null);
+        }
+
+        private void rbBuff6_CheckedChanged(object sender, EventArgs e)
+        {
+            rbBuff6_Changed(null, null);
+        }
+
+        private void rbAtt6_CheckedChanged(object sender, EventArgs e)
+        {
+            rbBuff6_Changed(null, null);
+        }
+
+        private void tbDelay6_TextChanged(object sender, EventArgs e)
+        {
+            rbBuff6_Changed(null, null);
+        }
+
+        private void tbCast6_TextChanged(object sender, EventArgs e)
+        {
+            rbBuff6_Changed(null, null);
+        }
+
+        private void nudPrio6_ValueChanged(object sender, EventArgs e)
+        {
+            rbBuff6_Changed(null, null);
+        }
+
+        private void tbMax6M_Scroll(object sender, EventArgs e)
+        {
+            rbBuff6_Changed(null, null);
+        }
+
+        private void tbMin6M_Scroll(object sender, EventArgs e)
+        {
+            rbBuff6_Changed(null, null);
+        }
+
+        private void tbMax6P_Scroll(object sender, EventArgs e)
+        {
+            rbBuff6_Changed(null, null);
+        }
+
+        private void tbMin6P_Scroll(object sender, EventArgs e)
+        {
+            rbBuff6_Changed(null, null);
         }
     }
 }
