@@ -913,7 +913,7 @@ namespace FloBot.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int tbMin5P {
             get {
                 return ((int)(this["tbMin5P"]));
@@ -1045,13 +1045,133 @@ namespace FloBot.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int tbMin6P {
             get {
                 return ((int)(this["tbMin6P"]));
             }
             set {
                 this["tbMin6P"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool cbUse7 {
+            get {
+                return ((bool)(this["cbUse7"]));
+            }
+            set {
+                this["cbUse7"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool rbBuff7 {
+            get {
+                return ((bool)(this["rbBuff7"]));
+            }
+            set {
+                this["rbBuff7"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool rbAtt7 {
+            get {
+                return ((bool)(this["rbAtt7"]));
+            }
+            set {
+                this["rbAtt7"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("6")]
+        public string tbReuse7 {
+            get {
+                return ((string)(this["tbReuse7"]));
+            }
+            set {
+                this["tbReuse7"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string tbCast7 {
+            get {
+                return ((string)(this["tbCast7"]));
+            }
+            set {
+                this["tbCast7"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal nudPrio7 {
+            get {
+                return ((decimal)(this["nudPrio7"]));
+            }
+            set {
+                this["nudPrio7"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int tbMax7P {
+            get {
+                return ((int)(this["tbMax7P"]));
+            }
+            set {
+                this["tbMax7P"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int tbMin7P {
+            get {
+                return ((int)(this["tbMin7P"]));
+            }
+            set {
+                this["tbMin7P"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int tbMax7M {
+            get {
+                return ((int)(this["tbMax7M"]));
+            }
+            set {
+                this["tbMax7M"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int tbMin7M {
+            get {
+                return ((int)(this["tbMin7M"]));
+            }
+            set {
+                this["tbMin7M"] = value;
             }
         }
     }

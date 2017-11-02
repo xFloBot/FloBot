@@ -65,22 +65,14 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label45 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
-            this.tbNotRevivePercent = new System.Windows.Forms.TextBox();
             this.lblDeathDate = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.cbEnableCombatState = new System.Windows.Forms.CheckBox();
-            this.cbAutoTarget = new System.Windows.Forms.CheckBox();
-            this.cbAutoLoot = new System.Windows.Forms.CheckBox();
-            this.cbAutoBattle = new System.Windows.Forms.CheckBox();
-            this.tbLvLRange = new System.Windows.Forms.TextBox();
             this.tbHotkeys = new System.Windows.Forms.TabControl();
             this.tp1 = new System.Windows.Forms.TabPage();
-            this.nudPrio1 = new System.Windows.Forms.NumericUpDown();
             this.label64 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
-            this.tbMin1P = new System.Windows.Forms.TrackBar();
-            this.tbMin1M = new System.Windows.Forms.TrackBar();
             this.lblMin1P = new System.Windows.Forms.Label();
             this.lblMin1M = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
@@ -92,18 +84,10 @@
             this.label62 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.tbMax1P = new System.Windows.Forms.TrackBar();
             this.label39 = new System.Windows.Forms.Label();
-            this.tbMax1M = new System.Windows.Forms.TrackBar();
             this.label21 = new System.Windows.Forms.Label();
-            this.tbCast1 = new System.Windows.Forms.TextBox();
-            this.tbDelay1 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.cbUseSkill1 = new System.Windows.Forms.CheckBox();
-            this.rbAtt1 = new System.Windows.Forms.RadioButton();
-            this.rbBuff1 = new System.Windows.Forms.RadioButton();
             this.tp2 = new System.Windows.Forms.TabPage();
-            this.nudPrio2 = new System.Windows.Forms.NumericUpDown();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
@@ -121,17 +105,7 @@
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
-            this.tbMin2P = new System.Windows.Forms.TrackBar();
-            this.tbMin2M = new System.Windows.Forms.TrackBar();
-            this.tbMax2P = new System.Windows.Forms.TrackBar();
-            this.tbMax2M = new System.Windows.Forms.TrackBar();
-            this.tbCast2 = new System.Windows.Forms.TextBox();
-            this.tbDelay2 = new System.Windows.Forms.TextBox();
-            this.cbUseSkill2 = new System.Windows.Forms.CheckBox();
-            this.rbAtt2 = new System.Windows.Forms.RadioButton();
-            this.rbBuff2 = new System.Windows.Forms.RadioButton();
             this.tp3 = new System.Windows.Forms.TabPage();
-            this.nudPrio3 = new System.Windows.Forms.NumericUpDown();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -149,17 +123,7 @@
             this.label84 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
-            this.tbMin3P = new System.Windows.Forms.TrackBar();
-            this.tbMin3M = new System.Windows.Forms.TrackBar();
-            this.tbMax3P = new System.Windows.Forms.TrackBar();
-            this.tbMax3M = new System.Windows.Forms.TrackBar();
-            this.tbCast3 = new System.Windows.Forms.TextBox();
-            this.tbDelay3 = new System.Windows.Forms.TextBox();
-            this.cbUseSkill3 = new System.Windows.Forms.CheckBox();
-            this.rbAtt3 = new System.Windows.Forms.RadioButton();
-            this.rbBuff3 = new System.Windows.Forms.RadioButton();
             this.tp4 = new System.Windows.Forms.TabPage();
-            this.nudPrio4 = new System.Windows.Forms.NumericUpDown();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
@@ -177,17 +141,7 @@
             this.label92 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
-            this.tbMin4P = new System.Windows.Forms.TrackBar();
-            this.tbMin4M = new System.Windows.Forms.TrackBar();
-            this.tbMax4P = new System.Windows.Forms.TrackBar();
-            this.tbMax4M = new System.Windows.Forms.TrackBar();
-            this.tbCast4 = new System.Windows.Forms.TextBox();
-            this.tbDelay4 = new System.Windows.Forms.TextBox();
-            this.cbUseSkill4 = new System.Windows.Forms.CheckBox();
-            this.rbAtt4 = new System.Windows.Forms.RadioButton();
-            this.rbBuff4 = new System.Windows.Forms.RadioButton();
             this.tp5 = new System.Windows.Forms.TabPage();
-            this.nudPrio5 = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -205,17 +159,7 @@
             this.label103 = new System.Windows.Forms.Label();
             this.label104 = new System.Windows.Forms.Label();
             this.label105 = new System.Windows.Forms.Label();
-            this.tbMin5P = new System.Windows.Forms.TrackBar();
-            this.tbMin5M = new System.Windows.Forms.TrackBar();
-            this.tbMax5P = new System.Windows.Forms.TrackBar();
-            this.tbMax5M = new System.Windows.Forms.TrackBar();
-            this.tbCast5 = new System.Windows.Forms.TextBox();
-            this.tbDelay5 = new System.Windows.Forms.TextBox();
-            this.cbUseSkill5 = new System.Windows.Forms.CheckBox();
-            this.rbAtt5 = new System.Windows.Forms.RadioButton();
-            this.rbBuff5 = new System.Windows.Forms.RadioButton();
             this.tp6 = new System.Windows.Forms.TabPage();
-            this.nudPrio6 = new System.Windows.Forms.NumericUpDown();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
@@ -233,23 +177,7 @@
             this.label114 = new System.Windows.Forms.Label();
             this.label115 = new System.Windows.Forms.Label();
             this.label116 = new System.Windows.Forms.Label();
-            this.tbMin6P = new System.Windows.Forms.TrackBar();
-            this.tbMin6M = new System.Windows.Forms.TrackBar();
-            this.tbMax6P = new System.Windows.Forms.TrackBar();
-            this.tbMax6M = new System.Windows.Forms.TrackBar();
-            this.tbCast6 = new System.Windows.Forms.TextBox();
-            this.tbDelay6 = new System.Windows.Forms.TextBox();
-            this.cbUseSkill6 = new System.Windows.Forms.CheckBox();
-            this.rbAtt6 = new System.Windows.Forms.RadioButton();
-            this.rbBuff6 = new System.Windows.Forms.RadioButton();
             this.tp7 = new System.Windows.Forms.TabPage();
-            this.label32 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
             this.tp8 = new System.Windows.Forms.TabPage();
             this.label34 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -266,6 +194,100 @@
             this.label57 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
+            this.tp0 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.cbDisableBot = new System.Windows.Forms.CheckBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.lblMin7P = new System.Windows.Forms.Label();
+            this.lblMin7M = new System.Windows.Forms.Label();
+            this.label108 = new System.Windows.Forms.Label();
+            this.label117 = new System.Windows.Forms.Label();
+            this.lblMax7P = new System.Windows.Forms.Label();
+            this.lblMax7M = new System.Windows.Forms.Label();
+            this.label120 = new System.Windows.Forms.Label();
+            this.label121 = new System.Windows.Forms.Label();
+            this.label122 = new System.Windows.Forms.Label();
+            this.label123 = new System.Windows.Forms.Label();
+            this.label124 = new System.Windows.Forms.Label();
+            this.label125 = new System.Windows.Forms.Label();
+            this.label126 = new System.Windows.Forms.Label();
+            this.label127 = new System.Windows.Forms.Label();
+            this.tbProcessName = new System.Windows.Forms.TextBox();
+            this.tbProcessID = new System.Windows.Forms.TextBox();
+            this.nudPrio1 = new System.Windows.Forms.NumericUpDown();
+            this.tbMin1P = new System.Windows.Forms.TrackBar();
+            this.tbMin1M = new System.Windows.Forms.TrackBar();
+            this.tbMax1P = new System.Windows.Forms.TrackBar();
+            this.tbMax1M = new System.Windows.Forms.TrackBar();
+            this.tbCast1 = new System.Windows.Forms.TextBox();
+            this.tbDelay1 = new System.Windows.Forms.TextBox();
+            this.cbUseSkill1 = new System.Windows.Forms.CheckBox();
+            this.rbAtt1 = new System.Windows.Forms.RadioButton();
+            this.rbBuff1 = new System.Windows.Forms.RadioButton();
+            this.nudPrio2 = new System.Windows.Forms.NumericUpDown();
+            this.tbMin2P = new System.Windows.Forms.TrackBar();
+            this.tbMin2M = new System.Windows.Forms.TrackBar();
+            this.tbMax2P = new System.Windows.Forms.TrackBar();
+            this.tbMax2M = new System.Windows.Forms.TrackBar();
+            this.tbCast2 = new System.Windows.Forms.TextBox();
+            this.tbDelay2 = new System.Windows.Forms.TextBox();
+            this.cbUseSkill2 = new System.Windows.Forms.CheckBox();
+            this.rbAtt2 = new System.Windows.Forms.RadioButton();
+            this.rbBuff2 = new System.Windows.Forms.RadioButton();
+            this.nudPrio3 = new System.Windows.Forms.NumericUpDown();
+            this.tbMin3P = new System.Windows.Forms.TrackBar();
+            this.tbMin3M = new System.Windows.Forms.TrackBar();
+            this.tbMax3P = new System.Windows.Forms.TrackBar();
+            this.tbMax3M = new System.Windows.Forms.TrackBar();
+            this.tbCast3 = new System.Windows.Forms.TextBox();
+            this.tbDelay3 = new System.Windows.Forms.TextBox();
+            this.cbUseSkill3 = new System.Windows.Forms.CheckBox();
+            this.rbAtt3 = new System.Windows.Forms.RadioButton();
+            this.rbBuff3 = new System.Windows.Forms.RadioButton();
+            this.nudPrio4 = new System.Windows.Forms.NumericUpDown();
+            this.tbMin4P = new System.Windows.Forms.TrackBar();
+            this.tbMin4M = new System.Windows.Forms.TrackBar();
+            this.tbMax4P = new System.Windows.Forms.TrackBar();
+            this.tbMax4M = new System.Windows.Forms.TrackBar();
+            this.tbCast4 = new System.Windows.Forms.TextBox();
+            this.tbDelay4 = new System.Windows.Forms.TextBox();
+            this.cbUseSkill4 = new System.Windows.Forms.CheckBox();
+            this.rbAtt4 = new System.Windows.Forms.RadioButton();
+            this.rbBuff4 = new System.Windows.Forms.RadioButton();
+            this.nudPrio5 = new System.Windows.Forms.NumericUpDown();
+            this.tbMin5P = new System.Windows.Forms.TrackBar();
+            this.tbMin5M = new System.Windows.Forms.TrackBar();
+            this.tbMax5P = new System.Windows.Forms.TrackBar();
+            this.tbMax5M = new System.Windows.Forms.TrackBar();
+            this.tbCast5 = new System.Windows.Forms.TextBox();
+            this.tbDelay5 = new System.Windows.Forms.TextBox();
+            this.cbUseSkill5 = new System.Windows.Forms.CheckBox();
+            this.rbAtt5 = new System.Windows.Forms.RadioButton();
+            this.rbBuff5 = new System.Windows.Forms.RadioButton();
+            this.nudPrio6 = new System.Windows.Forms.NumericUpDown();
+            this.tbMin6P = new System.Windows.Forms.TrackBar();
+            this.tbMin6M = new System.Windows.Forms.TrackBar();
+            this.tbMax6P = new System.Windows.Forms.TrackBar();
+            this.tbMax6M = new System.Windows.Forms.TrackBar();
+            this.tbCast6 = new System.Windows.Forms.TextBox();
+            this.tbDelay6 = new System.Windows.Forms.TextBox();
+            this.cbUseSkill6 = new System.Windows.Forms.CheckBox();
+            this.rbAtt6 = new System.Windows.Forms.RadioButton();
+            this.rbBuff6 = new System.Windows.Forms.RadioButton();
+            this.nudPrio7 = new System.Windows.Forms.NumericUpDown();
+            this.tbMin7P = new System.Windows.Forms.TrackBar();
+            this.tbMin7M = new System.Windows.Forms.TrackBar();
+            this.tbMax7P = new System.Windows.Forms.TrackBar();
+            this.tbMax7M = new System.Windows.Forms.TrackBar();
+            this.tbCast7 = new System.Windows.Forms.TextBox();
+            this.tbDelay7 = new System.Windows.Forms.TextBox();
+            this.cbUseSkill7 = new System.Windows.Forms.CheckBox();
+            this.rbAtt7 = new System.Windows.Forms.RadioButton();
+            this.rbBuff7 = new System.Windows.Forms.RadioButton();
             this.lblMin9 = new System.Windows.Forms.Label();
             this.lblMax9 = new System.Windows.Forms.Label();
             this.tbMin9 = new System.Windows.Forms.TrackBar();
@@ -275,13 +297,11 @@
             this.cbUseSkill9 = new System.Windows.Forms.CheckBox();
             this.rbAtt9 = new System.Windows.Forms.RadioButton();
             this.rbBuff9 = new System.Windows.Forms.RadioButton();
-            this.tp0 = new System.Windows.Forms.TabPage();
-            this.label19 = new System.Windows.Forms.Label();
-            this.cbDisableBot = new System.Windows.Forms.CheckBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.tbProcessName = new System.Windows.Forms.TextBox();
-            this.tbProcessID = new System.Windows.Forms.TextBox();
+            this.tbNotRevivePercent = new System.Windows.Forms.TextBox();
+            this.cbAutoTarget = new System.Windows.Forms.CheckBox();
+            this.cbAutoLoot = new System.Windows.Forms.CheckBox();
+            this.cbAutoBattle = new System.Windows.Forms.CheckBox();
+            this.tbLvLRange = new System.Windows.Forms.TextBox();
             this.tbEmHP = new System.Windows.Forms.TrackBar();
             this.tbEmMP = new System.Windows.Forms.TrackBar();
             this.tbRestMP = new System.Windows.Forms.TrackBar();
@@ -291,44 +311,49 @@
             this.groupBox3.SuspendLayout();
             this.tbHotkeys.SuspendLayout();
             this.tp1.SuspendLayout();
+            this.tp2.SuspendLayout();
+            this.tp3.SuspendLayout();
+            this.tp4.SuspendLayout();
+            this.tp5.SuspendLayout();
+            this.tp6.SuspendLayout();
+            this.tp7.SuspendLayout();
+            this.tp8.SuspendLayout();
+            this.tp9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrio1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin1P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin1M)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax1P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax1M)).BeginInit();
-            this.tp2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrio2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin2P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin2M)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax2P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax2M)).BeginInit();
-            this.tp3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrio3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin3P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin3M)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax3P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax3M)).BeginInit();
-            this.tp4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrio4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin4P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin4M)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax4P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax4M)).BeginInit();
-            this.tp5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrio5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin5P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin5M)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax5P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax5M)).BeginInit();
-            this.tp6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrio6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin6P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin6M)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax6P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax6M)).BeginInit();
-            this.tp7.SuspendLayout();
-            this.tp8.SuspendLayout();
-            this.tp9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrio7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin7P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin7M)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax7P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax7M)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmHP)).BeginInit();
@@ -499,11 +524,13 @@
             // lblMobsTillUp
             // 
             this.lblMobsTillUp.AutoSize = true;
+            this.lblMobsTillUp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMobsTillUp.Location = new System.Drawing.Point(12, 194);
             this.lblMobsTillUp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMobsTillUp.Name = "lblMobsTillUp";
-            this.lblMobsTillUp.Size = new System.Drawing.Size(0, 17);
+            this.lblMobsTillUp.Size = new System.Drawing.Size(18, 19);
             this.lblMobsTillUp.TabIndex = 4;
+            this.lblMobsTillUp.Text = "0";
             this.lblMobsTillUp.Click += new System.EventHandler(this.lblExpCurrent_Click);
             // 
             // lblExpCurrent
@@ -757,16 +784,6 @@
             this.label60.TabIndex = 15;
             this.label60.Text = "Stop resurrection after:";
             // 
-            // tbNotRevivePercent
-            // 
-            this.tbNotRevivePercent.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbRevivePercent", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbNotRevivePercent.Location = new System.Drawing.Point(159, 277);
-            this.tbNotRevivePercent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbNotRevivePercent.Name = "tbNotRevivePercent";
-            this.tbNotRevivePercent.Size = new System.Drawing.Size(100, 22);
-            this.tbNotRevivePercent.TabIndex = 14;
-            this.tbNotRevivePercent.Text = global::FloBot.Properties.Settings.Default.tbRevivePercent;
-            // 
             // lblDeathDate
             // 
             this.lblDeathDate.AutoSize = true;
@@ -800,56 +817,6 @@
             this.cbEnableCombatState.Text = "Enable";
             this.cbEnableCombatState.UseVisualStyleBackColor = true;
             this.cbEnableCombatState.CheckedChanged += new System.EventHandler(this.cbEnableCombatState_CheckedChanged);
-            // 
-            // cbAutoTarget
-            // 
-            this.cbAutoTarget.AutoSize = true;
-            this.cbAutoTarget.Checked = global::FloBot.Properties.Settings.Default.cbAutoTarget;
-            this.cbAutoTarget.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoTarget", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbAutoTarget.Location = new System.Drawing.Point(27, 74);
-            this.cbAutoTarget.Margin = new System.Windows.Forms.Padding(4);
-            this.cbAutoTarget.Name = "cbAutoTarget";
-            this.cbAutoTarget.Size = new System.Drawing.Size(100, 21);
-            this.cbAutoTarget.TabIndex = 10;
-            this.cbAutoTarget.Text = "Auto target";
-            this.cbAutoTarget.UseVisualStyleBackColor = true;
-            // 
-            // cbAutoLoot
-            // 
-            this.cbAutoLoot.AutoSize = true;
-            this.cbAutoLoot.Checked = global::FloBot.Properties.Settings.Default.cbAutoLoot;
-            this.cbAutoLoot.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoLoot", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbAutoLoot.Location = new System.Drawing.Point(27, 206);
-            this.cbAutoLoot.Margin = new System.Windows.Forms.Padding(4);
-            this.cbAutoLoot.Name = "cbAutoLoot";
-            this.cbAutoLoot.Size = new System.Drawing.Size(86, 21);
-            this.cbAutoLoot.TabIndex = 9;
-            this.cbAutoLoot.Text = "Auto loot";
-            this.cbAutoLoot.UseVisualStyleBackColor = true;
-            this.cbAutoLoot.CheckedChanged += new System.EventHandler(this.cbAutoLoot_CheckedChanged);
-            // 
-            // cbAutoBattle
-            // 
-            this.cbAutoBattle.AutoSize = true;
-            this.cbAutoBattle.Checked = global::FloBot.Properties.Settings.Default.cbAutoAttack;
-            this.cbAutoBattle.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoAttack", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbAutoBattle.Location = new System.Drawing.Point(27, 174);
-            this.cbAutoBattle.Margin = new System.Windows.Forms.Padding(4);
-            this.cbAutoBattle.Name = "cbAutoBattle";
-            this.cbAutoBattle.Size = new System.Drawing.Size(69, 21);
-            this.cbAutoBattle.TabIndex = 9;
-            this.cbAutoBattle.Text = "Attack";
-            this.cbAutoBattle.UseVisualStyleBackColor = true;
-            // 
-            // tbLvLRange
-            // 
-            this.tbLvLRange.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "maxLevelDif", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbLvLRange.Location = new System.Drawing.Point(51, 123);
-            this.tbLvLRange.Margin = new System.Windows.Forms.Padding(4);
-            this.tbLvLRange.Name = "tbLvLRange";
-            this.tbLvLRange.Size = new System.Drawing.Size(132, 22);
-            this.tbLvLRange.TabIndex = 6;
-            this.tbLvLRange.Text = global::FloBot.Properties.Settings.Default.maxLevelDif;
             // 
             // tbHotkeys
             // 
@@ -908,25 +875,14 @@
             this.tp1.Text = "1";
             this.tp1.UseVisualStyleBackColor = true;
             // 
-            // nudPrio1
-            // 
-            this.nudPrio1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.nudPrio1.Location = new System.Drawing.Point(35, 220);
-            this.nudPrio1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.nudPrio1.Name = "nudPrio1";
-            this.nudPrio1.Size = new System.Drawing.Size(120, 22);
-            this.nudPrio1.TabIndex = 22;
-            this.nudPrio1.Value = global::FloBot.Properties.Settings.Default.nudPrio1;
-            this.nudPrio1.ValueChanged += new System.EventHandler(this.rbBuff1_Changed);
-            // 
             // label64
             // 
             this.label64.AutoSize = true;
             this.label64.Location = new System.Drawing.Point(31, 199);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(55, 17);
+            this.label64.Size = new System.Drawing.Size(56, 17);
             this.label64.TabIndex = 21;
-            this.label64.Text = "priority:";
+            this.label64.Text = "Priority:";
             // 
             // label67
             // 
@@ -945,34 +901,6 @@
             this.label61.Size = new System.Drawing.Size(58, 17);
             this.label61.TabIndex = 20;
             this.label61.Text = "Mob HP";
-            // 
-            // tbMin1P
-            // 
-            this.tbMin1P.AutoSize = false;
-            this.tbMin1P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin1P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin1P.Location = new System.Drawing.Point(295, 187);
-            this.tbMin1P.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin1P.Maximum = 100;
-            this.tbMin1P.Name = "tbMin1P";
-            this.tbMin1P.Size = new System.Drawing.Size(312, 38);
-            this.tbMin1P.TabIndex = 17;
-            this.tbMin1P.TickFrequency = 10;
-            this.tbMin1P.Value = global::FloBot.Properties.Settings.Default.tbMin1P;
-            this.tbMin1P.Scroll += new System.EventHandler(this.rbBuff1_Changed);
-            // 
-            // tbMin1M
-            // 
-            this.tbMin1M.AutoSize = false;
-            this.tbMin1M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin1M.Location = new System.Drawing.Point(295, 75);
-            this.tbMin1M.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin1M.Maximum = 100;
-            this.tbMin1M.Name = "tbMin1M";
-            this.tbMin1M.Size = new System.Drawing.Size(312, 38);
-            this.tbMin1M.TabIndex = 17;
-            this.tbMin1M.TickFrequency = 10;
-            this.tbMin1M.Value = global::FloBot.Properties.Settings.Default.tbMin1;
-            this.tbMin1M.Scroll += new System.EventHandler(this.rbBuff1_Changed);
             // 
             // lblMin1P
             // 
@@ -1084,20 +1012,6 @@
             this.label54.TabIndex = 15;
             this.label54.Text = "Use at";
             // 
-            // tbMax1P
-            // 
-            this.tbMax1P.AutoSize = false;
-            this.tbMax1P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax1P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax1P.Location = new System.Drawing.Point(295, 150);
-            this.tbMax1P.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax1P.Maximum = 100;
-            this.tbMax1P.Name = "tbMax1P";
-            this.tbMax1P.Size = new System.Drawing.Size(312, 38);
-            this.tbMax1P.TabIndex = 12;
-            this.tbMax1P.TickFrequency = 10;
-            this.tbMax1P.Value = global::FloBot.Properties.Settings.Default.tbMax1P;
-            this.tbMax1P.Scroll += new System.EventHandler(this.rbBuff1_Changed);
-            // 
             // label39
             // 
             this.label39.AutoSize = true;
@@ -1107,20 +1021,6 @@
             this.label39.Size = new System.Drawing.Size(49, 17);
             this.label39.TabIndex = 15;
             this.label39.Text = "Use at";
-            // 
-            // tbMax1M
-            // 
-            this.tbMax1M.AutoSize = false;
-            this.tbMax1M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax1M.Location = new System.Drawing.Point(295, 38);
-            this.tbMax1M.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax1M.Maximum = 100;
-            this.tbMax1M.Name = "tbMax1M";
-            this.tbMax1M.Size = new System.Drawing.Size(312, 38);
-            this.tbMax1M.TabIndex = 12;
-            this.tbMax1M.TickFrequency = 10;
-            this.tbMax1M.Value = global::FloBot.Properties.Settings.Default.tbMax1;
-            this.tbMax1M.Scroll += new System.EventHandler(this.rbBuff1_Changed);
             // 
             // label21
             // 
@@ -1132,28 +1032,6 @@
             this.label21.TabIndex = 5;
             this.label21.Text = "Cast time:";
             // 
-            // tbCast1
-            // 
-            this.tbCast1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCastSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbCast1.Location = new System.Drawing.Point(31, 165);
-            this.tbCast1.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCast1.Name = "tbCast1";
-            this.tbCast1.Size = new System.Drawing.Size(132, 22);
-            this.tbCast1.TabIndex = 4;
-            this.tbCast1.Text = global::FloBot.Properties.Settings.Default.tbCastSkill1;
-            this.tbCast1.TextChanged += new System.EventHandler(this.rbBuff1_Changed);
-            // 
-            // tbDelay1
-            // 
-            this.tbDelay1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelaySkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbDelay1.Location = new System.Drawing.Point(31, 112);
-            this.tbDelay1.Margin = new System.Windows.Forms.Padding(4);
-            this.tbDelay1.Name = "tbDelay1";
-            this.tbDelay1.Size = new System.Drawing.Size(132, 22);
-            this.tbDelay1.TabIndex = 4;
-            this.tbDelay1.Text = global::FloBot.Properties.Settings.Default.tbDelaySkill1;
-            this.tbDelay1.TextChanged += new System.EventHandler(this.rbBuff1_Changed);
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -1163,49 +1041,6 @@
             this.label20.Size = new System.Drawing.Size(113, 17);
             this.label20.TabIndex = 3;
             this.label20.Text = "Time until reuse:";
-            // 
-            // cbUseSkill1
-            // 
-            this.cbUseSkill1.AutoSize = true;
-            this.cbUseSkill1.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill1;
-            this.cbUseSkill1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbUseSkill1.Location = new System.Drawing.Point(4, 4);
-            this.cbUseSkill1.Margin = new System.Windows.Forms.Padding(4);
-            this.cbUseSkill1.Name = "cbUseSkill1";
-            this.cbUseSkill1.Size = new System.Drawing.Size(55, 21);
-            this.cbUseSkill1.TabIndex = 2;
-            this.cbUseSkill1.Text = "Use";
-            this.cbUseSkill1.UseVisualStyleBackColor = true;
-            this.cbUseSkill1.CheckedChanged += new System.EventHandler(this.rbBuff1_Changed);
-            // 
-            // rbAtt1
-            // 
-            this.rbAtt1.AutoSize = true;
-            this.rbAtt1.Checked = global::FloBot.Properties.Settings.Default.rbAttackSkill1;
-            this.rbAtt1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAttackSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbAtt1.Location = new System.Drawing.Point(25, 62);
-            this.rbAtt1.Margin = new System.Windows.Forms.Padding(4);
-            this.rbAtt1.Name = "rbAtt1";
-            this.rbAtt1.Size = new System.Drawing.Size(97, 21);
-            this.rbAtt1.TabIndex = 1;
-            this.rbAtt1.TabStop = true;
-            this.rbAtt1.Text = "Attack Skill";
-            this.rbAtt1.UseVisualStyleBackColor = true;
-            this.rbAtt1.CheckedChanged += new System.EventHandler(this.rbBuff1_Changed);
-            // 
-            // rbBuff1
-            // 
-            this.rbBuff1.AutoSize = true;
-            this.rbBuff1.Checked = global::FloBot.Properties.Settings.Default.rbBuffSkill1;
-            this.rbBuff1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuffSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbBuff1.Location = new System.Drawing.Point(25, 32);
-            this.rbBuff1.Margin = new System.Windows.Forms.Padding(4);
-            this.rbBuff1.Name = "rbBuff1";
-            this.rbBuff1.Size = new System.Drawing.Size(81, 21);
-            this.rbBuff1.TabIndex = 0;
-            this.rbBuff1.Text = "Buff skill";
-            this.rbBuff1.UseVisualStyleBackColor = true;
-            this.rbBuff1.CheckedChanged += new System.EventHandler(this.rbBuff1_Changed);
             // 
             // tp2
             // 
@@ -1245,25 +1080,14 @@
             this.tp2.Text = "2";
             this.tp2.UseVisualStyleBackColor = true;
             // 
-            // nudPrio2
-            // 
-            this.nudPrio2.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.nudPrio2.Location = new System.Drawing.Point(35, 220);
-            this.nudPrio2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.nudPrio2.Name = "nudPrio2";
-            this.nudPrio2.Size = new System.Drawing.Size(120, 22);
-            this.nudPrio2.TabIndex = 49;
-            this.nudPrio2.Value = global::FloBot.Properties.Settings.Default.nudPrio2;
-            this.nudPrio2.ValueChanged += new System.EventHandler(this.rbBuff2_Changed);
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(31, 199);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(61, 17);
+            this.label22.Size = new System.Drawing.Size(56, 17);
             this.label22.TabIndex = 48;
-            this.label22.Text = "Priorität:";
+            this.label22.Text = "Priority:";
             // 
             // label23
             // 
@@ -1423,125 +1247,6 @@
             this.label76.TabIndex = 26;
             this.label76.Text = "Time until reuse:";
             // 
-            // tbMin2P
-            // 
-            this.tbMin2P.AutoSize = false;
-            this.tbMin2P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin2P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin2P.Location = new System.Drawing.Point(295, 187);
-            this.tbMin2P.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin2P.Maximum = 100;
-            this.tbMin2P.Name = "tbMin2P";
-            this.tbMin2P.Size = new System.Drawing.Size(312, 38);
-            this.tbMin2P.TabIndex = 41;
-            this.tbMin2P.TickFrequency = 10;
-            this.tbMin2P.Value = global::FloBot.Properties.Settings.Default.tbMin2P;
-            this.tbMin2P.Scroll += new System.EventHandler(this.rbBuff2_Changed);
-            // 
-            // tbMin2M
-            // 
-            this.tbMin2M.AutoSize = false;
-            this.tbMin2M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin2M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin2M.Location = new System.Drawing.Point(295, 75);
-            this.tbMin2M.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin2M.Maximum = 100;
-            this.tbMin2M.Name = "tbMin2M";
-            this.tbMin2M.Size = new System.Drawing.Size(312, 38);
-            this.tbMin2M.TabIndex = 40;
-            this.tbMin2M.TickFrequency = 10;
-            this.tbMin2M.Value = global::FloBot.Properties.Settings.Default.tbMin2M;
-            this.tbMin2M.Scroll += new System.EventHandler(this.rbBuff2_Changed);
-            // 
-            // tbMax2P
-            // 
-            this.tbMax2P.AutoSize = false;
-            this.tbMax2P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax2P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax2P.Location = new System.Drawing.Point(295, 150);
-            this.tbMax2P.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax2P.Maximum = 100;
-            this.tbMax2P.Name = "tbMax2P";
-            this.tbMax2P.Size = new System.Drawing.Size(312, 38);
-            this.tbMax2P.TabIndex = 31;
-            this.tbMax2P.TickFrequency = 10;
-            this.tbMax2P.Value = global::FloBot.Properties.Settings.Default.tbMax2P;
-            this.tbMax2P.Scroll += new System.EventHandler(this.rbBuff2_Changed);
-            // 
-            // tbMax2M
-            // 
-            this.tbMax2M.AutoSize = false;
-            this.tbMax2M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax2M.Location = new System.Drawing.Point(295, 38);
-            this.tbMax2M.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax2M.Maximum = 100;
-            this.tbMax2M.Name = "tbMax2M";
-            this.tbMax2M.Size = new System.Drawing.Size(312, 38);
-            this.tbMax2M.TabIndex = 30;
-            this.tbMax2M.TickFrequency = 10;
-            this.tbMax2M.Value = global::FloBot.Properties.Settings.Default.tbMax3M;
-            this.tbMax2M.Scroll += new System.EventHandler(this.rbBuff2_Changed);
-            // 
-            // tbCast2
-            // 
-            this.tbCast2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbCast2.Location = new System.Drawing.Point(31, 165);
-            this.tbCast2.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCast2.Name = "tbCast2";
-            this.tbCast2.Size = new System.Drawing.Size(132, 22);
-            this.tbCast2.TabIndex = 28;
-            this.tbCast2.Text = global::FloBot.Properties.Settings.Default.tbCast2;
-            // 
-            // tbDelay2
-            // 
-            this.tbDelay2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbDelay2.Location = new System.Drawing.Point(31, 112);
-            this.tbDelay2.Margin = new System.Windows.Forms.Padding(4);
-            this.tbDelay2.Name = "tbDelay2";
-            this.tbDelay2.Size = new System.Drawing.Size(132, 22);
-            this.tbDelay2.TabIndex = 27;
-            this.tbDelay2.Text = global::FloBot.Properties.Settings.Default.tbDelay2;
-            // 
-            // cbUseSkill2
-            // 
-            this.cbUseSkill2.AutoSize = true;
-            this.cbUseSkill2.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill2;
-            this.cbUseSkill2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbUseSkill2.Location = new System.Drawing.Point(4, 4);
-            this.cbUseSkill2.Margin = new System.Windows.Forms.Padding(4);
-            this.cbUseSkill2.Name = "cbUseSkill2";
-            this.cbUseSkill2.Size = new System.Drawing.Size(55, 21);
-            this.cbUseSkill2.TabIndex = 25;
-            this.cbUseSkill2.Text = "Use";
-            this.cbUseSkill2.UseVisualStyleBackColor = true;
-            this.cbUseSkill2.CheckedChanged += new System.EventHandler(this.rbBuff2_Changed);
-            // 
-            // rbAtt2
-            // 
-            this.rbAtt2.AutoSize = true;
-            this.rbAtt2.Checked = global::FloBot.Properties.Settings.Default.rbAtt2;
-            this.rbAtt2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbAtt2.Location = new System.Drawing.Point(25, 62);
-            this.rbAtt2.Margin = new System.Windows.Forms.Padding(4);
-            this.rbAtt2.Name = "rbAtt2";
-            this.rbAtt2.Size = new System.Drawing.Size(97, 21);
-            this.rbAtt2.TabIndex = 24;
-            this.rbAtt2.TabStop = true;
-            this.rbAtt2.Text = "Attack Skill";
-            this.rbAtt2.UseVisualStyleBackColor = true;
-            this.rbAtt2.CheckedChanged += new System.EventHandler(this.rbBuff2_Changed);
-            // 
-            // rbBuff2
-            // 
-            this.rbBuff2.AutoSize = true;
-            this.rbBuff2.Checked = global::FloBot.Properties.Settings.Default.rbBuff2;
-            this.rbBuff2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbBuff2.Location = new System.Drawing.Point(25, 32);
-            this.rbBuff2.Margin = new System.Windows.Forms.Padding(4);
-            this.rbBuff2.Name = "rbBuff2";
-            this.rbBuff2.Size = new System.Drawing.Size(81, 21);
-            this.rbBuff2.TabIndex = 23;
-            this.rbBuff2.Text = "Buff skill";
-            this.rbBuff2.UseVisualStyleBackColor = true;
-            this.rbBuff2.CheckedChanged += new System.EventHandler(this.rbBuff2_Changed);
-            // 
             // tp3
             // 
             this.tp3.Controls.Add(this.nudPrio3);
@@ -1579,25 +1284,14 @@
             this.tp3.Text = "3";
             this.tp3.UseVisualStyleBackColor = true;
             // 
-            // nudPrio3
-            // 
-            this.nudPrio3.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.nudPrio3.Location = new System.Drawing.Point(35, 220);
-            this.nudPrio3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.nudPrio3.Name = "nudPrio3";
-            this.nudPrio3.Size = new System.Drawing.Size(120, 22);
-            this.nudPrio3.TabIndex = 49;
-            this.nudPrio3.Value = global::FloBot.Properties.Settings.Default.nudPrio3;
-            this.nudPrio3.ValueChanged += new System.EventHandler(this.rbBuff3_Changed);
-            // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(31, 199);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(61, 17);
+            this.label24.Size = new System.Drawing.Size(56, 17);
             this.label24.TabIndex = 48;
-            this.label24.Text = "Priorität:";
+            this.label24.Text = "Priority:";
             // 
             // label25
             // 
@@ -1757,127 +1451,6 @@
             this.label86.TabIndex = 26;
             this.label86.Text = "Time until reuse:";
             // 
-            // tbMin3P
-            // 
-            this.tbMin3P.AutoSize = false;
-            this.tbMin3P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin3P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin3P.Location = new System.Drawing.Point(295, 187);
-            this.tbMin3P.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin3P.Maximum = 100;
-            this.tbMin3P.Name = "tbMin3P";
-            this.tbMin3P.Size = new System.Drawing.Size(312, 38);
-            this.tbMin3P.TabIndex = 41;
-            this.tbMin3P.TickFrequency = 10;
-            this.tbMin3P.Value = global::FloBot.Properties.Settings.Default.tbMin3P;
-            this.tbMin3P.Scroll += new System.EventHandler(this.rbBuff3_Changed);
-            // 
-            // tbMin3M
-            // 
-            this.tbMin3M.AutoSize = false;
-            this.tbMin3M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin3M.Location = new System.Drawing.Point(295, 75);
-            this.tbMin3M.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin3M.Maximum = 100;
-            this.tbMin3M.Name = "tbMin3M";
-            this.tbMin3M.Size = new System.Drawing.Size(312, 38);
-            this.tbMin3M.TabIndex = 40;
-            this.tbMin3M.TickFrequency = 10;
-            this.tbMin3M.Value = global::FloBot.Properties.Settings.Default.tbMin3;
-            this.tbMin3M.Scroll += new System.EventHandler(this.rbBuff3_Changed);
-            // 
-            // tbMax3P
-            // 
-            this.tbMax3P.AutoSize = false;
-            this.tbMax3P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax3P.Location = new System.Drawing.Point(295, 150);
-            this.tbMax3P.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax3P.Maximum = 100;
-            this.tbMax3P.Name = "tbMax3P";
-            this.tbMax3P.Size = new System.Drawing.Size(312, 38);
-            this.tbMax3P.TabIndex = 31;
-            this.tbMax3P.TickFrequency = 10;
-            this.tbMax3P.Value = global::FloBot.Properties.Settings.Default.tbMax3P;
-            this.tbMax3P.Scroll += new System.EventHandler(this.rbBuff3_Changed);
-            // 
-            // tbMax3M
-            // 
-            this.tbMax3M.AutoSize = false;
-            this.tbMax3M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax3M.Location = new System.Drawing.Point(295, 38);
-            this.tbMax3M.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax3M.Maximum = 100;
-            this.tbMax3M.Name = "tbMax3M";
-            this.tbMax3M.Size = new System.Drawing.Size(312, 38);
-            this.tbMax3M.TabIndex = 30;
-            this.tbMax3M.TickFrequency = 10;
-            this.tbMax3M.Value = global::FloBot.Properties.Settings.Default.tbMax3;
-            this.tbMax3M.Scroll += new System.EventHandler(this.rbBuff3_Changed);
-            // 
-            // tbCast3
-            // 
-            this.tbCast3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbCast3.Location = new System.Drawing.Point(31, 165);
-            this.tbCast3.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCast3.Name = "tbCast3";
-            this.tbCast3.Size = new System.Drawing.Size(132, 22);
-            this.tbCast3.TabIndex = 28;
-            this.tbCast3.Text = global::FloBot.Properties.Settings.Default.tbCast3;
-            this.tbCast3.TextChanged += new System.EventHandler(this.rbBuff3_Changed);
-            // 
-            // tbDelay3
-            // 
-            this.tbDelay3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbDelay3.Location = new System.Drawing.Point(31, 112);
-            this.tbDelay3.Margin = new System.Windows.Forms.Padding(4);
-            this.tbDelay3.Name = "tbDelay3";
-            this.tbDelay3.Size = new System.Drawing.Size(132, 22);
-            this.tbDelay3.TabIndex = 27;
-            this.tbDelay3.Text = global::FloBot.Properties.Settings.Default.tbDelay3;
-            this.tbDelay3.TextChanged += new System.EventHandler(this.rbBuff3_Changed);
-            // 
-            // cbUseSkill3
-            // 
-            this.cbUseSkill3.AutoSize = true;
-            this.cbUseSkill3.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill3;
-            this.cbUseSkill3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbUseSkill3.Location = new System.Drawing.Point(4, 4);
-            this.cbUseSkill3.Margin = new System.Windows.Forms.Padding(4);
-            this.cbUseSkill3.Name = "cbUseSkill3";
-            this.cbUseSkill3.Size = new System.Drawing.Size(55, 21);
-            this.cbUseSkill3.TabIndex = 25;
-            this.cbUseSkill3.Text = "Use";
-            this.cbUseSkill3.UseVisualStyleBackColor = true;
-            this.cbUseSkill3.CheckedChanged += new System.EventHandler(this.rbBuff3_Changed);
-            // 
-            // rbAtt3
-            // 
-            this.rbAtt3.AutoSize = true;
-            this.rbAtt3.Checked = global::FloBot.Properties.Settings.Default.rbAtt3;
-            this.rbAtt3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbAtt3.Location = new System.Drawing.Point(25, 62);
-            this.rbAtt3.Margin = new System.Windows.Forms.Padding(4);
-            this.rbAtt3.Name = "rbAtt3";
-            this.rbAtt3.Size = new System.Drawing.Size(97, 21);
-            this.rbAtt3.TabIndex = 24;
-            this.rbAtt3.TabStop = true;
-            this.rbAtt3.Text = "Attack Skill";
-            this.rbAtt3.UseVisualStyleBackColor = true;
-            this.rbAtt3.CheckedChanged += new System.EventHandler(this.rbBuff3_Changed);
-            // 
-            // rbBuff3
-            // 
-            this.rbBuff3.AutoSize = true;
-            this.rbBuff3.Checked = global::FloBot.Properties.Settings.Default.rbBuff3;
-            this.rbBuff3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbBuff3.Location = new System.Drawing.Point(25, 32);
-            this.rbBuff3.Margin = new System.Windows.Forms.Padding(4);
-            this.rbBuff3.Name = "rbBuff3";
-            this.rbBuff3.Size = new System.Drawing.Size(81, 21);
-            this.rbBuff3.TabIndex = 23;
-            this.rbBuff3.Text = "Buff skill";
-            this.rbBuff3.UseVisualStyleBackColor = true;
-            this.rbBuff3.CheckedChanged += new System.EventHandler(this.rbBuff3_Changed);
-            // 
             // tp4
             // 
             this.tp4.Controls.Add(this.nudPrio4);
@@ -1916,25 +1489,14 @@
             this.tp4.UseVisualStyleBackColor = true;
             this.tp4.Click += new System.EventHandler(this.tp4_Click);
             // 
-            // nudPrio4
-            // 
-            this.nudPrio4.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.nudPrio4.Location = new System.Drawing.Point(35, 220);
-            this.nudPrio4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.nudPrio4.Name = "nudPrio4";
-            this.nudPrio4.Size = new System.Drawing.Size(120, 22);
-            this.nudPrio4.TabIndex = 76;
-            this.nudPrio4.Value = global::FloBot.Properties.Settings.Default.nudPrio4;
-            this.nudPrio4.ValueChanged += new System.EventHandler(this.nudPrio4_ValueChanged);
-            // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Location = new System.Drawing.Point(31, 199);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(61, 17);
+            this.label26.Size = new System.Drawing.Size(56, 17);
             this.label26.TabIndex = 75;
-            this.label26.Text = "Priorität:";
+            this.label26.Text = "Priority:";
             // 
             // label27
             // 
@@ -2094,126 +1656,6 @@
             this.label94.TabIndex = 53;
             this.label94.Text = "Time until reuse:";
             // 
-            // tbMin4P
-            // 
-            this.tbMin4P.AutoSize = false;
-            this.tbMin4P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin4P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin4P.Location = new System.Drawing.Point(295, 187);
-            this.tbMin4P.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin4P.Maximum = 100;
-            this.tbMin4P.Name = "tbMin4P";
-            this.tbMin4P.Size = new System.Drawing.Size(312, 38);
-            this.tbMin4P.TabIndex = 68;
-            this.tbMin4P.TickFrequency = 10;
-            this.tbMin4P.Value = global::FloBot.Properties.Settings.Default.tbMin4P;
-            this.tbMin4P.Scroll += new System.EventHandler(this.tbMin4P_Scroll);
-            // 
-            // tbMin4M
-            // 
-            this.tbMin4M.AutoSize = false;
-            this.tbMin4M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin4M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin4M.Location = new System.Drawing.Point(295, 75);
-            this.tbMin4M.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin4M.Maximum = 100;
-            this.tbMin4M.Name = "tbMin4M";
-            this.tbMin4M.Size = new System.Drawing.Size(312, 38);
-            this.tbMin4M.TabIndex = 67;
-            this.tbMin4M.TickFrequency = 10;
-            this.tbMin4M.Value = global::FloBot.Properties.Settings.Default.tbMin4M;
-            this.tbMin4M.Scroll += new System.EventHandler(this.tbMin4M_Scroll);
-            // 
-            // tbMax4P
-            // 
-            this.tbMax4P.AutoSize = false;
-            this.tbMax4P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax4P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax4P.Location = new System.Drawing.Point(295, 150);
-            this.tbMax4P.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax4P.Maximum = 100;
-            this.tbMax4P.Name = "tbMax4P";
-            this.tbMax4P.Size = new System.Drawing.Size(312, 38);
-            this.tbMax4P.TabIndex = 58;
-            this.tbMax4P.TickFrequency = 10;
-            this.tbMax4P.Value = global::FloBot.Properties.Settings.Default.tbMax4P;
-            this.tbMax4P.Scroll += new System.EventHandler(this.tbMax4P_Scroll);
-            // 
-            // tbMax4M
-            // 
-            this.tbMax4M.AutoSize = false;
-            this.tbMax4M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax4M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax4M.Location = new System.Drawing.Point(295, 38);
-            this.tbMax4M.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax4M.Maximum = 100;
-            this.tbMax4M.Name = "tbMax4M";
-            this.tbMax4M.Size = new System.Drawing.Size(312, 38);
-            this.tbMax4M.TabIndex = 57;
-            this.tbMax4M.TickFrequency = 10;
-            this.tbMax4M.Value = global::FloBot.Properties.Settings.Default.tbMax4M;
-            this.tbMax4M.Scroll += new System.EventHandler(this.tbMax4M_Scroll);
-            // 
-            // tbCast4
-            // 
-            this.tbCast4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbCast4.Location = new System.Drawing.Point(31, 165);
-            this.tbCast4.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCast4.Name = "tbCast4";
-            this.tbCast4.Size = new System.Drawing.Size(132, 22);
-            this.tbCast4.TabIndex = 55;
-            this.tbCast4.Text = global::FloBot.Properties.Settings.Default.tbCast4;
-            this.tbCast4.TextChanged += new System.EventHandler(this.tbCast4_TextChanged);
-            // 
-            // tbDelay4
-            // 
-            this.tbDelay4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbReuse4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbDelay4.Location = new System.Drawing.Point(31, 112);
-            this.tbDelay4.Margin = new System.Windows.Forms.Padding(4);
-            this.tbDelay4.Name = "tbDelay4";
-            this.tbDelay4.Size = new System.Drawing.Size(132, 22);
-            this.tbDelay4.TabIndex = 54;
-            this.tbDelay4.Text = global::FloBot.Properties.Settings.Default.tbReuse4;
-            this.tbDelay4.TextChanged += new System.EventHandler(this.tbDelay4_TextChanged);
-            // 
-            // cbUseSkill4
-            // 
-            this.cbUseSkill4.AutoSize = true;
-            this.cbUseSkill4.Checked = global::FloBot.Properties.Settings.Default.cbUse4;
-            this.cbUseSkill4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbUseSkill4.Location = new System.Drawing.Point(4, 4);
-            this.cbUseSkill4.Margin = new System.Windows.Forms.Padding(4);
-            this.cbUseSkill4.Name = "cbUseSkill4";
-            this.cbUseSkill4.Size = new System.Drawing.Size(55, 21);
-            this.cbUseSkill4.TabIndex = 52;
-            this.cbUseSkill4.Text = "Use";
-            this.cbUseSkill4.UseVisualStyleBackColor = true;
-            this.cbUseSkill4.CheckedChanged += new System.EventHandler(this.cbUseSkill4_CheckedChanged);
-            // 
-            // rbAtt4
-            // 
-            this.rbAtt4.AutoSize = true;
-            this.rbAtt4.Checked = global::FloBot.Properties.Settings.Default.rbAtt4;
-            this.rbAtt4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbAtt4.Location = new System.Drawing.Point(25, 62);
-            this.rbAtt4.Margin = new System.Windows.Forms.Padding(4);
-            this.rbAtt4.Name = "rbAtt4";
-            this.rbAtt4.Size = new System.Drawing.Size(97, 21);
-            this.rbAtt4.TabIndex = 51;
-            this.rbAtt4.Text = "Attack Skill";
-            this.rbAtt4.UseVisualStyleBackColor = true;
-            this.rbAtt4.CheckedChanged += new System.EventHandler(this.rbAtt4_CheckedChanged);
-            // 
-            // rbBuff4
-            // 
-            this.rbBuff4.AutoSize = true;
-            this.rbBuff4.Checked = global::FloBot.Properties.Settings.Default.rbBuff4;
-            this.rbBuff4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbBuff4.Location = new System.Drawing.Point(25, 32);
-            this.rbBuff4.Margin = new System.Windows.Forms.Padding(4);
-            this.rbBuff4.Name = "rbBuff4";
-            this.rbBuff4.Size = new System.Drawing.Size(81, 21);
-            this.rbBuff4.TabIndex = 50;
-            this.rbBuff4.Text = "Buff skill";
-            this.rbBuff4.UseVisualStyleBackColor = true;
-            this.rbBuff4.CheckedChanged += new System.EventHandler(this.rbBuff4_CheckedChanged);
-            // 
             // tp5
             // 
             this.tp5.Controls.Add(this.nudPrio5);
@@ -2252,25 +1694,14 @@
             this.tp5.UseVisualStyleBackColor = true;
             this.tp5.Click += new System.EventHandler(this.tp5_Click);
             // 
-            // nudPrio5
-            // 
-            this.nudPrio5.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.nudPrio5.Location = new System.Drawing.Point(35, 220);
-            this.nudPrio5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.nudPrio5.Name = "nudPrio5";
-            this.nudPrio5.Size = new System.Drawing.Size(120, 22);
-            this.nudPrio5.TabIndex = 103;
-            this.nudPrio5.Value = global::FloBot.Properties.Settings.Default.nudPrio5;
-            this.nudPrio5.ValueChanged += new System.EventHandler(this.nudPrio5_ValueChanged);
-            // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(31, 199);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(61, 17);
+            this.label28.Size = new System.Drawing.Size(56, 17);
             this.label28.TabIndex = 102;
-            this.label28.Text = "Priorität:";
+            this.label28.Text = "Priority:";
             // 
             // label29
             // 
@@ -2430,126 +1861,6 @@
             this.label105.TabIndex = 80;
             this.label105.Text = "Time until reuse:";
             // 
-            // tbMin5P
-            // 
-            this.tbMin5P.AutoSize = false;
-            this.tbMin5P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin5P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin5P.Location = new System.Drawing.Point(295, 187);
-            this.tbMin5P.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin5P.Maximum = 100;
-            this.tbMin5P.Name = "tbMin5P";
-            this.tbMin5P.Size = new System.Drawing.Size(312, 38);
-            this.tbMin5P.TabIndex = 95;
-            this.tbMin5P.TickFrequency = 10;
-            this.tbMin5P.Value = global::FloBot.Properties.Settings.Default.tbMin5P;
-            this.tbMin5P.Scroll += new System.EventHandler(this.tbMin5P_Scroll);
-            // 
-            // tbMin5M
-            // 
-            this.tbMin5M.AutoSize = false;
-            this.tbMin5M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin5M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin5M.Location = new System.Drawing.Point(295, 75);
-            this.tbMin5M.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin5M.Maximum = 100;
-            this.tbMin5M.Name = "tbMin5M";
-            this.tbMin5M.Size = new System.Drawing.Size(312, 38);
-            this.tbMin5M.TabIndex = 94;
-            this.tbMin5M.TickFrequency = 10;
-            this.tbMin5M.Value = global::FloBot.Properties.Settings.Default.tbMin5M;
-            this.tbMin5M.Scroll += new System.EventHandler(this.tbMin5M_Scroll);
-            // 
-            // tbMax5P
-            // 
-            this.tbMax5P.AutoSize = false;
-            this.tbMax5P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax5P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax5P.Location = new System.Drawing.Point(295, 150);
-            this.tbMax5P.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax5P.Maximum = 100;
-            this.tbMax5P.Name = "tbMax5P";
-            this.tbMax5P.Size = new System.Drawing.Size(312, 38);
-            this.tbMax5P.TabIndex = 85;
-            this.tbMax5P.TickFrequency = 10;
-            this.tbMax5P.Value = global::FloBot.Properties.Settings.Default.tbMax5P;
-            this.tbMax5P.Scroll += new System.EventHandler(this.tbMax5P_Scroll);
-            // 
-            // tbMax5M
-            // 
-            this.tbMax5M.AutoSize = false;
-            this.tbMax5M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax5M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax5M.Location = new System.Drawing.Point(295, 38);
-            this.tbMax5M.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax5M.Maximum = 100;
-            this.tbMax5M.Name = "tbMax5M";
-            this.tbMax5M.Size = new System.Drawing.Size(312, 38);
-            this.tbMax5M.TabIndex = 84;
-            this.tbMax5M.TickFrequency = 10;
-            this.tbMax5M.Value = global::FloBot.Properties.Settings.Default.tbMax5M;
-            this.tbMax5M.Scroll += new System.EventHandler(this.tbMax5M_Scroll);
-            // 
-            // tbCast5
-            // 
-            this.tbCast5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbCast5.Location = new System.Drawing.Point(31, 165);
-            this.tbCast5.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCast5.Name = "tbCast5";
-            this.tbCast5.Size = new System.Drawing.Size(132, 22);
-            this.tbCast5.TabIndex = 82;
-            this.tbCast5.Text = global::FloBot.Properties.Settings.Default.tbCast5;
-            this.tbCast5.TextChanged += new System.EventHandler(this.tbCast5_TextChanged);
-            // 
-            // tbDelay5
-            // 
-            this.tbDelay5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbReuse5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbDelay5.Location = new System.Drawing.Point(31, 112);
-            this.tbDelay5.Margin = new System.Windows.Forms.Padding(4);
-            this.tbDelay5.Name = "tbDelay5";
-            this.tbDelay5.Size = new System.Drawing.Size(132, 22);
-            this.tbDelay5.TabIndex = 81;
-            this.tbDelay5.Text = global::FloBot.Properties.Settings.Default.tbReuse5;
-            this.tbDelay5.TextChanged += new System.EventHandler(this.tbDelay5_TextChanged);
-            // 
-            // cbUseSkill5
-            // 
-            this.cbUseSkill5.AutoSize = true;
-            this.cbUseSkill5.Checked = global::FloBot.Properties.Settings.Default.cbUse5;
-            this.cbUseSkill5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbUseSkill5.Location = new System.Drawing.Point(4, 4);
-            this.cbUseSkill5.Margin = new System.Windows.Forms.Padding(4);
-            this.cbUseSkill5.Name = "cbUseSkill5";
-            this.cbUseSkill5.Size = new System.Drawing.Size(55, 21);
-            this.cbUseSkill5.TabIndex = 79;
-            this.cbUseSkill5.Text = "Use";
-            this.cbUseSkill5.UseVisualStyleBackColor = true;
-            this.cbUseSkill5.CheckedChanged += new System.EventHandler(this.cbUse5_CheckedChanged);
-            // 
-            // rbAtt5
-            // 
-            this.rbAtt5.AutoSize = true;
-            this.rbAtt5.Checked = global::FloBot.Properties.Settings.Default.rbAtt5;
-            this.rbAtt5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbAtt5.Location = new System.Drawing.Point(25, 62);
-            this.rbAtt5.Margin = new System.Windows.Forms.Padding(4);
-            this.rbAtt5.Name = "rbAtt5";
-            this.rbAtt5.Size = new System.Drawing.Size(97, 21);
-            this.rbAtt5.TabIndex = 78;
-            this.rbAtt5.Text = "Attack Skill";
-            this.rbAtt5.UseVisualStyleBackColor = true;
-            this.rbAtt5.CheckedChanged += new System.EventHandler(this.rbAtt5_CheckedChanged);
-            // 
-            // rbBuff5
-            // 
-            this.rbBuff5.AutoSize = true;
-            this.rbBuff5.Checked = global::FloBot.Properties.Settings.Default.rbBuff5;
-            this.rbBuff5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbBuff5.Location = new System.Drawing.Point(25, 32);
-            this.rbBuff5.Margin = new System.Windows.Forms.Padding(4);
-            this.rbBuff5.Name = "rbBuff5";
-            this.rbBuff5.Size = new System.Drawing.Size(81, 21);
-            this.rbBuff5.TabIndex = 77;
-            this.rbBuff5.Text = "Buff skill";
-            this.rbBuff5.UseVisualStyleBackColor = true;
-            this.rbBuff5.CheckedChanged += new System.EventHandler(this.rbBuff5_CheckedChanged);
-            // 
             // tp6
             // 
             this.tp6.Controls.Add(this.nudPrio6);
@@ -2587,25 +1898,14 @@
             this.tp6.Text = "6";
             this.tp6.UseVisualStyleBackColor = true;
             // 
-            // nudPrio6
-            // 
-            this.nudPrio6.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.nudPrio6.Location = new System.Drawing.Point(35, 220);
-            this.nudPrio6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.nudPrio6.Name = "nudPrio6";
-            this.nudPrio6.Size = new System.Drawing.Size(120, 22);
-            this.nudPrio6.TabIndex = 130;
-            this.nudPrio6.Value = global::FloBot.Properties.Settings.Default.nudPrio6;
-            this.nudPrio6.ValueChanged += new System.EventHandler(this.nudPrio6_ValueChanged);
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.Location = new System.Drawing.Point(31, 199);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(61, 17);
+            this.label30.Size = new System.Drawing.Size(56, 17);
             this.label30.TabIndex = 129;
-            this.label30.Text = "Priorität:";
+            this.label30.Text = "Priority:";
             // 
             // label31
             // 
@@ -2765,135 +2065,35 @@
             this.label116.TabIndex = 107;
             this.label116.Text = "Time until reuse:";
             // 
-            // tbMin6P
-            // 
-            this.tbMin6P.AutoSize = false;
-            this.tbMin6P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin6P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin6P.Location = new System.Drawing.Point(295, 187);
-            this.tbMin6P.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin6P.Maximum = 100;
-            this.tbMin6P.Name = "tbMin6P";
-            this.tbMin6P.Size = new System.Drawing.Size(312, 38);
-            this.tbMin6P.TabIndex = 122;
-            this.tbMin6P.TickFrequency = 10;
-            this.tbMin6P.Value = global::FloBot.Properties.Settings.Default.tbMin6P;
-            this.tbMin6P.Scroll += new System.EventHandler(this.tbMin6P_Scroll);
-            // 
-            // tbMin6M
-            // 
-            this.tbMin6M.AutoSize = false;
-            this.tbMin6M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin6M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMin6M.Location = new System.Drawing.Point(295, 75);
-            this.tbMin6M.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMin6M.Maximum = 100;
-            this.tbMin6M.Name = "tbMin6M";
-            this.tbMin6M.Size = new System.Drawing.Size(312, 38);
-            this.tbMin6M.TabIndex = 121;
-            this.tbMin6M.TickFrequency = 10;
-            this.tbMin6M.Value = global::FloBot.Properties.Settings.Default.tbMin6M;
-            this.tbMin6M.Scroll += new System.EventHandler(this.tbMin6M_Scroll);
-            // 
-            // tbMax6P
-            // 
-            this.tbMax6P.AutoSize = false;
-            this.tbMax6P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax6P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax6P.Location = new System.Drawing.Point(295, 150);
-            this.tbMax6P.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax6P.Maximum = 100;
-            this.tbMax6P.Name = "tbMax6P";
-            this.tbMax6P.Size = new System.Drawing.Size(312, 38);
-            this.tbMax6P.TabIndex = 112;
-            this.tbMax6P.TickFrequency = 10;
-            this.tbMax6P.Value = global::FloBot.Properties.Settings.Default.tbMax6P;
-            this.tbMax6P.Scroll += new System.EventHandler(this.tbMax6P_Scroll);
-            // 
-            // tbMax6M
-            // 
-            this.tbMax6M.AutoSize = false;
-            this.tbMax6M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax6M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbMax6M.Location = new System.Drawing.Point(295, 38);
-            this.tbMax6M.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMax6M.Maximum = 100;
-            this.tbMax6M.Name = "tbMax6M";
-            this.tbMax6M.Size = new System.Drawing.Size(312, 38);
-            this.tbMax6M.TabIndex = 111;
-            this.tbMax6M.TickFrequency = 10;
-            this.tbMax6M.Value = global::FloBot.Properties.Settings.Default.tbMax6M;
-            this.tbMax6M.Scroll += new System.EventHandler(this.tbMax6M_Scroll);
-            // 
-            // tbCast6
-            // 
-            this.tbCast6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbCast6.Location = new System.Drawing.Point(31, 165);
-            this.tbCast6.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCast6.Name = "tbCast6";
-            this.tbCast6.Size = new System.Drawing.Size(132, 22);
-            this.tbCast6.TabIndex = 109;
-            this.tbCast6.Text = global::FloBot.Properties.Settings.Default.tbCast6;
-            this.tbCast6.TextChanged += new System.EventHandler(this.tbCast6_TextChanged);
-            // 
-            // tbDelay6
-            // 
-            this.tbDelay6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbDelay6.Location = new System.Drawing.Point(31, 112);
-            this.tbDelay6.Margin = new System.Windows.Forms.Padding(4);
-            this.tbDelay6.Name = "tbDelay6";
-            this.tbDelay6.Size = new System.Drawing.Size(132, 22);
-            this.tbDelay6.TabIndex = 108;
-            this.tbDelay6.Text = global::FloBot.Properties.Settings.Default.tbDelay6;
-            this.tbDelay6.TextChanged += new System.EventHandler(this.tbDelay6_TextChanged);
-            // 
-            // cbUseSkill6
-            // 
-            this.cbUseSkill6.AutoSize = true;
-            this.cbUseSkill6.Checked = global::FloBot.Properties.Settings.Default.cbUse6;
-            this.cbUseSkill6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cbUseSkill6.Location = new System.Drawing.Point(4, 4);
-            this.cbUseSkill6.Margin = new System.Windows.Forms.Padding(4);
-            this.cbUseSkill6.Name = "cbUseSkill6";
-            this.cbUseSkill6.Size = new System.Drawing.Size(55, 21);
-            this.cbUseSkill6.TabIndex = 106;
-            this.cbUseSkill6.Text = "Use";
-            this.cbUseSkill6.UseVisualStyleBackColor = true;
-            this.cbUseSkill6.CheckedChanged += new System.EventHandler(this.cbUseSkill6_CheckedChanged);
-            // 
-            // rbAtt6
-            // 
-            this.rbAtt6.AutoSize = true;
-            this.rbAtt6.Checked = global::FloBot.Properties.Settings.Default.rbAtt6;
-            this.rbAtt6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbAtt6.Location = new System.Drawing.Point(25, 62);
-            this.rbAtt6.Margin = new System.Windows.Forms.Padding(4);
-            this.rbAtt6.Name = "rbAtt6";
-            this.rbAtt6.Size = new System.Drawing.Size(97, 21);
-            this.rbAtt6.TabIndex = 105;
-            this.rbAtt6.Text = "Attack Skill";
-            this.rbAtt6.UseVisualStyleBackColor = true;
-            this.rbAtt6.CheckedChanged += new System.EventHandler(this.rbAtt6_CheckedChanged);
-            // 
-            // rbBuff6
-            // 
-            this.rbBuff6.AutoSize = true;
-            this.rbBuff6.Checked = global::FloBot.Properties.Settings.Default.rbBuff6;
-            this.rbBuff6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.rbBuff6.Location = new System.Drawing.Point(25, 32);
-            this.rbBuff6.Margin = new System.Windows.Forms.Padding(4);
-            this.rbBuff6.Name = "rbBuff6";
-            this.rbBuff6.Size = new System.Drawing.Size(81, 21);
-            this.rbBuff6.TabIndex = 104;
-            this.rbBuff6.Text = "Buff skill";
-            this.rbBuff6.UseVisualStyleBackColor = true;
-            this.rbBuff6.CheckedChanged += new System.EventHandler(this.rbBuff6_CheckedChanged);
-            // 
             // tp7
             // 
+            this.tp7.Controls.Add(this.nudPrio7);
             this.tp7.Controls.Add(this.label32);
-            this.tp7.Controls.Add(this.textBox11);
-            this.tp7.Controls.Add(this.textBox12);
             this.tp7.Controls.Add(this.label33);
-            this.tp7.Controls.Add(this.checkBox6);
-            this.tp7.Controls.Add(this.radioButton11);
-            this.tp7.Controls.Add(this.radioButton12);
+            this.tp7.Controls.Add(this.label77);
+            this.tp7.Controls.Add(this.lblMin7P);
+            this.tp7.Controls.Add(this.lblMin7M);
+            this.tp7.Controls.Add(this.label108);
+            this.tp7.Controls.Add(this.label117);
+            this.tp7.Controls.Add(this.lblMax7P);
+            this.tp7.Controls.Add(this.lblMax7M);
+            this.tp7.Controls.Add(this.label120);
+            this.tp7.Controls.Add(this.label121);
+            this.tp7.Controls.Add(this.label122);
+            this.tp7.Controls.Add(this.label123);
+            this.tp7.Controls.Add(this.label124);
+            this.tp7.Controls.Add(this.label125);
+            this.tp7.Controls.Add(this.label126);
+            this.tp7.Controls.Add(this.label127);
+            this.tp7.Controls.Add(this.tbMin7P);
+            this.tp7.Controls.Add(this.tbMin7M);
+            this.tp7.Controls.Add(this.tbMax7P);
+            this.tp7.Controls.Add(this.tbMax7M);
+            this.tp7.Controls.Add(this.tbCast7);
+            this.tp7.Controls.Add(this.tbDelay7);
+            this.tp7.Controls.Add(this.cbUseSkill7);
+            this.tp7.Controls.Add(this.rbAtt7);
+            this.tp7.Controls.Add(this.rbBuff7);
             this.tp7.Location = new System.Drawing.Point(4, 25);
             this.tp7.Margin = new System.Windows.Forms.Padding(4);
             this.tp7.Name = "tp7";
@@ -2901,77 +2101,6 @@
             this.tp7.TabIndex = 6;
             this.tp7.Text = "7";
             this.tp7.UseVisualStyleBackColor = true;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(27, 145);
-            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(70, 17);
-            this.label32.TabIndex = 12;
-            this.label32.Text = "Cast time:";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(31, 165);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(132, 22);
-            this.textBox11.TabIndex = 10;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(31, 112);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(132, 22);
-            this.textBox12.TabIndex = 11;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(23, 94);
-            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(48, 17);
-            this.label33.TabIndex = 9;
-            this.label33.Text = "Delay:";
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(4, 4);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(55, 21);
-            this.checkBox6.TabIndex = 8;
-            this.checkBox6.Text = "Use";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton11
-            // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(25, 62);
-            this.radioButton11.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(97, 21);
-            this.radioButton11.TabIndex = 7;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Attack Skill";
-            this.radioButton11.UseVisualStyleBackColor = true;
-            // 
-            // radioButton12
-            // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(25, 32);
-            this.radioButton12.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(81, 21);
-            this.radioButton12.TabIndex = 6;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Buff skill";
-            this.radioButton12.UseVisualStyleBackColor = true;
             // 
             // tp8
             // 
@@ -3157,6 +2286,1151 @@
             this.label37.TabIndex = 9;
             this.label37.Text = "Delay:";
             // 
+            // tp0
+            // 
+            this.tp0.Location = new System.Drawing.Point(4, 25);
+            this.tp0.Margin = new System.Windows.Forms.Padding(4);
+            this.tp0.Name = "tp0";
+            this.tp0.Size = new System.Drawing.Size(631, 252);
+            this.tp0.TabIndex = 9;
+            this.tp0.Text = "0";
+            this.tp0.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(700, 16);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(59, 17);
+            this.label19.TabIndex = 15;
+            this.label19.Text = "Hotkeys";
+            // 
+            // cbDisableBot
+            // 
+            this.cbDisableBot.AutoSize = true;
+            this.cbDisableBot.Location = new System.Drawing.Point(700, 325);
+            this.cbDisableBot.Margin = new System.Windows.Forms.Padding(4);
+            this.cbDisableBot.Name = "cbDisableBot";
+            this.cbDisableBot.Size = new System.Drawing.Size(295, 21);
+            this.cbDisableBot.TabIndex = 16;
+            this.cbDisableBot.Text = "disable bot while florensia is in foreground";
+            this.cbDisableBot.UseVisualStyleBackColor = true;
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(148, 16);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(133, 17);
+            this.label58.TabIndex = 17;
+            this.label58.Text = "Process (start at 0):";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(401, 12);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(153, 17);
+            this.label59.TabIndex = 19;
+            this.label59.Text = "Window name(unique):";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(31, 199);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(56, 17);
+            this.label32.TabIndex = 156;
+            this.label32.Text = "Priority:";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(457, 119);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(71, 17);
+            this.label33.TabIndex = 155;
+            this.label33.Text = "Player HP";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(457, 7);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(58, 17);
+            this.label77.TabIndex = 154;
+            this.label77.Text = "Mob HP";
+            // 
+            // lblMin7P
+            // 
+            this.lblMin7P.AutoSize = true;
+            this.lblMin7P.Location = new System.Drawing.Point(424, 118);
+            this.lblMin7P.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMin7P.Name = "lblMin7P";
+            this.lblMin7P.Size = new System.Drawing.Size(16, 17);
+            this.lblMin7P.TabIndex = 153;
+            this.lblMin7P.Text = "0";
+            // 
+            // lblMin7M
+            // 
+            this.lblMin7M.AutoSize = true;
+            this.lblMin7M.Location = new System.Drawing.Point(424, 6);
+            this.lblMin7M.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMin7M.Name = "lblMin7M";
+            this.lblMin7M.Size = new System.Drawing.Size(16, 17);
+            this.lblMin7M.TabIndex = 152;
+            this.lblMin7M.Text = "0";
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.Location = new System.Drawing.Point(369, 118);
+            this.label108.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(34, 17);
+            this.label108.TabIndex = 151;
+            this.label108.Text = "until";
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Location = new System.Drawing.Point(369, 6);
+            this.label117.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(34, 17);
+            this.label117.TabIndex = 150;
+            this.label117.Text = "until";
+            // 
+            // lblMax7P
+            // 
+            this.lblMax7P.AutoSize = true;
+            this.lblMax7P.Location = new System.Drawing.Point(305, 118);
+            this.lblMax7P.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMax7P.Name = "lblMax7P";
+            this.lblMax7P.Size = new System.Drawing.Size(32, 17);
+            this.lblMax7P.TabIndex = 147;
+            this.lblMax7P.Text = "100";
+            // 
+            // lblMax7M
+            // 
+            this.lblMax7M.AutoSize = true;
+            this.lblMax7M.Location = new System.Drawing.Point(305, 6);
+            this.lblMax7M.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMax7M.Name = "lblMax7M";
+            this.lblMax7M.Size = new System.Drawing.Size(32, 17);
+            this.lblMax7M.TabIndex = 146;
+            this.lblMax7M.Text = "100";
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Location = new System.Drawing.Point(231, 199);
+            this.label120.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(30, 17);
+            this.label120.TabIndex = 145;
+            this.label120.Text = "min";
+            // 
+            // label121
+            // 
+            this.label121.AutoSize = true;
+            this.label121.Location = new System.Drawing.Point(231, 89);
+            this.label121.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(30, 17);
+            this.label121.TabIndex = 144;
+            this.label121.Text = "min";
+            // 
+            // label122
+            // 
+            this.label122.AutoSize = true;
+            this.label122.Location = new System.Drawing.Point(227, 155);
+            this.label122.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(33, 17);
+            this.label122.TabIndex = 143;
+            this.label122.Text = "max";
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Location = new System.Drawing.Point(227, 43);
+            this.label123.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(33, 17);
+            this.label123.TabIndex = 142;
+            this.label123.Text = "max";
+            // 
+            // label124
+            // 
+            this.label124.AutoSize = true;
+            this.label124.Location = new System.Drawing.Point(207, 118);
+            this.label124.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(49, 17);
+            this.label124.TabIndex = 141;
+            this.label124.Text = "Use at";
+            // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Location = new System.Drawing.Point(207, 6);
+            this.label125.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(49, 17);
+            this.label125.TabIndex = 140;
+            this.label125.Text = "Use at";
+            // 
+            // label126
+            // 
+            this.label126.AutoSize = true;
+            this.label126.Location = new System.Drawing.Point(27, 145);
+            this.label126.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(70, 17);
+            this.label126.TabIndex = 137;
+            this.label126.Text = "Cast time:";
+            // 
+            // label127
+            // 
+            this.label127.AutoSize = true;
+            this.label127.Location = new System.Drawing.Point(23, 94);
+            this.label127.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(113, 17);
+            this.label127.TabIndex = 134;
+            this.label127.Text = "Time until reuse:";
+            // 
+            // tbProcessName
+            // 
+            this.tbProcessName.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbProcessName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbProcessName.Location = new System.Drawing.Point(561, 9);
+            this.tbProcessName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbProcessName.Name = "tbProcessName";
+            this.tbProcessName.Size = new System.Drawing.Size(100, 22);
+            this.tbProcessName.TabIndex = 20;
+            this.tbProcessName.Text = global::FloBot.Properties.Settings.Default.tbProcessName;
+            this.tbProcessName.TextChanged += new System.EventHandler(this.tbProcessName_TextChanged);
+            // 
+            // tbProcessID
+            // 
+            this.tbProcessID.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbProcessID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbProcessID.Location = new System.Drawing.Point(284, 12);
+            this.tbProcessID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbProcessID.Name = "tbProcessID";
+            this.tbProcessID.Size = new System.Drawing.Size(100, 22);
+            this.tbProcessID.TabIndex = 18;
+            this.tbProcessID.Text = global::FloBot.Properties.Settings.Default.tbProcessID;
+            // 
+            // nudPrio1
+            // 
+            this.nudPrio1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio1.Location = new System.Drawing.Point(35, 220);
+            this.nudPrio1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudPrio1.Name = "nudPrio1";
+            this.nudPrio1.Size = new System.Drawing.Size(120, 22);
+            this.nudPrio1.TabIndex = 22;
+            this.nudPrio1.Value = global::FloBot.Properties.Settings.Default.nudPrio1;
+            this.nudPrio1.ValueChanged += new System.EventHandler(this.rbBuff1_Changed);
+            // 
+            // tbMin1P
+            // 
+            this.tbMin1P.AutoSize = false;
+            this.tbMin1P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin1P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin1P.Location = new System.Drawing.Point(295, 187);
+            this.tbMin1P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin1P.Maximum = 100;
+            this.tbMin1P.Name = "tbMin1P";
+            this.tbMin1P.Size = new System.Drawing.Size(312, 38);
+            this.tbMin1P.TabIndex = 17;
+            this.tbMin1P.TickFrequency = 10;
+            this.tbMin1P.Value = global::FloBot.Properties.Settings.Default.tbMin1P;
+            this.tbMin1P.Scroll += new System.EventHandler(this.rbBuff1_Changed);
+            // 
+            // tbMin1M
+            // 
+            this.tbMin1M.AutoSize = false;
+            this.tbMin1M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin1M.Location = new System.Drawing.Point(295, 75);
+            this.tbMin1M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin1M.Maximum = 100;
+            this.tbMin1M.Name = "tbMin1M";
+            this.tbMin1M.Size = new System.Drawing.Size(312, 38);
+            this.tbMin1M.TabIndex = 17;
+            this.tbMin1M.TickFrequency = 10;
+            this.tbMin1M.Value = global::FloBot.Properties.Settings.Default.tbMin1;
+            this.tbMin1M.Scroll += new System.EventHandler(this.rbBuff1_Changed);
+            // 
+            // tbMax1P
+            // 
+            this.tbMax1P.AutoSize = false;
+            this.tbMax1P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax1P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax1P.Location = new System.Drawing.Point(295, 150);
+            this.tbMax1P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax1P.Maximum = 100;
+            this.tbMax1P.Name = "tbMax1P";
+            this.tbMax1P.Size = new System.Drawing.Size(312, 38);
+            this.tbMax1P.TabIndex = 12;
+            this.tbMax1P.TickFrequency = 10;
+            this.tbMax1P.Value = global::FloBot.Properties.Settings.Default.tbMax1P;
+            this.tbMax1P.Scroll += new System.EventHandler(this.rbBuff1_Changed);
+            // 
+            // tbMax1M
+            // 
+            this.tbMax1M.AutoSize = false;
+            this.tbMax1M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax1M.Location = new System.Drawing.Point(295, 38);
+            this.tbMax1M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax1M.Maximum = 100;
+            this.tbMax1M.Name = "tbMax1M";
+            this.tbMax1M.Size = new System.Drawing.Size(312, 38);
+            this.tbMax1M.TabIndex = 12;
+            this.tbMax1M.TickFrequency = 10;
+            this.tbMax1M.Value = global::FloBot.Properties.Settings.Default.tbMax1;
+            this.tbMax1M.Scroll += new System.EventHandler(this.rbBuff1_Changed);
+            // 
+            // tbCast1
+            // 
+            this.tbCast1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCastSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast1.Location = new System.Drawing.Point(31, 165);
+            this.tbCast1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCast1.Name = "tbCast1";
+            this.tbCast1.Size = new System.Drawing.Size(132, 22);
+            this.tbCast1.TabIndex = 4;
+            this.tbCast1.Text = global::FloBot.Properties.Settings.Default.tbCastSkill1;
+            this.tbCast1.TextChanged += new System.EventHandler(this.rbBuff1_Changed);
+            // 
+            // tbDelay1
+            // 
+            this.tbDelay1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelaySkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay1.Location = new System.Drawing.Point(31, 112);
+            this.tbDelay1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDelay1.Name = "tbDelay1";
+            this.tbDelay1.Size = new System.Drawing.Size(132, 22);
+            this.tbDelay1.TabIndex = 4;
+            this.tbDelay1.Text = global::FloBot.Properties.Settings.Default.tbDelaySkill1;
+            this.tbDelay1.TextChanged += new System.EventHandler(this.rbBuff1_Changed);
+            // 
+            // cbUseSkill1
+            // 
+            this.cbUseSkill1.AutoSize = true;
+            this.cbUseSkill1.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill1;
+            this.cbUseSkill1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill1.Location = new System.Drawing.Point(4, 4);
+            this.cbUseSkill1.Margin = new System.Windows.Forms.Padding(4);
+            this.cbUseSkill1.Name = "cbUseSkill1";
+            this.cbUseSkill1.Size = new System.Drawing.Size(55, 21);
+            this.cbUseSkill1.TabIndex = 2;
+            this.cbUseSkill1.Text = "Use";
+            this.cbUseSkill1.UseVisualStyleBackColor = true;
+            this.cbUseSkill1.CheckedChanged += new System.EventHandler(this.rbBuff1_Changed);
+            // 
+            // rbAtt1
+            // 
+            this.rbAtt1.AutoSize = true;
+            this.rbAtt1.Checked = global::FloBot.Properties.Settings.Default.rbAttackSkill1;
+            this.rbAtt1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAttackSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt1.Location = new System.Drawing.Point(25, 62);
+            this.rbAtt1.Margin = new System.Windows.Forms.Padding(4);
+            this.rbAtt1.Name = "rbAtt1";
+            this.rbAtt1.Size = new System.Drawing.Size(97, 21);
+            this.rbAtt1.TabIndex = 1;
+            this.rbAtt1.TabStop = true;
+            this.rbAtt1.Text = "Attack Skill";
+            this.rbAtt1.UseVisualStyleBackColor = true;
+            this.rbAtt1.CheckedChanged += new System.EventHandler(this.rbBuff1_Changed);
+            // 
+            // rbBuff1
+            // 
+            this.rbBuff1.AutoSize = true;
+            this.rbBuff1.Checked = global::FloBot.Properties.Settings.Default.rbBuffSkill1;
+            this.rbBuff1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuffSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff1.Location = new System.Drawing.Point(25, 32);
+            this.rbBuff1.Margin = new System.Windows.Forms.Padding(4);
+            this.rbBuff1.Name = "rbBuff1";
+            this.rbBuff1.Size = new System.Drawing.Size(81, 21);
+            this.rbBuff1.TabIndex = 0;
+            this.rbBuff1.Text = "Buff skill";
+            this.rbBuff1.UseVisualStyleBackColor = true;
+            this.rbBuff1.CheckedChanged += new System.EventHandler(this.rbBuff1_Changed);
+            // 
+            // nudPrio2
+            // 
+            this.nudPrio2.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio2.Location = new System.Drawing.Point(35, 220);
+            this.nudPrio2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudPrio2.Name = "nudPrio2";
+            this.nudPrio2.Size = new System.Drawing.Size(120, 22);
+            this.nudPrio2.TabIndex = 49;
+            this.nudPrio2.Value = global::FloBot.Properties.Settings.Default.nudPrio2;
+            this.nudPrio2.ValueChanged += new System.EventHandler(this.rbBuff2_Changed);
+            // 
+            // tbMin2P
+            // 
+            this.tbMin2P.AutoSize = false;
+            this.tbMin2P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin2P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin2P.Location = new System.Drawing.Point(295, 187);
+            this.tbMin2P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin2P.Maximum = 100;
+            this.tbMin2P.Name = "tbMin2P";
+            this.tbMin2P.Size = new System.Drawing.Size(312, 38);
+            this.tbMin2P.TabIndex = 41;
+            this.tbMin2P.TickFrequency = 10;
+            this.tbMin2P.Value = global::FloBot.Properties.Settings.Default.tbMin2P;
+            this.tbMin2P.Scroll += new System.EventHandler(this.rbBuff2_Changed);
+            // 
+            // tbMin2M
+            // 
+            this.tbMin2M.AutoSize = false;
+            this.tbMin2M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin2M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin2M.Location = new System.Drawing.Point(295, 75);
+            this.tbMin2M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin2M.Maximum = 100;
+            this.tbMin2M.Name = "tbMin2M";
+            this.tbMin2M.Size = new System.Drawing.Size(312, 38);
+            this.tbMin2M.TabIndex = 40;
+            this.tbMin2M.TickFrequency = 10;
+            this.tbMin2M.Value = global::FloBot.Properties.Settings.Default.tbMin2M;
+            this.tbMin2M.Scroll += new System.EventHandler(this.rbBuff2_Changed);
+            // 
+            // tbMax2P
+            // 
+            this.tbMax2P.AutoSize = false;
+            this.tbMax2P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax2P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax2P.Location = new System.Drawing.Point(295, 150);
+            this.tbMax2P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax2P.Maximum = 100;
+            this.tbMax2P.Name = "tbMax2P";
+            this.tbMax2P.Size = new System.Drawing.Size(312, 38);
+            this.tbMax2P.TabIndex = 31;
+            this.tbMax2P.TickFrequency = 10;
+            this.tbMax2P.Value = global::FloBot.Properties.Settings.Default.tbMax2P;
+            this.tbMax2P.Scroll += new System.EventHandler(this.rbBuff2_Changed);
+            // 
+            // tbMax2M
+            // 
+            this.tbMax2M.AutoSize = false;
+            this.tbMax2M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax2M.Location = new System.Drawing.Point(295, 38);
+            this.tbMax2M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax2M.Maximum = 100;
+            this.tbMax2M.Name = "tbMax2M";
+            this.tbMax2M.Size = new System.Drawing.Size(312, 38);
+            this.tbMax2M.TabIndex = 30;
+            this.tbMax2M.TickFrequency = 10;
+            this.tbMax2M.Value = global::FloBot.Properties.Settings.Default.tbMax3M;
+            this.tbMax2M.Scroll += new System.EventHandler(this.rbBuff2_Changed);
+            // 
+            // tbCast2
+            // 
+            this.tbCast2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast2.Location = new System.Drawing.Point(31, 165);
+            this.tbCast2.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCast2.Name = "tbCast2";
+            this.tbCast2.Size = new System.Drawing.Size(132, 22);
+            this.tbCast2.TabIndex = 28;
+            this.tbCast2.Text = global::FloBot.Properties.Settings.Default.tbCast2;
+            // 
+            // tbDelay2
+            // 
+            this.tbDelay2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay2.Location = new System.Drawing.Point(31, 112);
+            this.tbDelay2.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDelay2.Name = "tbDelay2";
+            this.tbDelay2.Size = new System.Drawing.Size(132, 22);
+            this.tbDelay2.TabIndex = 27;
+            this.tbDelay2.Text = global::FloBot.Properties.Settings.Default.tbDelay2;
+            // 
+            // cbUseSkill2
+            // 
+            this.cbUseSkill2.AutoSize = true;
+            this.cbUseSkill2.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill2;
+            this.cbUseSkill2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill2.Location = new System.Drawing.Point(4, 4);
+            this.cbUseSkill2.Margin = new System.Windows.Forms.Padding(4);
+            this.cbUseSkill2.Name = "cbUseSkill2";
+            this.cbUseSkill2.Size = new System.Drawing.Size(55, 21);
+            this.cbUseSkill2.TabIndex = 25;
+            this.cbUseSkill2.Text = "Use";
+            this.cbUseSkill2.UseVisualStyleBackColor = true;
+            this.cbUseSkill2.CheckedChanged += new System.EventHandler(this.rbBuff2_Changed);
+            // 
+            // rbAtt2
+            // 
+            this.rbAtt2.AutoSize = true;
+            this.rbAtt2.Checked = global::FloBot.Properties.Settings.Default.rbAtt2;
+            this.rbAtt2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt2.Location = new System.Drawing.Point(25, 62);
+            this.rbAtt2.Margin = new System.Windows.Forms.Padding(4);
+            this.rbAtt2.Name = "rbAtt2";
+            this.rbAtt2.Size = new System.Drawing.Size(97, 21);
+            this.rbAtt2.TabIndex = 24;
+            this.rbAtt2.TabStop = true;
+            this.rbAtt2.Text = "Attack Skill";
+            this.rbAtt2.UseVisualStyleBackColor = true;
+            this.rbAtt2.CheckedChanged += new System.EventHandler(this.rbBuff2_Changed);
+            // 
+            // rbBuff2
+            // 
+            this.rbBuff2.AutoSize = true;
+            this.rbBuff2.Checked = global::FloBot.Properties.Settings.Default.rbBuff2;
+            this.rbBuff2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff2.Location = new System.Drawing.Point(25, 32);
+            this.rbBuff2.Margin = new System.Windows.Forms.Padding(4);
+            this.rbBuff2.Name = "rbBuff2";
+            this.rbBuff2.Size = new System.Drawing.Size(81, 21);
+            this.rbBuff2.TabIndex = 23;
+            this.rbBuff2.Text = "Buff skill";
+            this.rbBuff2.UseVisualStyleBackColor = true;
+            this.rbBuff2.CheckedChanged += new System.EventHandler(this.rbBuff2_Changed);
+            // 
+            // nudPrio3
+            // 
+            this.nudPrio3.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio3.Location = new System.Drawing.Point(35, 220);
+            this.nudPrio3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudPrio3.Name = "nudPrio3";
+            this.nudPrio3.Size = new System.Drawing.Size(120, 22);
+            this.nudPrio3.TabIndex = 49;
+            this.nudPrio3.Value = global::FloBot.Properties.Settings.Default.nudPrio3;
+            this.nudPrio3.ValueChanged += new System.EventHandler(this.rbBuff3_Changed);
+            // 
+            // tbMin3P
+            // 
+            this.tbMin3P.AutoSize = false;
+            this.tbMin3P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin3P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin3P.Location = new System.Drawing.Point(295, 187);
+            this.tbMin3P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin3P.Maximum = 100;
+            this.tbMin3P.Name = "tbMin3P";
+            this.tbMin3P.Size = new System.Drawing.Size(312, 38);
+            this.tbMin3P.TabIndex = 41;
+            this.tbMin3P.TickFrequency = 10;
+            this.tbMin3P.Value = global::FloBot.Properties.Settings.Default.tbMin3P;
+            this.tbMin3P.Scroll += new System.EventHandler(this.rbBuff3_Changed);
+            // 
+            // tbMin3M
+            // 
+            this.tbMin3M.AutoSize = false;
+            this.tbMin3M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin3M.Location = new System.Drawing.Point(295, 75);
+            this.tbMin3M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin3M.Maximum = 100;
+            this.tbMin3M.Name = "tbMin3M";
+            this.tbMin3M.Size = new System.Drawing.Size(312, 38);
+            this.tbMin3M.TabIndex = 40;
+            this.tbMin3M.TickFrequency = 10;
+            this.tbMin3M.Value = global::FloBot.Properties.Settings.Default.tbMin3;
+            this.tbMin3M.Scroll += new System.EventHandler(this.rbBuff3_Changed);
+            // 
+            // tbMax3P
+            // 
+            this.tbMax3P.AutoSize = false;
+            this.tbMax3P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax3P.Location = new System.Drawing.Point(295, 150);
+            this.tbMax3P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax3P.Maximum = 100;
+            this.tbMax3P.Name = "tbMax3P";
+            this.tbMax3P.Size = new System.Drawing.Size(312, 38);
+            this.tbMax3P.TabIndex = 31;
+            this.tbMax3P.TickFrequency = 10;
+            this.tbMax3P.Value = global::FloBot.Properties.Settings.Default.tbMax3P;
+            this.tbMax3P.Scroll += new System.EventHandler(this.rbBuff3_Changed);
+            // 
+            // tbMax3M
+            // 
+            this.tbMax3M.AutoSize = false;
+            this.tbMax3M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax3M.Location = new System.Drawing.Point(295, 38);
+            this.tbMax3M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax3M.Maximum = 100;
+            this.tbMax3M.Name = "tbMax3M";
+            this.tbMax3M.Size = new System.Drawing.Size(312, 38);
+            this.tbMax3M.TabIndex = 30;
+            this.tbMax3M.TickFrequency = 10;
+            this.tbMax3M.Value = global::FloBot.Properties.Settings.Default.tbMax3;
+            this.tbMax3M.Scroll += new System.EventHandler(this.rbBuff3_Changed);
+            // 
+            // tbCast3
+            // 
+            this.tbCast3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast3.Location = new System.Drawing.Point(31, 165);
+            this.tbCast3.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCast3.Name = "tbCast3";
+            this.tbCast3.Size = new System.Drawing.Size(132, 22);
+            this.tbCast3.TabIndex = 28;
+            this.tbCast3.Text = global::FloBot.Properties.Settings.Default.tbCast3;
+            this.tbCast3.TextChanged += new System.EventHandler(this.rbBuff3_Changed);
+            // 
+            // tbDelay3
+            // 
+            this.tbDelay3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay3.Location = new System.Drawing.Point(31, 112);
+            this.tbDelay3.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDelay3.Name = "tbDelay3";
+            this.tbDelay3.Size = new System.Drawing.Size(132, 22);
+            this.tbDelay3.TabIndex = 27;
+            this.tbDelay3.Text = global::FloBot.Properties.Settings.Default.tbDelay3;
+            this.tbDelay3.TextChanged += new System.EventHandler(this.rbBuff3_Changed);
+            // 
+            // cbUseSkill3
+            // 
+            this.cbUseSkill3.AutoSize = true;
+            this.cbUseSkill3.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill3;
+            this.cbUseSkill3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill3.Location = new System.Drawing.Point(4, 4);
+            this.cbUseSkill3.Margin = new System.Windows.Forms.Padding(4);
+            this.cbUseSkill3.Name = "cbUseSkill3";
+            this.cbUseSkill3.Size = new System.Drawing.Size(55, 21);
+            this.cbUseSkill3.TabIndex = 25;
+            this.cbUseSkill3.Text = "Use";
+            this.cbUseSkill3.UseVisualStyleBackColor = true;
+            this.cbUseSkill3.CheckedChanged += new System.EventHandler(this.rbBuff3_Changed);
+            // 
+            // rbAtt3
+            // 
+            this.rbAtt3.AutoSize = true;
+            this.rbAtt3.Checked = global::FloBot.Properties.Settings.Default.rbAtt3;
+            this.rbAtt3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt3.Location = new System.Drawing.Point(25, 62);
+            this.rbAtt3.Margin = new System.Windows.Forms.Padding(4);
+            this.rbAtt3.Name = "rbAtt3";
+            this.rbAtt3.Size = new System.Drawing.Size(97, 21);
+            this.rbAtt3.TabIndex = 24;
+            this.rbAtt3.TabStop = true;
+            this.rbAtt3.Text = "Attack Skill";
+            this.rbAtt3.UseVisualStyleBackColor = true;
+            this.rbAtt3.CheckedChanged += new System.EventHandler(this.rbBuff3_Changed);
+            // 
+            // rbBuff3
+            // 
+            this.rbBuff3.AutoSize = true;
+            this.rbBuff3.Checked = global::FloBot.Properties.Settings.Default.rbBuff3;
+            this.rbBuff3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff3.Location = new System.Drawing.Point(25, 32);
+            this.rbBuff3.Margin = new System.Windows.Forms.Padding(4);
+            this.rbBuff3.Name = "rbBuff3";
+            this.rbBuff3.Size = new System.Drawing.Size(81, 21);
+            this.rbBuff3.TabIndex = 23;
+            this.rbBuff3.Text = "Buff skill";
+            this.rbBuff3.UseVisualStyleBackColor = true;
+            this.rbBuff3.CheckedChanged += new System.EventHandler(this.rbBuff3_Changed);
+            // 
+            // nudPrio4
+            // 
+            this.nudPrio4.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio4.Location = new System.Drawing.Point(35, 220);
+            this.nudPrio4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudPrio4.Name = "nudPrio4";
+            this.nudPrio4.Size = new System.Drawing.Size(120, 22);
+            this.nudPrio4.TabIndex = 76;
+            this.nudPrio4.Value = global::FloBot.Properties.Settings.Default.nudPrio4;
+            this.nudPrio4.ValueChanged += new System.EventHandler(this.nudPrio4_ValueChanged);
+            // 
+            // tbMin4P
+            // 
+            this.tbMin4P.AutoSize = false;
+            this.tbMin4P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin4P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin4P.Location = new System.Drawing.Point(295, 187);
+            this.tbMin4P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin4P.Maximum = 100;
+            this.tbMin4P.Name = "tbMin4P";
+            this.tbMin4P.Size = new System.Drawing.Size(312, 38);
+            this.tbMin4P.TabIndex = 68;
+            this.tbMin4P.TickFrequency = 10;
+            this.tbMin4P.Value = global::FloBot.Properties.Settings.Default.tbMin4P;
+            this.tbMin4P.Scroll += new System.EventHandler(this.tbMin4P_Scroll);
+            // 
+            // tbMin4M
+            // 
+            this.tbMin4M.AutoSize = false;
+            this.tbMin4M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin4M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin4M.Location = new System.Drawing.Point(295, 75);
+            this.tbMin4M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin4M.Maximum = 100;
+            this.tbMin4M.Name = "tbMin4M";
+            this.tbMin4M.Size = new System.Drawing.Size(312, 38);
+            this.tbMin4M.TabIndex = 67;
+            this.tbMin4M.TickFrequency = 10;
+            this.tbMin4M.Value = global::FloBot.Properties.Settings.Default.tbMin4M;
+            this.tbMin4M.Scroll += new System.EventHandler(this.tbMin4M_Scroll);
+            // 
+            // tbMax4P
+            // 
+            this.tbMax4P.AutoSize = false;
+            this.tbMax4P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax4P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax4P.Location = new System.Drawing.Point(295, 150);
+            this.tbMax4P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax4P.Maximum = 100;
+            this.tbMax4P.Name = "tbMax4P";
+            this.tbMax4P.Size = new System.Drawing.Size(312, 38);
+            this.tbMax4P.TabIndex = 58;
+            this.tbMax4P.TickFrequency = 10;
+            this.tbMax4P.Value = global::FloBot.Properties.Settings.Default.tbMax4P;
+            this.tbMax4P.Scroll += new System.EventHandler(this.tbMax4P_Scroll);
+            // 
+            // tbMax4M
+            // 
+            this.tbMax4M.AutoSize = false;
+            this.tbMax4M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax4M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax4M.Location = new System.Drawing.Point(295, 38);
+            this.tbMax4M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax4M.Maximum = 100;
+            this.tbMax4M.Name = "tbMax4M";
+            this.tbMax4M.Size = new System.Drawing.Size(312, 38);
+            this.tbMax4M.TabIndex = 57;
+            this.tbMax4M.TickFrequency = 10;
+            this.tbMax4M.Value = global::FloBot.Properties.Settings.Default.tbMax4M;
+            this.tbMax4M.Scroll += new System.EventHandler(this.tbMax4M_Scroll);
+            // 
+            // tbCast4
+            // 
+            this.tbCast4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast4.Location = new System.Drawing.Point(31, 165);
+            this.tbCast4.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCast4.Name = "tbCast4";
+            this.tbCast4.Size = new System.Drawing.Size(132, 22);
+            this.tbCast4.TabIndex = 55;
+            this.tbCast4.Text = global::FloBot.Properties.Settings.Default.tbCast4;
+            this.tbCast4.TextChanged += new System.EventHandler(this.tbCast4_TextChanged);
+            // 
+            // tbDelay4
+            // 
+            this.tbDelay4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbReuse4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay4.Location = new System.Drawing.Point(31, 112);
+            this.tbDelay4.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDelay4.Name = "tbDelay4";
+            this.tbDelay4.Size = new System.Drawing.Size(132, 22);
+            this.tbDelay4.TabIndex = 54;
+            this.tbDelay4.Text = global::FloBot.Properties.Settings.Default.tbReuse4;
+            this.tbDelay4.TextChanged += new System.EventHandler(this.tbDelay4_TextChanged);
+            // 
+            // cbUseSkill4
+            // 
+            this.cbUseSkill4.AutoSize = true;
+            this.cbUseSkill4.Checked = global::FloBot.Properties.Settings.Default.cbUse4;
+            this.cbUseSkill4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill4.Location = new System.Drawing.Point(4, 4);
+            this.cbUseSkill4.Margin = new System.Windows.Forms.Padding(4);
+            this.cbUseSkill4.Name = "cbUseSkill4";
+            this.cbUseSkill4.Size = new System.Drawing.Size(55, 21);
+            this.cbUseSkill4.TabIndex = 52;
+            this.cbUseSkill4.Text = "Use";
+            this.cbUseSkill4.UseVisualStyleBackColor = true;
+            this.cbUseSkill4.CheckedChanged += new System.EventHandler(this.cbUseSkill4_CheckedChanged);
+            // 
+            // rbAtt4
+            // 
+            this.rbAtt4.AutoSize = true;
+            this.rbAtt4.Checked = global::FloBot.Properties.Settings.Default.rbAtt4;
+            this.rbAtt4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt4.Location = new System.Drawing.Point(25, 62);
+            this.rbAtt4.Margin = new System.Windows.Forms.Padding(4);
+            this.rbAtt4.Name = "rbAtt4";
+            this.rbAtt4.Size = new System.Drawing.Size(97, 21);
+            this.rbAtt4.TabIndex = 51;
+            this.rbAtt4.Text = "Attack Skill";
+            this.rbAtt4.UseVisualStyleBackColor = true;
+            this.rbAtt4.CheckedChanged += new System.EventHandler(this.rbAtt4_CheckedChanged);
+            // 
+            // rbBuff4
+            // 
+            this.rbBuff4.AutoSize = true;
+            this.rbBuff4.Checked = global::FloBot.Properties.Settings.Default.rbBuff4;
+            this.rbBuff4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff4.Location = new System.Drawing.Point(25, 32);
+            this.rbBuff4.Margin = new System.Windows.Forms.Padding(4);
+            this.rbBuff4.Name = "rbBuff4";
+            this.rbBuff4.Size = new System.Drawing.Size(81, 21);
+            this.rbBuff4.TabIndex = 50;
+            this.rbBuff4.Text = "Buff skill";
+            this.rbBuff4.UseVisualStyleBackColor = true;
+            this.rbBuff4.CheckedChanged += new System.EventHandler(this.rbBuff4_CheckedChanged);
+            // 
+            // nudPrio5
+            // 
+            this.nudPrio5.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio5.Location = new System.Drawing.Point(35, 220);
+            this.nudPrio5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudPrio5.Name = "nudPrio5";
+            this.nudPrio5.Size = new System.Drawing.Size(120, 22);
+            this.nudPrio5.TabIndex = 103;
+            this.nudPrio5.Value = global::FloBot.Properties.Settings.Default.nudPrio5;
+            this.nudPrio5.ValueChanged += new System.EventHandler(this.nudPrio5_ValueChanged);
+            // 
+            // tbMin5P
+            // 
+            this.tbMin5P.AutoSize = false;
+            this.tbMin5P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin5P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin5P.Location = new System.Drawing.Point(295, 187);
+            this.tbMin5P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin5P.Maximum = 100;
+            this.tbMin5P.Name = "tbMin5P";
+            this.tbMin5P.Size = new System.Drawing.Size(312, 38);
+            this.tbMin5P.TabIndex = 95;
+            this.tbMin5P.TickFrequency = 10;
+            this.tbMin5P.Value = global::FloBot.Properties.Settings.Default.tbMin5P;
+            this.tbMin5P.Scroll += new System.EventHandler(this.tbMin5P_Scroll);
+            // 
+            // tbMin5M
+            // 
+            this.tbMin5M.AutoSize = false;
+            this.tbMin5M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin5M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin5M.Location = new System.Drawing.Point(295, 75);
+            this.tbMin5M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin5M.Maximum = 100;
+            this.tbMin5M.Name = "tbMin5M";
+            this.tbMin5M.Size = new System.Drawing.Size(312, 38);
+            this.tbMin5M.TabIndex = 94;
+            this.tbMin5M.TickFrequency = 10;
+            this.tbMin5M.Value = global::FloBot.Properties.Settings.Default.tbMin5M;
+            this.tbMin5M.Scroll += new System.EventHandler(this.tbMin5M_Scroll);
+            // 
+            // tbMax5P
+            // 
+            this.tbMax5P.AutoSize = false;
+            this.tbMax5P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax5P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax5P.Location = new System.Drawing.Point(295, 150);
+            this.tbMax5P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax5P.Maximum = 100;
+            this.tbMax5P.Name = "tbMax5P";
+            this.tbMax5P.Size = new System.Drawing.Size(312, 38);
+            this.tbMax5P.TabIndex = 85;
+            this.tbMax5P.TickFrequency = 10;
+            this.tbMax5P.Value = global::FloBot.Properties.Settings.Default.tbMax5P;
+            this.tbMax5P.Scroll += new System.EventHandler(this.tbMax5P_Scroll);
+            // 
+            // tbMax5M
+            // 
+            this.tbMax5M.AutoSize = false;
+            this.tbMax5M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax5M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax5M.Location = new System.Drawing.Point(295, 38);
+            this.tbMax5M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax5M.Maximum = 100;
+            this.tbMax5M.Name = "tbMax5M";
+            this.tbMax5M.Size = new System.Drawing.Size(312, 38);
+            this.tbMax5M.TabIndex = 84;
+            this.tbMax5M.TickFrequency = 10;
+            this.tbMax5M.Value = global::FloBot.Properties.Settings.Default.tbMax5M;
+            this.tbMax5M.Scroll += new System.EventHandler(this.tbMax5M_Scroll);
+            // 
+            // tbCast5
+            // 
+            this.tbCast5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast5.Location = new System.Drawing.Point(31, 165);
+            this.tbCast5.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCast5.Name = "tbCast5";
+            this.tbCast5.Size = new System.Drawing.Size(132, 22);
+            this.tbCast5.TabIndex = 82;
+            this.tbCast5.Text = global::FloBot.Properties.Settings.Default.tbCast5;
+            this.tbCast5.TextChanged += new System.EventHandler(this.tbCast5_TextChanged);
+            // 
+            // tbDelay5
+            // 
+            this.tbDelay5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbReuse5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay5.Location = new System.Drawing.Point(31, 112);
+            this.tbDelay5.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDelay5.Name = "tbDelay5";
+            this.tbDelay5.Size = new System.Drawing.Size(132, 22);
+            this.tbDelay5.TabIndex = 81;
+            this.tbDelay5.Text = global::FloBot.Properties.Settings.Default.tbReuse5;
+            this.tbDelay5.TextChanged += new System.EventHandler(this.tbDelay5_TextChanged);
+            // 
+            // cbUseSkill5
+            // 
+            this.cbUseSkill5.AutoSize = true;
+            this.cbUseSkill5.Checked = global::FloBot.Properties.Settings.Default.cbUse5;
+            this.cbUseSkill5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill5.Location = new System.Drawing.Point(4, 4);
+            this.cbUseSkill5.Margin = new System.Windows.Forms.Padding(4);
+            this.cbUseSkill5.Name = "cbUseSkill5";
+            this.cbUseSkill5.Size = new System.Drawing.Size(55, 21);
+            this.cbUseSkill5.TabIndex = 79;
+            this.cbUseSkill5.Text = "Use";
+            this.cbUseSkill5.UseVisualStyleBackColor = true;
+            this.cbUseSkill5.CheckedChanged += new System.EventHandler(this.cbUse5_CheckedChanged);
+            // 
+            // rbAtt5
+            // 
+            this.rbAtt5.AutoSize = true;
+            this.rbAtt5.Checked = global::FloBot.Properties.Settings.Default.rbAtt5;
+            this.rbAtt5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt5.Location = new System.Drawing.Point(25, 62);
+            this.rbAtt5.Margin = new System.Windows.Forms.Padding(4);
+            this.rbAtt5.Name = "rbAtt5";
+            this.rbAtt5.Size = new System.Drawing.Size(97, 21);
+            this.rbAtt5.TabIndex = 78;
+            this.rbAtt5.Text = "Attack Skill";
+            this.rbAtt5.UseVisualStyleBackColor = true;
+            this.rbAtt5.CheckedChanged += new System.EventHandler(this.rbAtt5_CheckedChanged);
+            // 
+            // rbBuff5
+            // 
+            this.rbBuff5.AutoSize = true;
+            this.rbBuff5.Checked = global::FloBot.Properties.Settings.Default.rbBuff5;
+            this.rbBuff5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff5.Location = new System.Drawing.Point(25, 32);
+            this.rbBuff5.Margin = new System.Windows.Forms.Padding(4);
+            this.rbBuff5.Name = "rbBuff5";
+            this.rbBuff5.Size = new System.Drawing.Size(81, 21);
+            this.rbBuff5.TabIndex = 77;
+            this.rbBuff5.Text = "Buff skill";
+            this.rbBuff5.UseVisualStyleBackColor = true;
+            this.rbBuff5.CheckedChanged += new System.EventHandler(this.rbBuff5_CheckedChanged);
+            // 
+            // nudPrio6
+            // 
+            this.nudPrio6.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio6.Location = new System.Drawing.Point(35, 220);
+            this.nudPrio6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudPrio6.Name = "nudPrio6";
+            this.nudPrio6.Size = new System.Drawing.Size(120, 22);
+            this.nudPrio6.TabIndex = 130;
+            this.nudPrio6.Value = global::FloBot.Properties.Settings.Default.nudPrio6;
+            this.nudPrio6.ValueChanged += new System.EventHandler(this.nudPrio6_ValueChanged);
+            // 
+            // tbMin6P
+            // 
+            this.tbMin6P.AutoSize = false;
+            this.tbMin6P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin6P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin6P.Location = new System.Drawing.Point(295, 187);
+            this.tbMin6P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin6P.Maximum = 100;
+            this.tbMin6P.Name = "tbMin6P";
+            this.tbMin6P.Size = new System.Drawing.Size(312, 38);
+            this.tbMin6P.TabIndex = 122;
+            this.tbMin6P.TickFrequency = 10;
+            this.tbMin6P.Value = global::FloBot.Properties.Settings.Default.tbMin6P;
+            this.tbMin6P.Scroll += new System.EventHandler(this.tbMin6P_Scroll);
+            // 
+            // tbMin6M
+            // 
+            this.tbMin6M.AutoSize = false;
+            this.tbMin6M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin6M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin6M.Location = new System.Drawing.Point(295, 75);
+            this.tbMin6M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin6M.Maximum = 100;
+            this.tbMin6M.Name = "tbMin6M";
+            this.tbMin6M.Size = new System.Drawing.Size(312, 38);
+            this.tbMin6M.TabIndex = 121;
+            this.tbMin6M.TickFrequency = 10;
+            this.tbMin6M.Value = global::FloBot.Properties.Settings.Default.tbMin6M;
+            this.tbMin6M.Scroll += new System.EventHandler(this.tbMin6M_Scroll);
+            // 
+            // tbMax6P
+            // 
+            this.tbMax6P.AutoSize = false;
+            this.tbMax6P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax6P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax6P.Location = new System.Drawing.Point(295, 150);
+            this.tbMax6P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax6P.Maximum = 100;
+            this.tbMax6P.Name = "tbMax6P";
+            this.tbMax6P.Size = new System.Drawing.Size(312, 38);
+            this.tbMax6P.TabIndex = 112;
+            this.tbMax6P.TickFrequency = 10;
+            this.tbMax6P.Value = global::FloBot.Properties.Settings.Default.tbMax6P;
+            this.tbMax6P.Scroll += new System.EventHandler(this.tbMax6P_Scroll);
+            // 
+            // tbMax6M
+            // 
+            this.tbMax6M.AutoSize = false;
+            this.tbMax6M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax6M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax6M.Location = new System.Drawing.Point(295, 38);
+            this.tbMax6M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax6M.Maximum = 100;
+            this.tbMax6M.Name = "tbMax6M";
+            this.tbMax6M.Size = new System.Drawing.Size(312, 38);
+            this.tbMax6M.TabIndex = 111;
+            this.tbMax6M.TickFrequency = 10;
+            this.tbMax6M.Value = global::FloBot.Properties.Settings.Default.tbMax6M;
+            this.tbMax6M.Scroll += new System.EventHandler(this.tbMax6M_Scroll);
+            // 
+            // tbCast6
+            // 
+            this.tbCast6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast6.Location = new System.Drawing.Point(31, 165);
+            this.tbCast6.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCast6.Name = "tbCast6";
+            this.tbCast6.Size = new System.Drawing.Size(132, 22);
+            this.tbCast6.TabIndex = 109;
+            this.tbCast6.Text = global::FloBot.Properties.Settings.Default.tbCast6;
+            this.tbCast6.TextChanged += new System.EventHandler(this.tbCast6_TextChanged);
+            // 
+            // tbDelay6
+            // 
+            this.tbDelay6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay6.Location = new System.Drawing.Point(31, 112);
+            this.tbDelay6.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDelay6.Name = "tbDelay6";
+            this.tbDelay6.Size = new System.Drawing.Size(132, 22);
+            this.tbDelay6.TabIndex = 108;
+            this.tbDelay6.Text = global::FloBot.Properties.Settings.Default.tbDelay6;
+            this.tbDelay6.TextChanged += new System.EventHandler(this.tbDelay6_TextChanged);
+            // 
+            // cbUseSkill6
+            // 
+            this.cbUseSkill6.AutoSize = true;
+            this.cbUseSkill6.Checked = global::FloBot.Properties.Settings.Default.cbUse6;
+            this.cbUseSkill6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill6.Location = new System.Drawing.Point(4, 4);
+            this.cbUseSkill6.Margin = new System.Windows.Forms.Padding(4);
+            this.cbUseSkill6.Name = "cbUseSkill6";
+            this.cbUseSkill6.Size = new System.Drawing.Size(55, 21);
+            this.cbUseSkill6.TabIndex = 106;
+            this.cbUseSkill6.Text = "Use";
+            this.cbUseSkill6.UseVisualStyleBackColor = true;
+            this.cbUseSkill6.CheckedChanged += new System.EventHandler(this.cbUseSkill6_CheckedChanged);
+            // 
+            // rbAtt6
+            // 
+            this.rbAtt6.AutoSize = true;
+            this.rbAtt6.Checked = global::FloBot.Properties.Settings.Default.rbAtt6;
+            this.rbAtt6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt6.Location = new System.Drawing.Point(25, 62);
+            this.rbAtt6.Margin = new System.Windows.Forms.Padding(4);
+            this.rbAtt6.Name = "rbAtt6";
+            this.rbAtt6.Size = new System.Drawing.Size(97, 21);
+            this.rbAtt6.TabIndex = 105;
+            this.rbAtt6.Text = "Attack Skill";
+            this.rbAtt6.UseVisualStyleBackColor = true;
+            this.rbAtt6.CheckedChanged += new System.EventHandler(this.rbAtt6_CheckedChanged);
+            // 
+            // rbBuff6
+            // 
+            this.rbBuff6.AutoSize = true;
+            this.rbBuff6.Checked = global::FloBot.Properties.Settings.Default.rbBuff6;
+            this.rbBuff6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff6.Location = new System.Drawing.Point(25, 32);
+            this.rbBuff6.Margin = new System.Windows.Forms.Padding(4);
+            this.rbBuff6.Name = "rbBuff6";
+            this.rbBuff6.Size = new System.Drawing.Size(81, 21);
+            this.rbBuff6.TabIndex = 104;
+            this.rbBuff6.Text = "Buff skill";
+            this.rbBuff6.UseVisualStyleBackColor = true;
+            this.rbBuff6.CheckedChanged += new System.EventHandler(this.rbBuff6_CheckedChanged);
+            // 
+            // nudPrio7
+            // 
+            this.nudPrio7.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio7.Location = new System.Drawing.Point(35, 220);
+            this.nudPrio7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudPrio7.Name = "nudPrio7";
+            this.nudPrio7.Size = new System.Drawing.Size(120, 22);
+            this.nudPrio7.TabIndex = 157;
+            this.nudPrio7.Value = global::FloBot.Properties.Settings.Default.nudPrio7;
+            // 
+            // tbMin7P
+            // 
+            this.tbMin7P.AutoSize = false;
+            this.tbMin7P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin7P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin7P.Location = new System.Drawing.Point(295, 187);
+            this.tbMin7P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin7P.Maximum = 100;
+            this.tbMin7P.Name = "tbMin7P";
+            this.tbMin7P.Size = new System.Drawing.Size(312, 38);
+            this.tbMin7P.TabIndex = 149;
+            this.tbMin7P.TickFrequency = 10;
+            this.tbMin7P.Value = global::FloBot.Properties.Settings.Default.tbMin7P;
+            // 
+            // tbMin7M
+            // 
+            this.tbMin7M.AutoSize = false;
+            this.tbMin7M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin7M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin7M.Location = new System.Drawing.Point(295, 75);
+            this.tbMin7M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin7M.Maximum = 100;
+            this.tbMin7M.Name = "tbMin7M";
+            this.tbMin7M.Size = new System.Drawing.Size(312, 38);
+            this.tbMin7M.TabIndex = 148;
+            this.tbMin7M.TickFrequency = 10;
+            this.tbMin7M.Value = global::FloBot.Properties.Settings.Default.tbMin7M;
+            // 
+            // tbMax7P
+            // 
+            this.tbMax7P.AutoSize = false;
+            this.tbMax7P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax7P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax7P.Location = new System.Drawing.Point(295, 150);
+            this.tbMax7P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax7P.Maximum = 100;
+            this.tbMax7P.Name = "tbMax7P";
+            this.tbMax7P.Size = new System.Drawing.Size(312, 38);
+            this.tbMax7P.TabIndex = 139;
+            this.tbMax7P.TickFrequency = 10;
+            this.tbMax7P.Value = global::FloBot.Properties.Settings.Default.tbMax7P;
+            // 
+            // tbMax7M
+            // 
+            this.tbMax7M.AutoSize = false;
+            this.tbMax7M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax7M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax7M.Location = new System.Drawing.Point(295, 38);
+            this.tbMax7M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax7M.Maximum = 100;
+            this.tbMax7M.Name = "tbMax7M";
+            this.tbMax7M.Size = new System.Drawing.Size(312, 38);
+            this.tbMax7M.TabIndex = 138;
+            this.tbMax7M.TickFrequency = 10;
+            this.tbMax7M.Value = global::FloBot.Properties.Settings.Default.tbMax7M;
+            // 
+            // tbCast7
+            // 
+            this.tbCast7.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast7.Location = new System.Drawing.Point(31, 165);
+            this.tbCast7.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCast7.Name = "tbCast7";
+            this.tbCast7.Size = new System.Drawing.Size(132, 22);
+            this.tbCast7.TabIndex = 136;
+            this.tbCast7.Text = global::FloBot.Properties.Settings.Default.tbCast7;
+            // 
+            // tbDelay7
+            // 
+            this.tbDelay7.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbReuse7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay7.Location = new System.Drawing.Point(31, 112);
+            this.tbDelay7.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDelay7.Name = "tbDelay7";
+            this.tbDelay7.Size = new System.Drawing.Size(132, 22);
+            this.tbDelay7.TabIndex = 135;
+            this.tbDelay7.Text = global::FloBot.Properties.Settings.Default.tbReuse7;
+            // 
+            // cbUseSkill7
+            // 
+            this.cbUseSkill7.AutoSize = true;
+            this.cbUseSkill7.Checked = global::FloBot.Properties.Settings.Default.cbUse7;
+            this.cbUseSkill7.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill7.Location = new System.Drawing.Point(4, 4);
+            this.cbUseSkill7.Margin = new System.Windows.Forms.Padding(4);
+            this.cbUseSkill7.Name = "cbUseSkill7";
+            this.cbUseSkill7.Size = new System.Drawing.Size(55, 21);
+            this.cbUseSkill7.TabIndex = 133;
+            this.cbUseSkill7.Text = "Use";
+            this.cbUseSkill7.UseVisualStyleBackColor = true;
+            // 
+            // rbAtt7
+            // 
+            this.rbAtt7.AutoSize = true;
+            this.rbAtt7.Checked = global::FloBot.Properties.Settings.Default.rbAtt7;
+            this.rbAtt7.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt7.Location = new System.Drawing.Point(25, 62);
+            this.rbAtt7.Margin = new System.Windows.Forms.Padding(4);
+            this.rbAtt7.Name = "rbAtt7";
+            this.rbAtt7.Size = new System.Drawing.Size(97, 21);
+            this.rbAtt7.TabIndex = 132;
+            this.rbAtt7.Text = "Attack Skill";
+            this.rbAtt7.UseVisualStyleBackColor = true;
+            // 
+            // rbBuff7
+            // 
+            this.rbBuff7.AutoSize = true;
+            this.rbBuff7.Checked = global::FloBot.Properties.Settings.Default.rbBuff7;
+            this.rbBuff7.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff7.Location = new System.Drawing.Point(25, 32);
+            this.rbBuff7.Margin = new System.Windows.Forms.Padding(4);
+            this.rbBuff7.Name = "rbBuff7";
+            this.rbBuff7.Size = new System.Drawing.Size(81, 21);
+            this.rbBuff7.TabIndex = 131;
+            this.rbBuff7.Text = "Buff skill";
+            this.rbBuff7.UseVisualStyleBackColor = true;
+            // 
             // lblMin9
             // 
             this.lblMin9.AutoSize = true;
@@ -3270,75 +3544,65 @@
             this.rbBuff9.UseVisualStyleBackColor = true;
             this.rbBuff9.CheckedChanged += new System.EventHandler(this.rbBuff9_CheckedChanged);
             // 
-            // tp0
+            // tbNotRevivePercent
             // 
-            this.tp0.Location = new System.Drawing.Point(4, 25);
-            this.tp0.Margin = new System.Windows.Forms.Padding(4);
-            this.tp0.Name = "tp0";
-            this.tp0.Size = new System.Drawing.Size(631, 252);
-            this.tp0.TabIndex = 9;
-            this.tp0.Text = "0";
-            this.tp0.UseVisualStyleBackColor = true;
+            this.tbNotRevivePercent.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbRevivePercent", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbNotRevivePercent.Location = new System.Drawing.Point(159, 277);
+            this.tbNotRevivePercent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbNotRevivePercent.Name = "tbNotRevivePercent";
+            this.tbNotRevivePercent.Size = new System.Drawing.Size(100, 22);
+            this.tbNotRevivePercent.TabIndex = 14;
+            this.tbNotRevivePercent.Text = global::FloBot.Properties.Settings.Default.tbRevivePercent;
             // 
-            // label19
+            // cbAutoTarget
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(700, 16);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 17);
-            this.label19.TabIndex = 15;
-            this.label19.Text = "Hotkeys";
+            this.cbAutoTarget.AutoSize = true;
+            this.cbAutoTarget.Checked = global::FloBot.Properties.Settings.Default.cbAutoTarget;
+            this.cbAutoTarget.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoTarget", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbAutoTarget.Location = new System.Drawing.Point(27, 74);
+            this.cbAutoTarget.Margin = new System.Windows.Forms.Padding(4);
+            this.cbAutoTarget.Name = "cbAutoTarget";
+            this.cbAutoTarget.Size = new System.Drawing.Size(100, 21);
+            this.cbAutoTarget.TabIndex = 10;
+            this.cbAutoTarget.Text = "Auto target";
+            this.cbAutoTarget.UseVisualStyleBackColor = true;
             // 
-            // cbDisableBot
+            // cbAutoLoot
             // 
-            this.cbDisableBot.AutoSize = true;
-            this.cbDisableBot.Location = new System.Drawing.Point(700, 325);
-            this.cbDisableBot.Margin = new System.Windows.Forms.Padding(4);
-            this.cbDisableBot.Name = "cbDisableBot";
-            this.cbDisableBot.Size = new System.Drawing.Size(295, 21);
-            this.cbDisableBot.TabIndex = 16;
-            this.cbDisableBot.Text = "disable bot while florensia is in foreground";
-            this.cbDisableBot.UseVisualStyleBackColor = true;
+            this.cbAutoLoot.AutoSize = true;
+            this.cbAutoLoot.Checked = global::FloBot.Properties.Settings.Default.cbAutoLoot;
+            this.cbAutoLoot.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoLoot", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbAutoLoot.Location = new System.Drawing.Point(27, 206);
+            this.cbAutoLoot.Margin = new System.Windows.Forms.Padding(4);
+            this.cbAutoLoot.Name = "cbAutoLoot";
+            this.cbAutoLoot.Size = new System.Drawing.Size(86, 21);
+            this.cbAutoLoot.TabIndex = 9;
+            this.cbAutoLoot.Text = "Auto loot";
+            this.cbAutoLoot.UseVisualStyleBackColor = true;
+            this.cbAutoLoot.CheckedChanged += new System.EventHandler(this.cbAutoLoot_CheckedChanged);
             // 
-            // label58
+            // cbAutoBattle
             // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(148, 16);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(133, 17);
-            this.label58.TabIndex = 17;
-            this.label58.Text = "Process (start at 0):";
+            this.cbAutoBattle.AutoSize = true;
+            this.cbAutoBattle.Checked = global::FloBot.Properties.Settings.Default.cbAutoAttack;
+            this.cbAutoBattle.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoAttack", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbAutoBattle.Location = new System.Drawing.Point(27, 174);
+            this.cbAutoBattle.Margin = new System.Windows.Forms.Padding(4);
+            this.cbAutoBattle.Name = "cbAutoBattle";
+            this.cbAutoBattle.Size = new System.Drawing.Size(69, 21);
+            this.cbAutoBattle.TabIndex = 9;
+            this.cbAutoBattle.Text = "Attack";
+            this.cbAutoBattle.UseVisualStyleBackColor = true;
             // 
-            // label59
+            // tbLvLRange
             // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(401, 12);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(153, 17);
-            this.label59.TabIndex = 19;
-            this.label59.Text = "Window name(unique):";
-            // 
-            // tbProcessName
-            // 
-            this.tbProcessName.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbProcessName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbProcessName.Location = new System.Drawing.Point(561, 9);
-            this.tbProcessName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbProcessName.Name = "tbProcessName";
-            this.tbProcessName.Size = new System.Drawing.Size(100, 22);
-            this.tbProcessName.TabIndex = 20;
-            this.tbProcessName.Text = global::FloBot.Properties.Settings.Default.tbProcessName;
-            this.tbProcessName.TextChanged += new System.EventHandler(this.tbProcessName_TextChanged);
-            // 
-            // tbProcessID
-            // 
-            this.tbProcessID.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbProcessID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbProcessID.Location = new System.Drawing.Point(284, 12);
-            this.tbProcessID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbProcessID.Name = "tbProcessID";
-            this.tbProcessID.Size = new System.Drawing.Size(100, 22);
-            this.tbProcessID.TabIndex = 18;
-            this.tbProcessID.Text = global::FloBot.Properties.Settings.Default.tbProcessID;
+            this.tbLvLRange.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "maxLevelDif", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbLvLRange.Location = new System.Drawing.Point(51, 123);
+            this.tbLvLRange.Margin = new System.Windows.Forms.Padding(4);
+            this.tbLvLRange.Name = "tbLvLRange";
+            this.tbLvLRange.Size = new System.Drawing.Size(132, 22);
+            this.tbLvLRange.TabIndex = 6;
+            this.tbLvLRange.Text = global::FloBot.Properties.Settings.Default.maxLevelDif;
             // 
             // tbEmHP
             // 
@@ -3440,52 +3704,57 @@
             this.tbHotkeys.ResumeLayout(false);
             this.tp1.ResumeLayout(false);
             this.tp1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPrio1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin1P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin1M)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax1P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax1M)).EndInit();
             this.tp2.ResumeLayout(false);
             this.tp2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPrio2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin2P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin2M)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax2P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax2M)).EndInit();
             this.tp3.ResumeLayout(false);
             this.tp3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPrio3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin3P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin3M)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax3P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax3M)).EndInit();
             this.tp4.ResumeLayout(false);
             this.tp4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPrio4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin4P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin4M)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax4P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax4M)).EndInit();
             this.tp5.ResumeLayout(false);
             this.tp5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPrio5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin5P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin5M)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax5P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax5M)).EndInit();
             this.tp6.ResumeLayout(false);
             this.tp6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPrio6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin6P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMin6M)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax6P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMax6M)).EndInit();
             this.tp7.ResumeLayout(false);
             this.tp7.PerformLayout();
             this.tp8.ResumeLayout(false);
             this.tp8.PerformLayout();
             this.tp9.ResumeLayout(false);
             this.tp9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrio1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin1P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin1M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax1P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax1M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrio2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin2P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin2M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax2P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax2M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrio3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin3P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin3M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax3P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax3M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrio4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin4P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin4M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax4P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax4M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrio5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin5P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin5M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax5P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax5M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrio6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin6P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin6M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax6P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax6M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrio7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin7P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin7M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax7P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax7M)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMin9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmHP)).EndInit();
@@ -3564,13 +3833,6 @@
         private System.Windows.Forms.Label label21;
         public System.Windows.Forms.TextBox tbCast1;
         public System.Windows.Forms.TextBox tbDelay1;
-        private System.Windows.Forms.Label label32;
-        public System.Windows.Forms.TextBox textBox11;
-        public System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label33;
-        public System.Windows.Forms.CheckBox checkBox6;
-        public System.Windows.Forms.RadioButton radioButton11;
-        public System.Windows.Forms.RadioButton radioButton12;
         private System.Windows.Forms.Label label34;
         public System.Windows.Forms.TextBox textBox13;
         public System.Windows.Forms.TextBox textBox14;
@@ -3757,6 +4019,33 @@
         public System.Windows.Forms.CheckBox cbUseSkill6;
         public System.Windows.Forms.RadioButton rbAtt6;
         public System.Windows.Forms.RadioButton rbBuff6;
+        private System.Windows.Forms.NumericUpDown nudPrio7;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label lblMin7P;
+        private System.Windows.Forms.Label lblMin7M;
+        private System.Windows.Forms.Label label108;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.Label lblMax7P;
+        private System.Windows.Forms.Label lblMax7M;
+        private System.Windows.Forms.Label label120;
+        private System.Windows.Forms.Label label121;
+        private System.Windows.Forms.Label label122;
+        private System.Windows.Forms.Label label123;
+        private System.Windows.Forms.Label label124;
+        private System.Windows.Forms.Label label125;
+        private System.Windows.Forms.Label label126;
+        private System.Windows.Forms.Label label127;
+        public System.Windows.Forms.TrackBar tbMin7P;
+        public System.Windows.Forms.TrackBar tbMin7M;
+        public System.Windows.Forms.TrackBar tbMax7P;
+        public System.Windows.Forms.TrackBar tbMax7M;
+        public System.Windows.Forms.TextBox tbCast7;
+        public System.Windows.Forms.TextBox tbDelay7;
+        public System.Windows.Forms.CheckBox cbUseSkill7;
+        public System.Windows.Forms.RadioButton rbAtt7;
+        public System.Windows.Forms.RadioButton rbBuff7;
     }
 }
 
