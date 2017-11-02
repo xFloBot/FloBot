@@ -44,6 +44,8 @@ namespace FloBot
             rbBuff2_Changed(null, null);
             rbBuff3_Changed(null, null);
             rbBuff4_Changed(null, null);
+            rbBuff5_Changed(null, null);
+            rbBuff6_Changed(null, null);
             rbBuff9_CheckedChanged(null, null);
 
             Console.WriteLine("AttArraySizAfter:{0}\nBuffArrayAfter:{1}\n_____________", player.AttArray.Count, player.BuffArray.Count);
