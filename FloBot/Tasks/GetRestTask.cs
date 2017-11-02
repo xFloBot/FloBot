@@ -35,27 +35,23 @@ namespace FloBot.Tasks
 
             if(player.Resting && oldHP > player.PlayerCurrentHP)
             {
-               
-               //layer.Resting = false;
-               //c.sendKeystroke(Keys.Z);
-               //thread.Sleep(100);
                 mc.sendKeystroke(Keys.Tab);
-                oldHP = -1;
-                return false;
+                return true;
             }
 
             //Check if player is not resting but needs to rest
             if(!player.Resting && (getRestHP(main_form,player) || getRestMP(main_form, player)))
             {
-                while (player.Pos.moved())
-                    Thread.Sleep(100);
-                //int count = 0;
-                //while (count++ < 15 && !player.inCombat) Thread.Sleep(100);
-
+                
                 if (player.inCombat)
                     return false;
-                //int counter = 0;
-                //while ((oldHP = player.PlayerCurrentHP) <= 0 && counter++ < 10) Thread.Sleep(100);
+                //Try to avoid not being able to sit down when you killed an enemy with a cast time spell
+                //Bot notices that an enemy died even befor shown in the client
+                do
+                {
+                    Thread.Sleep(200);
+                } while (player.Pos.moved());
+                Thread.Sleep(2000);
                 oldHP = player.PlayerCurrentHP;
                 player.Resting = true;
                 mc.sendKeystroke(Keys.Z);
