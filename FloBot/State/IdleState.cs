@@ -21,7 +21,7 @@ namespace FloBot.State
                 return new IdleState();
             }
             Thread.Sleep(100);
-            if(!player.PlayerName.Equals(""))
+            if( main_form.cbEnableCombatState.Checked &&  !player.PlayerName.Equals("") )
                 return new PreCombatState();
             return new IdleState();
         }
