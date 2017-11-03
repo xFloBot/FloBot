@@ -1294,5 +1294,89 @@ namespace FloBot.Properties {
                 this["tbMin8P"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool cbUse9 {
+            get {
+                return ((bool)(this["cbUse9"]));
+            }
+            set {
+                this["cbUse9"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("6")]
+        public string tbReuse9 {
+            get {
+                return ((string)(this["tbReuse9"]));
+            }
+            set {
+                this["tbReuse9"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal nudPrio9 {
+            get {
+                return ((decimal)(this["nudPrio9"]));
+            }
+            set {
+                this["nudPrio9"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int tbMax9M {
+            get {
+                return ((int)(this["tbMax9M"]));
+            }
+            set {
+                this["tbMax9M"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int tbMin9M {
+            get {
+                return ((int)(this["tbMin9M"]));
+            }
+            set {
+                this["tbMin9M"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int tbMax9P {
+            get {
+                return ((int)(this["tbMax9P"]));
+            }
+            set {
+                this["tbMax9P"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int tbMin9P {
+            get {
+                return ((int)(this["tbMin9P"]));
+            }
+            set {
+                this["tbMin9P"] = value;
+            }
+        }
     }
 }
