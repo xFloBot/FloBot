@@ -327,6 +327,33 @@
             this.rbAtt9 = new System.Windows.Forms.RadioButton();
             this.rbBuff9 = new System.Windows.Forms.RadioButton();
             this.tp0 = new System.Windows.Forms.TabPage();
+            this.nudPrio0 = new System.Windows.Forms.NumericUpDown();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label107 = new System.Windows.Forms.Label();
+            this.lblMin0P = new System.Windows.Forms.Label();
+            this.lblMin0M = new System.Windows.Forms.Label();
+            this.label146 = new System.Windows.Forms.Label();
+            this.label147 = new System.Windows.Forms.Label();
+            this.lblMax0P = new System.Windows.Forms.Label();
+            this.lblMax0M = new System.Windows.Forms.Label();
+            this.label150 = new System.Windows.Forms.Label();
+            this.label151 = new System.Windows.Forms.Label();
+            this.label152 = new System.Windows.Forms.Label();
+            this.label153 = new System.Windows.Forms.Label();
+            this.label154 = new System.Windows.Forms.Label();
+            this.label155 = new System.Windows.Forms.Label();
+            this.label156 = new System.Windows.Forms.Label();
+            this.label157 = new System.Windows.Forms.Label();
+            this.tbMin0P = new System.Windows.Forms.TrackBar();
+            this.tbMin0M = new System.Windows.Forms.TrackBar();
+            this.tbMax0P = new System.Windows.Forms.TrackBar();
+            this.tbMax0M = new System.Windows.Forms.TrackBar();
+            this.tbCast0 = new System.Windows.Forms.TextBox();
+            this.tbDelay0 = new System.Windows.Forms.TextBox();
+            this.cbUseSkill0 = new System.Windows.Forms.CheckBox();
+            this.rbAtt0 = new System.Windows.Forms.RadioButton();
+            this.rbBuff0 = new System.Windows.Forms.RadioButton();
             this.label19 = new System.Windows.Forms.Label();
             this.cbDisableBot = new System.Windows.Forms.CheckBox();
             this.label58 = new System.Windows.Forms.Label();
@@ -395,6 +422,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbMin9M)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax9P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax9M)).BeginInit();
+            this.tp0.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrio0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin0P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin0M)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax0P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax0M)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmMP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbRestMP)).BeginInit();
@@ -3960,6 +3993,33 @@
             // 
             // tp0
             // 
+            this.tp0.Controls.Add(this.nudPrio0);
+            this.tp0.Controls.Add(this.label49);
+            this.tp0.Controls.Add(this.label53);
+            this.tp0.Controls.Add(this.label107);
+            this.tp0.Controls.Add(this.lblMin0P);
+            this.tp0.Controls.Add(this.lblMin0M);
+            this.tp0.Controls.Add(this.label146);
+            this.tp0.Controls.Add(this.label147);
+            this.tp0.Controls.Add(this.lblMax0P);
+            this.tp0.Controls.Add(this.lblMax0M);
+            this.tp0.Controls.Add(this.label150);
+            this.tp0.Controls.Add(this.label151);
+            this.tp0.Controls.Add(this.label152);
+            this.tp0.Controls.Add(this.label153);
+            this.tp0.Controls.Add(this.label154);
+            this.tp0.Controls.Add(this.label155);
+            this.tp0.Controls.Add(this.label156);
+            this.tp0.Controls.Add(this.label157);
+            this.tp0.Controls.Add(this.tbMin0P);
+            this.tp0.Controls.Add(this.tbMin0M);
+            this.tp0.Controls.Add(this.tbMax0P);
+            this.tp0.Controls.Add(this.tbMax0M);
+            this.tp0.Controls.Add(this.tbCast0);
+            this.tp0.Controls.Add(this.tbDelay0);
+            this.tp0.Controls.Add(this.cbUseSkill0);
+            this.tp0.Controls.Add(this.rbAtt0);
+            this.tp0.Controls.Add(this.rbBuff0);
             this.tp0.Location = new System.Drawing.Point(4, 25);
             this.tp0.Margin = new System.Windows.Forms.Padding(4);
             this.tp0.Name = "tp0";
@@ -3967,6 +4027,305 @@
             this.tp0.TabIndex = 9;
             this.tp0.Text = "0";
             this.tp0.UseVisualStyleBackColor = true;
+            // 
+            // nudPrio0
+            // 
+            this.nudPrio0.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio0.Location = new System.Drawing.Point(35, 220);
+            this.nudPrio0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.nudPrio0.Name = "nudPrio0";
+            this.nudPrio0.Size = new System.Drawing.Size(120, 22);
+            this.nudPrio0.TabIndex = 238;
+            this.nudPrio0.Value = global::FloBot.Properties.Settings.Default.nudPrio0;
+            this.nudPrio0.ValueChanged += new System.EventHandler(this.nudPrio0_ValueChanged);
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(31, 199);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(56, 17);
+            this.label49.TabIndex = 237;
+            this.label49.Text = "Priority:";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(457, 119);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(71, 17);
+            this.label53.TabIndex = 236;
+            this.label53.Text = "Player HP";
+            // 
+            // label107
+            // 
+            this.label107.AutoSize = true;
+            this.label107.Location = new System.Drawing.Point(457, 7);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(58, 17);
+            this.label107.TabIndex = 235;
+            this.label107.Text = "Mob HP";
+            // 
+            // lblMin0P
+            // 
+            this.lblMin0P.AutoSize = true;
+            this.lblMin0P.Location = new System.Drawing.Point(424, 118);
+            this.lblMin0P.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMin0P.Name = "lblMin0P";
+            this.lblMin0P.Size = new System.Drawing.Size(16, 17);
+            this.lblMin0P.TabIndex = 234;
+            this.lblMin0P.Text = "0";
+            // 
+            // lblMin0M
+            // 
+            this.lblMin0M.AutoSize = true;
+            this.lblMin0M.Location = new System.Drawing.Point(424, 6);
+            this.lblMin0M.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMin0M.Name = "lblMin0M";
+            this.lblMin0M.Size = new System.Drawing.Size(16, 17);
+            this.lblMin0M.TabIndex = 233;
+            this.lblMin0M.Text = "0";
+            // 
+            // label146
+            // 
+            this.label146.AutoSize = true;
+            this.label146.Location = new System.Drawing.Point(369, 118);
+            this.label146.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label146.Name = "label146";
+            this.label146.Size = new System.Drawing.Size(34, 17);
+            this.label146.TabIndex = 232;
+            this.label146.Text = "until";
+            // 
+            // label147
+            // 
+            this.label147.AutoSize = true;
+            this.label147.Location = new System.Drawing.Point(369, 6);
+            this.label147.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label147.Name = "label147";
+            this.label147.Size = new System.Drawing.Size(34, 17);
+            this.label147.TabIndex = 231;
+            this.label147.Text = "until";
+            // 
+            // lblMax0P
+            // 
+            this.lblMax0P.AutoSize = true;
+            this.lblMax0P.Location = new System.Drawing.Point(305, 118);
+            this.lblMax0P.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMax0P.Name = "lblMax0P";
+            this.lblMax0P.Size = new System.Drawing.Size(32, 17);
+            this.lblMax0P.TabIndex = 228;
+            this.lblMax0P.Text = "100";
+            // 
+            // lblMax0M
+            // 
+            this.lblMax0M.AutoSize = true;
+            this.lblMax0M.Location = new System.Drawing.Point(305, 6);
+            this.lblMax0M.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMax0M.Name = "lblMax0M";
+            this.lblMax0M.Size = new System.Drawing.Size(32, 17);
+            this.lblMax0M.TabIndex = 227;
+            this.lblMax0M.Text = "100";
+            // 
+            // label150
+            // 
+            this.label150.AutoSize = true;
+            this.label150.Location = new System.Drawing.Point(231, 199);
+            this.label150.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label150.Name = "label150";
+            this.label150.Size = new System.Drawing.Size(30, 17);
+            this.label150.TabIndex = 226;
+            this.label150.Text = "min";
+            // 
+            // label151
+            // 
+            this.label151.AutoSize = true;
+            this.label151.Location = new System.Drawing.Point(231, 89);
+            this.label151.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(30, 17);
+            this.label151.TabIndex = 225;
+            this.label151.Text = "min";
+            // 
+            // label152
+            // 
+            this.label152.AutoSize = true;
+            this.label152.Location = new System.Drawing.Point(227, 155);
+            this.label152.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label152.Name = "label152";
+            this.label152.Size = new System.Drawing.Size(33, 17);
+            this.label152.TabIndex = 224;
+            this.label152.Text = "max";
+            // 
+            // label153
+            // 
+            this.label153.AutoSize = true;
+            this.label153.Location = new System.Drawing.Point(227, 43);
+            this.label153.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label153.Name = "label153";
+            this.label153.Size = new System.Drawing.Size(33, 17);
+            this.label153.TabIndex = 223;
+            this.label153.Text = "max";
+            // 
+            // label154
+            // 
+            this.label154.AutoSize = true;
+            this.label154.Location = new System.Drawing.Point(207, 118);
+            this.label154.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label154.Name = "label154";
+            this.label154.Size = new System.Drawing.Size(49, 17);
+            this.label154.TabIndex = 222;
+            this.label154.Text = "Use at";
+            // 
+            // label155
+            // 
+            this.label155.AutoSize = true;
+            this.label155.Location = new System.Drawing.Point(207, 6);
+            this.label155.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label155.Name = "label155";
+            this.label155.Size = new System.Drawing.Size(49, 17);
+            this.label155.TabIndex = 221;
+            this.label155.Text = "Use at";
+            // 
+            // label156
+            // 
+            this.label156.AutoSize = true;
+            this.label156.Location = new System.Drawing.Point(27, 145);
+            this.label156.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label156.Name = "label156";
+            this.label156.Size = new System.Drawing.Size(70, 17);
+            this.label156.TabIndex = 218;
+            this.label156.Text = "Cast time:";
+            // 
+            // label157
+            // 
+            this.label157.AutoSize = true;
+            this.label157.Location = new System.Drawing.Point(23, 94);
+            this.label157.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label157.Name = "label157";
+            this.label157.Size = new System.Drawing.Size(113, 17);
+            this.label157.TabIndex = 215;
+            this.label157.Text = "Time until reuse:";
+            // 
+            // tbMin0P
+            // 
+            this.tbMin0P.AutoSize = false;
+            this.tbMin0P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin0P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin0P.Location = new System.Drawing.Point(295, 187);
+            this.tbMin0P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin0P.Maximum = 100;
+            this.tbMin0P.Name = "tbMin0P";
+            this.tbMin0P.Size = new System.Drawing.Size(312, 38);
+            this.tbMin0P.TabIndex = 230;
+            this.tbMin0P.TickFrequency = 10;
+            this.tbMin0P.Value = global::FloBot.Properties.Settings.Default.tbMin0P;
+            this.tbMin0P.Scroll += new System.EventHandler(this.tbMin0P_Scroll);
+            // 
+            // tbMin0M
+            // 
+            this.tbMin0M.AutoSize = false;
+            this.tbMin0M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin0M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin0M.Location = new System.Drawing.Point(295, 75);
+            this.tbMin0M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMin0M.Maximum = 100;
+            this.tbMin0M.Name = "tbMin0M";
+            this.tbMin0M.Size = new System.Drawing.Size(312, 38);
+            this.tbMin0M.TabIndex = 229;
+            this.tbMin0M.TickFrequency = 10;
+            this.tbMin0M.Value = global::FloBot.Properties.Settings.Default.tbMin0M;
+            this.tbMin0M.Scroll += new System.EventHandler(this.tbMin0M_Scroll);
+            // 
+            // tbMax0P
+            // 
+            this.tbMax0P.AutoSize = false;
+            this.tbMax0P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax0P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax0P.Location = new System.Drawing.Point(295, 150);
+            this.tbMax0P.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax0P.Maximum = 100;
+            this.tbMax0P.Name = "tbMax0P";
+            this.tbMax0P.Size = new System.Drawing.Size(312, 38);
+            this.tbMax0P.TabIndex = 220;
+            this.tbMax0P.TickFrequency = 10;
+            this.tbMax0P.Value = global::FloBot.Properties.Settings.Default.tbMax0P;
+            this.tbMax0P.Scroll += new System.EventHandler(this.tbMax0P_Scroll);
+            // 
+            // tbMax0M
+            // 
+            this.tbMax0M.AutoSize = false;
+            this.tbMax0M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax0M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax0M.Location = new System.Drawing.Point(295, 38);
+            this.tbMax0M.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMax0M.Maximum = 100;
+            this.tbMax0M.Name = "tbMax0M";
+            this.tbMax0M.Size = new System.Drawing.Size(312, 38);
+            this.tbMax0M.TabIndex = 219;
+            this.tbMax0M.TickFrequency = 10;
+            this.tbMax0M.Value = global::FloBot.Properties.Settings.Default.tbMax0M;
+            this.tbMax0M.Scroll += new System.EventHandler(this.tbMax0M_Scroll);
+            // 
+            // tbCast0
+            // 
+            this.tbCast0.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast0.Location = new System.Drawing.Point(31, 165);
+            this.tbCast0.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCast0.Name = "tbCast0";
+            this.tbCast0.Size = new System.Drawing.Size(132, 22);
+            this.tbCast0.TabIndex = 217;
+            this.tbCast0.Text = global::FloBot.Properties.Settings.Default.tbCast0;
+            this.tbCast0.TextChanged += new System.EventHandler(this.tbCast0_TextChanged);
+            // 
+            // tbDelay0
+            // 
+            this.tbDelay0.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbReuse0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay0.Location = new System.Drawing.Point(31, 112);
+            this.tbDelay0.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDelay0.Name = "tbDelay0";
+            this.tbDelay0.Size = new System.Drawing.Size(132, 22);
+            this.tbDelay0.TabIndex = 216;
+            this.tbDelay0.Text = global::FloBot.Properties.Settings.Default.tbReuse0;
+            this.tbDelay0.TextChanged += new System.EventHandler(this.tbDelay0_TextChanged);
+            // 
+            // cbUseSkill0
+            // 
+            this.cbUseSkill0.AutoSize = true;
+            this.cbUseSkill0.Checked = global::FloBot.Properties.Settings.Default.cbUse0;
+            this.cbUseSkill0.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill0.Location = new System.Drawing.Point(4, 4);
+            this.cbUseSkill0.Margin = new System.Windows.Forms.Padding(4);
+            this.cbUseSkill0.Name = "cbUseSkill0";
+            this.cbUseSkill0.Size = new System.Drawing.Size(55, 21);
+            this.cbUseSkill0.TabIndex = 214;
+            this.cbUseSkill0.Text = "Use";
+            this.cbUseSkill0.UseVisualStyleBackColor = true;
+            this.cbUseSkill0.CheckedChanged += new System.EventHandler(this.cbUseSkill0_CheckedChanged);
+            // 
+            // rbAtt0
+            // 
+            this.rbAtt0.AutoSize = true;
+            this.rbAtt0.Checked = global::FloBot.Properties.Settings.Default.rbAtt0;
+            this.rbAtt0.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt0.Location = new System.Drawing.Point(25, 62);
+            this.rbAtt0.Margin = new System.Windows.Forms.Padding(4);
+            this.rbAtt0.Name = "rbAtt0";
+            this.rbAtt0.Size = new System.Drawing.Size(97, 21);
+            this.rbAtt0.TabIndex = 213;
+            this.rbAtt0.TabStop = true;
+            this.rbAtt0.Text = "Attack Skill";
+            this.rbAtt0.UseVisualStyleBackColor = true;
+            this.rbAtt0.CheckedChanged += new System.EventHandler(this.rbAtt0_CheckedChanged);
+            // 
+            // rbBuff0
+            // 
+            this.rbBuff0.AutoSize = true;
+            this.rbBuff0.Checked = global::FloBot.Properties.Settings.Default.rbBuff0;
+            this.rbBuff0.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff0.Location = new System.Drawing.Point(25, 32);
+            this.rbBuff0.Margin = new System.Windows.Forms.Padding(4);
+            this.rbBuff0.Name = "rbBuff0";
+            this.rbBuff0.Size = new System.Drawing.Size(81, 21);
+            this.rbBuff0.TabIndex = 212;
+            this.rbBuff0.Text = "Buff skill";
+            this.rbBuff0.UseVisualStyleBackColor = true;
+            this.rbBuff0.CheckedChanged += new System.EventHandler(this.rbBuff0_CheckedChanged);
             // 
             // label19
             // 
@@ -4115,7 +4474,7 @@
             this.Controls.Add(this.lblGameFound);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mainForm";
-            this.Text = "mainForm";
+            this.Text = "Google Chrome";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_Closing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
@@ -4189,6 +4548,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbMin9M)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax9P)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax9M)).EndInit();
+            this.tp0.ResumeLayout(false);
+            this.tp0.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrio0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin0P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMin0M)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax0P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMax0M)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmMP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbRestMP)).EndInit();
@@ -4509,6 +4875,33 @@
         public System.Windows.Forms.CheckBox cbUseSkill9;
         public System.Windows.Forms.RadioButton rbAtt9;
         public System.Windows.Forms.RadioButton rbBuff9;
+        private System.Windows.Forms.NumericUpDown nudPrio0;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label107;
+        private System.Windows.Forms.Label lblMin0P;
+        private System.Windows.Forms.Label lblMin0M;
+        private System.Windows.Forms.Label label146;
+        private System.Windows.Forms.Label label147;
+        private System.Windows.Forms.Label lblMax0P;
+        private System.Windows.Forms.Label lblMax0M;
+        private System.Windows.Forms.Label label150;
+        private System.Windows.Forms.Label label151;
+        private System.Windows.Forms.Label label152;
+        private System.Windows.Forms.Label label153;
+        private System.Windows.Forms.Label label154;
+        private System.Windows.Forms.Label label155;
+        private System.Windows.Forms.Label label156;
+        private System.Windows.Forms.Label label157;
+        public System.Windows.Forms.TrackBar tbMin0P;
+        public System.Windows.Forms.TrackBar tbMax0P;
+        public System.Windows.Forms.TrackBar tbMax0M;
+        public System.Windows.Forms.TextBox tbCast0;
+        public System.Windows.Forms.TextBox tbDelay0;
+        public System.Windows.Forms.CheckBox cbUseSkill0;
+        public System.Windows.Forms.RadioButton rbAtt0;
+        public System.Windows.Forms.RadioButton rbBuff0;
+        public System.Windows.Forms.TrackBar tbMin0M;
     }
 }
 
