@@ -43,16 +43,14 @@ namespace FloBot.State
             */
             new BuffMyselfTask().doTask(main_form, mc, player);
 
-            if (main_form.cbEnableCombatState.Checked)
-            {
 
-                if (main_form.cbAutoTarget.Checked)
-                    new FocusTargetTask().doTask(main_form, mc, player);
+            if (main_form.cbAutoTarget.Checked)
+                new FocusTargetTask().doTask(main_form, mc, player);
 
-                Thread.Sleep(100);
-                if (main_form.cbAutoBattle.Checked)
-                    return new CombatState();
-            }
+            Thread.Sleep(100);
+            if (main_form.cbAutoBattle.Checked)
+                return new CombatState();
+            
                 
 
             return new IdleState();
