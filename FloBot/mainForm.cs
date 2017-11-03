@@ -219,19 +219,19 @@ namespace FloBot
 
         private void rbBuff8_Changed(object sender, EventArgs e)
         {
-            lblMax6M.Text = tbMax6M.Value + "%";
-            lblMin6M.Text = tbMin6M.Value + "%";
-            lblMax6P.Text = tbMax6P.Value + "%";
-            lblMin6P.Text = tbMin6P.Value + "%";
-            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad6, 0, 0, 0, 0, 0));
-            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad6, 0, 0, 0, 0, 0));
+            lblMax8M.Text = tbMax8M.Value + "%";
+            lblMin8M.Text = tbMin8M.Value + "%";
+            lblMax8P.Text = tbMax8P.Value + "%";
+            lblMin8P.Text = tbMin8P.Value + "%";
+            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad8, 0, 0, 0, 0, 0));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad8, 0, 0, 0, 0, 0));
 
-            if (cbUseSkill6.Checked)
+            if (cbUseSkill8.Checked)
             {
-                if (rbBuff6.Checked)
-                    player.addElement(player.BuffArray, new Skill(tbDelay6.Text, tbCast6.Text, Keys.NumPad6, tbMax6M.Value, tbMin6M.Value, tbMax6P.Value, tbMin6P.Value, (int)nudPrio6.Value));
-                if (rbAtt6.Checked)
-                    player.addElement(player.AttArray, new Skill(tbDelay6.Text, tbCast6.Text, Keys.NumPad6, tbMax6M.Value, tbMin6M.Value, tbMax6P.Value, tbMin6P.Value, (int)nudPrio6.Value));
+                if (rbBuff8.Checked)
+                    player.addElement(player.BuffArray, new Skill(tbDelay8.Text, tbCast8.Text, Keys.NumPad8, tbMax8M.Value, tbMin8M.Value, tbMax8P.Value, tbMin8P.Value, (int)nudPrio8.Value));
+                if (rbAtt8.Checked)
+                    player.addElement(player.AttArray, new Skill(tbDelay8.Text, tbCast8.Text, Keys.NumPad8, tbMax8M.Value, tbMin8M.Value, tbMax8P.Value, tbMin8P.Value, (int)nudPrio8.Value));
             }
         }
 
@@ -489,6 +489,111 @@ namespace FloBot
         private void tbMin6P_Scroll(object sender, EventArgs e)
         {
             rbBuff6_Changed(null, null);
+        }
+
+        private void tp7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbUseSkill7_CheckedChanged(object sender, EventArgs e)
+        {
+            rbBuff7_Changed(null, null);
+        }
+
+        private void rbBuff7_CheckedChanged(object sender, EventArgs e)
+        {
+            rbBuff7_Changed(null, null);
+        }
+
+        private void rbAtt7_CheckedChanged(object sender, EventArgs e)
+        {
+            rbBuff7_Changed(null, null);
+        }
+
+        private void tbDelay7_TextChanged(object sender, EventArgs e)
+        {
+            rbBuff7_Changed(null, null);
+        }
+
+        private void tbCast7_TextChanged(object sender, EventArgs e)
+        {
+            rbBuff7_Changed(null, null);
+        }
+
+        private void nudPrio7_ValueChanged(object sender, EventArgs e)
+        {
+            rbBuff7_Changed(null, null);
+        }
+
+        private void tbMax7M_Scroll(object sender, EventArgs e)
+        {
+            rbBuff7_Changed(null, null);
+        }
+
+        private void tbMin7M_Scroll(object sender, EventArgs e)
+        {
+            rbBuff7_Changed(null, null);
+        }
+
+        private void tbMax7P_Scroll(object sender, EventArgs e)
+        {
+            rbBuff7_Changed(null, null);
+        }
+
+        private void tbMin7P_Scroll(object sender, EventArgs e)
+        {
+            rbBuff7_Changed(null, null);
+        }
+
+        private void cbUseSkill8_CheckedChanged(object sender, EventArgs e)
+        {
+            rbBuff8_Changed(null, null);
+        }
+
+        private void rbBuff8_CheckedChanged(object sender, EventArgs e)
+        {
+            rbBuff8_Changed(null, null);
+        }
+
+        private void rbAtt8_CheckedChanged(object sender, EventArgs e)
+        {
+            rbBuff8_Changed(null, null);
+        }
+
+        private void tbDelay8_TextChanged(object sender, EventArgs e)
+        {
+            rbBuff8_Changed(null, null);
+        }
+
+        private void tbCast8_TextChanged(object sender, EventArgs e)
+        {
+            rbBuff8_Changed(null, null);
+        }
+
+        private void nudPrio8_ValueChanged(object sender, EventArgs e)
+        {
+            rbBuff8_Changed(null, null);
+        }
+
+        private void tbMax8M_Scroll(object sender, EventArgs e)
+        {
+            rbBuff8_Changed(null, null);
+        }
+
+        private void tbMin8M_Scroll(object sender, EventArgs e)
+        {
+            rbBuff8_Changed(null, null);
+        }
+
+        private void tbMax8P_Scroll(object sender, EventArgs e)
+        {
+            rbBuff8_Changed(null, null);
+        }
+
+        private void tbMin8P_Scroll(object sender, EventArgs e)
+        {
+            rbBuff8_Changed(null, null);
         }
     }
 }
