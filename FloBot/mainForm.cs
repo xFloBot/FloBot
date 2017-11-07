@@ -56,7 +56,7 @@ namespace FloBot
         private void Form1_Closing(object sender, EventArgs e)
         {
             machine.endBotThread();
-            Properties.Settings.Default.Save();
+            googleChrome.Properties.Settings.Default.Save();
         }
 
         private void tbRestHP_Scroll(object sender, EventArgs e)

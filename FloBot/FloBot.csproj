@@ -7,8 +7,8 @@
     <ProjectGuid>{6EC66DB0-A234-4635-8D0F-E886018B34CB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FloBot</RootNamespace>
-    <AssemblyName>FloBot</AssemblyName>
+    <RootNamespace>googleChrome</RootNamespace>
+    <AssemblyName>googleChrome</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

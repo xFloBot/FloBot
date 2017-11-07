@@ -24,7 +24,7 @@ namespace FloBot.Tasks
             while(player.PlayerCurrentHP <= 0 && player.PlayerName.Length >= 3)
             {
                 
-                mc.sendLeftClick(mc.getPixelsByPercent(50, 50));
+                mc.sendLeftClick(mc.getPixelsByPercent(50, 50),mc.getPixelsByPercent(50,50));
                 Thread.Sleep(100);
             }
             player.Resting = false;

@@ -23,6 +23,11 @@ namespace FloBot.State
             Thread.Sleep(100);
             if( main_form.cbEnableCombatState.Checked &&  !player.PlayerName.Equals("") )
                 return new PreCombatState();
+
+            new UpdateCharInfoTask().doTask(main_form, player);
+
+            new UpdateTargetInfo().doTask(main_form, player);
+
             return new IdleState();
         }
          

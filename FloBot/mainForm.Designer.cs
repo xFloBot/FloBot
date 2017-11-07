@@ -858,13 +858,13 @@
             // 
             // tbNotRevivePercent
             // 
-            this.tbNotRevivePercent.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbRevivePercent", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbNotRevivePercent.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbRevivePercent", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbNotRevivePercent.Location = new System.Drawing.Point(159, 277);
             this.tbNotRevivePercent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbNotRevivePercent.Name = "tbNotRevivePercent";
             this.tbNotRevivePercent.Size = new System.Drawing.Size(100, 22);
             this.tbNotRevivePercent.TabIndex = 14;
-            this.tbNotRevivePercent.Text = global::FloBot.Properties.Settings.Default.tbRevivePercent;
+            this.tbNotRevivePercent.Text = global::googleChrome.Properties.Settings.Default.tbRevivePercent;
             // 
             // lblDeathDate
             // 
@@ -903,8 +903,8 @@
             // cbAutoTarget
             // 
             this.cbAutoTarget.AutoSize = true;
-            this.cbAutoTarget.Checked = global::FloBot.Properties.Settings.Default.cbAutoTarget;
-            this.cbAutoTarget.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoTarget", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbAutoTarget.Checked = global::googleChrome.Properties.Settings.Default.cbAutoTarget;
+            this.cbAutoTarget.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbAutoTarget", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbAutoTarget.Location = new System.Drawing.Point(27, 74);
             this.cbAutoTarget.Margin = new System.Windows.Forms.Padding(4);
             this.cbAutoTarget.Name = "cbAutoTarget";
@@ -916,8 +916,8 @@
             // cbAutoLoot
             // 
             this.cbAutoLoot.AutoSize = true;
-            this.cbAutoLoot.Checked = global::FloBot.Properties.Settings.Default.cbAutoLoot;
-            this.cbAutoLoot.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoLoot", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbAutoLoot.Checked = global::googleChrome.Properties.Settings.Default.cbAutoLoot;
+            this.cbAutoLoot.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbAutoLoot", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbAutoLoot.Location = new System.Drawing.Point(27, 206);
             this.cbAutoLoot.Margin = new System.Windows.Forms.Padding(4);
             this.cbAutoLoot.Name = "cbAutoLoot";
@@ -930,8 +930,8 @@
             // cbAutoBattle
             // 
             this.cbAutoBattle.AutoSize = true;
-            this.cbAutoBattle.Checked = global::FloBot.Properties.Settings.Default.cbAutoAttack;
-            this.cbAutoBattle.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbAutoAttack", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbAutoBattle.Checked = global::googleChrome.Properties.Settings.Default.cbAutoAttack;
+            this.cbAutoBattle.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbAutoAttack", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbAutoBattle.Location = new System.Drawing.Point(27, 174);
             this.cbAutoBattle.Margin = new System.Windows.Forms.Padding(4);
             this.cbAutoBattle.Name = "cbAutoBattle";
@@ -942,13 +942,13 @@
             // 
             // tbLvLRange
             // 
-            this.tbLvLRange.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "maxLevelDif", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbLvLRange.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "maxLevelDif", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbLvLRange.Location = new System.Drawing.Point(51, 123);
             this.tbLvLRange.Margin = new System.Windows.Forms.Padding(4);
             this.tbLvLRange.Name = "tbLvLRange";
             this.tbLvLRange.Size = new System.Drawing.Size(132, 22);
             this.tbLvLRange.TabIndex = 6;
-            this.tbLvLRange.Text = global::FloBot.Properties.Settings.Default.maxLevelDif;
+            this.tbLvLRange.Text = global::googleChrome.Properties.Settings.Default.maxLevelDif;
             // 
             // tbHotkeys
             // 
@@ -1009,13 +1009,13 @@
             // 
             // nudPrio1
             // 
-            this.nudPrio1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "nudPrio1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio1.Location = new System.Drawing.Point(35, 220);
             this.nudPrio1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudPrio1.Name = "nudPrio1";
             this.nudPrio1.Size = new System.Drawing.Size(120, 22);
             this.nudPrio1.TabIndex = 22;
-            this.nudPrio1.Value = global::FloBot.Properties.Settings.Default.nudPrio1;
+            this.nudPrio1.Value = global::googleChrome.Properties.Settings.Default.nudPrio1;
             this.nudPrio1.ValueChanged += new System.EventHandler(this.rbBuff1_Changed);
             // 
             // label64
@@ -1048,7 +1048,7 @@
             // tbMin1P
             // 
             this.tbMin1P.AutoSize = false;
-            this.tbMin1P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin1P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin1P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin1P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin1P.Location = new System.Drawing.Point(295, 187);
             this.tbMin1P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin1P.Maximum = 100;
@@ -1056,13 +1056,13 @@
             this.tbMin1P.Size = new System.Drawing.Size(312, 38);
             this.tbMin1P.TabIndex = 17;
             this.tbMin1P.TickFrequency = 10;
-            this.tbMin1P.Value = global::FloBot.Properties.Settings.Default.tbMin1P;
+            this.tbMin1P.Value = global::googleChrome.Properties.Settings.Default.tbMin1P;
             this.tbMin1P.Scroll += new System.EventHandler(this.rbBuff1_Changed);
             // 
             // tbMin1M
             // 
             this.tbMin1M.AutoSize = false;
-            this.tbMin1M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin1M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin1M.Location = new System.Drawing.Point(295, 75);
             this.tbMin1M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin1M.Maximum = 100;
@@ -1070,7 +1070,7 @@
             this.tbMin1M.Size = new System.Drawing.Size(312, 38);
             this.tbMin1M.TabIndex = 17;
             this.tbMin1M.TickFrequency = 10;
-            this.tbMin1M.Value = global::FloBot.Properties.Settings.Default.tbMin1;
+            this.tbMin1M.Value = global::googleChrome.Properties.Settings.Default.tbMin1;
             this.tbMin1M.Scroll += new System.EventHandler(this.rbBuff1_Changed);
             // 
             // lblMin1P
@@ -1186,7 +1186,7 @@
             // tbMax1P
             // 
             this.tbMax1P.AutoSize = false;
-            this.tbMax1P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax1P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax1P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax1P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax1P.Location = new System.Drawing.Point(295, 150);
             this.tbMax1P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax1P.Maximum = 100;
@@ -1194,7 +1194,7 @@
             this.tbMax1P.Size = new System.Drawing.Size(312, 38);
             this.tbMax1P.TabIndex = 12;
             this.tbMax1P.TickFrequency = 10;
-            this.tbMax1P.Value = global::FloBot.Properties.Settings.Default.tbMax1P;
+            this.tbMax1P.Value = global::googleChrome.Properties.Settings.Default.tbMax1P;
             this.tbMax1P.Scroll += new System.EventHandler(this.rbBuff1_Changed);
             // 
             // label39
@@ -1210,7 +1210,7 @@
             // tbMax1M
             // 
             this.tbMax1M.AutoSize = false;
-            this.tbMax1M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax1M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax1M.Location = new System.Drawing.Point(295, 38);
             this.tbMax1M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax1M.Maximum = 100;
@@ -1218,7 +1218,7 @@
             this.tbMax1M.Size = new System.Drawing.Size(312, 38);
             this.tbMax1M.TabIndex = 12;
             this.tbMax1M.TickFrequency = 10;
-            this.tbMax1M.Value = global::FloBot.Properties.Settings.Default.tbMax1;
+            this.tbMax1M.Value = global::googleChrome.Properties.Settings.Default.tbMax1;
             this.tbMax1M.Scroll += new System.EventHandler(this.rbBuff1_Changed);
             // 
             // label21
@@ -1233,24 +1233,24 @@
             // 
             // tbCast1
             // 
-            this.tbCast1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCastSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbCastSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast1.Location = new System.Drawing.Point(31, 165);
             this.tbCast1.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast1.Name = "tbCast1";
             this.tbCast1.Size = new System.Drawing.Size(132, 22);
             this.tbCast1.TabIndex = 4;
-            this.tbCast1.Text = global::FloBot.Properties.Settings.Default.tbCastSkill1;
+            this.tbCast1.Text = global::googleChrome.Properties.Settings.Default.tbCastSkill1;
             this.tbCast1.TextChanged += new System.EventHandler(this.rbBuff1_Changed);
             // 
             // tbDelay1
             // 
-            this.tbDelay1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelaySkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbDelaySkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay1.Location = new System.Drawing.Point(31, 112);
             this.tbDelay1.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay1.Name = "tbDelay1";
             this.tbDelay1.Size = new System.Drawing.Size(132, 22);
             this.tbDelay1.TabIndex = 4;
-            this.tbDelay1.Text = global::FloBot.Properties.Settings.Default.tbDelaySkill1;
+            this.tbDelay1.Text = global::googleChrome.Properties.Settings.Default.tbDelaySkill1;
             this.tbDelay1.TextChanged += new System.EventHandler(this.rbBuff1_Changed);
             // 
             // label20
@@ -1266,8 +1266,8 @@
             // cbUseSkill1
             // 
             this.cbUseSkill1.AutoSize = true;
-            this.cbUseSkill1.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill1;
-            this.cbUseSkill1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill1.Checked = global::googleChrome.Properties.Settings.Default.cbUseSkill1;
+            this.cbUseSkill1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbUseSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill1.Location = new System.Drawing.Point(4, 4);
             this.cbUseSkill1.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill1.Name = "cbUseSkill1";
@@ -1280,8 +1280,8 @@
             // rbAtt1
             // 
             this.rbAtt1.AutoSize = true;
-            this.rbAtt1.Checked = global::FloBot.Properties.Settings.Default.rbAttackSkill1;
-            this.rbAtt1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAttackSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt1.Checked = global::googleChrome.Properties.Settings.Default.rbAttackSkill1;
+            this.rbAtt1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbAttackSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt1.Location = new System.Drawing.Point(25, 62);
             this.rbAtt1.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt1.Name = "rbAtt1";
@@ -1295,8 +1295,8 @@
             // rbBuff1
             // 
             this.rbBuff1.AutoSize = true;
-            this.rbBuff1.Checked = global::FloBot.Properties.Settings.Default.rbBuffSkill1;
-            this.rbBuff1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuffSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff1.Checked = global::googleChrome.Properties.Settings.Default.rbBuffSkill1;
+            this.rbBuff1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbBuffSkill1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff1.Location = new System.Drawing.Point(25, 32);
             this.rbBuff1.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff1.Name = "rbBuff1";
@@ -1346,13 +1346,13 @@
             // 
             // nudPrio2
             // 
-            this.nudPrio2.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio2.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "nudPrio2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio2.Location = new System.Drawing.Point(35, 220);
             this.nudPrio2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudPrio2.Name = "nudPrio2";
             this.nudPrio2.Size = new System.Drawing.Size(120, 22);
             this.nudPrio2.TabIndex = 49;
-            this.nudPrio2.Value = global::FloBot.Properties.Settings.Default.nudPrio2;
+            this.nudPrio2.Value = global::googleChrome.Properties.Settings.Default.nudPrio2;
             this.nudPrio2.ValueChanged += new System.EventHandler(this.rbBuff2_Changed);
             // 
             // label22
@@ -1525,7 +1525,7 @@
             // tbMin2P
             // 
             this.tbMin2P.AutoSize = false;
-            this.tbMin2P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin2P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin2P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin2P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin2P.Location = new System.Drawing.Point(295, 187);
             this.tbMin2P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin2P.Maximum = 100;
@@ -1533,13 +1533,13 @@
             this.tbMin2P.Size = new System.Drawing.Size(312, 38);
             this.tbMin2P.TabIndex = 41;
             this.tbMin2P.TickFrequency = 10;
-            this.tbMin2P.Value = global::FloBot.Properties.Settings.Default.tbMin2P;
+            this.tbMin2P.Value = global::googleChrome.Properties.Settings.Default.tbMin2P;
             this.tbMin2P.Scroll += new System.EventHandler(this.rbBuff2_Changed);
             // 
             // tbMin2M
             // 
             this.tbMin2M.AutoSize = false;
-            this.tbMin2M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin2M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin2M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin2M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin2M.Location = new System.Drawing.Point(295, 75);
             this.tbMin2M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin2M.Maximum = 100;
@@ -1547,13 +1547,13 @@
             this.tbMin2M.Size = new System.Drawing.Size(312, 38);
             this.tbMin2M.TabIndex = 40;
             this.tbMin2M.TickFrequency = 10;
-            this.tbMin2M.Value = global::FloBot.Properties.Settings.Default.tbMin2M;
+            this.tbMin2M.Value = global::googleChrome.Properties.Settings.Default.tbMin2M;
             this.tbMin2M.Scroll += new System.EventHandler(this.rbBuff2_Changed);
             // 
             // tbMax2P
             // 
             this.tbMax2P.AutoSize = false;
-            this.tbMax2P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax2P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax2P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax2P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax2P.Location = new System.Drawing.Point(295, 150);
             this.tbMax2P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax2P.Maximum = 100;
@@ -1561,13 +1561,13 @@
             this.tbMax2P.Size = new System.Drawing.Size(312, 38);
             this.tbMax2P.TabIndex = 31;
             this.tbMax2P.TickFrequency = 10;
-            this.tbMax2P.Value = global::FloBot.Properties.Settings.Default.tbMax2P;
+            this.tbMax2P.Value = global::googleChrome.Properties.Settings.Default.tbMax2P;
             this.tbMax2P.Scroll += new System.EventHandler(this.rbBuff2_Changed);
             // 
             // tbMax2M
             // 
             this.tbMax2M.AutoSize = false;
-            this.tbMax2M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax2M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax3M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax2M.Location = new System.Drawing.Point(295, 38);
             this.tbMax2M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax2M.Maximum = 100;
@@ -1575,34 +1575,34 @@
             this.tbMax2M.Size = new System.Drawing.Size(312, 38);
             this.tbMax2M.TabIndex = 30;
             this.tbMax2M.TickFrequency = 10;
-            this.tbMax2M.Value = global::FloBot.Properties.Settings.Default.tbMax3M;
+            this.tbMax2M.Value = global::googleChrome.Properties.Settings.Default.tbMax3M;
             this.tbMax2M.Scroll += new System.EventHandler(this.rbBuff2_Changed);
             // 
             // tbCast2
             // 
-            this.tbCast2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbCast2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast2.Location = new System.Drawing.Point(31, 165);
             this.tbCast2.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast2.Name = "tbCast2";
             this.tbCast2.Size = new System.Drawing.Size(132, 22);
             this.tbCast2.TabIndex = 28;
-            this.tbCast2.Text = global::FloBot.Properties.Settings.Default.tbCast2;
+            this.tbCast2.Text = global::googleChrome.Properties.Settings.Default.tbCast2;
             // 
             // tbDelay2
             // 
-            this.tbDelay2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbDelay2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay2.Location = new System.Drawing.Point(31, 112);
             this.tbDelay2.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay2.Name = "tbDelay2";
             this.tbDelay2.Size = new System.Drawing.Size(132, 22);
             this.tbDelay2.TabIndex = 27;
-            this.tbDelay2.Text = global::FloBot.Properties.Settings.Default.tbDelay2;
+            this.tbDelay2.Text = global::googleChrome.Properties.Settings.Default.tbDelay2;
             // 
             // cbUseSkill2
             // 
             this.cbUseSkill2.AutoSize = true;
-            this.cbUseSkill2.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill2;
-            this.cbUseSkill2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill2.Checked = global::googleChrome.Properties.Settings.Default.cbUseSkill2;
+            this.cbUseSkill2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbUseSkill2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill2.Location = new System.Drawing.Point(4, 4);
             this.cbUseSkill2.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill2.Name = "cbUseSkill2";
@@ -1615,8 +1615,8 @@
             // rbAtt2
             // 
             this.rbAtt2.AutoSize = true;
-            this.rbAtt2.Checked = global::FloBot.Properties.Settings.Default.rbAtt2;
-            this.rbAtt2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt2.Checked = global::googleChrome.Properties.Settings.Default.rbAtt2;
+            this.rbAtt2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbAtt2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt2.Location = new System.Drawing.Point(25, 62);
             this.rbAtt2.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt2.Name = "rbAtt2";
@@ -1630,8 +1630,8 @@
             // rbBuff2
             // 
             this.rbBuff2.AutoSize = true;
-            this.rbBuff2.Checked = global::FloBot.Properties.Settings.Default.rbBuff2;
-            this.rbBuff2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff2.Checked = global::googleChrome.Properties.Settings.Default.rbBuff2;
+            this.rbBuff2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbBuff2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff2.Location = new System.Drawing.Point(25, 32);
             this.rbBuff2.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff2.Name = "rbBuff2";
@@ -1680,13 +1680,13 @@
             // 
             // nudPrio3
             // 
-            this.nudPrio3.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio3.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "nudPrio3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio3.Location = new System.Drawing.Point(35, 220);
             this.nudPrio3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudPrio3.Name = "nudPrio3";
             this.nudPrio3.Size = new System.Drawing.Size(120, 22);
             this.nudPrio3.TabIndex = 49;
-            this.nudPrio3.Value = global::FloBot.Properties.Settings.Default.nudPrio3;
+            this.nudPrio3.Value = global::googleChrome.Properties.Settings.Default.nudPrio3;
             this.nudPrio3.ValueChanged += new System.EventHandler(this.rbBuff3_Changed);
             // 
             // label24
@@ -1859,7 +1859,7 @@
             // tbMin3P
             // 
             this.tbMin3P.AutoSize = false;
-            this.tbMin3P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin3P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin3P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin3P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin3P.Location = new System.Drawing.Point(295, 187);
             this.tbMin3P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin3P.Maximum = 100;
@@ -1867,13 +1867,13 @@
             this.tbMin3P.Size = new System.Drawing.Size(312, 38);
             this.tbMin3P.TabIndex = 41;
             this.tbMin3P.TickFrequency = 10;
-            this.tbMin3P.Value = global::FloBot.Properties.Settings.Default.tbMin3P;
+            this.tbMin3P.Value = global::googleChrome.Properties.Settings.Default.tbMin3P;
             this.tbMin3P.Scroll += new System.EventHandler(this.rbBuff3_Changed);
             // 
             // tbMin3M
             // 
             this.tbMin3M.AutoSize = false;
-            this.tbMin3M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin3M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin3M.Location = new System.Drawing.Point(295, 75);
             this.tbMin3M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin3M.Maximum = 100;
@@ -1881,13 +1881,13 @@
             this.tbMin3M.Size = new System.Drawing.Size(312, 38);
             this.tbMin3M.TabIndex = 40;
             this.tbMin3M.TickFrequency = 10;
-            this.tbMin3M.Value = global::FloBot.Properties.Settings.Default.tbMin3;
+            this.tbMin3M.Value = global::googleChrome.Properties.Settings.Default.tbMin3;
             this.tbMin3M.Scroll += new System.EventHandler(this.rbBuff3_Changed);
             // 
             // tbMax3P
             // 
             this.tbMax3P.AutoSize = false;
-            this.tbMax3P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax3P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax3P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax3P.Location = new System.Drawing.Point(295, 150);
             this.tbMax3P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax3P.Maximum = 100;
@@ -1895,13 +1895,13 @@
             this.tbMax3P.Size = new System.Drawing.Size(312, 38);
             this.tbMax3P.TabIndex = 31;
             this.tbMax3P.TickFrequency = 10;
-            this.tbMax3P.Value = global::FloBot.Properties.Settings.Default.tbMax3P;
+            this.tbMax3P.Value = global::googleChrome.Properties.Settings.Default.tbMax3P;
             this.tbMax3P.Scroll += new System.EventHandler(this.rbBuff3_Changed);
             // 
             // tbMax3M
             // 
             this.tbMax3M.AutoSize = false;
-            this.tbMax3M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax3M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax3M.Location = new System.Drawing.Point(295, 38);
             this.tbMax3M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax3M.Maximum = 100;
@@ -1909,36 +1909,36 @@
             this.tbMax3M.Size = new System.Drawing.Size(312, 38);
             this.tbMax3M.TabIndex = 30;
             this.tbMax3M.TickFrequency = 10;
-            this.tbMax3M.Value = global::FloBot.Properties.Settings.Default.tbMax3;
+            this.tbMax3M.Value = global::googleChrome.Properties.Settings.Default.tbMax3;
             this.tbMax3M.Scroll += new System.EventHandler(this.rbBuff3_Changed);
             // 
             // tbCast3
             // 
-            this.tbCast3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbCast3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast3.Location = new System.Drawing.Point(31, 165);
             this.tbCast3.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast3.Name = "tbCast3";
             this.tbCast3.Size = new System.Drawing.Size(132, 22);
             this.tbCast3.TabIndex = 28;
-            this.tbCast3.Text = global::FloBot.Properties.Settings.Default.tbCast3;
+            this.tbCast3.Text = global::googleChrome.Properties.Settings.Default.tbCast3;
             this.tbCast3.TextChanged += new System.EventHandler(this.rbBuff3_Changed);
             // 
             // tbDelay3
             // 
-            this.tbDelay3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbDelay3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay3.Location = new System.Drawing.Point(31, 112);
             this.tbDelay3.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay3.Name = "tbDelay3";
             this.tbDelay3.Size = new System.Drawing.Size(132, 22);
             this.tbDelay3.TabIndex = 27;
-            this.tbDelay3.Text = global::FloBot.Properties.Settings.Default.tbDelay3;
+            this.tbDelay3.Text = global::googleChrome.Properties.Settings.Default.tbDelay3;
             this.tbDelay3.TextChanged += new System.EventHandler(this.rbBuff3_Changed);
             // 
             // cbUseSkill3
             // 
             this.cbUseSkill3.AutoSize = true;
-            this.cbUseSkill3.Checked = global::FloBot.Properties.Settings.Default.cbUseSkill3;
-            this.cbUseSkill3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUseSkill3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill3.Checked = global::googleChrome.Properties.Settings.Default.cbUseSkill3;
+            this.cbUseSkill3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbUseSkill3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill3.Location = new System.Drawing.Point(4, 4);
             this.cbUseSkill3.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill3.Name = "cbUseSkill3";
@@ -1951,8 +1951,8 @@
             // rbAtt3
             // 
             this.rbAtt3.AutoSize = true;
-            this.rbAtt3.Checked = global::FloBot.Properties.Settings.Default.rbAtt3;
-            this.rbAtt3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt3.Checked = global::googleChrome.Properties.Settings.Default.rbAtt3;
+            this.rbAtt3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbAtt3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt3.Location = new System.Drawing.Point(25, 62);
             this.rbAtt3.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt3.Name = "rbAtt3";
@@ -1966,8 +1966,8 @@
             // rbBuff3
             // 
             this.rbBuff3.AutoSize = true;
-            this.rbBuff3.Checked = global::FloBot.Properties.Settings.Default.rbBuff3;
-            this.rbBuff3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff3.Checked = global::googleChrome.Properties.Settings.Default.rbBuff3;
+            this.rbBuff3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbBuff3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff3.Location = new System.Drawing.Point(25, 32);
             this.rbBuff3.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff3.Name = "rbBuff3";
@@ -2017,13 +2017,13 @@
             // 
             // nudPrio4
             // 
-            this.nudPrio4.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio4.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "nudPrio4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio4.Location = new System.Drawing.Point(35, 220);
             this.nudPrio4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudPrio4.Name = "nudPrio4";
             this.nudPrio4.Size = new System.Drawing.Size(120, 22);
             this.nudPrio4.TabIndex = 76;
-            this.nudPrio4.Value = global::FloBot.Properties.Settings.Default.nudPrio4;
+            this.nudPrio4.Value = global::googleChrome.Properties.Settings.Default.nudPrio4;
             this.nudPrio4.ValueChanged += new System.EventHandler(this.nudPrio4_ValueChanged);
             // 
             // label26
@@ -2196,7 +2196,7 @@
             // tbMin4P
             // 
             this.tbMin4P.AutoSize = false;
-            this.tbMin4P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin4P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin4P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin4P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin4P.Location = new System.Drawing.Point(295, 187);
             this.tbMin4P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin4P.Maximum = 100;
@@ -2204,13 +2204,13 @@
             this.tbMin4P.Size = new System.Drawing.Size(312, 38);
             this.tbMin4P.TabIndex = 68;
             this.tbMin4P.TickFrequency = 10;
-            this.tbMin4P.Value = global::FloBot.Properties.Settings.Default.tbMin4P;
+            this.tbMin4P.Value = global::googleChrome.Properties.Settings.Default.tbMin4P;
             this.tbMin4P.Scroll += new System.EventHandler(this.tbMin4P_Scroll);
             // 
             // tbMin4M
             // 
             this.tbMin4M.AutoSize = false;
-            this.tbMin4M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin4M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin4M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin4M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin4M.Location = new System.Drawing.Point(295, 75);
             this.tbMin4M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin4M.Maximum = 100;
@@ -2218,13 +2218,13 @@
             this.tbMin4M.Size = new System.Drawing.Size(312, 38);
             this.tbMin4M.TabIndex = 67;
             this.tbMin4M.TickFrequency = 10;
-            this.tbMin4M.Value = global::FloBot.Properties.Settings.Default.tbMin4M;
+            this.tbMin4M.Value = global::googleChrome.Properties.Settings.Default.tbMin4M;
             this.tbMin4M.Scroll += new System.EventHandler(this.tbMin4M_Scroll);
             // 
             // tbMax4P
             // 
             this.tbMax4P.AutoSize = false;
-            this.tbMax4P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax4P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax4P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax4P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax4P.Location = new System.Drawing.Point(295, 150);
             this.tbMax4P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax4P.Maximum = 100;
@@ -2232,13 +2232,13 @@
             this.tbMax4P.Size = new System.Drawing.Size(312, 38);
             this.tbMax4P.TabIndex = 58;
             this.tbMax4P.TickFrequency = 10;
-            this.tbMax4P.Value = global::FloBot.Properties.Settings.Default.tbMax4P;
+            this.tbMax4P.Value = global::googleChrome.Properties.Settings.Default.tbMax4P;
             this.tbMax4P.Scroll += new System.EventHandler(this.tbMax4P_Scroll);
             // 
             // tbMax4M
             // 
             this.tbMax4M.AutoSize = false;
-            this.tbMax4M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax4M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax4M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax4M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax4M.Location = new System.Drawing.Point(295, 38);
             this.tbMax4M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax4M.Maximum = 100;
@@ -2246,36 +2246,36 @@
             this.tbMax4M.Size = new System.Drawing.Size(312, 38);
             this.tbMax4M.TabIndex = 57;
             this.tbMax4M.TickFrequency = 10;
-            this.tbMax4M.Value = global::FloBot.Properties.Settings.Default.tbMax4M;
+            this.tbMax4M.Value = global::googleChrome.Properties.Settings.Default.tbMax4M;
             this.tbMax4M.Scroll += new System.EventHandler(this.tbMax4M_Scroll);
             // 
             // tbCast4
             // 
-            this.tbCast4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbCast4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast4.Location = new System.Drawing.Point(31, 165);
             this.tbCast4.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast4.Name = "tbCast4";
             this.tbCast4.Size = new System.Drawing.Size(132, 22);
             this.tbCast4.TabIndex = 55;
-            this.tbCast4.Text = global::FloBot.Properties.Settings.Default.tbCast4;
+            this.tbCast4.Text = global::googleChrome.Properties.Settings.Default.tbCast4;
             this.tbCast4.TextChanged += new System.EventHandler(this.tbCast4_TextChanged);
             // 
             // tbDelay4
             // 
-            this.tbDelay4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbReuse4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbReuse4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay4.Location = new System.Drawing.Point(31, 112);
             this.tbDelay4.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay4.Name = "tbDelay4";
             this.tbDelay4.Size = new System.Drawing.Size(132, 22);
             this.tbDelay4.TabIndex = 54;
-            this.tbDelay4.Text = global::FloBot.Properties.Settings.Default.tbReuse4;
+            this.tbDelay4.Text = global::googleChrome.Properties.Settings.Default.tbReuse4;
             this.tbDelay4.TextChanged += new System.EventHandler(this.tbDelay4_TextChanged);
             // 
             // cbUseSkill4
             // 
             this.cbUseSkill4.AutoSize = true;
-            this.cbUseSkill4.Checked = global::FloBot.Properties.Settings.Default.cbUse4;
-            this.cbUseSkill4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill4.Checked = global::googleChrome.Properties.Settings.Default.cbUse4;
+            this.cbUseSkill4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbUse4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill4.Location = new System.Drawing.Point(4, 4);
             this.cbUseSkill4.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill4.Name = "cbUseSkill4";
@@ -2288,8 +2288,8 @@
             // rbAtt4
             // 
             this.rbAtt4.AutoSize = true;
-            this.rbAtt4.Checked = global::FloBot.Properties.Settings.Default.rbAtt4;
-            this.rbAtt4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt4.Checked = global::googleChrome.Properties.Settings.Default.rbAtt4;
+            this.rbAtt4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbAtt4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt4.Location = new System.Drawing.Point(25, 62);
             this.rbAtt4.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt4.Name = "rbAtt4";
@@ -2302,8 +2302,8 @@
             // rbBuff4
             // 
             this.rbBuff4.AutoSize = true;
-            this.rbBuff4.Checked = global::FloBot.Properties.Settings.Default.rbBuff4;
-            this.rbBuff4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff4.Checked = global::googleChrome.Properties.Settings.Default.rbBuff4;
+            this.rbBuff4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbBuff4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff4.Location = new System.Drawing.Point(25, 32);
             this.rbBuff4.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff4.Name = "rbBuff4";
@@ -2353,13 +2353,13 @@
             // 
             // nudPrio5
             // 
-            this.nudPrio5.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio5.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "nudPrio5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio5.Location = new System.Drawing.Point(35, 220);
             this.nudPrio5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudPrio5.Name = "nudPrio5";
             this.nudPrio5.Size = new System.Drawing.Size(120, 22);
             this.nudPrio5.TabIndex = 103;
-            this.nudPrio5.Value = global::FloBot.Properties.Settings.Default.nudPrio5;
+            this.nudPrio5.Value = global::googleChrome.Properties.Settings.Default.nudPrio5;
             this.nudPrio5.ValueChanged += new System.EventHandler(this.nudPrio5_ValueChanged);
             // 
             // label28
@@ -2532,7 +2532,7 @@
             // tbMin5P
             // 
             this.tbMin5P.AutoSize = false;
-            this.tbMin5P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin5P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin5P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin5P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin5P.Location = new System.Drawing.Point(295, 187);
             this.tbMin5P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin5P.Maximum = 100;
@@ -2540,13 +2540,13 @@
             this.tbMin5P.Size = new System.Drawing.Size(312, 38);
             this.tbMin5P.TabIndex = 95;
             this.tbMin5P.TickFrequency = 10;
-            this.tbMin5P.Value = global::FloBot.Properties.Settings.Default.tbMin5P;
+            this.tbMin5P.Value = global::googleChrome.Properties.Settings.Default.tbMin5P;
             this.tbMin5P.Scroll += new System.EventHandler(this.tbMin5P_Scroll);
             // 
             // tbMin5M
             // 
             this.tbMin5M.AutoSize = false;
-            this.tbMin5M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin5M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin5M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin5M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin5M.Location = new System.Drawing.Point(295, 75);
             this.tbMin5M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin5M.Maximum = 100;
@@ -2554,13 +2554,13 @@
             this.tbMin5M.Size = new System.Drawing.Size(312, 38);
             this.tbMin5M.TabIndex = 94;
             this.tbMin5M.TickFrequency = 10;
-            this.tbMin5M.Value = global::FloBot.Properties.Settings.Default.tbMin5M;
+            this.tbMin5M.Value = global::googleChrome.Properties.Settings.Default.tbMin5M;
             this.tbMin5M.Scroll += new System.EventHandler(this.tbMin5M_Scroll);
             // 
             // tbMax5P
             // 
             this.tbMax5P.AutoSize = false;
-            this.tbMax5P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax5P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax5P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax5P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax5P.Location = new System.Drawing.Point(295, 150);
             this.tbMax5P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax5P.Maximum = 100;
@@ -2568,13 +2568,13 @@
             this.tbMax5P.Size = new System.Drawing.Size(312, 38);
             this.tbMax5P.TabIndex = 85;
             this.tbMax5P.TickFrequency = 10;
-            this.tbMax5P.Value = global::FloBot.Properties.Settings.Default.tbMax5P;
+            this.tbMax5P.Value = global::googleChrome.Properties.Settings.Default.tbMax5P;
             this.tbMax5P.Scroll += new System.EventHandler(this.tbMax5P_Scroll);
             // 
             // tbMax5M
             // 
             this.tbMax5M.AutoSize = false;
-            this.tbMax5M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax5M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax5M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax5M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax5M.Location = new System.Drawing.Point(295, 38);
             this.tbMax5M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax5M.Maximum = 100;
@@ -2582,36 +2582,36 @@
             this.tbMax5M.Size = new System.Drawing.Size(312, 38);
             this.tbMax5M.TabIndex = 84;
             this.tbMax5M.TickFrequency = 10;
-            this.tbMax5M.Value = global::FloBot.Properties.Settings.Default.tbMax5M;
+            this.tbMax5M.Value = global::googleChrome.Properties.Settings.Default.tbMax5M;
             this.tbMax5M.Scroll += new System.EventHandler(this.tbMax5M_Scroll);
             // 
             // tbCast5
             // 
-            this.tbCast5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbCast5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast5.Location = new System.Drawing.Point(31, 165);
             this.tbCast5.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast5.Name = "tbCast5";
             this.tbCast5.Size = new System.Drawing.Size(132, 22);
             this.tbCast5.TabIndex = 82;
-            this.tbCast5.Text = global::FloBot.Properties.Settings.Default.tbCast5;
+            this.tbCast5.Text = global::googleChrome.Properties.Settings.Default.tbCast5;
             this.tbCast5.TextChanged += new System.EventHandler(this.tbCast5_TextChanged);
             // 
             // tbDelay5
             // 
-            this.tbDelay5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbReuse5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbReuse5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay5.Location = new System.Drawing.Point(31, 112);
             this.tbDelay5.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay5.Name = "tbDelay5";
             this.tbDelay5.Size = new System.Drawing.Size(132, 22);
             this.tbDelay5.TabIndex = 81;
-            this.tbDelay5.Text = global::FloBot.Properties.Settings.Default.tbReuse5;
+            this.tbDelay5.Text = global::googleChrome.Properties.Settings.Default.tbReuse5;
             this.tbDelay5.TextChanged += new System.EventHandler(this.tbDelay5_TextChanged);
             // 
             // cbUseSkill5
             // 
             this.cbUseSkill5.AutoSize = true;
-            this.cbUseSkill5.Checked = global::FloBot.Properties.Settings.Default.cbUse5;
-            this.cbUseSkill5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill5.Checked = global::googleChrome.Properties.Settings.Default.cbUse5;
+            this.cbUseSkill5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbUse5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill5.Location = new System.Drawing.Point(4, 4);
             this.cbUseSkill5.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill5.Name = "cbUseSkill5";
@@ -2624,8 +2624,8 @@
             // rbAtt5
             // 
             this.rbAtt5.AutoSize = true;
-            this.rbAtt5.Checked = global::FloBot.Properties.Settings.Default.rbAtt5;
-            this.rbAtt5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt5.Checked = global::googleChrome.Properties.Settings.Default.rbAtt5;
+            this.rbAtt5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbAtt5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt5.Location = new System.Drawing.Point(25, 62);
             this.rbAtt5.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt5.Name = "rbAtt5";
@@ -2638,8 +2638,8 @@
             // rbBuff5
             // 
             this.rbBuff5.AutoSize = true;
-            this.rbBuff5.Checked = global::FloBot.Properties.Settings.Default.rbBuff5;
-            this.rbBuff5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff5.Checked = global::googleChrome.Properties.Settings.Default.rbBuff5;
+            this.rbBuff5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbBuff5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff5.Location = new System.Drawing.Point(25, 32);
             this.rbBuff5.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff5.Name = "rbBuff5";
@@ -2688,13 +2688,13 @@
             // 
             // nudPrio6
             // 
-            this.nudPrio6.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio6.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "nudPrio6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio6.Location = new System.Drawing.Point(35, 220);
             this.nudPrio6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudPrio6.Name = "nudPrio6";
             this.nudPrio6.Size = new System.Drawing.Size(120, 22);
             this.nudPrio6.TabIndex = 130;
-            this.nudPrio6.Value = global::FloBot.Properties.Settings.Default.nudPrio6;
+            this.nudPrio6.Value = global::googleChrome.Properties.Settings.Default.nudPrio6;
             this.nudPrio6.ValueChanged += new System.EventHandler(this.nudPrio6_ValueChanged);
             // 
             // label30
@@ -2867,7 +2867,7 @@
             // tbMin6P
             // 
             this.tbMin6P.AutoSize = false;
-            this.tbMin6P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin6P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin6P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin6P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin6P.Location = new System.Drawing.Point(295, 187);
             this.tbMin6P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin6P.Maximum = 100;
@@ -2875,13 +2875,13 @@
             this.tbMin6P.Size = new System.Drawing.Size(312, 38);
             this.tbMin6P.TabIndex = 122;
             this.tbMin6P.TickFrequency = 10;
-            this.tbMin6P.Value = global::FloBot.Properties.Settings.Default.tbMin6P;
+            this.tbMin6P.Value = global::googleChrome.Properties.Settings.Default.tbMin6P;
             this.tbMin6P.Scroll += new System.EventHandler(this.tbMin6P_Scroll);
             // 
             // tbMin6M
             // 
             this.tbMin6M.AutoSize = false;
-            this.tbMin6M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin6M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin6M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin6M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin6M.Location = new System.Drawing.Point(295, 75);
             this.tbMin6M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin6M.Maximum = 100;
@@ -2889,13 +2889,13 @@
             this.tbMin6M.Size = new System.Drawing.Size(312, 38);
             this.tbMin6M.TabIndex = 121;
             this.tbMin6M.TickFrequency = 10;
-            this.tbMin6M.Value = global::FloBot.Properties.Settings.Default.tbMin6M;
+            this.tbMin6M.Value = global::googleChrome.Properties.Settings.Default.tbMin6M;
             this.tbMin6M.Scroll += new System.EventHandler(this.tbMin6M_Scroll);
             // 
             // tbMax6P
             // 
             this.tbMax6P.AutoSize = false;
-            this.tbMax6P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax6P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax6P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax6P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax6P.Location = new System.Drawing.Point(295, 150);
             this.tbMax6P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax6P.Maximum = 100;
@@ -2903,13 +2903,13 @@
             this.tbMax6P.Size = new System.Drawing.Size(312, 38);
             this.tbMax6P.TabIndex = 112;
             this.tbMax6P.TickFrequency = 10;
-            this.tbMax6P.Value = global::FloBot.Properties.Settings.Default.tbMax6P;
+            this.tbMax6P.Value = global::googleChrome.Properties.Settings.Default.tbMax6P;
             this.tbMax6P.Scroll += new System.EventHandler(this.tbMax6P_Scroll);
             // 
             // tbMax6M
             // 
             this.tbMax6M.AutoSize = false;
-            this.tbMax6M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax6M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax6M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax6M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax6M.Location = new System.Drawing.Point(295, 38);
             this.tbMax6M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax6M.Maximum = 100;
@@ -2917,36 +2917,36 @@
             this.tbMax6M.Size = new System.Drawing.Size(312, 38);
             this.tbMax6M.TabIndex = 111;
             this.tbMax6M.TickFrequency = 10;
-            this.tbMax6M.Value = global::FloBot.Properties.Settings.Default.tbMax6M;
+            this.tbMax6M.Value = global::googleChrome.Properties.Settings.Default.tbMax6M;
             this.tbMax6M.Scroll += new System.EventHandler(this.tbMax6M_Scroll);
             // 
             // tbCast6
             // 
-            this.tbCast6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbCast6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast6.Location = new System.Drawing.Point(31, 165);
             this.tbCast6.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast6.Name = "tbCast6";
             this.tbCast6.Size = new System.Drawing.Size(132, 22);
             this.tbCast6.TabIndex = 109;
-            this.tbCast6.Text = global::FloBot.Properties.Settings.Default.tbCast6;
+            this.tbCast6.Text = global::googleChrome.Properties.Settings.Default.tbCast6;
             this.tbCast6.TextChanged += new System.EventHandler(this.tbCast6_TextChanged);
             // 
             // tbDelay6
             // 
-            this.tbDelay6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbDelay6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbDelay6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay6.Location = new System.Drawing.Point(31, 112);
             this.tbDelay6.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay6.Name = "tbDelay6";
             this.tbDelay6.Size = new System.Drawing.Size(132, 22);
             this.tbDelay6.TabIndex = 108;
-            this.tbDelay6.Text = global::FloBot.Properties.Settings.Default.tbDelay6;
+            this.tbDelay6.Text = global::googleChrome.Properties.Settings.Default.tbDelay6;
             this.tbDelay6.TextChanged += new System.EventHandler(this.tbDelay6_TextChanged);
             // 
             // cbUseSkill6
             // 
             this.cbUseSkill6.AutoSize = true;
-            this.cbUseSkill6.Checked = global::FloBot.Properties.Settings.Default.cbUse6;
-            this.cbUseSkill6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill6.Checked = global::googleChrome.Properties.Settings.Default.cbUse6;
+            this.cbUseSkill6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbUse6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill6.Location = new System.Drawing.Point(4, 4);
             this.cbUseSkill6.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill6.Name = "cbUseSkill6";
@@ -2959,8 +2959,8 @@
             // rbAtt6
             // 
             this.rbAtt6.AutoSize = true;
-            this.rbAtt6.Checked = global::FloBot.Properties.Settings.Default.rbAtt6;
-            this.rbAtt6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt6.Checked = global::googleChrome.Properties.Settings.Default.rbAtt6;
+            this.rbAtt6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbAtt6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt6.Location = new System.Drawing.Point(25, 62);
             this.rbAtt6.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt6.Name = "rbAtt6";
@@ -2973,8 +2973,8 @@
             // rbBuff6
             // 
             this.rbBuff6.AutoSize = true;
-            this.rbBuff6.Checked = global::FloBot.Properties.Settings.Default.rbBuff6;
-            this.rbBuff6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff6.Checked = global::googleChrome.Properties.Settings.Default.rbBuff6;
+            this.rbBuff6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbBuff6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff6.Location = new System.Drawing.Point(25, 32);
             this.rbBuff6.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff6.Name = "rbBuff6";
@@ -3024,13 +3024,13 @@
             // 
             // nudPrio7
             // 
-            this.nudPrio7.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio7.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "nudPrio7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio7.Location = new System.Drawing.Point(35, 220);
             this.nudPrio7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudPrio7.Name = "nudPrio7";
             this.nudPrio7.Size = new System.Drawing.Size(120, 22);
             this.nudPrio7.TabIndex = 157;
-            this.nudPrio7.Value = global::FloBot.Properties.Settings.Default.nudPrio7;
+            this.nudPrio7.Value = global::googleChrome.Properties.Settings.Default.nudPrio7;
             this.nudPrio7.ValueChanged += new System.EventHandler(this.nudPrio7_ValueChanged);
             // 
             // label32
@@ -3203,7 +3203,7 @@
             // tbMin7P
             // 
             this.tbMin7P.AutoSize = false;
-            this.tbMin7P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin7P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin7P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin7P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin7P.Location = new System.Drawing.Point(295, 187);
             this.tbMin7P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin7P.Maximum = 100;
@@ -3211,13 +3211,13 @@
             this.tbMin7P.Size = new System.Drawing.Size(312, 38);
             this.tbMin7P.TabIndex = 149;
             this.tbMin7P.TickFrequency = 10;
-            this.tbMin7P.Value = global::FloBot.Properties.Settings.Default.tbMin7P;
+            this.tbMin7P.Value = global::googleChrome.Properties.Settings.Default.tbMin7P;
             this.tbMin7P.Scroll += new System.EventHandler(this.tbMin7P_Scroll);
             // 
             // tbMin7M
             // 
             this.tbMin7M.AutoSize = false;
-            this.tbMin7M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin7M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin7M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin7M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin7M.Location = new System.Drawing.Point(295, 75);
             this.tbMin7M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin7M.Maximum = 100;
@@ -3225,13 +3225,13 @@
             this.tbMin7M.Size = new System.Drawing.Size(312, 38);
             this.tbMin7M.TabIndex = 148;
             this.tbMin7M.TickFrequency = 10;
-            this.tbMin7M.Value = global::FloBot.Properties.Settings.Default.tbMin7M;
+            this.tbMin7M.Value = global::googleChrome.Properties.Settings.Default.tbMin7M;
             this.tbMin7M.Scroll += new System.EventHandler(this.tbMin7M_Scroll);
             // 
             // tbMax7P
             // 
             this.tbMax7P.AutoSize = false;
-            this.tbMax7P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax7P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax7P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax7P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax7P.Location = new System.Drawing.Point(295, 150);
             this.tbMax7P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax7P.Maximum = 100;
@@ -3239,13 +3239,13 @@
             this.tbMax7P.Size = new System.Drawing.Size(312, 38);
             this.tbMax7P.TabIndex = 139;
             this.tbMax7P.TickFrequency = 10;
-            this.tbMax7P.Value = global::FloBot.Properties.Settings.Default.tbMax7P;
+            this.tbMax7P.Value = global::googleChrome.Properties.Settings.Default.tbMax7P;
             this.tbMax7P.Scroll += new System.EventHandler(this.tbMax7P_Scroll);
             // 
             // tbMax7M
             // 
             this.tbMax7M.AutoSize = false;
-            this.tbMax7M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax7M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax7M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax7M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax7M.Location = new System.Drawing.Point(295, 38);
             this.tbMax7M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax7M.Maximum = 100;
@@ -3253,36 +3253,36 @@
             this.tbMax7M.Size = new System.Drawing.Size(312, 38);
             this.tbMax7M.TabIndex = 138;
             this.tbMax7M.TickFrequency = 10;
-            this.tbMax7M.Value = global::FloBot.Properties.Settings.Default.tbMax7M;
+            this.tbMax7M.Value = global::googleChrome.Properties.Settings.Default.tbMax7M;
             this.tbMax7M.Scroll += new System.EventHandler(this.tbMax7M_Scroll);
             // 
             // tbCast7
             // 
-            this.tbCast7.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast7.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbCast7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast7.Location = new System.Drawing.Point(31, 165);
             this.tbCast7.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast7.Name = "tbCast7";
             this.tbCast7.Size = new System.Drawing.Size(132, 22);
             this.tbCast7.TabIndex = 136;
-            this.tbCast7.Text = global::FloBot.Properties.Settings.Default.tbCast7;
+            this.tbCast7.Text = global::googleChrome.Properties.Settings.Default.tbCast7;
             this.tbCast7.TextChanged += new System.EventHandler(this.tbCast7_TextChanged);
             // 
             // tbDelay7
             // 
-            this.tbDelay7.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbReuse7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay7.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbReuse7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay7.Location = new System.Drawing.Point(31, 112);
             this.tbDelay7.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay7.Name = "tbDelay7";
             this.tbDelay7.Size = new System.Drawing.Size(132, 22);
             this.tbDelay7.TabIndex = 135;
-            this.tbDelay7.Text = global::FloBot.Properties.Settings.Default.tbReuse7;
+            this.tbDelay7.Text = global::googleChrome.Properties.Settings.Default.tbReuse7;
             this.tbDelay7.TextChanged += new System.EventHandler(this.tbDelay7_TextChanged);
             // 
             // cbUseSkill7
             // 
             this.cbUseSkill7.AutoSize = true;
-            this.cbUseSkill7.Checked = global::FloBot.Properties.Settings.Default.cbUse7;
-            this.cbUseSkill7.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill7.Checked = global::googleChrome.Properties.Settings.Default.cbUse7;
+            this.cbUseSkill7.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbUse7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill7.Location = new System.Drawing.Point(4, 4);
             this.cbUseSkill7.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill7.Name = "cbUseSkill7";
@@ -3295,8 +3295,8 @@
             // rbAtt7
             // 
             this.rbAtt7.AutoSize = true;
-            this.rbAtt7.Checked = global::FloBot.Properties.Settings.Default.rbAtt7;
-            this.rbAtt7.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt7.Checked = global::googleChrome.Properties.Settings.Default.rbAtt7;
+            this.rbAtt7.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbAtt7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt7.Location = new System.Drawing.Point(25, 62);
             this.rbAtt7.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt7.Name = "rbAtt7";
@@ -3309,8 +3309,8 @@
             // rbBuff7
             // 
             this.rbBuff7.AutoSize = true;
-            this.rbBuff7.Checked = global::FloBot.Properties.Settings.Default.rbBuff7;
-            this.rbBuff7.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff7.Checked = global::googleChrome.Properties.Settings.Default.rbBuff7;
+            this.rbBuff7.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbBuff7", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff7.Location = new System.Drawing.Point(25, 32);
             this.rbBuff7.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff7.Name = "rbBuff7";
@@ -3359,13 +3359,13 @@
             // 
             // nudPrio8
             // 
-            this.nudPrio8.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio8", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio8.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "nudPrio8", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio8.Location = new System.Drawing.Point(35, 220);
             this.nudPrio8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudPrio8.Name = "nudPrio8";
             this.nudPrio8.Size = new System.Drawing.Size(120, 22);
             this.nudPrio8.TabIndex = 184;
-            this.nudPrio8.Value = global::FloBot.Properties.Settings.Default.nudPrio8;
+            this.nudPrio8.Value = global::googleChrome.Properties.Settings.Default.nudPrio8;
             this.nudPrio8.ValueChanged += new System.EventHandler(this.nudPrio8_ValueChanged);
             // 
             // label34
@@ -3538,7 +3538,7 @@
             // tbMin8P
             // 
             this.tbMin8P.AutoSize = false;
-            this.tbMin8P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin8P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin8P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin8P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin8P.Location = new System.Drawing.Point(295, 187);
             this.tbMin8P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin8P.Maximum = 100;
@@ -3546,13 +3546,13 @@
             this.tbMin8P.Size = new System.Drawing.Size(312, 38);
             this.tbMin8P.TabIndex = 176;
             this.tbMin8P.TickFrequency = 10;
-            this.tbMin8P.Value = global::FloBot.Properties.Settings.Default.tbMin8P;
+            this.tbMin8P.Value = global::googleChrome.Properties.Settings.Default.tbMin8P;
             this.tbMin8P.Scroll += new System.EventHandler(this.tbMin8P_Scroll);
             // 
             // tbMin8M
             // 
             this.tbMin8M.AutoSize = false;
-            this.tbMin8M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin8M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin8M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin8M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin8M.Location = new System.Drawing.Point(295, 75);
             this.tbMin8M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin8M.Maximum = 100;
@@ -3560,13 +3560,13 @@
             this.tbMin8M.Size = new System.Drawing.Size(312, 38);
             this.tbMin8M.TabIndex = 175;
             this.tbMin8M.TickFrequency = 10;
-            this.tbMin8M.Value = global::FloBot.Properties.Settings.Default.tbMin8M;
+            this.tbMin8M.Value = global::googleChrome.Properties.Settings.Default.tbMin8M;
             this.tbMin8M.Scroll += new System.EventHandler(this.tbMin8M_Scroll);
             // 
             // tbMax8P
             // 
             this.tbMax8P.AutoSize = false;
-            this.tbMax8P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax8P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax8P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax8P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax8P.Location = new System.Drawing.Point(295, 150);
             this.tbMax8P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax8P.Maximum = 100;
@@ -3574,13 +3574,13 @@
             this.tbMax8P.Size = new System.Drawing.Size(312, 38);
             this.tbMax8P.TabIndex = 166;
             this.tbMax8P.TickFrequency = 10;
-            this.tbMax8P.Value = global::FloBot.Properties.Settings.Default.tbMax8P;
+            this.tbMax8P.Value = global::googleChrome.Properties.Settings.Default.tbMax8P;
             this.tbMax8P.Scroll += new System.EventHandler(this.tbMax8P_Scroll);
             // 
             // tbMax8M
             // 
             this.tbMax8M.AutoSize = false;
-            this.tbMax8M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax8M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax8M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax8M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax8M.Location = new System.Drawing.Point(295, 38);
             this.tbMax8M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax8M.Maximum = 100;
@@ -3588,36 +3588,36 @@
             this.tbMax8M.Size = new System.Drawing.Size(312, 38);
             this.tbMax8M.TabIndex = 165;
             this.tbMax8M.TickFrequency = 10;
-            this.tbMax8M.Value = global::FloBot.Properties.Settings.Default.tbMax8M;
+            this.tbMax8M.Value = global::googleChrome.Properties.Settings.Default.tbMax8M;
             this.tbMax8M.Scroll += new System.EventHandler(this.tbMax8M_Scroll);
             // 
             // tbCast8
             // 
-            this.tbCast8.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast8", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast8.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbCast8", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast8.Location = new System.Drawing.Point(31, 165);
             this.tbCast8.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast8.Name = "tbCast8";
             this.tbCast8.Size = new System.Drawing.Size(132, 22);
             this.tbCast8.TabIndex = 163;
-            this.tbCast8.Text = global::FloBot.Properties.Settings.Default.tbCast8;
+            this.tbCast8.Text = global::googleChrome.Properties.Settings.Default.tbCast8;
             this.tbCast8.TextChanged += new System.EventHandler(this.tbCast8_TextChanged);
             // 
             // tbDelay8
             // 
-            this.tbDelay8.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbReuse8", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay8.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbReuse8", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay8.Location = new System.Drawing.Point(31, 112);
             this.tbDelay8.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay8.Name = "tbDelay8";
             this.tbDelay8.Size = new System.Drawing.Size(132, 22);
             this.tbDelay8.TabIndex = 162;
-            this.tbDelay8.Text = global::FloBot.Properties.Settings.Default.tbReuse8;
+            this.tbDelay8.Text = global::googleChrome.Properties.Settings.Default.tbReuse8;
             this.tbDelay8.TextChanged += new System.EventHandler(this.tbDelay8_TextChanged);
             // 
             // cbUseSkill8
             // 
             this.cbUseSkill8.AutoSize = true;
-            this.cbUseSkill8.Checked = global::FloBot.Properties.Settings.Default.cbUse8;
-            this.cbUseSkill8.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse8", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill8.Checked = global::googleChrome.Properties.Settings.Default.cbUse8;
+            this.cbUseSkill8.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbUse8", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill8.Location = new System.Drawing.Point(4, 4);
             this.cbUseSkill8.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill8.Name = "cbUseSkill8";
@@ -3630,8 +3630,8 @@
             // rbAtt8
             // 
             this.rbAtt8.AutoSize = true;
-            this.rbAtt8.Checked = global::FloBot.Properties.Settings.Default.rbAtt8;
-            this.rbAtt8.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt8", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt8.Checked = global::googleChrome.Properties.Settings.Default.rbAtt8;
+            this.rbAtt8.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbAtt8", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt8.Location = new System.Drawing.Point(25, 62);
             this.rbAtt8.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt8.Name = "rbAtt8";
@@ -3644,8 +3644,8 @@
             // rbBuff8
             // 
             this.rbBuff8.AutoSize = true;
-            this.rbBuff8.Checked = global::FloBot.Properties.Settings.Default.rbBuff8;
-            this.rbBuff8.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff8", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff8.Checked = global::googleChrome.Properties.Settings.Default.rbBuff8;
+            this.rbBuff8.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbBuff8", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff8.Location = new System.Drawing.Point(25, 32);
             this.rbBuff8.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff8.Name = "rbBuff8";
@@ -3694,13 +3694,13 @@
             // 
             // nudPrio9
             // 
-            this.nudPrio9.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio9.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "nudPrio9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio9.Location = new System.Drawing.Point(35, 220);
             this.nudPrio9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudPrio9.Name = "nudPrio9";
             this.nudPrio9.Size = new System.Drawing.Size(120, 22);
             this.nudPrio9.TabIndex = 211;
-            this.nudPrio9.Value = global::FloBot.Properties.Settings.Default.nudPrio9;
+            this.nudPrio9.Value = global::googleChrome.Properties.Settings.Default.nudPrio9;
             this.nudPrio9.ValueChanged += new System.EventHandler(this.nudPrio9_ValueChanged);
             // 
             // label36
@@ -3873,7 +3873,7 @@
             // tbMin9P
             // 
             this.tbMin9P.AutoSize = false;
-            this.tbMin9P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin9P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin9P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin9P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin9P.Location = new System.Drawing.Point(295, 187);
             this.tbMin9P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin9P.Maximum = 100;
@@ -3881,13 +3881,13 @@
             this.tbMin9P.Size = new System.Drawing.Size(312, 38);
             this.tbMin9P.TabIndex = 203;
             this.tbMin9P.TickFrequency = 10;
-            this.tbMin9P.Value = global::FloBot.Properties.Settings.Default.tbMin9P;
+            this.tbMin9P.Value = global::googleChrome.Properties.Settings.Default.tbMin9P;
             this.tbMin9P.Scroll += new System.EventHandler(this.tbMin9P_Scroll);
             // 
             // tbMin9M
             // 
             this.tbMin9M.AutoSize = false;
-            this.tbMin9M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin9M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin9M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin9M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin9M.Location = new System.Drawing.Point(295, 75);
             this.tbMin9M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin9M.Maximum = 100;
@@ -3895,13 +3895,13 @@
             this.tbMin9M.Size = new System.Drawing.Size(312, 38);
             this.tbMin9M.TabIndex = 202;
             this.tbMin9M.TickFrequency = 10;
-            this.tbMin9M.Value = global::FloBot.Properties.Settings.Default.tbMin9M;
+            this.tbMin9M.Value = global::googleChrome.Properties.Settings.Default.tbMin9M;
             this.tbMin9M.Scroll += new System.EventHandler(this.tbMin9M_Scroll);
             // 
             // tbMax9P
             // 
             this.tbMax9P.AutoSize = false;
-            this.tbMax9P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax9P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax9P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax9P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax9P.Location = new System.Drawing.Point(295, 150);
             this.tbMax9P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax9P.Maximum = 100;
@@ -3909,13 +3909,13 @@
             this.tbMax9P.Size = new System.Drawing.Size(312, 38);
             this.tbMax9P.TabIndex = 193;
             this.tbMax9P.TickFrequency = 10;
-            this.tbMax9P.Value = global::FloBot.Properties.Settings.Default.tbMax9P;
+            this.tbMax9P.Value = global::googleChrome.Properties.Settings.Default.tbMax9P;
             this.tbMax9P.Scroll += new System.EventHandler(this.tbMax9P_Scroll);
             // 
             // tbMax9M
             // 
             this.tbMax9M.AutoSize = false;
-            this.tbMax9M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax9M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax9M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax9M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax9M.Location = new System.Drawing.Point(295, 38);
             this.tbMax9M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax9M.Maximum = 100;
@@ -3923,36 +3923,36 @@
             this.tbMax9M.Size = new System.Drawing.Size(312, 38);
             this.tbMax9M.TabIndex = 192;
             this.tbMax9M.TickFrequency = 10;
-            this.tbMax9M.Value = global::FloBot.Properties.Settings.Default.tbMax9M;
+            this.tbMax9M.Value = global::googleChrome.Properties.Settings.Default.tbMax9M;
             this.tbMax9M.Scroll += new System.EventHandler(this.tbMax9M_Scroll);
             // 
             // tbCast9
             // 
-            this.tbCast9.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast9.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbCast9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast9.Location = new System.Drawing.Point(31, 165);
             this.tbCast9.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast9.Name = "tbCast9";
             this.tbCast9.Size = new System.Drawing.Size(132, 22);
             this.tbCast9.TabIndex = 190;
-            this.tbCast9.Text = global::FloBot.Properties.Settings.Default.tbCast9;
+            this.tbCast9.Text = global::googleChrome.Properties.Settings.Default.tbCast9;
             this.tbCast9.TextChanged += new System.EventHandler(this.tbCast9_TextChanged_1);
             // 
             // tbDelay9
             // 
-            this.tbDelay9.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbReuse9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay9.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbReuse9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay9.Location = new System.Drawing.Point(31, 112);
             this.tbDelay9.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay9.Name = "tbDelay9";
             this.tbDelay9.Size = new System.Drawing.Size(132, 22);
             this.tbDelay9.TabIndex = 189;
-            this.tbDelay9.Text = global::FloBot.Properties.Settings.Default.tbReuse9;
+            this.tbDelay9.Text = global::googleChrome.Properties.Settings.Default.tbReuse9;
             this.tbDelay9.TextChanged += new System.EventHandler(this.tbDelay9_TextChanged_1);
             // 
             // cbUseSkill9
             // 
             this.cbUseSkill9.AutoSize = true;
-            this.cbUseSkill9.Checked = global::FloBot.Properties.Settings.Default.cbUse9;
-            this.cbUseSkill9.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill9.Checked = global::googleChrome.Properties.Settings.Default.cbUse9;
+            this.cbUseSkill9.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbUse9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill9.Location = new System.Drawing.Point(4, 4);
             this.cbUseSkill9.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill9.Name = "cbUseSkill9";
@@ -3965,8 +3965,8 @@
             // rbAtt9
             // 
             this.rbAtt9.AutoSize = true;
-            this.rbAtt9.Checked = global::FloBot.Properties.Settings.Default.rbAtt9;
-            this.rbAtt9.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt9.Checked = global::googleChrome.Properties.Settings.Default.rbAtt9;
+            this.rbAtt9.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbAtt9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt9.Location = new System.Drawing.Point(25, 62);
             this.rbAtt9.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt9.Name = "rbAtt9";
@@ -3980,8 +3980,8 @@
             // rbBuff9
             // 
             this.rbBuff9.AutoSize = true;
-            this.rbBuff9.Checked = global::FloBot.Properties.Settings.Default.rbBuff9;
-            this.rbBuff9.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff9.Checked = global::googleChrome.Properties.Settings.Default.rbBuff9;
+            this.rbBuff9.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbBuff9", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff9.Location = new System.Drawing.Point(25, 32);
             this.rbBuff9.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff9.Name = "rbBuff9";
@@ -4030,13 +4030,13 @@
             // 
             // nudPrio0
             // 
-            this.nudPrio0.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "nudPrio0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudPrio0.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "nudPrio0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.nudPrio0.Location = new System.Drawing.Point(35, 220);
             this.nudPrio0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudPrio0.Name = "nudPrio0";
             this.nudPrio0.Size = new System.Drawing.Size(120, 22);
             this.nudPrio0.TabIndex = 238;
-            this.nudPrio0.Value = global::FloBot.Properties.Settings.Default.nudPrio0;
+            this.nudPrio0.Value = global::googleChrome.Properties.Settings.Default.nudPrio0;
             this.nudPrio0.ValueChanged += new System.EventHandler(this.nudPrio0_ValueChanged);
             // 
             // label49
@@ -4209,7 +4209,7 @@
             // tbMin0P
             // 
             this.tbMin0P.AutoSize = false;
-            this.tbMin0P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin0P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin0P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin0P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin0P.Location = new System.Drawing.Point(295, 187);
             this.tbMin0P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin0P.Maximum = 100;
@@ -4217,13 +4217,13 @@
             this.tbMin0P.Size = new System.Drawing.Size(312, 38);
             this.tbMin0P.TabIndex = 230;
             this.tbMin0P.TickFrequency = 10;
-            this.tbMin0P.Value = global::FloBot.Properties.Settings.Default.tbMin0P;
+            this.tbMin0P.Value = global::googleChrome.Properties.Settings.Default.tbMin0P;
             this.tbMin0P.Scroll += new System.EventHandler(this.tbMin0P_Scroll);
             // 
             // tbMin0M
             // 
             this.tbMin0M.AutoSize = false;
-            this.tbMin0M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMin0M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMin0M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMin0M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMin0M.Location = new System.Drawing.Point(295, 75);
             this.tbMin0M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMin0M.Maximum = 100;
@@ -4231,13 +4231,13 @@
             this.tbMin0M.Size = new System.Drawing.Size(312, 38);
             this.tbMin0M.TabIndex = 229;
             this.tbMin0M.TickFrequency = 10;
-            this.tbMin0M.Value = global::FloBot.Properties.Settings.Default.tbMin0M;
+            this.tbMin0M.Value = global::googleChrome.Properties.Settings.Default.tbMin0M;
             this.tbMin0M.Scroll += new System.EventHandler(this.tbMin0M_Scroll);
             // 
             // tbMax0P
             // 
             this.tbMax0P.AutoSize = false;
-            this.tbMax0P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax0P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax0P.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax0P", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax0P.Location = new System.Drawing.Point(295, 150);
             this.tbMax0P.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax0P.Maximum = 100;
@@ -4245,13 +4245,13 @@
             this.tbMax0P.Size = new System.Drawing.Size(312, 38);
             this.tbMax0P.TabIndex = 220;
             this.tbMax0P.TickFrequency = 10;
-            this.tbMax0P.Value = global::FloBot.Properties.Settings.Default.tbMax0P;
+            this.tbMax0P.Value = global::googleChrome.Properties.Settings.Default.tbMax0P;
             this.tbMax0P.Scroll += new System.EventHandler(this.tbMax0P_Scroll);
             // 
             // tbMax0M
             // 
             this.tbMax0M.AutoSize = false;
-            this.tbMax0M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbMax0M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbMax0M.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbMax0M", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbMax0M.Location = new System.Drawing.Point(295, 38);
             this.tbMax0M.Margin = new System.Windows.Forms.Padding(4);
             this.tbMax0M.Maximum = 100;
@@ -4259,36 +4259,36 @@
             this.tbMax0M.Size = new System.Drawing.Size(312, 38);
             this.tbMax0M.TabIndex = 219;
             this.tbMax0M.TickFrequency = 10;
-            this.tbMax0M.Value = global::FloBot.Properties.Settings.Default.tbMax0M;
+            this.tbMax0M.Value = global::googleChrome.Properties.Settings.Default.tbMax0M;
             this.tbMax0M.Scroll += new System.EventHandler(this.tbMax0M_Scroll);
             // 
             // tbCast0
             // 
-            this.tbCast0.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbCast0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCast0.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbCast0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbCast0.Location = new System.Drawing.Point(31, 165);
             this.tbCast0.Margin = new System.Windows.Forms.Padding(4);
             this.tbCast0.Name = "tbCast0";
             this.tbCast0.Size = new System.Drawing.Size(132, 22);
             this.tbCast0.TabIndex = 217;
-            this.tbCast0.Text = global::FloBot.Properties.Settings.Default.tbCast0;
+            this.tbCast0.Text = global::googleChrome.Properties.Settings.Default.tbCast0;
             this.tbCast0.TextChanged += new System.EventHandler(this.tbCast0_TextChanged);
             // 
             // tbDelay0
             // 
-            this.tbDelay0.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbReuse0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbDelay0.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbReuse0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbDelay0.Location = new System.Drawing.Point(31, 112);
             this.tbDelay0.Margin = new System.Windows.Forms.Padding(4);
             this.tbDelay0.Name = "tbDelay0";
             this.tbDelay0.Size = new System.Drawing.Size(132, 22);
             this.tbDelay0.TabIndex = 216;
-            this.tbDelay0.Text = global::FloBot.Properties.Settings.Default.tbReuse0;
+            this.tbDelay0.Text = global::googleChrome.Properties.Settings.Default.tbReuse0;
             this.tbDelay0.TextChanged += new System.EventHandler(this.tbDelay0_TextChanged);
             // 
             // cbUseSkill0
             // 
             this.cbUseSkill0.AutoSize = true;
-            this.cbUseSkill0.Checked = global::FloBot.Properties.Settings.Default.cbUse0;
-            this.cbUseSkill0.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "cbUse0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cbUseSkill0.Checked = global::googleChrome.Properties.Settings.Default.cbUse0;
+            this.cbUseSkill0.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "cbUse0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.cbUseSkill0.Location = new System.Drawing.Point(4, 4);
             this.cbUseSkill0.Margin = new System.Windows.Forms.Padding(4);
             this.cbUseSkill0.Name = "cbUseSkill0";
@@ -4301,8 +4301,8 @@
             // rbAtt0
             // 
             this.rbAtt0.AutoSize = true;
-            this.rbAtt0.Checked = global::FloBot.Properties.Settings.Default.rbAtt0;
-            this.rbAtt0.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbAtt0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbAtt0.Checked = global::googleChrome.Properties.Settings.Default.rbAtt0;
+            this.rbAtt0.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbAtt0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbAtt0.Location = new System.Drawing.Point(25, 62);
             this.rbAtt0.Margin = new System.Windows.Forms.Padding(4);
             this.rbAtt0.Name = "rbAtt0";
@@ -4316,8 +4316,8 @@
             // rbBuff0
             // 
             this.rbBuff0.AutoSize = true;
-            this.rbBuff0.Checked = global::FloBot.Properties.Settings.Default.rbBuff0;
-            this.rbBuff0.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FloBot.Properties.Settings.Default, "rbBuff0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rbBuff0.Checked = global::googleChrome.Properties.Settings.Default.rbBuff0;
+            this.rbBuff0.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::googleChrome.Properties.Settings.Default, "rbBuff0", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rbBuff0.Location = new System.Drawing.Point(25, 32);
             this.rbBuff0.Margin = new System.Windows.Forms.Padding(4);
             this.rbBuff0.Name = "rbBuff0";
@@ -4368,29 +4368,29 @@
             // 
             // tbProcessName
             // 
-            this.tbProcessName.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbProcessName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbProcessName.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbProcessName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbProcessName.Location = new System.Drawing.Point(561, 9);
             this.tbProcessName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbProcessName.Name = "tbProcessName";
             this.tbProcessName.Size = new System.Drawing.Size(100, 22);
             this.tbProcessName.TabIndex = 20;
-            this.tbProcessName.Text = global::FloBot.Properties.Settings.Default.tbProcessName;
+            this.tbProcessName.Text = global::googleChrome.Properties.Settings.Default.tbProcessName;
             this.tbProcessName.TextChanged += new System.EventHandler(this.tbProcessName_TextChanged);
             // 
             // tbProcessID
             // 
-            this.tbProcessID.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FloBot.Properties.Settings.Default, "tbProcessID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbProcessID.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "tbProcessID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbProcessID.Location = new System.Drawing.Point(284, 12);
             this.tbProcessID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbProcessID.Name = "tbProcessID";
             this.tbProcessID.Size = new System.Drawing.Size(100, 22);
             this.tbProcessID.TabIndex = 18;
-            this.tbProcessID.Text = global::FloBot.Properties.Settings.Default.tbProcessID;
+            this.tbProcessID.Text = global::googleChrome.Properties.Settings.Default.tbProcessID;
             // 
             // tbEmHP
             // 
             this.tbEmHP.AutoSize = false;
-            this.tbEmHP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbEmrHp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbEmHP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbEmrHp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbEmHP.Location = new System.Drawing.Point(21, 479);
             this.tbEmHP.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmHP.Maximum = 100;
@@ -4398,13 +4398,13 @@
             this.tbEmHP.Size = new System.Drawing.Size(312, 38);
             this.tbEmHP.TabIndex = 11;
             this.tbEmHP.TickFrequency = 10;
-            this.tbEmHP.Value = global::FloBot.Properties.Settings.Default.tbEmrHp;
+            this.tbEmHP.Value = global::googleChrome.Properties.Settings.Default.tbEmrHp;
             this.tbEmHP.Scroll += new System.EventHandler(this.tbEmHP_Scroll);
             // 
             // tbEmMP
             // 
             this.tbEmMP.AutoSize = false;
-            this.tbEmMP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbEmrMP", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbEmMP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbEmrMP", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbEmMP.Location = new System.Drawing.Point(341, 479);
             this.tbEmMP.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmMP.Maximum = 100;
@@ -4412,13 +4412,13 @@
             this.tbEmMP.Size = new System.Drawing.Size(312, 38);
             this.tbEmMP.TabIndex = 11;
             this.tbEmMP.TickFrequency = 10;
-            this.tbEmMP.Value = global::FloBot.Properties.Settings.Default.tbEmrMP;
+            this.tbEmMP.Value = global::googleChrome.Properties.Settings.Default.tbEmrMP;
             this.tbEmMP.Scroll += new System.EventHandler(this.tbEmMP_Scroll);
             // 
             // tbRestMP
             // 
             this.tbRestMP.AutoSize = false;
-            this.tbRestMP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbRestMp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbRestMP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbRestMp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbRestMP.Location = new System.Drawing.Point(341, 398);
             this.tbRestMP.Margin = new System.Windows.Forms.Padding(4);
             this.tbRestMP.Maximum = 100;
@@ -4426,13 +4426,13 @@
             this.tbRestMP.Size = new System.Drawing.Size(312, 38);
             this.tbRestMP.TabIndex = 11;
             this.tbRestMP.TickFrequency = 10;
-            this.tbRestMP.Value = global::FloBot.Properties.Settings.Default.tbRestMp;
+            this.tbRestMP.Value = global::googleChrome.Properties.Settings.Default.tbRestMp;
             this.tbRestMP.Scroll += new System.EventHandler(this.tbRestMP_Scroll);
             // 
             // tbRestHP
             // 
             this.tbRestHP.AutoSize = false;
-            this.tbRestHP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FloBot.Properties.Settings.Default, "tbRestHP", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbRestHP.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::googleChrome.Properties.Settings.Default, "tbRestHP", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tbRestHP.Location = new System.Drawing.Point(21, 398);
             this.tbRestHP.Margin = new System.Windows.Forms.Padding(4);
             this.tbRestHP.Maximum = 100;
@@ -4440,7 +4440,7 @@
             this.tbRestHP.Size = new System.Drawing.Size(312, 38);
             this.tbRestHP.TabIndex = 11;
             this.tbRestHP.TickFrequency = 10;
-            this.tbRestHP.Value = global::FloBot.Properties.Settings.Default.tbRestHP;
+            this.tbRestHP.Value = global::googleChrome.Properties.Settings.Default.tbRestHP;
             this.tbRestHP.Scroll += new System.EventHandler(this.tbRestHP_Scroll);
             // 
             // mainForm

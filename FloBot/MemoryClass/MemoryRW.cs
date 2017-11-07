@@ -161,14 +161,15 @@ namespace FloBot.MemoryClass
             PostMessage(hWnd, WM_KEYUP, k, 0);
         }
 
-        public void sendLeftClick(int[] pos)
+        public void sendLeftClick(int[] pos,int[] endPos)
         {
-            int coordinates = pos[0] | (pos[1] << 16);
+            int startCord = pos[0] | (pos[1] << 16);
+            int endCord = endPos[0] | (endPos[1] << 16);
             const uint WM_LBUTTONDOWN = 0x201; //Left mousebutton down
             const uint WM_LBUTTONUP = 0x202;   //Left mousebutton up
-            PostMessage(hWnd, WM_LBUTTONDOWN, 0, coordinates);
+            PostMessage(hWnd, WM_LBUTTONDOWN, 0, startCord);
             Thread.Sleep(new Random().Next(1, 150));
-            PostMessage(hWnd, WM_LBUTTONUP, 0, coordinates);
+            PostMessage(hWnd, WM_LBUTTONUP, 0, endCord);
         }
 
 
