@@ -165,13 +165,28 @@ namespace FloBot.MemoryClass
         {
             int startCord = pos[0] | (pos[1] << 16);
             int endCord = endPos[0] | (endPos[1] << 16);
-            const uint WM_LBUTTONDOWN = 0x201; //Left mousebutton down
-            const uint WM_LBUTTONUP = 0x202;   //Left mousebutton up
-            PostMessage(hWnd, WM_LBUTTONDOWN, 0, startCord);
-            Thread.Sleep(new Random().Next(1, 150));
-            PostMessage(hWnd, WM_LBUTTONUP, 0, endCord);
+           // const uint WM_LBUTTONDOWN = 0x201; //Left mousebutton down
+           // const uint WM_LBUTTONUP = 0x202;   //Left mousebutton up
+            uint[] LB = { 0x201, 0x202 };
+            sendClick(startCord, endCord,LB);
         }
 
+        public void sendRightClick(int[] pos, int[] endPos)
+        {
+            int startCord = pos[0] | (pos[1] << 16);
+            int endCord = endPos[0] | (endPos[1] << 16);
+            // const uint WM_LBUTTONDOWN = 0x201; //Left mousebutton down
+            // const uint WM_LBUTTONUP = 0x202;   //Left mousebutton up
+            uint[] RB = { 0x204, 0x205 };
+            sendClick(startCord, endCord, LB);
+        }
+
+        private void sendClick(int startCord, int endCord,uint[] button)
+        {
+            PostMessage(hWnd, button[0], 0, startCord);
+            Thread.Sleep(new Random().Next(1, 150));
+            PostMessage(hWnd, button[1], 0, endCord);
+        }
 
         [DllImport("user32.dll")]
         [return: MarshalAs(UnmanagedType.Bool)]

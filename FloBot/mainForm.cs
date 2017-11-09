@@ -92,15 +92,15 @@ namespace FloBot
             lblMin1M.Text = tbMin1M.Value + "%";
             lblMax1P.Text = tbMax1P.Value + "%";
             lblMin1P.Text = tbMin1P.Value + "%";
-            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad1,0,0,0,0,0));
-            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad1, 0, 0, 0, 0, 0));
+            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad1,0,0,0,0,0,false));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad1, 0, 0, 0, 0, 0, false));
 
             if (cbUseSkill1.Checked)
             {
                 if (rbBuff1.Checked)
-                    player.addElement(player.BuffArray, new Skill(tbDelay1.Text, tbCast1.Text, Keys.NumPad1, tbMax1M.Value, tbMin1M.Value,tbMax1P.Value,tbMin1P.Value,(int)nudPrio1.Value));
+                    player.addElement(player.BuffArray, new Skill(tbDelay1.Text, tbCast1.Text, Keys.NumPad1, tbMax1M.Value, tbMin1M.Value,tbMax1P.Value,tbMin1P.Value,(int)nudPrio1.Value, false));
                 if(rbAtt1.Checked)
-                    player.addElement(player.AttArray, new Skill(tbDelay1.Text, tbCast1.Text, Keys.NumPad1, tbMax1M.Value, tbMin1M.Value, tbMax1P.Value, tbMin1P.Value, (int)nudPrio1.Value));
+                    player.addElement(player.AttArray, new Skill(tbDelay1.Text, tbCast1.Text, Keys.NumPad1, tbMax1M.Value, tbMin1M.Value, tbMax1P.Value, tbMin1P.Value, (int)nudPrio1.Value, false));
             }
                 
                     
@@ -114,15 +114,15 @@ namespace FloBot
             lblMin2M.Text = tbMin2M.Value + "%";
             lblMax2P.Text = tbMax2P.Value + "%";
             lblMin2P.Text = tbMin2P.Value + "%";
-            player.removeElement(player.AttArray, new Skill("","", Keys.NumPad2, 0, 0, 0, 0, 0));
-            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad2, 0, 0, 0, 0, 0));
+            player.removeElement(player.AttArray, new Skill("","", Keys.NumPad2, 0, 0, 0, 0, 0, false));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad2, 0, 0, 0, 0, 0, false));
 
             if (cbUseSkill2.Checked)
             {
                 if (rbBuff2.Checked)
-                    player.addElement(player.BuffArray, new Skill(tbDelay2.Text, tbCast2.Text, Keys.NumPad2, tbMax2M.Value, tbMin2M.Value, tbMax2P.Value, tbMin2P.Value, (int)nudPrio2.Value));
+                    player.addElement(player.BuffArray, new Skill(tbDelay2.Text, tbCast2.Text, Keys.NumPad2, tbMax2M.Value, tbMin2M.Value, tbMax2P.Value, tbMin2P.Value, (int)nudPrio2.Value, false));
                 if (rbAtt2.Checked)
-                    player.addElement(player.AttArray, new Skill(tbDelay2.Text, tbCast2.Text, Keys.NumPad2, tbMax2M.Value, tbMin2M.Value, tbMax2P.Value, tbMin2P.Value, (int)nudPrio2.Value));
+                    player.addElement(player.AttArray, new Skill(tbDelay2.Text, tbCast2.Text, Keys.NumPad2, tbMax2M.Value, tbMin2M.Value, tbMax2P.Value, tbMin2P.Value, (int)nudPrio2.Value, false));
             }
 
 
@@ -135,15 +135,15 @@ namespace FloBot
             lblMin3M.Text = tbMin3M.Value + "%";
             lblMax3P.Text = tbMax3P.Value + "%";
             lblMin3P.Text = tbMin3P.Value + "%";
-            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad3, 0, 0, 0, 0, 0));
-            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad3, 0, 0, 0, 0, 0));
+            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad3, 0, 0, 0, 0, 0, false));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad3, 0, 0, 0, 0, 0, false));
 
             if (cbUseSkill3.Checked)
             {
                 if (rbBuff3.Checked)
-                    player.addElement(player.BuffArray, new Skill(tbDelay3.Text, tbCast3.Text, Keys.NumPad3, tbMax3M.Value, tbMin3M.Value, tbMax3P.Value, tbMin3P.Value, (int)nudPrio3.Value));
+                    player.addElement(player.BuffArray, new Skill(tbDelay3.Text, tbCast3.Text, Keys.NumPad3, tbMax3M.Value, tbMin3M.Value, tbMax3P.Value, tbMin3P.Value, (int)nudPrio3.Value, false));
                 if (rbAtt3.Checked)
-                    player.addElement(player.AttArray, new Skill(tbDelay3.Text, tbCast3.Text, Keys.NumPad3, tbMax3M.Value, tbMin3M.Value, tbMax3P.Value, tbMin3P.Value, (int)nudPrio3.Value));
+                    player.addElement(player.AttArray, new Skill(tbDelay3.Text, tbCast3.Text, Keys.NumPad3, tbMax3M.Value, tbMin3M.Value, tbMax3P.Value, tbMin3P.Value, (int)nudPrio3.Value, false));
             }
         }
         private void rbBuff4_Changed(object sender, EventArgs e)
@@ -152,15 +152,15 @@ namespace FloBot
             lblMin4M.Text = tbMin4M.Value + "%";
             lblMax4P.Text = tbMax4P.Value + "%";
             lblMin4P.Text = tbMin4P.Value + "%";
-            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad4, 0, 0, 0, 0, 0));
-            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad4, 0, 0, 0, 0, 0));
+            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad4, 0, 0, 0, 0, 0, false));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad4, 0, 0, 0, 0, 0, false));
 
             if (cbUseSkill4.Checked)
             {
                 if (rbBuff4.Checked)
-                    player.addElement(player.BuffArray, new Skill(tbDelay4.Text, tbCast4.Text, Keys.NumPad4, tbMax4M.Value, tbMin4M.Value, tbMax4P.Value, tbMin4P.Value, (int)nudPrio4.Value));
+                    player.addElement(player.BuffArray, new Skill(tbDelay4.Text, tbCast4.Text, Keys.NumPad4, tbMax4M.Value, tbMin4M.Value, tbMax4P.Value, tbMin4P.Value, (int)nudPrio4.Value, false));
                 if (rbAtt4.Checked)
-                    player.addElement(player.AttArray, new Skill(tbDelay4.Text, tbCast4.Text, Keys.NumPad4, tbMax4M.Value, tbMin4M.Value, tbMax4P.Value, tbMin4P.Value, (int)nudPrio4.Value));
+                    player.addElement(player.AttArray, new Skill(tbDelay4.Text, tbCast4.Text, Keys.NumPad4, tbMax4M.Value, tbMin4M.Value, tbMax4P.Value, tbMin4P.Value, (int)nudPrio4.Value, false));
             }
         }
         private void rbBuff5_Changed(object sender, EventArgs e)
@@ -169,15 +169,15 @@ namespace FloBot
             lblMin5M.Text = tbMin5M.Value + "%";
             lblMax5P.Text = tbMax5P.Value + "%";
             lblMin5P.Text = tbMin5P.Value + "%";
-            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad5, 0, 0, 0, 0, 0));
-            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad5, 0, 0, 0, 0, 0));
+            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad5, 0, 0, 0, 0, 0, false));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad5, 0, 0, 0, 0, 0, false));
 
             if (cbUseSkill5.Checked)
             {
                 if (rbBuff5.Checked)
-                    player.addElement(player.BuffArray, new Skill(tbDelay5.Text, tbCast5.Text, Keys.NumPad5, tbMax5M.Value, tbMin5M.Value, tbMax5P.Value, tbMin5P.Value, (int)nudPrio5.Value));
+                    player.addElement(player.BuffArray, new Skill(tbDelay5.Text, tbCast5.Text, Keys.NumPad5, tbMax5M.Value, tbMin5M.Value, tbMax5P.Value, tbMin5P.Value, (int)nudPrio5.Value, false));
                 if (rbAtt5.Checked)
-                    player.addElement(player.AttArray, new Skill(tbDelay5.Text, tbCast5.Text, Keys.NumPad5, tbMax5M.Value, tbMin5M.Value, tbMax5P.Value, tbMin5P.Value, (int)nudPrio5.Value));
+                    player.addElement(player.AttArray, new Skill(tbDelay5.Text, tbCast5.Text, Keys.NumPad5, tbMax5M.Value, tbMin5M.Value, tbMax5P.Value, tbMin5P.Value, (int)nudPrio5.Value, false));
             }
         }
 
@@ -187,15 +187,15 @@ namespace FloBot
             lblMin6M.Text = tbMin6M.Value + "%";
             lblMax6P.Text = tbMax6P.Value + "%";
             lblMin6P.Text = tbMin6P.Value + "%";
-            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad6, 0, 0, 0, 0, 0));
-            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad6, 0, 0, 0, 0, 0));
+            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad6, 0, 0, 0, 0, 0, false));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad6, 0, 0, 0, 0, 0, false));
 
             if (cbUseSkill6.Checked)
             {
                 if (rbBuff6.Checked)
-                    player.addElement(player.BuffArray, new Skill(tbDelay6.Text, tbCast6.Text, Keys.NumPad6, tbMax6M.Value, tbMin6M.Value, tbMax6P.Value, tbMin6P.Value, (int)nudPrio6.Value));
+                    player.addElement(player.BuffArray, new Skill(tbDelay6.Text, tbCast6.Text, Keys.NumPad6, tbMax6M.Value, tbMin6M.Value, tbMax6P.Value, tbMin6P.Value, (int)nudPrio6.Value, false));
                 if (rbAtt6.Checked)
-                    player.addElement(player.AttArray, new Skill(tbDelay6.Text, tbCast6.Text, Keys.NumPad6, tbMax6M.Value, tbMin6M.Value, tbMax6P.Value, tbMin6P.Value, (int)nudPrio6.Value));
+                    player.addElement(player.AttArray, new Skill(tbDelay6.Text, tbCast6.Text, Keys.NumPad6, tbMax6M.Value, tbMin6M.Value, tbMax6P.Value, tbMin6P.Value, (int)nudPrio6.Value, false));
             }
         }
 
@@ -205,15 +205,15 @@ namespace FloBot
             lblMin7M.Text = tbMin7M.Value + "%";
             lblMax7P.Text = tbMax7P.Value + "%";
             lblMin7P.Text = tbMin7P.Value + "%";
-            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad7, 0, 0, 0, 0, 0));
-            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad7, 0, 0, 0, 0, 0));
+            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad7, 0, 0, 0, 0, 0, false));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad7, 0, 0, 0, 0, 0, false));
 
             if (cbUseSkill7.Checked)
             {
                 if (rbBuff7.Checked)
-                    player.addElement(player.BuffArray, new Skill(tbDelay7.Text, tbCast7.Text, Keys.NumPad7, tbMax7M.Value, tbMin7M.Value, tbMax7P.Value, tbMin7P.Value, (int)nudPrio7.Value));
+                    player.addElement(player.BuffArray, new Skill(tbDelay7.Text, tbCast7.Text, Keys.NumPad7, tbMax7M.Value, tbMin7M.Value, tbMax7P.Value, tbMin7P.Value, (int)nudPrio7.Value, false));
                 if (rbAtt7.Checked)
-                    player.addElement(player.AttArray, new Skill(tbDelay7.Text, tbCast7.Text, Keys.NumPad7, tbMax7M.Value, tbMin7M.Value, tbMax7P.Value, tbMin7P.Value, (int)nudPrio7.Value));
+                    player.addElement(player.AttArray, new Skill(tbDelay7.Text, tbCast7.Text, Keys.NumPad7, tbMax7M.Value, tbMin7M.Value, tbMax7P.Value, tbMin7P.Value, (int)nudPrio7.Value, false));
             }
         }
 
@@ -223,15 +223,15 @@ namespace FloBot
             lblMin8M.Text = tbMin8M.Value + "%";
             lblMax8P.Text = tbMax8P.Value + "%";
             lblMin8P.Text = tbMin8P.Value + "%";
-            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad8, 0, 0, 0, 0, 0));
-            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad8, 0, 0, 0, 0, 0));
+            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad8, 0, 0, 0, 0, 0, false));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad8, 0, 0, 0, 0, 0, false));
 
             if (cbUseSkill8.Checked)
             {
                 if (rbBuff8.Checked)
-                    player.addElement(player.BuffArray, new Skill(tbDelay8.Text, tbCast8.Text, Keys.NumPad8, tbMax8M.Value, tbMin8M.Value, tbMax8P.Value, tbMin8P.Value, (int)nudPrio8.Value));
+                    player.addElement(player.BuffArray, new Skill(tbDelay8.Text, tbCast8.Text, Keys.NumPad8, tbMax8M.Value, tbMin8M.Value, tbMax8P.Value, tbMin8P.Value, (int)nudPrio8.Value, false));
                 if (rbAtt8.Checked)
-                    player.addElement(player.AttArray, new Skill(tbDelay8.Text, tbCast8.Text, Keys.NumPad8, tbMax8M.Value, tbMin8M.Value, tbMax8P.Value, tbMin8P.Value, (int)nudPrio8.Value));
+                    player.addElement(player.AttArray, new Skill(tbDelay8.Text, tbCast8.Text, Keys.NumPad8, tbMax8M.Value, tbMin8M.Value, tbMax8P.Value, tbMin8P.Value, (int)nudPrio8.Value, false));
             }
         }
 
@@ -241,15 +241,15 @@ namespace FloBot
             lblMin9M.Text = tbMin9M.Value + "%";
             lblMax9P.Text = tbMax9P.Value + "%";
             lblMin9P.Text = tbMin9P.Value + "%";
-            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad9, 0, 0, 0, 0, 0));
-            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad9, 0, 0, 0, 0, 0));
+            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad9, 0, 0, 0, 0, 0, false));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad9, 0, 0, 0, 0, 0, false));
 
             if (cbUseSkill9.Checked)
             {
                 if (rbBuff9.Checked)
-                    player.addElement(player.BuffArray, new Skill(tbDelay9.Text, tbCast9.Text, Keys.NumPad9, tbMax9M.Value, tbMin9M.Value, tbMax9P.Value, tbMin9P.Value, (int)nudPrio9.Value));
+                    player.addElement(player.BuffArray, new Skill(tbDelay9.Text, tbCast9.Text, Keys.NumPad9, tbMax9M.Value, tbMin9M.Value, tbMax9P.Value, tbMin9P.Value, (int)nudPrio9.Value, false));
                 if (rbAtt9.Checked)
-                    player.addElement(player.AttArray, new Skill(tbDelay9.Text, tbCast9.Text, Keys.NumPad9, tbMax9M.Value, tbMin9M.Value, tbMax9P.Value, tbMin9P.Value, (int)nudPrio9.Value));
+                    player.addElement(player.AttArray, new Skill(tbDelay9.Text, tbCast9.Text, Keys.NumPad9, tbMax9M.Value, tbMin9M.Value, tbMax9P.Value, tbMin9P.Value, (int)nudPrio9.Value, false));
             }
         }
 
@@ -259,15 +259,15 @@ namespace FloBot
             lblMin0M.Text = tbMin0M.Value + "%";
             lblMax0P.Text = tbMax0P.Value + "%";
             lblMin0P.Text = tbMin0P.Value + "%";
-            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad0, 0, 0, 0, 0, 0));
-            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad0, 0, 0, 0, 0, 0));
+            player.removeElement(player.AttArray, new Skill("", "", Keys.NumPad0, 0, 0, 0, 0, 0, false));
+            player.removeElement(player.BuffArray, new Skill("", "", Keys.NumPad0, 0, 0, 0, 0, 0, false));
 
             if (cbUseSkill0.Checked)
             {
                 if (rbBuff0.Checked)
-                    player.addElement(player.BuffArray, new Skill(tbDelay0.Text, tbCast0.Text, Keys.NumPad0, tbMax0M.Value, tbMin0M.Value, tbMax0P.Value, tbMin0P.Value, (int)nudPrio0.Value));
+                    player.addElement(player.BuffArray, new Skill(tbDelay0.Text, tbCast0.Text, Keys.NumPad0, tbMax0M.Value, tbMin0M.Value, tbMax0P.Value, tbMin0P.Value, (int)nudPrio0.Value, false));
                 if (rbAtt0.Checked)
-                    player.addElement(player.AttArray, new Skill(tbDelay0.Text, tbCast0.Text, Keys.NumPad0, tbMax0M.Value, tbMin0M.Value, tbMax0P.Value, tbMin0P.Value, (int)nudPrio0.Value));
+                    player.addElement(player.AttArray, new Skill(tbDelay0.Text, tbCast0.Text, Keys.NumPad0, tbMax0M.Value, tbMin0M.Value, tbMax0P.Value, tbMin0P.Value, (int)nudPrio0.Value, false));
             }
         }
 

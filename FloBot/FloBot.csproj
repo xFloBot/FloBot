@@ -74,6 +74,7 @@
     <Compile Include="State\AfterCombatState.cs" />
     <Compile Include="State\CombatState.cs" />
     <Compile Include="State\PreCombatState.cs" />
+    <Compile Include="Tasks\AoEAttackTargetsTask.cs" />
     <Compile Include="Tasks\AttackTargetTask.cs" />
     <Compile Include="Tasks\AutoLootTask.cs" />
     <Compile Include="Tasks\BuffMyselfTask.cs" />

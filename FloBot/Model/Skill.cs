@@ -10,7 +10,7 @@ namespace FloBot.Model
 {
     class Skill : IComparable
     {
-        private float _delay;
+        private float _reuse;
         private float _castTime;
         private DateTime _lastTimeUsed;
         private Keys _hotkey;
@@ -19,12 +19,13 @@ namespace FloBot.Model
         private int _maxHPP;
         private int _minHPP;
         private int _prio;
+        private bool _isAoE;
 
         public float Delay
         {
             get
             {
-                return _delay;
+                return _reuse;
             }
             
         }
@@ -100,18 +101,22 @@ namespace FloBot.Model
             }
         }
 
-        public Skill (String delay,String castTime,Keys hotkey,int maxHPM,int minHPM,int maxHPP,int minHPP,int prio)
+        public bool IsAoE { get => _isAoE; set => _isAoE = value; }
+
+        public Skill (String reuse,String castTime,Keys hotkey,int maxHPM,int minHPM,int maxHPP,int minHPP,int prio,bool isAoE)
         {
 
-            float.TryParse(delay, NumberStyles.Float , CultureInfo.InvariantCulture, out _delay);
+            float.TryParse(reuse, NumberStyles.Float , CultureInfo.InvariantCulture, out _reuse);
             float.TryParse(castTime, NumberStyles.Float, CultureInfo.InvariantCulture, out _castTime);
-         
+
+            _reuse += _castTime;
             _hotkey = hotkey;
             _maxHPM = maxHPM;
             _minHPM = minHPM;
             _maxHPP = maxHPP;
             _minHPP = minHPP;
             _prio = prio;
+            _isAoE = isAoE;
         }
         public bool skillCanBeUsed()
         {
