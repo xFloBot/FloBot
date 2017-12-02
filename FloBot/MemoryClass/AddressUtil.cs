@@ -96,7 +96,7 @@ namespace FloBot.MemoryClass
                CharCurrentExpOffset));
         }
 
-        private static int[] CharPosXOffset = { 0xC7C720 };
+        private static int[] CharPosXOffset = { 0xC7C718 };
         public static Single getCharPosX()
         {
             return mc.ReadSingle(
@@ -112,7 +112,7 @@ namespace FloBot.MemoryClass
                CharPosYOffset));
         }
 
-        private static int[] CharPosZOffset = { 0xC7C718 };
+        private static int[] CharPosZOffset = { 0xC7C720 };
         public static Single getCharPosZ()
         {
             return mc.ReadSingle(
@@ -163,6 +163,37 @@ namespace FloBot.MemoryClass
             return mc.ReadInteger(
                 getFinalPointer(mc.getBaseAdress().ToInt32(), TargetTypeOffset)
                 );
+        }
+        private static int[] TargetIdOffset = { targetBase, 0x14, 0x10 };
+        public static int getTargetID()
+        {
+            return mc.ReadInteger(getFinalPointer(mc.getBaseAdress().ToInt32(), TargetIdOffset));
+        }
+        private static int[] TargetPosLengthOffset = {targetBase , 0x20,0x10,-0x4};
+        private static int getTargetPosLength()
+        {
+            return mc.ReadInteger(getFinalPointer(mc.getBaseAdress().ToInt32(), TargetPosLengthOffset));
+        }
+
+
+        private static int[] TargetPosOffset = { targetBase, 0x20, 0x10, 0x0 };
+        //´[0] = x,[1] = y, [2] = z
+        public static Single[] getTargetPos()
+        {
+            int posLength = getTargetPosLength();
+            if(posLength == 5)
+                return new Single[] { 0,0,0};
+            Single[] pos = new Single[3];
+            String targetPos = mc.ReadString(getFinalPointer(mc.getBaseAdress().ToInt32(), TargetPosOffset) , getTargetPosLength());
+            
+            String[] posSplit = targetPos.Split(',');
+            for(int i = 0; i < posSplit.Length;i++)
+            {
+                Console.WriteLine(posSplit[i].Substring(posSplit[i].IndexOf('=') + 1, posSplit[i].Length - (posSplit[i].IndexOf('=') + 2)).Replace('.',','));
+                Single.TryParse(posSplit[i].Substring(posSplit[i].IndexOf('=')+1,posSplit[i].Length - (posSplit[i].IndexOf('=') + 2)).Replace('.', ','),out pos[i]);
+                Console.WriteLine("Target :" + pos[i]);
+            }
+            return pos;
         }
         #endregion
     }

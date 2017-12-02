@@ -1498,5 +1498,17 @@ namespace googleChrome.Properties {
                 this["tbMin0P"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string rtbBlacklist {
+            get {
+                return ((string)(this["rtbBlacklist"]));
+            }
+            set {
+                this["rtbBlacklist"] = value;
+            }
+        }
     }
 }

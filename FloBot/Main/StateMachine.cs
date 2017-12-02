@@ -22,11 +22,11 @@ namespace FloBot.Main
         private bool endBot = false;
         public StateMachine(mainForm main_form,Player player)
         {
-            this.main_form = main_form;
             this.mc = new MemoryRW();
+            AddressUtil.setMemoryRW(this.mc);
+            this.main_form = main_form;
             this.player = player;
             currentState = new IdleState();
-            AddressUtil.setMemoryRW(this.mc);
             botThread = new Thread(start_Method);
             botThread.Start();
             abortThread = new Thread(check_Abort_Bot);

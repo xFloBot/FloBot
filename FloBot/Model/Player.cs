@@ -10,7 +10,7 @@ namespace FloBot.Model
 {
     class Player
     {
-        private Position _pos = new Position();
+        private Position _pos;
         private Target _target = new Target();
         private  ArrayList _buffArray = new ArrayList();
         private  ArrayList _attArray = new ArrayList();
@@ -23,6 +23,21 @@ namespace FloBot.Model
         private int oldExp =-1;
         private int oldMobExp =-1;
         private bool _playerEngaged = false;
+        private static Player instance;
+        public static Player getInstance()
+        {
+            if (instance == null)
+            {
+                Console.WriteLine("Player Created");
+                instance = new Player();
+                return instance;
+            }
+            return instance;
+        }
+        private Player()
+        {
+            _pos = new Position();//new Single[] { AddressUtil.getCharPosX(), AddressUtil.getCharPosY(), AddressUtil.getCharPosZ() });
+        }
 
         public  ArrayList BuffArray
         {
@@ -234,6 +249,8 @@ namespace FloBot.Model
 
             main_form.lblCharMP.Text = AddressUtil.getCharCurrentMP() + "/" + AddressUtil.getCharMaxMP();
 
+            _pos.updatePos(new Single[] {AddressUtil.getCharPosX(),AddressUtil.getCharPosY(),AddressUtil.getCharPosZ() });
+            Console.WriteLine("_pos: " + Player.getInstance().Pos.posX);
             if (oldPercentage == -1)
             {
                 oldPercentage = AddressUtil.getCharExpPercent();

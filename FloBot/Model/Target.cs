@@ -10,7 +10,13 @@ namespace FloBot.Model
 {
     class Target
     {
+        private static String[] _targetBlacklist;
+        private Position targetPos;
 
+        public Target()
+        {
+            targetPos = new Position();
+        }
         public String targetName
         {
             get
@@ -50,6 +56,11 @@ namespace FloBot.Model
             }
         }
 
+        public static string[] TargetBlacklist { get => _targetBlacklist; set => _targetBlacklist = value; }
+        public void addTarget(mainForm main_form)
+        {
+            main_form.rtbBlacklist.AppendText(targetName);
+        }
         public bool isCurrentTargetAlive()
         {
             return targetCurrentHP > 0;
@@ -57,6 +68,8 @@ namespace FloBot.Model
 
         public void updateTargetInfo(mainForm main_form)
         {
+            targetPos.updatePos(AddressUtil.getTargetPos());
+            Console.WriteLine("Distance: " + targetPos.distance(Player.getInstance().Pos));
             main_form.lblTarget.Text = targetName;
             main_form.lblHP.Text = targetCurrentHP + "/" + targetMaxHP;
 
@@ -65,7 +78,7 @@ namespace FloBot.Model
 
         public bool isValidTarget(mainForm main_form)
         {
-            return targetCurrentHP == targetMaxHP && checkIfInRange(main_form) && !targetName.Contains("NoTarget"); 
+            return targetCurrentHP == targetMaxHP && checkIfInRange(main_form) && !targetName.Contains("NoTarget") && !_targetBlacklist.Contains(targetName); 
         }
         public bool isTargetFriendly()
         {

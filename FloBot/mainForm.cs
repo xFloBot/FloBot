@@ -15,7 +15,7 @@ namespace FloBot
 {
     public partial class mainForm : Form
     {
-        private Player player = new Player();
+        private Player player = Player.getInstance();
         private StateMachine machine;
         public mainForm()
         {
@@ -650,6 +650,16 @@ namespace FloBot
         private void tbMin0P_Scroll(object sender, EventArgs e)
         {
             rbBuff0_Changed(null, null);
+        }
+
+        private void btAddTargetBlacklist_Click(object sender, EventArgs e)
+        {
+            rtbBlacklist.AppendText(new Target().targetName);
+        }
+
+        private void rtbBlacklist_TextChanged(object sender, EventArgs e)
+        {
+            Target.TargetBlacklist = rtbBlacklist.Lines.Where(s => !string.IsNullOrWhiteSpace(s)).ToArray();
         }
     }
 }

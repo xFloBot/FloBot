@@ -358,6 +358,10 @@
             this.cbDisableBot = new System.Windows.Forms.CheckBox();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label118 = new System.Windows.Forms.Label();
+            this.btAddTargetBlacklist = new System.Windows.Forms.Button();
+            this.rtbBlacklist = new System.Windows.Forms.RichTextBox();
             this.tbProcessName = new System.Windows.Forms.TextBox();
             this.tbProcessID = new System.Windows.Forms.TextBox();
             this.tbEmHP = new System.Windows.Forms.TrackBar();
@@ -428,6 +432,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbMin0M)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax0P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax0M)).BeginInit();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmMP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbRestMP)).BeginInit();
@@ -4340,7 +4345,7 @@
             // cbDisableBot
             // 
             this.cbDisableBot.AutoSize = true;
-            this.cbDisableBot.Location = new System.Drawing.Point(700, 325);
+            this.cbDisableBot.Location = new System.Drawing.Point(708, 496);
             this.cbDisableBot.Margin = new System.Windows.Forms.Padding(4);
             this.cbDisableBot.Name = "cbDisableBot";
             this.cbDisableBot.Size = new System.Drawing.Size(295, 21);
@@ -4365,6 +4370,47 @@
             this.label59.Size = new System.Drawing.Size(153, 17);
             this.label59.TabIndex = 19;
             this.label59.Text = "Window name(unique):";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label118);
+            this.groupBox4.Controls.Add(this.btAddTargetBlacklist);
+            this.groupBox4.Controls.Add(this.rtbBlacklist);
+            this.groupBox4.Location = new System.Drawing.Point(704, 334);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(387, 155);
+            this.groupBox4.TabIndex = 21;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Enemy blacklist";
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Location = new System.Drawing.Point(217, 25);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(164, 51);
+            this.label118.TabIndex = 2;
+            this.label118.Text = "Remove Blacklisted\r\nenemys by deleting\r\nthe name on the left side";
+            // 
+            // btAddTargetBlacklist
+            // 
+            this.btAddTargetBlacklist.Location = new System.Drawing.Point(230, 98);
+            this.btAddTargetBlacklist.Name = "btAddTargetBlacklist";
+            this.btAddTargetBlacklist.Size = new System.Drawing.Size(133, 38);
+            this.btAddTargetBlacklist.TabIndex = 1;
+            this.btAddTargetBlacklist.Text = "Add Target";
+            this.btAddTargetBlacklist.UseVisualStyleBackColor = true;
+            this.btAddTargetBlacklist.Click += new System.EventHandler(this.btAddTargetBlacklist_Click);
+            // 
+            // rtbBlacklist
+            // 
+            this.rtbBlacklist.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::googleChrome.Properties.Settings.Default, "rtbBlacklist", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.rtbBlacklist.Location = new System.Drawing.Point(7, 22);
+            this.rtbBlacklist.Name = "rtbBlacklist";
+            this.rtbBlacklist.Size = new System.Drawing.Size(195, 127);
+            this.rtbBlacklist.TabIndex = 0;
+            this.rtbBlacklist.Text = global::googleChrome.Properties.Settings.Default.rtbBlacklist;
+            this.rtbBlacklist.TextChanged += new System.EventHandler(this.rtbBlacklist_TextChanged);
             // 
             // tbProcessName
             // 
@@ -4448,6 +4494,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1355, 532);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.tbProcessName);
             this.Controls.Add(this.label59);
             this.Controls.Add(this.tbProcessID);
@@ -4555,6 +4602,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbMin0M)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax0P)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMax0M)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmMP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbRestMP)).EndInit();
@@ -4902,6 +4951,10 @@
         public System.Windows.Forms.RadioButton rbAtt0;
         public System.Windows.Forms.RadioButton rbBuff0;
         public System.Windows.Forms.TrackBar tbMin0M;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.Button btAddTargetBlacklist;
+        public System.Windows.Forms.RichTextBox rtbBlacklist;
     }
 }
 
