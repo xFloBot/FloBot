@@ -25,8 +25,8 @@ namespace FloBot.Tasks
             if(!player.PlayerEngaged)
             {  //Attack
                 mc.sendKeystroke(Keys.Space);
-                //Stop Moving
-                mc.sendKeystroke(Keys.S);
+                // Stop Moving
+                //mc.sendKeystroke(Keys.S);
                 player.PlayerEngaged = true;
                 do
                     Thread.Sleep(50);

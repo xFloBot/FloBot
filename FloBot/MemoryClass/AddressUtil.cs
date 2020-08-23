@@ -25,9 +25,9 @@ namespace FloBot.MemoryClass
             return startPointer + offsetArray[offsetArray.Length-1];
         }
 
-        #region InfosAboutChar
+        #region InfosAboutChar  
 
-        private static int Player_Base = 0x0071DF38;
+        private static int Player_Base = 0x007BA63C;
         private static int[] CharCurrentHPOffset = { Player_Base, 0x60,0x10 };
         public static int getCharCurrentHP()
         {
@@ -61,7 +61,7 @@ namespace FloBot.MemoryClass
                 CharMaxMPOffset));
         }
 
-        private static int[] CharNameOffset = { 0x0071BAF8, 0x4, 0x8, 0x0 };
+        private static int[] CharNameOffset = { Player_Base, 0x8, 0x10, 0x0 };
         public static String getCharName()
         {
             return mc.ReadString(
@@ -96,7 +96,7 @@ namespace FloBot.MemoryClass
                CharCurrentExpOffset));
         }
 
-        private static int[] CharPosXOffset = { 0x0200C710 };
+        private static int[] CharPosXOffset = { 0x7F54D8 };
         public static Single getCharPosX()
         {
             return mc.ReadSingle(
@@ -104,7 +104,7 @@ namespace FloBot.MemoryClass
                CharPosXOffset));
         }
 
-        private static int[] CharPosYOffset = { 0x0200C714 };
+        private static int[] CharPosYOffset = { 0x7F54DC };
         public static Single getCharPosY()
         {
             return mc.ReadSingle(
@@ -112,7 +112,7 @@ namespace FloBot.MemoryClass
                CharPosYOffset));
         }
 
-        private static int[] CharPosZOffset = { 0x0200C718 };
+        private static int[] CharPosZOffset = { 0x7F54E0 };
         public static Single getCharPosZ()
         {
             return mc.ReadSingle(
@@ -123,7 +123,7 @@ namespace FloBot.MemoryClass
 
 
         #region InfosAboutTarget
-        private static int targetBase = 0x0071DF7C;
+        private static int targetBase =  0x007BA9E4;
         private static int[] TargetNameOffset = { targetBase, 0xc, 0x10, 0x0 };
         public static String getTargetName()
         {
@@ -137,7 +137,7 @@ namespace FloBot.MemoryClass
         {
             return mc.ReadSingle(
                getFinalPointer(mc.getBaseAdress().ToInt32(),
-               TargetCurrentHPOffset));
+               TargetCurrentHPOffset),8);
         }
         private static int[] TargetMaxHPOffset = { targetBase, 0x50 };
         public static Single getTargetMaxHP()
@@ -146,8 +146,8 @@ namespace FloBot.MemoryClass
                getFinalPointer(mc.getBaseAdress().ToInt32(),
                TargetMaxHPOffset));
         }
-
-        private static int[] TargetLevelOffset = { targetBase, 0x18, 0x10, 0x0 };
+    
+        private static int[] TargetLevelOffset = { targetBase, 0x18, 0x10, 0x0 }    ;
         public static String getTargetLevel()
         {
           
