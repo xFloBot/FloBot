@@ -137,7 +137,7 @@ namespace FloBot.MemoryClass
         {
             return mc.ReadSingle(
                getFinalPointer(mc.getBaseAdress().ToInt32(),
-               TargetCurrentHPOffset),8);
+               TargetCurrentHPOffset));
         }
         private static int[] TargetMaxHPOffset = { targetBase, 0x50 };
         public static Single getTargetMaxHP()
