@@ -22,7 +22,8 @@ namespace FloBot.Tasks
 
         public bool doTask(mainForm main_form, MemoryRW mc, Player player)
         {
-            if(!player.PlayerEngaged)
+            int counter = 400;
+            if (!player.PlayerEngaged)
             {  //Attack
                 mc.sendKeystroke(Keys.Space);
                 // Stop Moving
@@ -30,7 +31,8 @@ namespace FloBot.Tasks
                 player.PlayerEngaged = true;
                 do
                     Thread.Sleep(50);
-                while (player.Pos.moved());
+                while (player.Pos.moved() && counter-- > 0);
+                counter = 400;
             }
            
 
@@ -53,10 +55,10 @@ namespace FloBot.Tasks
                         return false;
 
                     mc.sendKeystroke(attk.Hotkey);
-
+                    
                     do
                         Thread.Sleep(50);
-                    while (player.Pos.moved());
+                    while (player.Pos.moved() && counter-- >0);
                     Console.WriteLine("Set Time Used");
                     attk.LastTimeUsed = DateTime.Now;
                     lastTimeUsedSpell = attk.LastTimeUsed;
@@ -70,7 +72,11 @@ namespace FloBot.Tasks
 
             }
 
-
+            //Attack
+            mc.sendKeystroke(Keys.Space);
+            do
+                Thread.Sleep(50);
+            while (player.Pos.moved() && counter-- > 0);
 
             return true;
         }

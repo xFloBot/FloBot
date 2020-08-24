@@ -23,6 +23,8 @@ namespace FloBot.MemoryClass
         IntPtr baseAddress;
         [DllImport("user32.dll")]
         public static extern bool PostMessage(IntPtr hWnd, uint Msg, Keys wParam, int lParam);
+        [DllImport("user32.dll")]
+        public static extern bool SendMessage(IntPtr hWnd, uint Msg, Keys wParam, int lParam);
 
         [DllImport("user32.dll", SetLastError = true)]
         public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
@@ -156,9 +158,9 @@ namespace FloBot.MemoryClass
         {
             const uint WM_KEYDOWN = 0x100;
             const uint WM_KEYUP = 0x101;
-            PostMessage(hWnd, WM_KEYDOWN, k , 0);
+            SendMessage(hWnd, WM_KEYDOWN, k , 0);
             Thread.Sleep(new Random().Next(1, 300));
-            PostMessage(hWnd, WM_KEYUP, k, 0);
+            SendMessage(hWnd, WM_KEYUP, k, 0);
         }
 
         public void sendLeftClick(int[] pos,int[] endPos)
@@ -167,9 +169,9 @@ namespace FloBot.MemoryClass
             int endCord = endPos[0] | (endPos[1] << 16);
             const uint WM_LBUTTONDOWN = 0x201; //Left mousebutton down
             const uint WM_LBUTTONUP = 0x202;   //Left mousebutton up
-            PostMessage(hWnd, WM_LBUTTONDOWN, 0, startCord);
+            SendMessage(hWnd, WM_LBUTTONDOWN, 0, startCord);
             Thread.Sleep(new Random().Next(1, 150));
-            PostMessage(hWnd, WM_LBUTTONUP, 0, endCord);
+            SendMessage(hWnd, WM_LBUTTONUP, 0, endCord);
         }
 
 

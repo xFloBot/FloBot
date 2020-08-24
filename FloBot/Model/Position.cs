@@ -15,9 +15,9 @@ namespace FloBot.Model
 
         public bool moved()
         {
-            bool moved = AddressUtil.getCharPosX().Equals(posX) 
-           || AddressUtil.getCharPosY().Equals(posY)
-           || AddressUtil.getCharPosZ().Equals(posZ);
+            bool moved = !AddressUtil.getCharPosX().Equals(posX) 
+           || !AddressUtil.getCharPosY().Equals(posY)
+           || !AddressUtil.getCharPosZ().Equals(posZ);
 
             posX = AddressUtil.getCharPosX();
             posY = AddressUtil.getCharPosY();
