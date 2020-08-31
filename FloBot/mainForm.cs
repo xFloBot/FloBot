@@ -651,5 +651,19 @@ namespace FloBot
         {
             rbBuff0_Changed(null, null);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String targetName = lblTarget.Text;
+            if (!String.IsNullOrWhiteSpace(targetName)) 
+                if (!lbWhitelist.Items.Contains(targetName))
+                    lbWhitelist.Items.Add(targetName);
+        }
+
+        private void btDeleteEntry_Click(object sender, EventArgs e)
+        {
+            if (lbWhitelist.SelectedIndex < 0) return;
+            lbWhitelist.Items.RemoveAt(lbWhitelist.SelectedIndex);
+        }
     }
 }

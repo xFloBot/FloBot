@@ -65,7 +65,7 @@ namespace FloBot.Model
 
         public bool isValidTarget(mainForm main_form)
         {
-            return targetCurrentHP == targetMaxHP && checkIfInRange(main_form) && !targetName.Contains("NoTarget"); 
+            return targetCurrentHP == targetMaxHP && checkIfInRange(main_form) && !targetName.Contains("NoTarget") && !(main_form.cbUseWhitelist.Checked && !main_form.lbWhitelist.Items.Contains(targetName)); 
         }
         public bool isTargetFriendly()
         {
